@@ -8,7 +8,7 @@ ROS 2–based navigation and manipulation for the **Hello Robot Stretch 3**: lid
 
 Pre-built map (dark), live lidar (red), and the robot localized in the map frame—typical view during mapping or Nav2 operation.
 
-![RViz SLAM localization — map, scan, and robot pose](Navigation/lidar.png)
+![RViz SLAM localization — map, scan, and robot pose](Navigation/rviz_lidar.png)
 
 ---
 
