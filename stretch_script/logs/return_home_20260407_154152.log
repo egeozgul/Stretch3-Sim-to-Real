@@ -1,0 +1,12 @@
+=== return_home.sh started at Tue Apr  7 03:41:52 PM EDT 2026 ===
+Waiting for nodes to be ready (launch_nodes.sh)...
+Nodes are ready!
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+Waiting for controller_server...
+Set parameter successful
+Yaw tolerance set.
+=== Navigating back to origin ===

@@ -1,0 +1,68 @@
+=== dock_pos.sh started at Fri Apr 10 05:19:53 PM EDT 2026 ===
+Using named pose 'PC_desk': x=-1.0191 y=-0.04 yaw=173.0°
+Goal: x=-1.0191  y=-0.04  yaw=173.0° (z=0.9981347984218669, w=0.06104853953485691)
+Waiting for nodes to be ready (launch_nodes.sh)...
+Nodes are ready!
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+Waiting for controller_server...
+Set parameter successful
+Yaw tolerance set.
+Resetting arm position...
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+[INFO] [1775855998.928996610] [reset_pose]: reset_pose started
+[INFO] [1775855998.985753598] [reset_pose]: Node reset_pose connected to /home_the_robot service.
+[INFO] [1775855998.987732252] [reset_pose]: Node reset_pose connected to /stow_the_robot service.
+[INFO] [1775855998.989313546] [reset_pose]: Node reset_pose connected to /stop_the_robot service.
+[INFO] [1775855998.990964924] [reset_pose]: Node reset_pose connected to /switch_to_trajectory_mode service.
+[INFO] [1775855998.994218497] [reset_pose]: Node reset_pose connected to /switch_to_position_mode service.
+[INFO] [1775855998.995575232] [reset_pose]: Node reset_pose connected to /switch_to_navigation_mode service.
+[INFO] [1775855998.995897471] [reset_pose]: Moving to default pose...
+[WARN] [1775855998.996194530] [reset_pose]: Currently in  mode. Recommend switching either to position or trajectory mode
+[WARN] [1775855998.996452232] [reset_pose]: Commanding joint trajectory server in position mode
+[INFO] [1775855999.061722018] [reset_pose]: Arm reset done.
+[INFO] [1775855999.062118063] [reset_pose]: Skipping rotation (ROTATE_DEG=0).
+[INFO] [1775855999.062502648] [reset_pose]: Done.
+./dock_pos.sh: line 81: 14809 Segmentation fault      (core dumped) python3 ~/test1.py
+Arm reset complete (exit 139).
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+=== Navigating to x=-1.0191 y=-0.04 yaw=173.0° ===
+Waiting for an action server to become available...
+Sending goal:
+     pose:
+  header:
+    stamp:
+      sec: 0
+      nanosec: 0
+    frame_id: map
+  pose:
+    position:
+      x: -1.0191
+      y: -0.04
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.9981347984218669
+      w: 0.06104853953485691
+behavior_tree: ''
+
+Goal accepted with ID: 094a70e879d74a0c8e9e1a0482261d8b
+
+Result:
+    result: {}
+
+Goal finished with status: SUCCEEDED
+Navigation succeeded!
+=== dock_pos.sh finished at Fri Apr 10 05:20:17 PM EDT 2026 ===

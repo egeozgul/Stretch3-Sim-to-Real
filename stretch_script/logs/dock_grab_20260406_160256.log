@@ -1,0 +1,690 @@
+=== dock_grab.sh started at Mon Apr  6 04:02:56 PM EDT 2026 ===
+Freeing robot process...
+Done!
+=== Launching all nodes ===
+Waiting for Nav2 action server...
+[INFO] [launch]: All log files can be found below /home/willy/.ros/log/2026-04-06-16-02-57-112595-stretch-re2-2204-42395
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch]: All log files can be found below /home/willy/.ros/log/2026-04-06-16-02-57-202695-stretch-re2-2204-42396
+[INFO] [launch]: Default logging verbosity is set to INFO
+Nav2 is up!
+Setting initial pose...
+[INFO] [launch.user]: D435i launched in high resolution
+[INFO] [realsense2_camera_node-1]: process started with pid [42480]
+[INFO] [d435i_accel_correction-2]: process started with pid [42482]
+[realsense2_camera_node-1] [0m[INFO] [1775505777.585932009] [camera]: RealSense ROS v4.55.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505777.586068414] [camera]: Built with LibRealSense v2.56.4[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505777.586085972] [camera]: Running with LibRealSense v2.56.4[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505777.606494332] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775505777.606627221] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505777.606654282] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505777.606896887] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775505777.606938359] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[INFO] [1775505777.780520945] [aruco_base_frame_estimator]: aruco_base_frame_estimator started
+[d435i_accel_correction-2] [INFO] [1775505777.836882326] [d435i_accel_correction_node]: d435i_accel_correction_node started
+[INFO] [stretch_driver-3]: process started with pid [42611]
+[INFO] [joint_state_publisher-1]: process started with pid [42607]
+[INFO] [robot_state_publisher-2]: process started with pid [42609]
+[INFO] [sllidar_node-4]: process started with pid [42613]
+[INFO] [scan_to_scan_filter_chain-5]: process started with pid [42615]
+[INFO] [joy_node-6]: process started with pid [42617]
+[INFO] [teleop_node-7]: process started with pid [42619]
+[INFO] [map_server-8]: process started with pid [42621]
+[INFO] [amcl-9]: process started with pid [42623]
+[INFO] [lifecycle_manager-10]: process started with pid [42625]
+[INFO] [controller_server-11]: process started with pid [42628]
+[INFO] [planner_server-12]: process started with pid [42631]
+[INFO] [behavior_server-13]: process started with pid [42634]
+[INFO] [bt_navigator-14]: process started with pid [42638]
+[INFO] [waypoint_follower-15]: process started with pid [42650]
+[INFO] [lifecycle_manager-16]: process started with pid [42718]
+[INFO] [rviz2-17]: process started with pid [42721]
+[sllidar_node-4] [INFO] [1775505778.231309154] [sllidar_node]: SLLidar running on ROS2 package SLLidar.ROS2 SDK Version:1.0.1, SLLIDAR SDK Version:2.1.0
+[scan_to_scan_filter_chain-5] [INFO] [1775505778.298319963] [laser_filter]: In shadow configure done
+[scan_to_scan_filter_chain-5] [WARN] [1775505778.298845621] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[planner_server-12] [INFO] [1775505778.268502397] [planner_server]: 
+[planner_server-12] 	planner_server lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1775505778.279908257] [planner_server]: Creating
+[planner_server-12] [INFO] [1775505778.298959752] [global_costmap.global_costmap]: 
+[planner_server-12] 	global_costmap lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1775505778.305364807] [global_costmap.global_costmap]: Creating Costmap
+[teleop_node-7] [INFO] [1775505778.306874417] [TeleopTwistJoy]: Teleop enable button 4.
+[teleop_node-7] [INFO] [1775505778.306986243] [TeleopTwistJoy]: Linear axis x on 4 at scale 0.500000.
+[teleop_node-7] [INFO] [1775505778.307006312] [TeleopTwistJoy]: Angular axis yaw on 3 at scale 0.500000.
+[amcl-9] [INFO] [1775505778.321338169] [amcl]: 
+[amcl-9] 	amcl lifecycle node launched. 
+[amcl-9] 	Waiting on external lifecycle transitions to activate
+[amcl-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-10] [INFO] [1775505778.334670038] [lifecycle_manager_localization]: Creating
+[controller_server-11] [INFO] [1775505778.338074458] [controller_server]: 
+[controller_server-11] 	controller_server lifecycle node launched. 
+[controller_server-11] 	Waiting on external lifecycle transitions to activate
+[controller_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-15] [INFO] [1775505778.347025494] [waypoint_follower]: 
+[waypoint_follower-15] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-15] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-15] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-9] [INFO] [1775505778.347089673] [amcl]: Creating
+[lifecycle_manager-10] [INFO] [1775505778.366259364] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[waypoint_follower-15] [INFO] [1775505778.376668616] [waypoint_follower]: Creating
+[controller_server-11] [INFO] [1775505778.396737812] [controller_server]: Creating controller server
+[behavior_server-13] [INFO] [1775505778.407013017] [behavior_server]: 
+[behavior_server-13] 	behavior_server lifecycle node launched. 
+[behavior_server-13] 	Waiting on external lifecycle transitions to activate
+[behavior_server-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-8] [INFO] [1775505778.425090091] [map_server]: 
+[map_server-8] 	map_server lifecycle node launched. 
+[map_server-8] 	Waiting on external lifecycle transitions to activate
+[map_server-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-8] [INFO] [1775505778.425324562] [map_server]: Creating
+[lifecycle_manager-16] [INFO] [1775505778.443199268] [lifecycle_manager_navigation]: Creating
+[lifecycle_manager-16] [INFO] [1775505778.461485715] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[controller_server-11] [INFO] [1775505778.501380967] [local_costmap.local_costmap]: 
+[controller_server-11] 	local_costmap lifecycle node launched. 
+[controller_server-11] 	Waiting on external lifecycle transitions to activate
+[controller_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-11] [INFO] [1775505778.522440151] [local_costmap.local_costmap]: Creating Costmap
+[bt_navigator-14] [INFO] [1775505778.529849288] [bt_navigator]: 
+[bt_navigator-14] 	bt_navigator lifecycle node launched. 
+[bt_navigator-14] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-14] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-14] [INFO] [1775505778.532803134] [bt_navigator]: Creating
+[lifecycle_manager-10] [INFO] [1775505778.769101073] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-10] [INFO] [1775505778.769183661] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[map_server-8] [INFO] [1775505778.769537078] [map_server]: Configuring
+[map_server-8] [INFO] [1775505778.769617944] [map_io]: Loading yaml file: /home/willy/stretch_user/maps/testing_map.yaml
+[map_server-8] [INFO] [1775505778.769938486] [map_io]: resolution: 0.05
+[map_server-8] [INFO] [1775505778.769950005] [map_io]: origin[0]: -11.5
+[map_server-8] [INFO] [1775505778.769955140] [map_io]: origin[1]: -1.71
+[map_server-8] [INFO] [1775505778.769959473] [map_io]: origin[2]: 0
+[map_server-8] [INFO] [1775505778.769972144] [map_io]: free_thresh: 0.25
+[map_server-8] [INFO] [1775505778.769977414] [map_io]: occupied_thresh: 0.65
+[map_server-8] [INFO] [1775505778.769982910] [map_io]: mode: trinary
+[map_server-8] [INFO] [1775505778.769988684] [map_io]: negate: 0
+[map_server-8] [INFO] [1775505778.770168326] [map_io]: Loading image_file: /home/willy/stretch_user/maps/testing_map.pgm
+[map_server-8] [INFO] [1775505778.800815984] [map_io]: Read map /home/willy/stretch_user/maps/testing_map.pgm: 416 X 249 map @ 0.05 m/cell
+[lifecycle_manager-10] [INFO] [1775505778.813079064] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[amcl-9] [INFO] [1775505778.814837198] [amcl]: Configuring
+[amcl-9] [INFO] [1775505778.814959517] [amcl]: initTransforms
+[amcl-9] [INFO] [1775505778.858605991] [amcl]: initPubSub
+[amcl-9] [INFO] [1775505778.872808135] [amcl]: Subscribed to map topic.
+[lifecycle_manager-10] [INFO] [1775505778.882529420] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[map_server-8] [INFO] [1775505778.882777560] [map_server]: Activating
+[map_server-8] [INFO] [1775505778.883440580] [map_server]: Creating bond (map_server) to lifecycle manager.
+[amcl-9] [INFO] [1775505778.884048164] [amcl]: Received a 416 X 249 map @ 0.050 m/pix
+[lifecycle_manager-10] [INFO] [1775505779.001333826] [lifecycle_manager_localization]: Server map_server connected with bond.
+[lifecycle_manager-10] [INFO] [1775505779.002140565] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+[amcl-9] [INFO] [1775505779.002589790] [amcl]: Activating
+[amcl-9] [INFO] [1775505779.002677685] [amcl]: Creating bond (amcl) to lifecycle manager.
+publisher: beginning loop
+publishing #1: geometry_msgs.msg.PoseWithCovarianceStamped(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0), frame_id='map'), pose=geometry_msgs.msg.PoseWithCovariance(pose=geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0), orientation=geometry_msgs.msg.Quaternion(x=0.0, y=0.0, z=0.0, w=1.0)), covariance=array([0.25, 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.25, 0.  , 0.  , 0.  ,
+       0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  ,
+       0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  ,
+       0.  , 0.  , 0.07])))
+
+[amcl-9] [INFO] [1775505779.042241426] [amcl]: initialPoseReceived
+[amcl-9] [INFO] [1775505779.042419828] [amcl]: Setting pose (1775505779.042420): 0.000 0.000 0.000
+[joy_node-6] [INFO] [1775505779.092955825] [joy_node]: Opened joystick: Controller 1.05.  deadzone: 0.050000
+[lifecycle_manager-10] [INFO] [1775505779.113081912] [lifecycle_manager_localization]: Server amcl connected with bond.
+[lifecycle_manager-10] [INFO] [1775505779.113163024] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-10] [INFO] [1775505779.113182661] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[scan_to_scan_filter_chain-5] [WARN] [1775505779.271059204] [laser_filter]: diagnostic_updater: No HW_ID was set. This is probably a bug. Please report it. For devices that do not have a HW_ID, set this value to 'none'. This warning only occurs once all diagnostics are OK. It is okay to wait until the device is open before calling setHardwareID.
+[INFO] [1775505779.431624136] [object_grasper]: object_grasper started
+[lifecycle_manager-16] [INFO] [1775505779.450852349] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-16] [INFO] [1775505779.450935424] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-11] [INFO] [1775505779.451259169] [controller_server]: Configuring controller interface
+[controller_server-11] [INFO] [1775505779.451765569] [controller_server]: getting goal checker plugins..
+[controller_server-11] [INFO] [1775505779.452166980] [controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-11] [INFO] [1775505779.452245287] [local_costmap.local_costmap]: Configuring
+[controller_server-11] [INFO] [1775505779.461226700] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[controller_server-11] [INFO] [1775505779.465994231] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-11] [INFO] [1775505779.472817178] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-11] [INFO] [1775505779.472917345] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[controller_server-11] [INFO] [1775505779.475395671] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-11] [INFO] [1775505779.490434754] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-11] [INFO] [1775505779.490531291] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-11] [INFO] [1775505779.492779303] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-11] [INFO] [1775505779.510225513] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-11] [INFO] [1775505779.512440205] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-11] [INFO] [1775505779.513650193] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-11] [INFO] [1775505779.516781338] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-11] [INFO] [1775505779.520406457] [controller_server]: Setting transform_tolerance to 0.200000
+[controller_server-11] [INFO] [1775505779.536938720] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[controller_server-11] [INFO] [1775505779.538622794] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775505779.538992166] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-11] [INFO] [1775505779.540515358] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775505779.541009546] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[controller_server-11] [INFO] [1775505779.541730945] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775505779.542264012] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-11] [INFO] [1775505779.543307524] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775505779.543685718] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-11] [INFO] [1775505779.544605376] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775505779.544927269] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-11] [INFO] [1775505779.545530028] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775505779.545838898] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-11] [INFO] [1775505779.546402481] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775505779.546777527] [controller_server]: Using critic "PreferForward" (dwb_critics::PreferForwardCritic)
+[controller_server-11] [INFO] [1775505779.548336569] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775505779.548387741] [controller_server]: Controller Server has FollowPath  controllers available.
+[rviz2-17] [INFO] [1775505779.551985493] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-17] [INFO] [1775505779.552228356] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[lifecycle_manager-16] [INFO] [1775505779.559405187] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-12] [INFO] [1775505779.559701234] [planner_server]: Configuring
+[planner_server-12] [INFO] [1775505779.559750515] [global_costmap.global_costmap]: Configuring
+[planner_server-12] [INFO] [1775505779.568505695] [global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-12] [INFO] [1775505779.572723211] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[planner_server-12] [INFO] [1775505779.573904324] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-12] [INFO] [1775505779.574007441] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-12] [INFO] [1775505779.577412549] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-12] [INFO] [1775505779.583861695] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-12] [INFO] [1775505779.583951242] [global_costmap.global_costmap]: Using plugin "voxel_layer"
+[planner_server-12] [INFO] [1775505779.586262794] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-12] [INFO] [1775505779.595724264] [global_costmap.global_costmap]: Initialized plugin "voxel_layer"
+[planner_server-12] [INFO] [1775505779.595821303] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-12] [INFO] [1775505779.598077917] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-12] [INFO] [1775505779.611163626] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 416 X 249 at 0.050000 m/pix
+[planner_server-12] [INFO] [1775505779.611449321] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[planner_server-12] [INFO] [1775505779.611485591] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-12] [INFO] [1775505779.613333830] [planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-16] [INFO] [1775505779.628288411] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-13] [INFO] [1775505779.628650361] [behavior_server]: Configuring
+[behavior_server-13] [INFO] [1775505779.639908928] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-13] [INFO] [1775505779.641889035] [behavior_server]: Configuring spin
+[behavior_server-13] [INFO] [1775505779.650943790] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-13] [INFO] [1775505779.652202932] [behavior_server]: Configuring backup
+[behavior_server-13] [INFO] [1775505779.663692769] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[behavior_server-13] [INFO] [1775505779.665409597] [behavior_server]: Configuring drive_on_heading
+[behavior_server-13] [INFO] [1775505779.676954505] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
+[behavior_server-13] [INFO] [1775505779.679277603] [behavior_server]: Configuring assisted_teleop
+[behavior_server-13] [INFO] [1775505779.691022781] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-13] [INFO] [1775505779.691908490] [behavior_server]: Configuring wait
+[rviz2-17] [INFO] [1775505779.699870687] [rviz2]: Stereo is NOT SUPPORTED
+[lifecycle_manager-16] [INFO] [1775505779.701480585] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[bt_navigator-14] [INFO] [1775505779.701752065] [bt_navigator]: Configuring
+[lifecycle_manager-16] [INFO] [1775505779.808076255] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[waypoint_follower-15] [INFO] [1775505779.808341763] [waypoint_follower]: Configuring
+[waypoint_follower-15] [INFO] [1775505779.824512668] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[lifecycle_manager-16] [INFO] [1775505779.828016091] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[controller_server-11] [INFO] [1775505779.828587946] [controller_server]: Activating
+[controller_server-11] [INFO] [1775505779.828649698] [local_costmap.local_costmap]: Activating
+[controller_server-11] [INFO] [1775505779.828664005] [local_costmap.local_costmap]: Checking transform
+[controller_server-11] [INFO] [1775505779.828726631] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [WARN] [1775505779.846805120] [amcl]: New subscription discovered on topic '/particle_cloud', requesting incompatible QoS. No messages will be sent to it. Last incompatible policy: RELIABILITY_QOS_POLICY
+Waiting for AMCL to localize...
+[rviz2-17] [INFO] [1775505780.263925306] [rviz2]: Trying to create a map of size 416 x 249 using 1 swatches
+[rviz2-17] [ERROR] [1775505780.271516876] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[rviz2-17] active samplers with a different type refer to the same texture image unit
+[stretch_driver-3] [0m[INFO] [1775505780.280875584] [stretch_driver]: For use with S T R E T C H (TM) RESEARCH EDITION from Hello Robot Inc.[0m
+[stretch_driver-3] [0m[INFO] [1775505780.281226597] [stretch_driver]: stretch_driver started[0m
+[controller_server-11] [INFO] [1775505780.328791889] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[sllidar_node-4] [ERROR] [1775505780.734278889] [sllidar_node]: Error, operation time out. SL_RESULT_OPERATION_TIMEOUT! 
+[controller_server-11] [INFO] [1775505780.828782894] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[stretch_driver-3] Key mapped to End-Of-Arm Tool: tool_stretch_dex_wrist
+[stretch_driver-3] Unable to load URDF: /home/willy/.local/lib/python3.10/site-packages/stretch_urdf/RE2V0/stretch_description_RE2V0_tool_stretch_dex_wrist.urdf. Disabling collision system.
+[controller_server-11] [INFO] [1775505781.329002817] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[ERROR] [sllidar_node-4]: process has died [pid 42613, exit code 255, cmd '/home/willy/ament_ws/install/sllidar_ros2/lib/sllidar_ros2/sllidar_node --ros-args -r __node:=sllidar_node --params-file /tmp/launch_params_3iuydesw'].
+[controller_server-11] [INFO] [1775505781.828787937] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[stretch_driver-3] [0m[INFO] [1775505782.073691575] [stretch_driver]: broadcast_odom_tf = True[0m
+[stretch_driver-3] [0m[INFO] [1775505782.115797119] [stretch_driver]: rate = 30.0 Hz[0m
+[stretch_driver-3] [0m[INFO] [1775505782.117757925] [stretch_driver]: twist timeout = 0.5 s[0m
+[stretch_driver-3] [0m[INFO] [1775505782.118908107] [stretch_driver]: base_frame_id = base_link[0m
+[stretch_driver-3] [0m[INFO] [1775505782.119996722] [stretch_driver]: odom_frame_id = odom[0m
+[stretch_driver-3] [0m[INFO] [1775505782.197423636] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1775505782.304459900] [object_grasper]: Node object_grasper connected to /home_the_robot service.
+[INFO] [1775505782.312120582] [object_grasper]: Node object_grasper connected to /stow_the_robot service.
+[INFO] [1775505782.322167844] [object_grasper]: Node object_grasper connected to /stop_the_robot service.
+[INFO] [1775505782.325334667] [object_grasper]: Node object_grasper connected to /switch_to_trajectory_mode service.
+[INFO] [1775505782.329002322] [object_grasper]: Node object_grasper connected to /switch_to_position_mode service.
+[controller_server-11] [INFO] [1775505782.329032088] [local_costmap.local_costmap]: start
+[INFO] [1775505782.333890455] [object_grasper]: Node object_grasper connected to /switch_to_navigation_mode service.
+[INFO] [1775505782.363836339] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /home_the_robot service.
+[INFO] [1775505782.372737775] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /stow_the_robot service.
+[INFO] [1775505782.396038046] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /stop_the_robot service.
+[INFO] [1775505782.402044470] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_trajectory_mode service.
+[INFO] [1775505782.404752073] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_position_mode service.
+[INFO] [1775505782.407410372] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_navigation_mode service.
+[INFO] [1775505782.407871423] [aruco_base_frame_estimator]: Moving head camera to detection orientation...
+[WARN] [1775505782.408202106] [aruco_base_frame_estimator]: Currently in navigation mode. Recommend switching either to position or trajectory mode
+[WARN] [1775505782.408458169] [aruco_base_frame_estimator]: Commanding joint trajectory server in position mode
+[stretch_driver-3] [0m[INFO] [1775505782.412517851] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775505782.427166910] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_head_pan', 'joint_head_tilt'][0m
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775505782.455417564] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775505782.464427693] [aruco_base_frame_estimator]: Head camera at detection pose — starting ArUco detection.
+[INFO] [1775505782.472791035] [aruco_base_frame_estimator]: Waiting for camera TF (base_link -> camera_color_optical_frame)...
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_mast is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+[INFO] [1775505782.502970730] [aruco_base_frame_estimator]: Camera pose acquired:
+[INFO] [1775505782.508537640] [aruco_base_frame_estimator]:   Position  : X=+0.0062  Y=-0.0517  Z=+1.2870  (m)
+[INFO] [1775505782.510422401] [aruco_base_frame_estimator]:   RPY (deg) : R=-179.03  P=+59.78  Y=+89.23
+[INFO] [1775505782.514387741] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775505782.514651146] [aruco_base_frame_estimator]: ArUco Base Frame Estimator Started
+[INFO] [1775505782.514840078] [aruco_base_frame_estimator]: Target Marker ID: 202
+[INFO] [1775505782.515008855] [aruco_base_frame_estimator]: Marker size: 2.8 cm
+[INFO] [1775505782.515198570] [aruco_base_frame_estimator]: Marker offset (cam frame): X=0.0  Y=0.0  Z=0.0
+[INFO] [1775505782.515370861] [aruco_base_frame_estimator]: Publishing target on: /aruco/target_base_link
+[INFO] [1775505782.515526231] [aruco_base_frame_estimator]: ============================================================
+[controller_server-11] [INFO] [1775505782.531725402] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_arm_l4 is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_wrist_yaw_bottom is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+[lifecycle_manager-16] [INFO] [1775505782.639936394] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[lifecycle_manager-16] [INFO] [1775505782.640035635] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[planner_server-12] [INFO] [1775505782.640639146] [planner_server]: Activating
+[planner_server-12] [INFO] [1775505782.640719408] [global_costmap.global_costmap]: Activating
+[planner_server-12] [INFO] [1775505782.640757968] [global_costmap.global_costmap]: Checking transform
+[planner_server-12] [INFO] [1775505782.640808506] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_gripper_s3_body is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_grasp_center is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link Base link (index: 0) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_mast (index: 2) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_arm_l4 (index: 4) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_wrist_yaw_bottom (index: 10) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_gripper_s3_body (index: 13) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_grasp_center (index: 14) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+[INFO] [1775505782.672326202] [object_grasper]: ============================================================
+[INFO] [1775505782.684228221] [object_grasper]: ObjectGrasper ready — waiting for ArUco detections
+[INFO] [1775505782.687784590] [object_grasper]: Listening on: /aruco/target_base_link
+[INFO] [1775505782.695760766] [object_grasper]: Call service: ros2 service call /grasp_object std_srvs/srv/Trigger {}
+[INFO] [1775505782.701678862] [object_grasper]: ============================================================
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/willy/ament_ws/build/hello_helpers/src/hello_helpers/hello_misc.py", line 125, in spin_thread
+    executor.spin()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 323, in spin
+    self.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 863, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 844, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 780, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 699, in _wait_for_ready_callbacks
+    if wt in waitables and wt.is_ready(wait_set):
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/action/client.py", line 233, in is_ready
+    ready_entities = self._client_handle.is_ready(wait_set)
+rclpy._rclpy_pybind11.RCLError: Failed to get number of ready entities for action client: wait set index for status subscription is out of bounds, at ./src/rcl_action/action_client.c:623
+[planner_server-12] [INFO] [1775505783.140854313] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505783.640846677] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[realsense2_camera_node-1] [0m[INFO] [1775505783.687134322] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775505783.687191485] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505783.687200484] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505783.687345260] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775505783.687360704] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[planner_server-12] [INFO] [1775505784.140861579] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505784.612457421] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505782.499 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505784.640824117] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505785.140849293] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505785.640867388] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505786.140905913] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505786.640854653] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505787.140846575] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505787.161894014] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505785.098 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505787.640961336] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505788.140848222] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505788.585819839] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505782.530 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505788.640863331] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505789.140849365] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505789.640852691] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[realsense2_camera_node-1] [0m[INFO] [1775505789.754972423] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775505789.755072650] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505789.755096470] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505789.755330333] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775505789.755370568] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775505789.890879871] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505787.698 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505790.140846485] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505790.640851770] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505791.140856757] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505791.602038668] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505785.529 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505791.641879334] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505792.140912495] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505792.419634434] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505790.298 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505792.640856978] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505793.140849848] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505793.640853984] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505794.140847010] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505794.537902630] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505788.529 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505794.640846297] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505794.944437095] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505792.898 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505795.140874728] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505795.640862342] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[realsense2_camera_node-1] [0m[INFO] [1775505795.825408435] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775505795.825481616] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505795.825491257] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505795.825658362] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775505795.825676553] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[planner_server-12] [INFO] [1775505796.140842570] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505796.640874954] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505797.140851029] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505797.586220214] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505795.499 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775505797.586317419] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505791.529 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505797.640851904] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505798.140846977] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505798.640850336] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505799.140848642] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505799.640850694] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505800.140858207] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505800.170536731] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505798.098 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775505800.537326403] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505794.529 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505800.640858158] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505801.140846794] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505801.640852458] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[realsense2_camera_node-1] [0m[INFO] [1775505801.892584798] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775505801.892674386] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505801.892702379] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505801.892979229] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775505801.893018943] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[planner_server-12] [INFO] [1775505802.141634357] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505802.640856067] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505802.823456936] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505800.699 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505803.140850504] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505803.593210312] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505797.529 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505803.640865145] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505804.140853124] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505804.640848190] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505805.140858000] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505805.344297425] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505803.299 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505805.640853615] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505806.140856623] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505806.604213700] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505800.529 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505806.643059502] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505807.140843972] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505807.640860358] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[realsense2_camera_node-1] [0m[INFO] [1775505807.963031120] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775505807.963109796] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505807.963119469] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505807.963282860] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775505807.963297268] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775505808.009859852] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505805.899 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505808.140857079] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505808.640894542] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505809.140855403] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505809.622601998] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505803.529 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505809.640845899] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505810.140902353] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505810.583669959] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505808.499 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505810.640845149] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505811.140857129] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505811.640855605] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505812.140895695] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505812.560827113] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505806.529 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505812.640848982] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505813.140860835] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505813.172042114] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505811.100 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505813.640850839] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[realsense2_camera_node-1] [0m[INFO] [1775505814.033982506] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775505814.034078077] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505814.034092329] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505814.034358953] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775505814.034428465] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[planner_server-12] [INFO] [1775505814.140856684] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505814.640861045] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505815.140853740] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505815.637162734] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505809.529 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505815.640853763] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505815.750971474] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505813.698 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505816.140889445] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505816.640850322] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505817.140901920] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505817.640851349] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505818.140853856] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505818.468640098] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505816.298 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775505818.548476181] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505812.529 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505818.640851090] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505819.140846062] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505819.640851002] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[realsense2_camera_node-1] [0m[INFO] [1775505820.104933025] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775505820.104989533] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505820.104999644] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505820.105146476] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775505820.105157315] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[planner_server-12] [INFO] [1775505820.140851477] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505820.640852530] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505821.035426838] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505818.899 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505821.140861473] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505821.614136278] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505815.529 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505821.640882042] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505822.140846021] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505822.640881083] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505823.140871004] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505823.577184711] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505821.499 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505823.640880723] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505824.140854341] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505824.543737065] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505818.529 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505824.640882396] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505825.140845141] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505825.640847471] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505826.140840279] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[realsense2_camera_node-1] [0m[INFO] [1775505826.176990501] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775505826.177130527] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505826.177154851] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505826.177513203] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775505826.177542217] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775505826.218983770] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505824.103 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505826.640849058] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505827.140847374] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505827.555987703] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505821.529 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505827.640845042] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505828.140886555] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505828.640842592] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505828.795450309] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505826.698 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505829.140844410] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505829.640842047] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505830.140853774] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505830.569661937] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505824.529 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505830.642805695] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505831.140846179] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505831.330155268] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505829.299 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505831.640857771] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505832.140846737] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[realsense2_camera_node-1] [0m[INFO] [1775505832.252183451] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775505832.252239687] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505832.252248502] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505832.252387658] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775505832.252397829] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[planner_server-12] [INFO] [1775505832.640847578] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505833.140844578] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505833.587811507] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505827.529 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505833.640846260] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505833.962409841] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505831.898 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505834.140841183] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505834.640842896] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505835.140850132] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505835.640848827] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505836.140865661] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505836.601775249] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505834.499 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775505836.601878605] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505830.529 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505836.644347344] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505837.140816700] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505837.640851830] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505838.140856288] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[realsense2_camera_node-1] [0m[INFO] [1775505838.319983905] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775505838.320047094] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505838.320056143] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505838.320199113] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775505838.320210246] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[planner_server-12] [INFO] [1775505838.640876017] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505839.140860945] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505839.181418221] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505837.098 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775505839.569332930] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505833.532 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505839.640844523] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505840.140855748] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505840.640851516] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505841.140851824] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505841.640847812] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505841.810659456] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505839.699 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505842.140853369] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505842.546130604] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505836.529 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505842.640853090] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505843.140911922] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505843.640850224] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505844.140853516] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505844.358433376] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505842.298 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775505844.390956091] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775505844.391035048] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505844.391054839] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505844.391251775] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775505844.391276708] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[planner_server-12] [INFO] [1775505844.640849120] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505845.141914366] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505845.607565673] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505839.529 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505845.640849366] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505846.141365320] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505846.640894845] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505846.999674492] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505844.899 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505847.141331029] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505847.640882769] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505848.140869903] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505848.558078309] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505842.529 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505848.640857401] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505849.140854367] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505849.562920470] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505847.499 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505849.640864873] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505850.140862329] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[realsense2_camera_node-1] [0m[INFO] [1775505850.459226269] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775505850.459282757] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505850.459292375] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505850.459440182] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775505850.459454931] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[planner_server-12] [INFO] [1775505850.640854260] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505851.140854791] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505851.590773680] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505845.529 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505851.640862997] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505852.140864254] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505852.210158165] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505850.098 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505852.640881721] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505853.140898502] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505853.640878731] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505854.140902468] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505854.569083334] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505848.529 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505854.640866872] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505854.784570326] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505852.698 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505855.140851850] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505855.640918463] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505856.140849436] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[realsense2_camera_node-1] [0m[INFO] [1775505856.527276996] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775505856.527349946] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505856.527372901] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505856.527584529] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775505856.527616402] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[planner_server-12] [INFO] [1775505856.640899648] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505857.140900442] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505857.436469409] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505855.301 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775505857.574281187] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505851.529 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505857.640887621] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505858.140899190] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505858.640847597] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505859.140847087] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505859.640991108] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505859.990150010] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505857.899 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505860.141109426] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505860.613726910] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505854.529 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505860.640854200] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505861.140878595] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505861.640858712] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505862.140858587] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[realsense2_camera_node-1] [0m[INFO] [1775505862.599174615] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775505862.599239203] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505862.599248745] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505862.599398906] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775505862.599411463] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775505862.607481253] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505860.499 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505862.640859681] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505863.140851905] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505863.562312939] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505857.529 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505863.640848688] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505864.140863093] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505864.640805314] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505865.140515969] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505863.098 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775505865.140862888] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775505865.640813762] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+Caught Exception in Thread: Thread-1 (spin_thread)
+[realsense2_camera_node-1] [0m[INFO] [1775505865.884110945] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505866.137443181] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[d435i_accel_correction-2] Traceback (most recent call last):
+[d435i_accel_correction-2]   File "/home/willy/ament_ws/install/stretch_core/lib/stretch_core/d435i_accel_correction", line 33, in <module>
+[d435i_accel_correction-2]     sys.exit(load_entry_point('stretch-core==0.2.0', 'console_scripts', 'd435i_accel_correction')())
+[d435i_accel_correction-2]   File "/home/willy/ament_ws/install/stretch_core/lib/python3.10/site-packages/stretch_core/d435i_accel_correction.py", line 47, in main
+[d435i_accel_correction-2]     rclpy.spin(node)
+[d435i_accel_correction-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[d435i_accel_correction-2]     executor.spin_once()
+[d435i_accel_correction-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 808, in spin_once
+[d435i_accel_correction-2]     self._spin_once_impl(timeout_sec)
+[d435i_accel_correction-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 797, in _spin_once_impl
+[d435i_accel_correction-2]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[d435i_accel_correction-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 780, in wait_for_ready_callbacks
+[d435i_accel_correction-2]     return next(self._cb_iter)
+[d435i_accel_correction-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 681, in _wait_for_ready_callbacks
+[d435i_accel_correction-2]     raise ExternalShutdownException()
+[d435i_accel_correction-2] rclpy.executors.ExternalShutdownException
+Traceback (most recent call last):
+  File "/home/willy/tf.py", line 299, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 808, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 797, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 780, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 681, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/willy/tf.py", line 307, in <module>
+    main()
+  File "/home/willy/tf.py", line 304, in main
+    rclpy.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 130, in shutdown
+    _shutdown(context=context)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
+    return context.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
+    self.__context.shutdown()
+rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241
+[realsense2_camera_node-1] [0m[INFO] [1775505866.232628384] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505866.431565987] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[ERROR] [1775505866.527608877] [rclpy.signals]: rcl_trigger_guard_condition() failed: guard condition implementation is invalid, at ./src/rcl/guard_condition.c:172
+[realsense2_camera_node-1] [0m[INFO] [1775505866.527620780] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[ERROR] [1775505866.641719178] [rclpy.signals]: rcl_trigger_guard_condition() failed: guard condition implementation is invalid, at ./src/rcl/guard_condition.c:172
+[realsense2_camera_node-1] [0m[INFO] [1775505866.641712536] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[ERROR] [1775505866.851706625] [rclpy.signals]: rcl_trigger_guard_condition() failed: guard condition implementation is invalid, at ./src/rcl/guard_condition.c:172
+[realsense2_camera_node-1] [0m[INFO] [1775505866.851700180] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[ERROR] [d435i_accel_correction-2]: process has died [pid 42482, exit code 1, cmd '/home/willy/ament_ws/install/stretch_core/lib/stretch_core/d435i_accel_correction --ros-args'].
+[INFO] [realsense2_camera_node-1]: process has finished cleanly [pid 42480]

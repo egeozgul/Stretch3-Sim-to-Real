@@ -1,0 +1,460 @@
+=== dock_grab.sh started at Fri Apr  3 05:32:04 PM EDT 2026 ===
+Freeing robot process...
+Failed because robot is being used by another user. To force kill the process, try running "sudo -E env PATH=$PATH stretch_free_robot_process.py"
+=== Launching all nodes ===
+Waiting for Nav2 action server...
+[INFO] [launch]: All log files can be found below /home/willy/.ros/log/2026-04-03-17-32-05-735305-stretch-re2-2204-12121
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: D435i launched in high resolution
+[INFO] [realsense2_camera_node-1]: process started with pid [12181]
+[INFO] [d435i_accel_correction-2]: process started with pid [12183]
+[INFO] [launch]: All log files can be found below /home/willy/.ros/log/2026-04-03-17-32-05-882245-stretch-re2-2204-12120
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [1775251926.309737450] [aruco_base_frame_estimator]: aruco_base_frame_estimator started
+[d435i_accel_correction-2] [INFO] [1775251926.390563016] [d435i_accel_correction_node]: d435i_accel_correction_node started
+[realsense2_camera_node-1] [0m[INFO] [1775251926.447756864] [camera]: RealSense ROS v4.55.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775251926.447898081] [camera]: Built with LibRealSense v2.56.4[0m
+[realsense2_camera_node-1] [0m[INFO] [1775251926.447920614] [camera]: Running with LibRealSense v2.56.4[0m
+[realsense2_camera_node-1] [0m[INFO] [1775251926.468242746] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775251926.468339387] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775251926.468352792] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775251926.468547956] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775251926.468566158] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1775251926.470815675] [camera]: Resetting device...[0m
+Nav2 is up!
+Setting initial pose...
+[INFO] [stretch_driver-3]: process started with pid [12366]
+[INFO] [joint_state_publisher-1]: process started with pid [12362]
+[INFO] [robot_state_publisher-2]: process started with pid [12364]
+[INFO] [sllidar_node-4]: process started with pid [12368]
+[INFO] [scan_to_scan_filter_chain-5]: process started with pid [12370]
+[INFO] [joy_node-6]: process started with pid [12372]
+[INFO] [teleop_node-7]: process started with pid [12374]
+[INFO] [map_server-8]: process started with pid [12376]
+[INFO] [amcl-9]: process started with pid [12378]
+[INFO] [lifecycle_manager-10]: process started with pid [12380]
+[INFO] [controller_server-11]: process started with pid [12382]
+[INFO] [planner_server-12]: process started with pid [12384]
+[INFO] [behavior_server-13]: process started with pid [12388]
+[INFO] [bt_navigator-14]: process started with pid [12396]
+[INFO] [waypoint_follower-15]: process started with pid [12400]
+[INFO] [lifecycle_manager-16]: process started with pid [12513]
+[INFO] [rviz2-17]: process started with pid [12515]
+[sllidar_node-4] [INFO] [1775251926.839411207] [sllidar_node]: SLLidar running on ROS2 package SLLidar.ROS2 SDK Version:1.0.1, SLLIDAR SDK Version:2.1.0
+[sllidar_node-4] [INFO] [1775251926.846985157] [sllidar_node]: SLLidar S/N: C394ED93C0EA98C9A5E698F2564A4669
+[sllidar_node-4] [INFO] [1775251926.847073859] [sllidar_node]: Firmware Ver: 1.29
+[sllidar_node-4] [INFO] [1775251926.847084008] [sllidar_node]: Hardware Rev: 7
+[sllidar_node-4] [INFO] [1775251926.848630084] [sllidar_node]: SLLidar health status : 0
+[sllidar_node-4] [INFO] [1775251926.848687619] [sllidar_node]: SLLidar health status : OK.
+[scan_to_scan_filter_chain-5] [INFO] [1775251926.847202091] [laser_filter]: In shadow configure done
+[scan_to_scan_filter_chain-5] [WARN] [1775251926.847496860] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[teleop_node-7] [INFO] [1775251926.849146471] [TeleopTwistJoy]: Teleop enable button 4.
+[teleop_node-7] [INFO] [1775251926.849223206] [TeleopTwistJoy]: Linear axis x on 4 at scale 0.500000.
+[teleop_node-7] [INFO] [1775251926.849240240] [TeleopTwistJoy]: Angular axis yaw on 3 at scale 0.500000.
+[amcl-9] [INFO] [1775251926.882971848] [amcl]: 
+[amcl-9] 	amcl lifecycle node launched. 
+[amcl-9] 	Waiting on external lifecycle transitions to activate
+[amcl-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-9] [INFO] [1775251926.884237664] [amcl]: Creating
+[lifecycle_manager-10] [INFO] [1775251926.872540047] [lifecycle_manager_localization]: Creating
+[lifecycle_manager-10] [INFO] [1775251926.877368730] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[controller_server-11] [INFO] [1775251926.874107353] [controller_server]: 
+[controller_server-11] 	controller_server lifecycle node launched. 
+[controller_server-11] 	Waiting on external lifecycle transitions to activate
+[controller_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1775251926.875532739] [planner_server]: 
+[planner_server-12] 	planner_server lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1775251926.879424085] [planner_server]: Creating
+[planner_server-12] [INFO] [1775251926.885442901] [global_costmap.global_costmap]: 
+[planner_server-12] 	global_costmap lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1775251926.888868708] [global_costmap.global_costmap]: Creating Costmap
+[waypoint_follower-15] [INFO] [1775251926.891238225] [waypoint_follower]: 
+[waypoint_follower-15] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-15] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-15] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-15] [INFO] [1775251926.892875831] [waypoint_follower]: Creating
+[behavior_server-13] [INFO] [1775251926.892383688] [behavior_server]: 
+[behavior_server-13] 	behavior_server lifecycle node launched. 
+[behavior_server-13] 	Waiting on external lifecycle transitions to activate
+[behavior_server-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-10] [INFO] [1775251926.897684161] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-10] [INFO] [1775251926.898366125] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[map_server-8] [INFO] [1775251926.901012826] [map_server]: 
+[map_server-8] 	map_server lifecycle node launched. 
+[map_server-8] 	Waiting on external lifecycle transitions to activate
+[map_server-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-8] [INFO] [1775251926.901233734] [map_server]: Creating
+[map_server-8] [INFO] [1775251926.916827028] [map_server]: Configuring
+[map_server-8] [INFO] [1775251926.916978003] [map_io]: Loading yaml file: /home/willy/stretch_user/maps/testing_map.yaml
+[map_server-8] [INFO] [1775251926.917420100] [map_io]: resolution: 0.05
+[map_server-8] [INFO] [1775251926.917443071] [map_io]: origin[0]: -11.5
+[map_server-8] [INFO] [1775251926.917451386] [map_io]: origin[1]: -1.71
+[map_server-8] [INFO] [1775251926.917458494] [map_io]: origin[2]: 0
+[map_server-8] [INFO] [1775251926.917465820] [map_io]: free_thresh: 0.25
+[map_server-8] [INFO] [1775251926.917472936] [map_io]: occupied_thresh: 0.65
+[map_server-8] [INFO] [1775251926.917481395] [map_io]: mode: trinary
+[map_server-8] [INFO] [1775251926.917491067] [map_io]: negate: 0
+[map_server-8] [INFO] [1775251926.917773127] [map_io]: Loading image_file: /home/willy/stretch_user/maps/testing_map.pgm
+[controller_server-11] [INFO] [1775251926.918476412] [controller_server]: Creating controller server
+[bt_navigator-14] [INFO] [1775251926.919640485] [bt_navigator]: 
+[bt_navigator-14] 	bt_navigator lifecycle node launched. 
+[bt_navigator-14] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-14] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-14] [INFO] [1775251926.919813565] [bt_navigator]: Creating
+[lifecycle_manager-16] [INFO] [1775251926.930040606] [lifecycle_manager_navigation]: Creating
+[map_server-8] [INFO] [1775251926.932251114] [map_io]: Read map /home/willy/stretch_user/maps/testing_map.pgm: 416 X 249 map @ 0.05 m/cell
+[lifecycle_manager-16] [INFO] [1775251926.936624417] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[lifecycle_manager-10] [INFO] [1775251926.943216344] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[amcl-9] [INFO] [1775251926.943504859] [amcl]: Configuring
+[amcl-9] [INFO] [1775251926.943635635] [amcl]: initTransforms
+[controller_server-11] [INFO] [1775251926.944148765] [local_costmap.local_costmap]: 
+[controller_server-11] 	local_costmap lifecycle node launched. 
+[controller_server-11] 	Waiting on external lifecycle transitions to activate
+[controller_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-11] [INFO] [1775251926.945478418] [local_costmap.local_costmap]: Creating Costmap
+[amcl-9] [INFO] [1775251926.951719568] [amcl]: initPubSub
+[lifecycle_manager-16] [INFO] [1775251926.951766838] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-16] [INFO] [1775251926.951869983] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-11] [INFO] [1775251926.953158882] [controller_server]: Configuring controller interface
+[controller_server-11] [INFO] [1775251926.954867830] [controller_server]: getting goal checker plugins..
+[controller_server-11] [INFO] [1775251926.955102912] [controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-11] [INFO] [1775251926.955175218] [local_costmap.local_costmap]: Configuring
+[amcl-9] [INFO] [1775251926.956057697] [amcl]: Subscribed to map topic.
+[lifecycle_manager-10] [INFO] [1775251926.959963150] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[map_server-8] [INFO] [1775251926.960248819] [map_server]: Activating
+[map_server-8] [INFO] [1775251926.960567145] [map_server]: Creating bond (map_server) to lifecycle manager.
+[controller_server-11] [INFO] [1775251926.960641268] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[amcl-9] [INFO] [1775251926.960872716] [amcl]: Received a 416 X 249 map @ 0.050 m/pix
+[controller_server-11] [INFO] [1775251926.965589650] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-11] [INFO] [1775251926.968743492] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-11] [INFO] [1775251926.968844881] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[controller_server-11] [INFO] [1775251926.969537299] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-11] [INFO] [1775251926.973105868] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-11] [INFO] [1775251926.973189260] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-11] [INFO] [1775251926.974488244] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-11] [INFO] [1775251926.984020211] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-11] [INFO] [1775251926.985372870] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-11] [INFO] [1775251926.985833719] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-11] [INFO] [1775251926.988640337] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-11] [INFO] [1775251926.989607825] [controller_server]: Setting transform_tolerance to 0.200000
+[controller_server-11] [INFO] [1775251926.996591137] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[controller_server-11] [INFO] [1775251926.997427727] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775251926.997553816] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-11] [INFO] [1775251926.997943481] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775251926.998059932] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[controller_server-11] [INFO] [1775251926.998214843] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775251926.998312607] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-11] [INFO] [1775251926.998566653] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775251926.998661627] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-11] [INFO] [1775251926.998905743] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775251926.999003443] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-11] [INFO] [1775251926.999192141] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775251926.999280623] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-11] [INFO] [1775251926.999443221] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775251926.999530140] [controller_server]: Using critic "PreferForward" (dwb_critics::PreferForwardCritic)
+[controller_server-11] [INFO] [1775251926.999904625] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775251926.999926304] [controller_server]: Controller Server has FollowPath  controllers available.
+[lifecycle_manager-16] [INFO] [1775251927.004011158] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-12] [INFO] [1775251927.046798286] [planner_server]: Configuring
+[planner_server-12] [INFO] [1775251927.046898023] [global_costmap.global_costmap]: Configuring
+[sllidar_node-4] [INFO] [1775251927.054290145] [sllidar_node]: current scan mode: Boost, sample rate: 8 Khz, max_distance: 12.0 m, scan frequency:10.0 Hz, 
+[planner_server-12] [INFO] [1775251927.059158197] [global_costmap.global_costmap]: Using plugin "static_layer"
+[lifecycle_manager-10] [INFO] [1775251927.064311484] [lifecycle_manager_localization]: Server map_server connected with bond.
+[lifecycle_manager-10] [INFO] [1775251927.064382080] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+[amcl-9] [INFO] [1775251927.064806366] [amcl]: Activating
+[amcl-9] [INFO] [1775251927.064893496] [amcl]: Creating bond (amcl) to lifecycle manager.
+[planner_server-12] [INFO] [1775251927.072884555] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[planner_server-12] [INFO] [1775251927.078268144] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-12] [INFO] [1775251927.078327236] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-12] [INFO] [1775251927.083335090] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-12] [INFO] [1775251927.093100983] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-12] [INFO] [1775251927.093163964] [global_costmap.global_costmap]: Using plugin "voxel_layer"
+[planner_server-12] [INFO] [1775251927.093774267] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-12] [INFO] [1775251927.105973467] [global_costmap.global_costmap]: Initialized plugin "voxel_layer"
+[planner_server-12] [INFO] [1775251927.106032803] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-12] [INFO] [1775251927.108794148] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-12] [INFO] [1775251927.135236930] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 416 X 249 at 0.050000 m/pix
+[planner_server-12] [INFO] [1775251927.135668393] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[planner_server-12] [INFO] [1775251927.135708454] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-12] [INFO] [1775251927.138084970] [planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-16] [INFO] [1775251927.148476575] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-13] [INFO] [1775251927.148729659] [behavior_server]: Configuring
+[behavior_server-13] [INFO] [1775251927.154049149] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-13] [INFO] [1775251927.155140458] [behavior_server]: Configuring spin
+[behavior_server-13] [INFO] [1775251927.158590476] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-13] [INFO] [1775251927.159565350] [behavior_server]: Configuring backup
+[behavior_server-13] [INFO] [1775251927.162908300] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[behavior_server-13] [INFO] [1775251927.164445546] [behavior_server]: Configuring drive_on_heading
+[behavior_server-13] [INFO] [1775251927.169950945] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
+[behavior_server-13] [INFO] [1775251927.172612060] [behavior_server]: Configuring assisted_teleop
+[lifecycle_manager-10] [INFO] [1775251927.173582589] [lifecycle_manager_localization]: Server amcl connected with bond.
+[lifecycle_manager-10] [INFO] [1775251927.173673499] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-10] [INFO] [1775251927.173698759] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[behavior_server-13] [INFO] [1775251927.179657560] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-13] [INFO] [1775251927.181074944] [behavior_server]: Configuring wait
+[lifecycle_manager-16] [INFO] [1775251927.190497368] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[bt_navigator-14] [INFO] [1775251927.191055375] [bt_navigator]: Configuring
+[lifecycle_manager-16] [INFO] [1775251927.323555584] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[waypoint_follower-15] [INFO] [1775251927.323822722] [waypoint_follower]: Configuring
+[waypoint_follower-15] [INFO] [1775251927.331328107] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[lifecycle_manager-16] [INFO] [1775251927.332401781] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[controller_server-11] [INFO] [1775251927.332552136] [controller_server]: Activating
+[controller_server-11] [INFO] [1775251927.332611153] [local_costmap.local_costmap]: Activating
+[controller_server-11] [INFO] [1775251927.332634987] [local_costmap.local_costmap]: Checking transform
+[controller_server-11] [INFO] [1775251927.332709589] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[joy_node-6] [INFO] [1775251927.460217769] [joy_node]: Opened joystick: Controller 1.05.  deadzone: 0.050000
+[INFO] [1775251927.665315257] [object_grasper]: object_grasper started
+[controller_server-11] [INFO] [1775251927.832769990] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[scan_to_scan_filter_chain-5] [WARN] [1775251927.844247724] [laser_filter]: diagnostic_updater: No HW_ID was set. This is probably a bug. Please report it. For devices that do not have a HW_ID, set this value to 'none'. This warning only occurs once all diagnostics are OK. It is okay to wait until the device is open before calling setHardwareID.
+publisher: beginning loop
+publishing #1: geometry_msgs.msg.PoseWithCovarianceStamped(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0), frame_id='map'), pose=geometry_msgs.msg.PoseWithCovariance(pose=geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0), orientation=geometry_msgs.msg.Quaternion(x=0.0, y=0.0, z=0.0, w=1.0)), covariance=array([0.25, 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.25, 0.  , 0.  , 0.  ,
+       0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  ,
+       0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  ,
+       0.  , 0.  , 0.07])))
+
+[amcl-9] [INFO] [1775251928.128872619] [amcl]: initialPoseReceived
+[amcl-9] [INFO] [1775251928.129050718] [amcl]: Setting pose (1775251928.129050): 0.000 0.000 0.000
+[controller_server-11] [INFO] [1775251928.332769916] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[stretch_driver-3] [0m[INFO] [1775251928.345407938] [stretch_driver]: For use with S T R E T C H (TM) RESEARCH EDITION from Hello Robot Inc.[0m
+[stretch_driver-3] [0m[INFO] [1775251928.345684695] [stretch_driver]: stretch_driver started[0m
+Waiting for AMCL to localize...
+[controller_server-11] [INFO] [1775251928.832766918] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251929.332760599] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[stretch_driver-3] Another process is already using Stretch. Try running "stretch_free_robot_process.py"
+[stretch_driver-3] [31m[FATAL] [1775251929.374604156] [stretch_driver]: Robot startup failed.[0m
+[amcl-9] [INFO] [1775251929.431916429] [amcl]: Message Filter dropping message: frame 'laser' at time 1775251927.054 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [stretch_driver-3]: process has finished cleanly [pid 12366]
+[controller_server-11] [INFO] [1775251929.832798023] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775251929.871258817] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-17] [INFO] [1775251929.871356953] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[rviz2-17] [INFO] [1775251930.175200138] [rviz2]: Stereo is NOT SUPPORTED
+[amcl-9] [WARN] [1775251930.246118912] [amcl]: New subscription discovered on topic '/particle_cloud', requesting incompatible QoS. No messages will be sent to it. Last incompatible policy: RELIABILITY_QOS_POLICY
+[controller_server-11] [INFO] [1775251930.332764688] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775251930.552021534] [rviz2]: Trying to create a map of size 416 x 249 using 1 swatches
+[rviz2-17] [ERROR] [1775251930.574370588] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[rviz2-17] active samplers with a different type refer to the same texture image unit
+[controller_server-11] [INFO] [1775251930.832799416] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251931.332755591] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251931.832755677] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [INFO] [1775251932.036126025] [amcl]: Message Filter dropping message: frame 'laser' at time 1775251930.901 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-11] [INFO] [1775251932.332780786] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[realsense2_camera_node-1] [0m[INFO] [1775251932.516353174] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775251932.516415526] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775251932.516424223] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775251932.516555991] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775251932.516566500] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1775251932.516637981] [camera]: getParameters...[0m
+[rviz2-17] [INFO] [1775251932.592215388] [rviz]: Message Filter dropping message: frame 'laser' at time 1775251930.213 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1775251932.832758616] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[realsense2_camera_node-1] [0m[INFO] [1775251932.899264060] [camera]: JSON file is loaded! (/home/willy/ament_ws/install/stretch_core/share/stretch_core/config/HighAccuracyPreset.json)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775251932.899337620] [camera]: Device Name: Intel RealSense D435I[0m
+[realsense2_camera_node-1] [0m[INFO] [1775251932.899349012] [camera]: Device Serial No: 239722071445[0m
+[realsense2_camera_node-1] [0m[INFO] [1775251932.899358762] [camera]: Device physical port: /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0[0m
+[realsense2_camera_node-1] [0m[INFO] [1775251932.899368122] [camera]: Device FW version: 5.16.0.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775251932.899376796] [camera]: Device Product ID: 0x0B3A[0m
+[realsense2_camera_node-1] [0m[INFO] [1775251932.899385115] [camera]: Sync Mode: On[0m
+[realsense2_camera_node-1] [33m[WARN] [1775251933.040128168] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775251933.041152339] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775251933.048567005] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775251933.049731561] [camera]: Given value, 63 is invalid. Set ROS param back to: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775251933.061495011] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775251933.061570795] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775251933.061587774] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775251933.073087340] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775251933.076136292] [camera]: Open profile: stream_type: Depth(0), Format: Z16, Width: 1280, Height: 720, FPS: 15[0m
+[realsense2_camera_node-1] [0m[INFO] [1775251933.082353782] [camera]: Starting Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775251933.085568210] [camera]: Open profile: stream_type: Color(0), Format: RGB8, Width: 1280, Height: 720, FPS: 15[0m
+[realsense2_camera_node-1] [0m[INFO] [1775251933.113653799] [camera]: Starting Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775251933.115701582] [camera]: Open profile: stream_type: Accel(0)Format: MOTION_XYZ32F, FPS: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775251933.115751471] [camera]: Open profile: stream_type: Gyro(0)Format: MOTION_XYZ32F, FPS: 200[0m
+[realsense2_camera_node-1] [0m[INFO] [1775251933.117801472] [camera]: RealSense Node Is Up![0m
+[controller_server-11] [INFO] [1775251933.332804366] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251933.832793010] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[realsense2_camera_node-1] [33m[WARN] [1775251934.073750131] [camera]: XXX Hardware Notification:Motion Module failure,1.77525e+12,Error,Hardware Error[0m
+[realsense2_camera_node-1] [33m[WARN] [1775251934.073835904] [camera]: Hardware Notification:Motion Module failure,1.77525e+12,Error,Hardware Error[0m
+[controller_server-11] [INFO] [1775251934.332770663] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [INFO] [1775251934.553453966] [amcl]: Message Filter dropping message: frame 'laser' at time 1775251933.418 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-11] [INFO] [1775251934.832754406] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775251935.139760878] [rviz]: Message Filter dropping message: frame 'laser' at time 1775251932.988 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1775251935.332760306] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251935.832756337] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251936.332754992] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251936.832790548] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [INFO] [1775251937.096081925] [amcl]: Message Filter dropping message: frame 'laser' at time 1775251935.961 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-11] [INFO] [1775251937.332754430] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775251937.710640282] [rviz]: Message Filter dropping message: frame 'laser' at time 1775251935.678 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1775251937.834929754] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251938.332775315] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251938.832755029] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251939.332762248] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [INFO] [1775251939.651060351] [amcl]: Message Filter dropping message: frame 'laser' at time 1775251938.516 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-11] [INFO] [1775251939.832814650] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775251940.326309550] [rviz]: Message Filter dropping message: frame 'laser' at time 1775251937.938 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1775251940.332761441] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251940.832801167] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251941.332770977] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251941.832759844] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [INFO] [1775251942.217435833] [amcl]: Message Filter dropping message: frame 'laser' at time 1775251941.070 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-11] [INFO] [1775251942.332756814] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251942.832796853] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775251942.871442308] [rviz]: Message Filter dropping message: frame 'laser' at time 1775251940.640 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1775251943.332798795] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251943.832891580] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251944.332760870] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [INFO] [1775251944.772668032] [amcl]: Message Filter dropping message: frame 'laser' at time 1775251943.625 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-11] [INFO] [1775251944.832807014] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251945.332758004] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775251945.394019331] [rviz]: Message Filter dropping message: frame 'laser' at time 1775251943.060 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1775251945.832758802] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251946.332775952] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251946.835955445] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [INFO] [1775251947.327120661] [amcl]: Message Filter dropping message: frame 'laser' at time 1775251946.180 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-11] [INFO] [1775251947.332853665] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251947.832758064] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775251947.981421143] [rviz]: Message Filter dropping message: frame 'laser' at time 1775251945.897 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1775251948.332819017] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251948.832763933] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251949.332784679] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251949.832803742] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [INFO] [1775251949.893856378] [amcl]: Message Filter dropping message: frame 'laser' at time 1775251948.746 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-11] [INFO] [1775251950.332784014] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775251950.544072158] [rviz]: Message Filter dropping message: frame 'laser' at time 1775251947.469 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1775251950.832755374] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251951.332807220] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251951.832761304] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251952.332806005] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [INFO] [1775251952.448384942] [amcl]: Message Filter dropping message: frame 'laser' at time 1775251951.313 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-11] [INFO] [1775251952.832784992] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775251953.155541660] [rviz]: Message Filter dropping message: frame 'laser' at time 1775251950.601 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1775251953.332811626] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251953.832804655] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251954.332772047] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251954.832761933] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [INFO] [1775251954.991227099] [amcl]: Message Filter dropping message: frame 'laser' at time 1775251953.843 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-11] [INFO] [1775251955.333967175] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775251955.714236774] [rviz]: Message Filter dropping message: frame 'laser' at time 1775251953.561 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1775251955.832882533] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251956.332830120] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251956.832941014] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251957.332838497] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [INFO] [1775251957.533672470] [amcl]: Message Filter dropping message: frame 'laser' at time 1775251956.398 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-11] [INFO] [1775251957.832795754] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775251958.231691812] [rviz]: Message Filter dropping message: frame 'laser' at time 1775251956.398 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1775251958.332766447] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251958.832807067] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251959.332765271] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251959.832793216] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [INFO] [1775251960.100535727] [amcl]: Message Filter dropping message: frame 'laser' at time 1775251958.953 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-11] [INFO] [1775251960.332800288] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775251960.752216406] [rviz]: Message Filter dropping message: frame 'laser' at time 1775251959.100 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1775251960.832806182] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251961.332761288] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251961.832761233] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251962.332804414] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [INFO] [1775251962.672740254] [amcl]: Message Filter dropping message: frame 'laser' at time 1775251961.520 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-11] [INFO] [1775251962.832766057] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775251963.279897997] [rviz]: Message Filter dropping message: frame 'laser' at time 1775251961.668 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1775251963.332772437] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251963.832758635] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251964.332761236] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251964.832757313] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [INFO] [1775251965.210008744] [amcl]: Message Filter dropping message: frame 'laser' at time 1775251964.062 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-11] [INFO] [1775251965.332758953] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775251965.829643274] [rviz]: Message Filter dropping message: frame 'laser' at time 1775251964.210 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1775251965.832764900] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251966.332753929] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251966.832833475] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251967.332760966] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [INFO] [1775251967.739944725] [amcl]: Message Filter dropping message: frame 'laser' at time 1775251966.592 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-11] [INFO] [1775251967.832769705] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251968.332762855] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775251968.552294915] [rviz]: Message Filter dropping message: frame 'laser' at time 1775251966.875 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1775251968.832877962] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251969.332760140] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251969.832914434] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [INFO] [1775251970.270370009] [amcl]: Message Filter dropping message: frame 'laser' at time 1775251969.122 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-11] [INFO] [1775251970.332804224] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251970.832760042] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775251971.134880663] [rviz]: Message Filter dropping message: frame 'laser' at time 1775251969.552 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1775251971.332755767] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251971.832758596] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251972.332777112] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [INFO] [1775251972.800568580] [amcl]: Message Filter dropping message: frame 'laser' at time 1775251971.665 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-11] [INFO] [1775251972.832928511] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251973.332770531] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775251973.736461684] [rviz]: Message Filter dropping message: frame 'laser' at time 1775251972.083 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1775251973.832759823] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251974.332767322] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251974.832760845] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [INFO] [1775251975.318063914] [amcl]: Message Filter dropping message: frame 'laser' at time 1775251974.183 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-11] [INFO] [1775251975.332759999] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251975.832764821] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775251976.323323190] [rviz]: Message Filter dropping message: frame 'laser' at time 1775251974.748 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1775251976.332814543] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251976.832761037] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775251977.332794233] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [INFO] [1775251977.824007396] [amcl]: Message Filter dropping message: frame 'laser' at time 1775251976.689 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-11] [INFO] [1775251977.832773766] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[realsense2_camera_node-1] [0m[INFO] [1775251977.863351921] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775251977.865370047] [camera]: Stop Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775251977.865479825] [camera]: Close Sensor. [0m
+[realsense2_camera_node-1] [0m[INFO] [1775251977.874548130] [camera]: Close Sensor - Done. [0m
+[realsense2_camera_node-1] [0m[INFO] [1775251977.874652602] [camera]: Stop Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775251977.874677810] [camera]: Close Sensor. [0m
+[realsense2_camera_node-1] [0m[INFO] [1775251977.878581514] [camera]: Close Sensor - Done. [0m
+[realsense2_camera_node-1] [0m[INFO] [1775251977.878658191] [camera]: Stop Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775251977.879317566] [camera]: Close Sensor. [0m
+[d435i_accel_correction-2] Traceback (most recent call last):
+[d435i_accel_correction-2]   File "/home/willy/ament_ws/install/stretch_core/lib/stretch_core/d435i_accel_correction", line 33, in <module>
+[d435i_accel_correction-2]     sys.exit(load_entry_point('stretch-core==0.2.0', 'console_scripts', 'd435i_accel_correction')())
+[d435i_accel_correction-2]   File "/home/willy/ament_ws/install/stretch_core/lib/python3.10/site-packages/stretch_core/d435i_accel_correction.py", line 47, in main
+[d435i_accel_correction-2]     rclpy.spin(node)
+[d435i_accel_correction-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[d435i_accel_correction-2]     executor.spin_once()
+[d435i_accel_correction-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 808, in spin_once
+[d435i_accel_correction-2]     self._spin_once_impl(timeout_sec)
+[d435i_accel_correction-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 797, in _spin_once_impl
+[d435i_accel_correction-2]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[d435i_accel_correction-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 780, in wait_for_ready_callbacks
+[d435i_accel_correction-2]     return next(self._cb_iter)
+[d435i_accel_correction-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 681, in _wait_for_ready_callbacks
+[d435i_accel_correction-2]     raise ExternalShutdownException()
+[d435i_accel_correction-2] rclpy.executors.ExternalShutdownException
+Traceback (most recent call last):
+  File "/home/willy/tf.py", line 307, in <module>
+    main()
+  File "/home/willy/tf.py", line 297, in main
+    node = ArUcoBaseFrameEstimator()
+  File "/home/willy/tf.py", line 29, in __init__
+    super().main('aruco_base_frame_estimator', 'aruco_base_frame_estimator', wait_for_first_pointcloud=False)
+  File "/home/willy/ament_ws/build/hello_helpers/src/hello_helpers/hello_misc.py", line 302, in main
+    server_reached = self.trajectory_client.wait_for_server(timeout_sec=60.0)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/action/client.py", line 606, in wait_for_server
+    return self.server_is_ready()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/action/client.py", line 585, in server_is_ready
+    return self._client_handle.is_action_server_available()
+rclpy._rclpy_pybind11.RCLError: Failed to check if action server is available: rcl node's context is invalid, at ./src/rcl/node.c:428
+Traceback (most recent call last):
+  File "/home/willy/ament_ws/install/stretch_perception/lib/stretch_perception/altobject", line 33, in <module>
+    sys.exit(load_entry_point('stretch-perception==0.0.0', 'console_scripts', 'altobject')())
+  File "/home/willy/ament_ws/install/stretch_perception/lib/python3.10/site-packages/stretch_perception/altobject.py", line 267, in main
+    node = ObjectGrasper()
+  File "/home/willy/ament_ws/install/stretch_perception/lib/python3.10/site-packages/stretch_perception/altobject.py", line 34, in __init__
+    super().main('object_grasper', 'object_grasper', wait_for_first_pointcloud=False)
+  File "/home/willy/ament_ws/build/hello_helpers/src/hello_helpers/hello_misc.py", line 302, in main
+    server_reached = self.trajectory_client.wait_for_server(timeout_sec=60.0)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/action/client.py", line 606, in wait_for_server
+    return self.server_is_ready()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/action/client.py", line 585, in server_is_ready
+    return self._client_handle.is_action_server_available()
+rclpy._rclpy_pybind11.RCLError: Failed to check if action server is available: rcl node's context is invalid, at ./src/rcl/node.c:428
+[realsense2_camera_node-1] [0m[INFO] [1775251978.620925641] [camera]: Close Sensor - Done. [0m
+[ERROR] [d435i_accel_correction-2]: process has died [pid 12183, exit code 1, cmd '/home/willy/ament_ws/install/stretch_core/lib/stretch_core/d435i_accel_correction --ros-args'].
+[ros2run]: Process exited with failure 1
+[INFO] [realsense2_camera_node-1]: process has finished cleanly [pid 12181]

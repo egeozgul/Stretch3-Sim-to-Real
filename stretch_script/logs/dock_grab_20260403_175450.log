@@ -1,0 +1,786 @@
+=== dock_grab.sh started at Fri Apr  3 05:54:50 PM EDT 2026 ===
+Freeing robot process...
+Done!
+=== Launching all nodes ===
+Waiting for Nav2 action server...
+[INFO] [launch]: All log files can be found below /home/willy/.ros/log/2026-04-03-17-54-53-017016-stretch-re2-2204-29503
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: D435i launched in high resolution
+[INFO] [realsense2_camera_node-1]: process started with pid [29559]
+[INFO] [d435i_accel_correction-2]: process started with pid [29561]
+[INFO] [launch]: All log files can be found below /home/willy/.ros/log/2026-04-03-17-54-53-209602-stretch-re2-2204-29502
+[INFO] [launch]: Default logging verbosity is set to INFO
+Nav2 is up!
+Setting initial pose...
+[d435i_accel_correction-2] [INFO] [1775253293.755097465] [d435i_accel_correction_node]: d435i_accel_correction_node started
+[INFO] [1775253293.776435444] [aruco_base_frame_estimator]: aruco_base_frame_estimator started
+[INFO] [stretch_driver-3]: process started with pid [29796]
+[INFO] [joint_state_publisher-1]: process started with pid [29792]
+[INFO] [robot_state_publisher-2]: process started with pid [29794]
+[INFO] [sllidar_node-4]: process started with pid [29798]
+[INFO] [scan_to_scan_filter_chain-5]: process started with pid [29800]
+[INFO] [joy_node-6]: process started with pid [29802]
+[INFO] [teleop_node-7]: process started with pid [29804]
+[INFO] [map_server-8]: process started with pid [29806]
+[INFO] [amcl-9]: process started with pid [29811]
+[INFO] [lifecycle_manager-10]: process started with pid [29822]
+[INFO] [controller_server-11]: process started with pid [29834]
+[INFO] [planner_server-12]: process started with pid [29836]
+[INFO] [behavior_server-13]: process started with pid [29851]
+[INFO] [bt_navigator-14]: process started with pid [29855]
+[INFO] [waypoint_follower-15]: process started with pid [29860]
+[INFO] [lifecycle_manager-16]: process started with pid [29943]
+[INFO] [rviz2-17]: process started with pid [29946]
+[sllidar_node-4] [INFO] [1775253294.394042904] [sllidar_node]: SLLidar running on ROS2 package SLLidar.ROS2 SDK Version:1.0.1, SLLIDAR SDK Version:2.1.0
+[scan_to_scan_filter_chain-5] [INFO] [1775253294.412766059] [laser_filter]: In shadow configure done
+[scan_to_scan_filter_chain-5] [WARN] [1775253294.413193133] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[teleop_node-7] [INFO] [1775253294.425171124] [TeleopTwistJoy]: Teleop enable button 4.
+[teleop_node-7] [INFO] [1775253294.425245039] [TeleopTwistJoy]: Linear axis x on 4 at scale 0.500000.
+[teleop_node-7] [INFO] [1775253294.425261643] [TeleopTwistJoy]: Angular axis yaw on 3 at scale 0.500000.
+[map_server-8] [INFO] [1775253294.480008674] [map_server]: 
+[map_server-8] 	map_server lifecycle node launched. 
+[map_server-8] 	Waiting on external lifecycle transitions to activate
+[map_server-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-8] [INFO] [1775253294.480191612] [map_server]: Creating
+[amcl-9] [INFO] [1775253294.521360755] [amcl]: 
+[amcl-9] 	amcl lifecycle node launched. 
+[amcl-9] 	Waiting on external lifecycle transitions to activate
+[amcl-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-9] [INFO] [1775253294.538690283] [amcl]: Creating
+[lifecycle_manager-10] [INFO] [1775253294.460759931] [lifecycle_manager_localization]: Creating
+[lifecycle_manager-10] [INFO] [1775253294.469374677] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[lifecycle_manager-10] [INFO] [1775253294.690761662] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-10] [INFO] [1775253294.690861563] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[controller_server-11] [INFO] [1775253294.466030599] [controller_server]: 
+[controller_server-11] 	controller_server lifecycle node launched. 
+[controller_server-11] 	Waiting on external lifecycle transitions to activate
+[controller_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-11] [INFO] [1775253294.551301118] [controller_server]: Creating controller server
+[controller_server-11] [INFO] [1775253294.603424664] [local_costmap.local_costmap]: 
+[controller_server-11] 	local_costmap lifecycle node launched. 
+[controller_server-11] 	Waiting on external lifecycle transitions to activate
+[controller_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-11] [INFO] [1775253294.604586096] [local_costmap.local_costmap]: Creating Costmap
+[planner_server-12] [INFO] [1775253294.472281470] [planner_server]: 
+[planner_server-12] 	planner_server lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1775253294.482858326] [planner_server]: Creating
+[planner_server-12] [INFO] [1775253294.512995864] [global_costmap.global_costmap]: 
+[planner_server-12] 	global_costmap lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1775253294.521992810] [global_costmap.global_costmap]: Creating Costmap
+[behavior_server-13] [INFO] [1775253294.585098340] [behavior_server]: 
+[behavior_server-13] 	behavior_server lifecycle node launched. 
+[behavior_server-13] 	Waiting on external lifecycle transitions to activate
+[behavior_server-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-14] [INFO] [1775253294.540487782] [bt_navigator]: 
+[bt_navigator-14] 	bt_navigator lifecycle node launched. 
+[bt_navigator-14] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-14] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-14] [INFO] [1775253294.540680908] [bt_navigator]: Creating
+[waypoint_follower-15] [INFO] [1775253294.579578345] [waypoint_follower]: 
+[waypoint_follower-15] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-15] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-15] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-15] [INFO] [1775253294.596877790] [waypoint_follower]: Creating
+[lifecycle_manager-10] [INFO] [1775253294.855778848] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[amcl-9] [INFO] [1775253294.857764315] [amcl]: Configuring
+[amcl-9] [INFO] [1775253294.857944630] [amcl]: initTransforms
+[amcl-9] [INFO] [1775253294.938566021] [amcl]: initPubSub
+[lifecycle_manager-16] [INFO] [1775253294.947982021] [lifecycle_manager_navigation]: Creating
+[amcl-9] [INFO] [1775253294.960259017] [amcl]: Subscribed to map topic.
+[lifecycle_manager-16] [INFO] [1775253294.971318436] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[amcl-9] [INFO] [1775253294.981389279] [amcl]: Received a 416 X 249 map @ 0.050 m/pix
+[lifecycle_manager-10] [INFO] [1775253294.994929227] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[map_server-8] [WARN] [1775253294.995600984] [rcl_lifecycle]: No transition matching 3 found for current state unconfigured
+[map_server-8] [WARN] [1775253294.995635493] [rcl_lifecycle]: No transition matching 3 found for current state unconfigured
+[map_server-8] [ERROR] [1775253294.995650149] [map_server]: Unable to start transition 3 from current state unconfigured: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[amcl-9] [INFO] [1775253295.005308755] [amcl]: Received a 416 X 249 map @ 0.050 m/pix
+[lifecycle_manager-10] [ERROR] [1775253295.015619513] [lifecycle_manager_localization]: Failed to change state for node: map_server
+[lifecycle_manager-10] [ERROR] [1775253295.015776188] [lifecycle_manager_localization]: Failed to bring up all requested nodes. Aborting bringup.
+[lifecycle_manager-16] [INFO] [1775253295.227959666] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-16] [INFO] [1775253295.228056375] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-11] [INFO] [1775253295.229003765] [controller_server]: Configuring controller interface
+[controller_server-11] [INFO] [1775253295.231141208] [controller_server]: getting goal checker plugins..
+[lifecycle_manager-16] [ERROR] [1775253295.235123704] [lifecycle_manager_navigation]: Failed to change state for node: controller_server
+[lifecycle_manager-16] [ERROR] [1775253295.235194769] [lifecycle_manager_navigation]: Failed to bring up all requested nodes. Aborting bringup.
+[controller_server-11] [INFO] [1775253295.234292704] [controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-11] [INFO] [1775253295.235725176] [local_costmap.local_costmap]: Configuring
+[controller_server-11] [INFO] [1775253295.277283448] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[controller_server-11] [INFO] [1775253295.297637636] [local_costmap.local_costmap]: Subscribed to Topics: scan
+publisher: beginning loop
+publishing #1: geometry_msgs.msg.PoseWithCovarianceStamped(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0), frame_id='map'), pose=geometry_msgs.msg.PoseWithCovariance(pose=geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0), orientation=geometry_msgs.msg.Quaternion(x=0.0, y=0.0, z=0.0, w=1.0)), covariance=array([0.25, 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.25, 0.  , 0.  , 0.  ,
+       0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  ,
+       0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  ,
+       0.  , 0.  , 0.07])))
+
+[amcl-9] [INFO] [1775253295.301687420] [amcl]: initialPoseReceived
+[amcl-9] [WARN] [1775253295.301757301] [amcl]: Received initial pose request, but AMCL is not yet in the active state
+[controller_server-11] [INFO] [1775253295.318098567] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-11] [INFO] [1775253295.318175847] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[controller_server-11] [INFO] [1775253295.334822949] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[scan_to_scan_filter_chain-5] [WARN] [1775253295.407993238] [laser_filter]: diagnostic_updater: No HW_ID was set. This is probably a bug. Please report it. For devices that do not have a HW_ID, set this value to 'none'. This warning only occurs once all diagnostics are OK. It is okay to wait until the device is open before calling setHardwareID.
+[controller_server-11] [INFO] [1775253295.422559702] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-11] [INFO] [1775253295.422659965] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-11] [INFO] [1775253295.438567234] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-11] [INFO] [1775253295.484221414] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-11] [INFO] [1775253295.491620322] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-11] [INFO] [1775253295.498405108] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-11] [INFO] [1775253295.506122626] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-11] [INFO] [1775253295.534618300] [controller_server]: Setting transform_tolerance to 0.200000
+[joy_node-6] [INFO] [1775253295.559607187] [joy_node]: Opened joystick: Controller 1.05.  deadzone: 0.050000
+[controller_server-11] [INFO] [1775253295.608155560] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[controller_server-11] [INFO] [1775253295.618297012] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775253295.618798207] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-11] [INFO] [1775253295.628014973] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775253295.630103099] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[controller_server-11] [INFO] [1775253295.630984074] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775253295.631353383] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-11] [INFO] [1775253295.639590822] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775253295.640062419] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-11] [INFO] [1775253295.640936180] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775253295.641298821] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-11] [INFO] [1775253295.649686645] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775253295.652312539] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-11] [INFO] [1775253295.659560707] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775253295.663215862] [controller_server]: Using critic "PreferForward" (dwb_critics::PreferForwardCritic)
+[controller_server-11] [INFO] [1775253295.676317448] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775253295.676424266] [controller_server]: Controller Server has FollowPath  controllers available.
+Waiting for AMCL to localize...
+[realsense2_camera_node-1] [0m[INFO] [1775253296.210189727] [camera]: RealSense ROS v4.55.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253296.210337513] [camera]: Built with LibRealSense v2.56.4[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253296.210355864] [camera]: Running with LibRealSense v2.56.4[0m
+[INFO] [1775253296.225413477] [object_grasper]: object_grasper started
+[realsense2_camera_node-1] [0m[INFO] [1775253296.236522926] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253296.236617155] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253296.236626420] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253296.236770254] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253296.236781591] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[stretch_driver-3] [0m[INFO] [1775253296.814120410] [stretch_driver]: For use with S T R E T C H (TM) RESEARCH EDITION from Hello Robot Inc.[0m
+[stretch_driver-3] [0m[INFO] [1775253296.814428341] [stretch_driver]: stretch_driver started[0m
+[sllidar_node-4] [ERROR] [1775253296.911969756] [sllidar_node]: Error, operation time out. SL_RESULT_OPERATION_TIMEOUT! 
+[ERROR] [sllidar_node-4]: process has died [pid 29798, exit code 255, cmd '/home/willy/ament_ws/install/sllidar_ros2/lib/sllidar_ros2/sllidar_node --ros-args -r __node:=sllidar_node --params-file /tmp/launch_params_ej5vsu4m'].
+AMCL localized!
+[stretch_driver-3] Key mapped to End-Of-Arm Tool: tool_stretch_dex_wrist
+[stretch_driver-3] Unable to load URDF: /home/willy/.local/lib/python3.10/site-packages/stretch_urdf/RE2V0/stretch_description_RE2V0_tool_stretch_dex_wrist.urdf. Disabling collision system.
+waiting for service to become available...
+[stretch_driver-3] [0m[INFO] [1775253298.667261939] [stretch_driver]: broadcast_odom_tf = True[0m
+[stretch_driver-3] [0m[INFO] [1775253298.720797870] [stretch_driver]: rate = 30.0 Hz[0m
+[stretch_driver-3] [0m[INFO] [1775253298.721155990] [stretch_driver]: twist timeout = 0.5 s[0m
+[stretch_driver-3] [0m[INFO] [1775253298.721540478] [stretch_driver]: base_frame_id = base_link[0m
+[stretch_driver-3] [0m[INFO] [1775253298.722002590] [stretch_driver]: odom_frame_id = odom[0m
+[stretch_driver-3] [0m[INFO] [1775253298.805029767] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1775253298.897718183] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /home_the_robot service.
+[INFO] [1775253298.900677041] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /stow_the_robot service.
+[INFO] [1775253298.907627083] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /stop_the_robot service.
+[INFO] [1775253298.910561729] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_trajectory_mode service.
+[INFO] [1775253298.915737652] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_position_mode service.
+[INFO] [1775253298.923563792] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_navigation_mode service.
+[INFO] [1775253298.925772344] [aruco_base_frame_estimator]: Moving head camera to detection orientation...
+[WARN] [1775253298.926287807] [aruco_base_frame_estimator]: Currently in navigation mode. Recommend switching either to position or trajectory mode
+[WARN] [1775253298.926551157] [aruco_base_frame_estimator]: Commanding joint trajectory server in position mode
+[stretch_driver-3] [0m[INFO] [1775253298.931327514] [stretch_driver]: Received goal request[0m
+requester: making request: std_srvs.srv.Trigger_Request()
+
+[stretch_driver-3] [0m[INFO] [1775253298.943942901] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_head_pan', 'joint_head_tilt'][0m
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775253298.970599725] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[stretch_driver-3] [0m[INFO] [1775253298.974241737] [stretch_driver]: Changed to mode = navigation[0m
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+[INFO] [1775253298.978905058] [aruco_base_frame_estimator]: Head camera at detection pose — starting ArUco detection.
+[INFO] [1775253298.989739583] [aruco_base_frame_estimator]: Waiting for camera TF (base_link -> camera_color_optical_frame)...
+[INFO] [1775253299.011085454] [aruco_base_frame_estimator]: Camera pose acquired:
+[INFO] [1775253299.011561897] [aruco_base_frame_estimator]:   Position  : X=+0.0062  Y=-0.0517  Z=+1.2870  (m)
+[INFO] [1775253299.011936572] [aruco_base_frame_estimator]:   RPY (deg) : R=-179.03  P=+59.78  Y=+89.23
+[INFO] [1775253299.016724569] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775253299.017260580] [aruco_base_frame_estimator]: ArUco Base Frame Estimator Started
+[INFO] [1775253299.017859676] [aruco_base_frame_estimator]: Target Marker ID: 202
+[INFO] [1775253299.018445288] [aruco_base_frame_estimator]: Marker size: 2.8 cm
+[INFO] [1775253299.019202220] [aruco_base_frame_estimator]: Marker offset (cam frame): X=0.0  Y=0.0  Z=0.0
+[INFO] [1775253299.019931176] [aruco_base_frame_estimator]: Publishing target on: /aruco/target_base_link
+[INFO] [1775253299.020477273] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775253299.052831456] [object_grasper]: Node object_grasper connected to /home_the_robot service.
+[INFO] [1775253299.056126998] [object_grasper]: Node object_grasper connected to /stow_the_robot service.
+[INFO] [1775253299.061736355] [object_grasper]: Node object_grasper connected to /stop_the_robot service.
+[INFO] [1775253299.071335850] [object_grasper]: Node object_grasper connected to /switch_to_trajectory_mode service.
+[INFO] [1775253299.073547442] [object_grasper]: Node object_grasper connected to /switch_to_position_mode service.
+[INFO] [1775253299.076682967] [object_grasper]: Node object_grasper connected to /switch_to_navigation_mode service.
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_mast is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_arm_l4 is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+Waiting for controller_server...
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_wrist_yaw_bottom is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_gripper_s3_body is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_grasp_center is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link Base link (index: 0) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_mast (index: 2) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_arm_l4 (index: 4) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_wrist_yaw_bottom (index: 10) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_gripper_s3_body (index: 13) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_grasp_center (index: 14) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+[INFO] [1775253299.361386564] [object_grasper]: ============================================================
+[INFO] [1775253299.361820680] [object_grasper]: ObjectGrasper ready — waiting for ArUco detections
+[INFO] [1775253299.362098867] [object_grasper]: Listening on: /aruco/target_base_link
+[INFO] [1775253299.364570720] [object_grasper]: Call service: ros2 service call /grasp_object std_srvs/srv/Trigger {}
+[INFO] [1775253299.373384887] [object_grasper]: ============================================================
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.65
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.52
+[rviz2-17] [INFO] [1775253301.276250418] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-17] [INFO] [1775253301.276423437] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+Set parameter successful
+Yaw tolerance set.
+Resetting arm position...
+[INFO] [1775253302.259375990] [reset_pose]: reset_pose started
+[realsense2_camera_node-1] [0m[INFO] [1775253302.327039569] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253302.327234965] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253302.327266136] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253302.327558605] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253302.327612063] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[INFO] [1775253302.344682396] [reset_pose]: Node reset_pose connected to /home_the_robot service.
+[INFO] [1775253302.353842365] [reset_pose]: Node reset_pose connected to /stow_the_robot service.
+[INFO] [1775253302.361104045] [reset_pose]: Node reset_pose connected to /stop_the_robot service.
+[INFO] [1775253302.364685470] [reset_pose]: Node reset_pose connected to /switch_to_trajectory_mode service.
+[INFO] [1775253302.378276199] [reset_pose]: Node reset_pose connected to /switch_to_position_mode service.
+[INFO] [1775253302.381177009] [reset_pose]: Node reset_pose connected to /switch_to_navigation_mode service.
+[INFO] [1775253302.381780812] [reset_pose]: Moving to default pose...
+[WARN] [1775253302.382223382] [reset_pose]: Currently in navigation mode. Recommend switching either to position or trajectory mode
+[WARN] [1775253302.382502363] [reset_pose]: Commanding joint trajectory server in position mode
+[stretch_driver-3] [0m[INFO] [1775253302.392404864] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775253302.398056611] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_lift', 'joint_arm', 'joint_wrist_yaw', 'joint_wrist_pitch', 'joint_wrist_roll', 'joint_gripper_finger_left'][0m
+[rviz2-17] [INFO] [1775253302.407543653] [rviz2]: Stereo is NOT SUPPORTED
+[amcl-9] [WARN] [1775253302.511840112] [amcl]: New subscription discovered on topic '/particle_cloud', requesting incompatible QoS. No messages will be sent to it. Last incompatible policy: RELIABILITY_QOS_POLICY
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.23
+[rviz2-17] [INFO] [1775253303.365353392] [rviz2]: Trying to create a map of size 416 x 249 using 1 swatches
+[rviz2-17] [INFO] [1775253303.366258339] [rviz2]: Trying to create a map of size 416 x 249 using 1 swatches
+[rviz2-17] [ERROR] [1775253303.374987038] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[rviz2-17] active samplers with a different type refer to the same texture image unit
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775253307.078471647] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775253307.082099899] [reset_pose]: Arm reset done.
+[INFO] [1775253307.082350568] [reset_pose]: Rotating base 0°...
+[WARN] [1775253307.082617116] [reset_pose]: Currently in navigation mode. Recommend switching either to position or trajectory mode
+[WARN] [1775253307.083138927] [reset_pose]: Commanding joint trajectory server in position mode
+[stretch_driver-3] [0m[INFO] [1775253307.085560287] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775253307.090214995] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['rotate_mobile_base'][0m
+[stretch_driver-3] [33m[WARN] [1775253307.091223075] [stretch_driver]: MobileBaseCommandGroup.update: Must be in position mode to receive a command for the ['rotate_mobile_base'] joint(s). Current mode = navigation.[0m
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Errored goal
+[stretch_driver-3] [0m[INFO] [1775253307.091769559] [stretch_driver]: stretch_driver joint_traj action: joint names violated one of command group's requirements[0m
+[INFO] [1775253307.095975847] [reset_pose]: Done.
+terminate called without an active exception
+./dock_grab.sh: line 88: 30371 Aborted                 (core dumped) python3 ../test1.py
+=== Docking to table ===
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.02
+[rviz2-17] [INFO] [1775253307.492615432] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253302.637 for reason 'discarding message because the queue is full'
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.26
+[stretch_driver-3] [0m[INFO] [1775253308.230011811] [stretch_driver]: Changed to mode = navigation[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253308.397967813] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253308.398035215] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253308.398056526] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253308.398245314] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253308.398271504] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253309.559819344] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253302.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253310.105602900] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253306.473 for reason 'discarding message because the queue is full'
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.69
+[rviz2-17] [INFO] [1775253312.743176629] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253309.476 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253312.743296037] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253306.502 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253314.468684754] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253314.468758676] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253314.468767302] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253314.469152127] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253314.469195923] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253315.283163407] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253311.875 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253315.567577612] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253309.500 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253317.922001342] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253314.275 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253318.642097528] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253312.501 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253320.537153483] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253320.537203890] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253320.537211757] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253320.537338724] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253320.537348980] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253320.655988740] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253317.073 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253321.152936364] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253314.900 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253323.271094355] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253319.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253324.097123003] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253317.901 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253325.954812702] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253322.273 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253326.603064174] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253326.603143187] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253326.603152857] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253326.603304989] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253326.603318700] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253326.603716348] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253320.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253328.826928653] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253324.873 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253329.351561244] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253323.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253331.402928743] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253327.273 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253331.987651439] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253325.700 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253332.678126691] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253332.678193846] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253332.678207229] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253332.678418746] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253332.678452342] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253334.204702348] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253330.473 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253334.750798301] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253328.700 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253336.839471003] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253332.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253337.705541169] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253331.700 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253338.753992109] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253338.754068991] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253338.754090364] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253338.754281317] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253338.754308134] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253339.393280783] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253335.473 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253340.721987363] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253334.700 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253342.132329854] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253338.473 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253343.910336670] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253337.700 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253344.704991488] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253341.273 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253344.823329978] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253344.823383830] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253344.823401135] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253344.823582979] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253344.823602304] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253346.800657230] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253340.700 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253347.355992231] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253343.873 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253349.735124615] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253343.700 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253350.035751846] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253346.473 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253350.891310700] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253350.891359802] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253350.891369245] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253350.891509635] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253350.891520910] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253352.618718972] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253349.273 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253352.932385777] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253346.700 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253355.229566857] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253351.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253355.766876395] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253349.700 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253356.961863395] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253356.961959477] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253356.961974168] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253356.962231445] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253356.962256115] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253357.910961748] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253354.273 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253358.723017046] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253352.700 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253360.595112526] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253357.073 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253361.332876426] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253355.100 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253363.037609436] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253363.037663619] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253363.037672371] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253363.037828350] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253363.037844337] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253363.118655044] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253359.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253364.451244721] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253358.100 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253365.709684388] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253362.273 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253367.246712287] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253361.100 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253368.283117962] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253364.874 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253369.110660544] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253369.110715398] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253369.110725167] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253369.110876396] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253369.110888968] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253370.374027112] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253364.100 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253370.795399916] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253367.273 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253373.150514236] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253367.100 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253373.469840951] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253369.873 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253375.179959194] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253375.180019904] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253375.180033039] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253375.180249201] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253375.180266602] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253376.287921522] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253372.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253376.288116829] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253370.100 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253378.794085040] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253375.073 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253378.794192609] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253372.500 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253381.250018023] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253381.250080065] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253381.250093216] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253381.250306920] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253381.250326083] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253381.312195365] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253377.873 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253381.560544604] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253375.500 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253384.065050711] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253380.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253384.065373188] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253377.900 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253386.634210759] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253382.873 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253386.634355415] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253380.300 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253387.322424548] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253387.322511819] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253387.322526575] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253387.322746846] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253387.322764168] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253389.392587115] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253385.873 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253389.392691395] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253383.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253392.049229145] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253388.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253392.516078168] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253386.300 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253393.391366248] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253393.391427348] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253393.391439987] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253393.391638385] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253393.391655580] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253394.603292030] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253391.073 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253395.423110537] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253389.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253397.488147621] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253394.073 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253398.521584438] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253392.300 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253399.461139426] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253399.461207940] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253399.461220983] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253399.461444854] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253399.461462743] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253400.224187188] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253396.873 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253401.525171406] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253395.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253402.838411867] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253399.273 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253404.514903264] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253398.302 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253405.535949358] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253405.536053013] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253405.536083518] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253405.536267642] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253405.536293387] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253405.536799346] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253401.878 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253407.452146602] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253401.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253408.195463295] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253404.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253410.025585683] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253403.700 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253410.751938657] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253407.272 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253411.609409855] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253411.609477468] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253411.609491502] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253411.609717188] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253411.609777276] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253412.723040655] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253406.701 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253413.631935268] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253410.073 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253415.268396094] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253409.100 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253416.294444876] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253412.873 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253417.681972231] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253417.682021176] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253417.682030488] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253417.682179767] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253417.682191406] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253418.102958770] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253412.100 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253418.813262315] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253415.273 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253420.606063011] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253414.500 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253421.422436994] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253417.873 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253423.128057273] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253416.900 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253423.747991625] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253423.748059179] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253423.748073402] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253423.748281145] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253423.748299429] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253423.966683905] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253420.273 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253425.673377164] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253419.301 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253426.467129048] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253423.073 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253428.495556142] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253422.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253428.982733370] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253425.272 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253429.817262263] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253429.817313419] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253429.817323846] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253429.817463629] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253429.817474916] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253431.557615161] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253427.873 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253431.557729320] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253425.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253434.090810159] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253430.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253434.487020584] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253428.300 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253435.882917510] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253435.883008822] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253435.883019626] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253435.883165279] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253435.883178119] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253436.759982731] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253433.273 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253437.604214885] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253431.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253439.514797360] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253435.873 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253440.349984429] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253434.300 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253441.953238971] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253441.953306139] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253441.953320185] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253441.953533888] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253441.953551637] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253442.164440425] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253438.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253443.515338865] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253437.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253444.856002839] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253441.272 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253446.577819376] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253440.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253447.579060900] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253443.873 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253448.020416724] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253448.020478586] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253448.020492091] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253448.020696882] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253448.020720903] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253449.386511829] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253443.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253450.323309521] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253446.076 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253452.420676414] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253446.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253453.005518793] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253448.673 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253454.086776387] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253454.086840573] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253454.086849435] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253454.086987764] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253454.086999729] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253455.545991808] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253451.073 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253455.546102431] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253449.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253458.185867463] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253454.276 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253458.493347398] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253452.300 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253460.155696194] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253460.155748798] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253460.155759295] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253460.155912741] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253460.155927016] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253460.821782223] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253456.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253461.358140916] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253455.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253463.402969282] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253459.873 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253463.944924427] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253457.700 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253466.149725461] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253462.476 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253466.223024667] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253466.223077792] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253466.223086434] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253466.223228021] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253466.223239442] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253466.929721635] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253460.700 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253468.728301766] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253465.273 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253469.755162432] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253463.700 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253471.294613307] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253467.872 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253472.290609519] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253472.290665676] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253472.290678720] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253472.290873188] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253472.290895637] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253472.389550115] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253466.100 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253473.934128319] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253470.276 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253475.193393373] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253469.100 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253476.459688984] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253473.073 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253477.791345699] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253471.500 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253478.361807478] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253478.361884827] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253478.361906685] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253478.362096605] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253478.362122316] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253479.021469377] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253475.274 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253480.597084312] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253474.500 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253481.651654885] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253478.073 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253483.725907360] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253477.500 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253484.210069592] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253480.673 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253484.429575969] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253484.429633670] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253484.429653302] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253484.429852470] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253484.429881349] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253486.618118687] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253480.500 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253486.862958695] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253483.273 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253489.582555213] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253486.273 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253489.582714499] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253483.500 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253490.499106515] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253490.499177479] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253490.499248405] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253490.499459044] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253490.499480635] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253492.166183567] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253488.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253492.681090676] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253486.500 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253494.769628603] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253491.274 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253495.616327497] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253489.500 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253496.572068372] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253496.572155547] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253496.572177130] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253496.572388910] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253496.572415810] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253497.434626949] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253493.873 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253498.169523770] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253491.900 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253500.101527326] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253496.675 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253500.941729516] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253494.900 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253502.645783119] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253502.645842802] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253502.645851615] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253502.646007799] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253502.646019980] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253502.862412663] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253498.873 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253503.919736432] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253497.900 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253505.654023124] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253501.873 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253507.009233346] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253500.900 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253508.361880711] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253504.676 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253508.713410593] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253508.713479268] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253508.713502258] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253508.713699714] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253508.713733678] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253509.658211348] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253503.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253510.894859375] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253507.474 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253512.512023711] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253506.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253513.503346885] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253509.874 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253514.787155026] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253514.787211313] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253514.787224403] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253514.787434138] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253514.787451390] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253515.331583488] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253509.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253516.101133147] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253512.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253517.940862700] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253511.700 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253518.697605445] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253514.873 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253520.854198924] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253520.854263395] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253520.854284870] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253520.854476960] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253520.854504575] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253520.887129360] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253514.700 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253521.542370441] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253517.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253523.750737259] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253517.700 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253524.048124482] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253520.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253526.425492473] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253520.100 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253526.602349720] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253523.073 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253526.930425370] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253526.930497026] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253526.930518601] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253526.930695477] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253526.930721776] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253529.115132834] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253525.472 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253529.115725946] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253523.100 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253531.918335342] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253528.273 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253532.126292826] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253526.100 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253533.001591250] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253533.001641571] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253533.001650359] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253533.001792880] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253533.001804198] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253534.891223492] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253531.075 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253534.891366313] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253528.500 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253537.618416736] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253533.873 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253537.618571242] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253531.500 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253539.073439476] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253539.073533150] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253539.073557272] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253539.073777093] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253539.073827032] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253540.422523429] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253536.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253540.625819038] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253534.500 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253542.942620571] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253539.073 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253543.552860594] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253537.500 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253545.146009219] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253545.146063532] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253545.146072256] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253545.146237506] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253545.146258524] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253545.526886463] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253542.073 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253546.580068745] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253540.500 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253548.167978876] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253544.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253549.724968311] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253543.500 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253550.682486252] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253547.273 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253551.213635788] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253551.213684071] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253551.213693774] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253551.213839341] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253551.213851385] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253552.523810385] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253546.503 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253553.354917148] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253549.473 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253555.288447641] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253548.900 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253555.978188767] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253552.473 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253557.283499492] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253557.283568106] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253557.283582229] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253557.283742929] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253557.283757654] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775253557.919688736] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253551.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253558.504829484] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253554.673 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775253558.654169551] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253558.829888583] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253559.022389178] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[d435i_accel_correction-2] Traceback (most recent call last):
+[d435i_accel_correction-2]   File "/home/willy/ament_ws/install/stretch_core/lib/stretch_core/d435i_accel_correction", line 33, in <module>
+[d435i_accel_correction-2]     sys.exit(load_entry_point('stretch-core==0.2.0', 'console_scripts', 'd435i_accel_correction')())
+[d435i_accel_correction-2]   File "/home/willy/ament_ws/install/stretch_core/lib/python3.10/site-packages/stretch_core/d435i_accel_correction.py", line 47, in main
+[d435i_accel_correction-2]     rclpy.spin(node)
+[d435i_accel_correction-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[d435i_accel_correction-2]     executor.spin_once()
+[d435i_accel_correction-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 808, in spin_once
+[d435i_accel_correction-2]     self._spin_once_impl(timeout_sec)
+[d435i_accel_correction-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 797, in _spin_once_impl
+[d435i_accel_correction-2]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[d435i_accel_correction-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 780, in wait_for_ready_callbacks
+[d435i_accel_correction-2]     return next(self._cb_iter)
+[d435i_accel_correction-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 681, in _wait_for_ready_callbacks
+[d435i_accel_correction-2]     raise ExternalShutdownException()
+[d435i_accel_correction-2] rclpy.executors.ExternalShutdownException
+Traceback (most recent call last):
+  File "/home/willy/tf.py", line 299, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 808, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 797, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 780, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 681, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/willy/tf.py", line 307, in <module>
+    main()
+  File "/home/willy/tf.py", line 304, in main
+    rclpy.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 130, in shutdown
+    _shutdown(context=context)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
+    return context.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
+    self.__context.shutdown()
+rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241
+[realsense2_camera_node-1] [0m[INFO] [1775253559.239243658] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253559.349808508] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253559.495244905] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253559.707067014] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253559.875924332] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253560.076625102] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[ERROR] [d435i_accel_correction-2]: process has died [pid 29561, exit code 1, cmd '/home/willy/ament_ws/install/stretch_core/lib/stretch_core/d435i_accel_correction --ros-args'].
+[INFO] [realsense2_camera_node-1]: process has finished cleanly [pid 29559]

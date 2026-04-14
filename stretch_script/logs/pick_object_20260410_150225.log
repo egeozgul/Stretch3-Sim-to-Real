@@ -1,0 +1,43 @@
+=== pick_object.sh started at Fri Apr 10 03:02:25 PM EDT 2026 ===
+Target ArUco marker ID: 202
+Waiting for nodes to be ready (launch_nodes.sh)...
+Nodes are ready!
+Setting target marker ID to 202...
+Set parameter successful
+Resetting arm position for camera view...
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+[INFO] [1775847748.647440691] [reset_pose]: reset_pose started
+[INFO] [1775847748.701563207] [reset_pose]: Node reset_pose connected to /home_the_robot service.
+[INFO] [1775847748.704327584] [reset_pose]: Node reset_pose connected to /stow_the_robot service.
+[INFO] [1775847748.707098267] [reset_pose]: Node reset_pose connected to /stop_the_robot service.
+[INFO] [1775847748.714080630] [reset_pose]: Node reset_pose connected to /switch_to_trajectory_mode service.
+[INFO] [1775847748.719747759] [reset_pose]: Node reset_pose connected to /switch_to_position_mode service.
+[INFO] [1775847748.721497194] [reset_pose]: Node reset_pose connected to /switch_to_navigation_mode service.
+[INFO] [1775847748.722295833] [reset_pose]: Moving to default pose...
+[INFO] [1775847758.801689930] [reset_pose]: Arm reset done.
+[INFO] [1775847758.802304867] [reset_pose]: Skipping rotation (ROTATE_DEG=0).
+[INFO] [1775847758.802776296] [reset_pose]: Done.
+Arm reset complete.
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+Waiting for live marker detection (confirming stamp is advancing)...
+Live detection confirmed! (stamp advancing: 1775847761 → 1775847762)
+Live pose:
+  x: 0.08492720899310116
+  y: -0.7770837269227721
+  z: 0.9082648758140345
+Waiting for grasp service...
+Grasp service ready!
+=== Triggering grasp ===
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+

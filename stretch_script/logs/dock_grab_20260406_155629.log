@@ -1,0 +1,555 @@
+=== dock_grab.sh started at Mon Apr  6 03:56:29 PM EDT 2026 ===
+Freeing robot process...
+Done!
+=== Launching all nodes ===
+Waiting for Nav2 action server...
+[INFO] [launch]: All log files can be found below /home/willy/.ros/log/2026-04-06-15-56-29-724585-stretch-re2-2204-40027
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch]: All log files can be found below /home/willy/.ros/log/2026-04-06-15-56-29-771022-stretch-re2-2204-40026
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: D435i launched in high resolution
+[INFO] [realsense2_camera_node-1]: process started with pid [40087]
+[INFO] [d435i_accel_correction-2]: process started with pid [40089]
+[realsense2_camera_node-1] [0m[INFO] [1775505390.120263437] [camera]: RealSense ROS v4.55.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505390.120392413] [camera]: Built with LibRealSense v2.56.4[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505390.121123304] [camera]: Running with LibRealSense v2.56.4[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505390.167356977] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775505390.167470604] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505390.167649336] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505390.168549948] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775505390.168596274] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[INFO] [1775505390.225746969] [aruco_base_frame_estimator]: aruco_base_frame_estimator started
+[d435i_accel_correction-2] [INFO] [1775505390.300174952] [d435i_accel_correction_node]: d435i_accel_correction_node started
+Nav2 is up!
+Setting initial pose...
+[INFO] [stretch_driver-3]: process started with pid [40257]
+[INFO] [joint_state_publisher-1]: process started with pid [40253]
+[INFO] [robot_state_publisher-2]: process started with pid [40255]
+[INFO] [sllidar_node-4]: process started with pid [40259]
+[INFO] [scan_to_scan_filter_chain-5]: process started with pid [40261]
+[INFO] [joy_node-6]: process started with pid [40263]
+[INFO] [teleop_node-7]: process started with pid [40265]
+[INFO] [map_server-8]: process started with pid [40267]
+[INFO] [amcl-9]: process started with pid [40269]
+[INFO] [lifecycle_manager-10]: process started with pid [40271]
+[INFO] [controller_server-11]: process started with pid [40273]
+[INFO] [planner_server-12]: process started with pid [40275]
+[INFO] [behavior_server-13]: process started with pid [40277]
+[INFO] [bt_navigator-14]: process started with pid [40281]
+[INFO] [waypoint_follower-15]: process started with pid [40291]
+[INFO] [lifecycle_manager-16]: process started with pid [40406]
+[INFO] [rviz2-17]: process started with pid [40408]
+[sllidar_node-4] [INFO] [1775505390.698410511] [sllidar_node]: SLLidar running on ROS2 package SLLidar.ROS2 SDK Version:1.0.1, SLLIDAR SDK Version:2.1.0
+[sllidar_node-4] [INFO] [1775505390.710592481] [sllidar_node]: SLLidar S/N: C394ED93C0EA98C9A5E698F2564A4669
+[sllidar_node-4] [INFO] [1775505390.710665474] [sllidar_node]: Firmware Ver: 1.29
+[sllidar_node-4] [INFO] [1775505390.710681016] [sllidar_node]: Hardware Rev: 7
+[sllidar_node-4] [INFO] [1775505390.713757515] [sllidar_node]: SLLidar health status : 0
+[sllidar_node-4] [INFO] [1775505390.713825515] [sllidar_node]: SLLidar health status : OK.
+[scan_to_scan_filter_chain-5] [INFO] [1775505390.704724081] [laser_filter]: In shadow configure done
+[scan_to_scan_filter_chain-5] [WARN] [1775505390.705048971] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[teleop_node-7] [INFO] [1775505390.703733050] [TeleopTwistJoy]: Teleop enable button 4.
+[teleop_node-7] [INFO] [1775505390.703834380] [TeleopTwistJoy]: Linear axis x on 4 at scale 0.500000.
+[teleop_node-7] [INFO] [1775505390.703851586] [TeleopTwistJoy]: Angular axis yaw on 3 at scale 0.500000.
+[map_server-8] [INFO] [1775505390.733651646] [map_server]: 
+[map_server-8] 	map_server lifecycle node launched. 
+[map_server-8] 	Waiting on external lifecycle transitions to activate
+[map_server-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-8] [INFO] [1775505390.733833778] [map_server]: Creating
+[amcl-9] [INFO] [1775505390.705597660] [amcl]: 
+[amcl-9] 	amcl lifecycle node launched. 
+[amcl-9] 	Waiting on external lifecycle transitions to activate
+[amcl-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-9] [INFO] [1775505390.707473076] [amcl]: Creating
+[lifecycle_manager-10] [INFO] [1775505390.709831255] [lifecycle_manager_localization]: Creating
+[lifecycle_manager-10] [INFO] [1775505390.746518882] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[controller_server-11] [INFO] [1775505390.712910765] [controller_server]: 
+[controller_server-11] 	controller_server lifecycle node launched. 
+[controller_server-11] 	Waiting on external lifecycle transitions to activate
+[controller_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-11] [INFO] [1775505390.723144654] [controller_server]: Creating controller server
+[controller_server-11] [INFO] [1775505390.727778320] [local_costmap.local_costmap]: 
+[controller_server-11] 	local_costmap lifecycle node launched. 
+[controller_server-11] 	Waiting on external lifecycle transitions to activate
+[controller_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-11] [INFO] [1775505390.729388790] [local_costmap.local_costmap]: Creating Costmap
+[planner_server-12] [INFO] [1775505390.730810551] [planner_server]: 
+[planner_server-12] 	planner_server lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1775505390.737279187] [planner_server]: Creating
+[planner_server-12] [INFO] [1775505390.746439273] [global_costmap.global_costmap]: 
+[planner_server-12] 	global_costmap lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1775505390.769806889] [global_costmap.global_costmap]: Creating Costmap
+[behavior_server-13] [INFO] [1775505390.700867613] [behavior_server]: 
+[behavior_server-13] 	behavior_server lifecycle node launched. 
+[behavior_server-13] 	Waiting on external lifecycle transitions to activate
+[behavior_server-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-14] [INFO] [1775505390.719613964] [bt_navigator]: 
+[bt_navigator-14] 	bt_navigator lifecycle node launched. 
+[bt_navigator-14] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-14] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-14] [INFO] [1775505390.719799576] [bt_navigator]: Creating
+[waypoint_follower-15] [INFO] [1775505390.736554370] [waypoint_follower]: 
+[waypoint_follower-15] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-15] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-15] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-15] [INFO] [1775505390.737774440] [waypoint_follower]: Creating
+[lifecycle_manager-16] [INFO] [1775505390.834309038] [lifecycle_manager_navigation]: Creating
+[lifecycle_manager-16] [INFO] [1775505390.842157638] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[lifecycle_manager-16] [INFO] [1775505390.894150089] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-16] [INFO] [1775505390.894223949] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[lifecycle_manager-10] [INFO] [1775505390.912435414] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-10] [INFO] [1775505390.913210760] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[map_server-8] [INFO] [1775505390.913468857] [map_server]: Configuring
+[map_server-8] [INFO] [1775505390.913540794] [map_io]: Loading yaml file: /home/willy/stretch_user/maps/testing_map.yaml
+[map_server-8] [INFO] [1775505390.913831342] [map_io]: resolution: 0.05
+[map_server-8] [INFO] [1775505390.913844187] [map_io]: origin[0]: -11.5
+[map_server-8] [INFO] [1775505390.913851589] [map_io]: origin[1]: -1.71
+[map_server-8] [INFO] [1775505390.913857935] [map_io]: origin[2]: 0
+[map_server-8] [INFO] [1775505390.913864546] [map_io]: free_thresh: 0.25
+[map_server-8] [INFO] [1775505390.913871432] [map_io]: occupied_thresh: 0.65
+[map_server-8] [INFO] [1775505390.913878034] [map_io]: mode: trinary
+[map_server-8] [INFO] [1775505390.913884919] [map_io]: negate: 0
+[map_server-8] [INFO] [1775505390.914067995] [map_io]: Loading image_file: /home/willy/stretch_user/maps/testing_map.pgm
+[sllidar_node-4] [INFO] [1775505390.936186961] [sllidar_node]: current scan mode: Boost, sample rate: 8 Khz, max_distance: 12.0 m, scan frequency:10.0 Hz, 
+[map_server-8] [INFO] [1775505390.937341751] [map_io]: Read map /home/willy/stretch_user/maps/testing_map.pgm: 416 X 249 map @ 0.05 m/cell
+[lifecycle_manager-10] [INFO] [1775505390.952012999] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[amcl-9] [INFO] [1775505390.952341654] [amcl]: Configuring
+[amcl-9] [INFO] [1775505390.952994340] [amcl]: initTransforms
+[amcl-9] [INFO] [1775505390.991014614] [amcl]: initPubSub
+[controller_server-11] [INFO] [1775505390.997271549] [controller_server]: Configuring controller interface
+[controller_server-11] [INFO] [1775505390.998100873] [controller_server]: getting goal checker plugins..
+[controller_server-11] [INFO] [1775505390.999248379] [controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-11] [INFO] [1775505390.999347010] [local_costmap.local_costmap]: Configuring
+[amcl-9] [INFO] [1775505391.003783819] [amcl]: Subscribed to map topic.
+[lifecycle_manager-10] [INFO] [1775505391.015598551] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[map_server-8] [INFO] [1775505391.015899902] [map_server]: Activating
+[map_server-8] [INFO] [1775505391.016160694] [map_server]: Creating bond (map_server) to lifecycle manager.
+[amcl-9] [INFO] [1775505391.016371491] [amcl]: Received a 416 X 249 map @ 0.050 m/pix
+[controller_server-11] [INFO] [1775505391.019535550] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[controller_server-11] [INFO] [1775505391.043471831] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-11] [INFO] [1775505391.062776123] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-11] [INFO] [1775505391.062823087] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[controller_server-11] [INFO] [1775505391.074151473] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-11] [INFO] [1775505391.109978615] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-11] [INFO] [1775505391.110026788] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-11] [INFO] [1775505391.117232300] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[lifecycle_manager-10] [INFO] [1775505391.128537810] [lifecycle_manager_localization]: Server map_server connected with bond.
+[lifecycle_manager-10] [INFO] [1775505391.128596072] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+[amcl-9] [INFO] [1775505391.128862951] [amcl]: Activating
+[amcl-9] [INFO] [1775505391.128920713] [amcl]: Creating bond (amcl) to lifecycle manager.
+[controller_server-11] [INFO] [1775505391.151664420] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-11] [INFO] [1775505391.154917560] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-11] [INFO] [1775505391.158419763] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-11] [INFO] [1775505391.162400094] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-11] [INFO] [1775505391.165763715] [controller_server]: Setting transform_tolerance to 0.200000
+[controller_server-11] [INFO] [1775505391.184257807] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[controller_server-11] [INFO] [1775505391.185725970] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775505391.186345306] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-11] [INFO] [1775505391.187729530] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775505391.188089810] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[controller_server-11] [INFO] [1775505391.188671320] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775505391.189025775] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-11] [INFO] [1775505391.189960222] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775505391.190535238] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-11] [INFO] [1775505391.191521902] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775505391.191929323] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-11] [INFO] [1775505391.192560552] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775505391.192896003] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-11] [INFO] [1775505391.193810682] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775505391.194174155] [controller_server]: Using critic "PreferForward" (dwb_critics::PreferForwardCritic)
+[controller_server-11] [INFO] [1775505391.195465456] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775505391.195516403] [controller_server]: Controller Server has FollowPath  controllers available.
+[lifecycle_manager-16] [INFO] [1775505391.204166990] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-12] [INFO] [1775505391.204441480] [planner_server]: Configuring
+[planner_server-12] [INFO] [1775505391.204492068] [global_costmap.global_costmap]: Configuring
+[planner_server-12] [INFO] [1775505391.215763703] [global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-12] [INFO] [1775505391.223215088] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[planner_server-12] [INFO] [1775505391.225482421] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-12] [INFO] [1775505391.225552954] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-12] [INFO] [1775505391.228495579] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-12] [INFO] [1775505391.235549530] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-12] [INFO] [1775505391.235626511] [global_costmap.global_costmap]: Using plugin "voxel_layer"
+[lifecycle_manager-10] [INFO] [1775505391.237391851] [lifecycle_manager_localization]: Server amcl connected with bond.
+[lifecycle_manager-10] [INFO] [1775505391.237458479] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-10] [INFO] [1775505391.237511856] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[planner_server-12] [INFO] [1775505391.238141357] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-12] [INFO] [1775505391.247240459] [global_costmap.global_costmap]: Initialized plugin "voxel_layer"
+[planner_server-12] [INFO] [1775505391.247320432] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-12] [INFO] [1775505391.250073180] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-12] [INFO] [1775505391.261858172] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 416 X 249 at 0.050000 m/pix
+[planner_server-12] [INFO] [1775505391.266671207] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[planner_server-12] [INFO] [1775505391.266764362] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-12] [INFO] [1775505391.268938602] [planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-16] [INFO] [1775505391.285427230] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-13] [INFO] [1775505391.285731660] [behavior_server]: Configuring
+[behavior_server-13] [INFO] [1775505391.296661466] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-13] [INFO] [1775505391.297771494] [behavior_server]: Configuring spin
+[behavior_server-13] [INFO] [1775505391.306388675] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-13] [INFO] [1775505391.307461272] [behavior_server]: Configuring backup
+[behavior_server-13] [INFO] [1775505391.316396959] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[behavior_server-13] [INFO] [1775505391.317613023] [behavior_server]: Configuring drive_on_heading
+[behavior_server-13] [INFO] [1775505391.325228321] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
+[behavior_server-13] [INFO] [1775505391.327382132] [behavior_server]: Configuring assisted_teleop
+[behavior_server-13] [INFO] [1775505391.335073340] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-13] [INFO] [1775505391.336275605] [behavior_server]: Configuring wait
+[lifecycle_manager-16] [INFO] [1775505391.341986202] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[bt_navigator-14] [INFO] [1775505391.342213043] [bt_navigator]: Configuring
+[lifecycle_manager-16] [INFO] [1775505391.483279268] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[waypoint_follower-15] [INFO] [1775505391.484063077] [waypoint_follower]: Configuring
+[waypoint_follower-15] [INFO] [1775505391.511145283] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[lifecycle_manager-16] [INFO] [1775505391.512707209] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[controller_server-11] [INFO] [1775505391.512918716] [controller_server]: Activating
+[controller_server-11] [INFO] [1775505391.512986570] [local_costmap.local_costmap]: Activating
+[controller_server-11] [INFO] [1775505391.513006938] [local_costmap.local_costmap]: Checking transform
+[controller_server-11] [INFO] [1775505391.513084511] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1775505391.602731280] [object_grasper]: object_grasper started
+[joy_node-6] [INFO] [1775505391.616074464] [joy_node]: Opened joystick: Controller 1.05.  deadzone: 0.050000
+[scan_to_scan_filter_chain-5] [WARN] [1775505391.699654895] [laser_filter]: diagnostic_updater: No HW_ID was set. This is probably a bug. Please report it. For devices that do not have a HW_ID, set this value to 'none'. This warning only occurs once all diagnostics are OK. It is okay to wait until the device is open before calling setHardwareID.
+[rviz2-17] [INFO] [1775505391.711832362] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-17] [INFO] [1775505391.711896696] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[rviz2-17] [INFO] [1775505391.811948323] [rviz2]: Stereo is NOT SUPPORTED
+[amcl-9] [WARN] [1775505391.868398750] [amcl]: New subscription discovered on topic '/particle_cloud', requesting incompatible QoS. No messages will be sent to it. Last incompatible policy: RELIABILITY_QOS_POLICY
+[controller_server-11] [INFO] [1775505392.013144243] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505392.126506859] [rviz2]: Trying to create a map of size 416 x 249 using 1 swatches
+[rviz2-17] [ERROR] [1775505392.131548793] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[rviz2-17] active samplers with a different type refer to the same texture image unit
+[stretch_driver-3] [0m[INFO] [1775505392.244375739] [stretch_driver]: For use with S T R E T C H (TM) RESEARCH EDITION from Hello Robot Inc.[0m
+[stretch_driver-3] [0m[INFO] [1775505392.244613537] [stretch_driver]: stretch_driver started[0m
+publisher: beginning loop
+publishing #1: geometry_msgs.msg.PoseWithCovarianceStamped(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0), frame_id='map'), pose=geometry_msgs.msg.PoseWithCovariance(pose=geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0), orientation=geometry_msgs.msg.Quaternion(x=0.0, y=0.0, z=0.0, w=1.0)), covariance=array([0.25, 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.25, 0.  , 0.  , 0.  ,
+       0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  ,
+       0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  ,
+       0.  , 0.  , 0.07])))
+
+[amcl-9] [INFO] [1775505392.253636883] [amcl]: initialPoseReceived
+[amcl-9] [INFO] [1775505392.253797361] [amcl]: Setting pose (1775505392.253797): 0.000 0.000 0.000
+[controller_server-11] [INFO] [1775505392.513140679] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+Waiting for AMCL to localize...
+[stretch_driver-3] Key mapped to End-Of-Arm Tool: tool_stretch_dex_wrist
+[stretch_driver-3] Unable to load URDF: /home/willy/.local/lib/python3.10/site-packages/stretch_urdf/RE2V0/stretch_description_RE2V0_tool_stretch_dex_wrist.urdf. Disabling collision system.
+[controller_server-11] [INFO] [1775505393.013213170] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [INFO] [1775505393.350650870] [amcl]: Message Filter dropping message: frame 'laser' at time 1775505390.936 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-11] [INFO] [1775505393.513131994] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775505393.805153278] [rviz]: Message Filter dropping message: frame 'laser' at time 1775505390.936 for reason 'discarding message because the queue is full'
+[stretch_driver-3] [0m[INFO] [1775505394.012921832] [stretch_driver]: broadcast_odom_tf = True[0m
+[controller_server-11] [INFO] [1775505394.013147006] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[stretch_driver-3] [0m[INFO] [1775505394.063669367] [stretch_driver]: rate = 30.0 Hz[0m
+[stretch_driver-3] [0m[INFO] [1775505394.063909411] [stretch_driver]: twist timeout = 0.5 s[0m
+[stretch_driver-3] [0m[INFO] [1775505394.064123251] [stretch_driver]: base_frame_id = base_link[0m
+[stretch_driver-3] [0m[INFO] [1775505394.064365145] [stretch_driver]: odom_frame_id = odom[0m
+[stretch_driver-3] [0m[INFO] [1775505394.113339007] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1775505394.190476498] [object_grasper]: Node object_grasper connected to /home_the_robot service.
+[INFO] [1775505394.196380782] [object_grasper]: Node object_grasper connected to /stow_the_robot service.
+[INFO] [1775505394.198682267] [object_grasper]: Node object_grasper connected to /stop_the_robot service.
+[INFO] [1775505394.200440629] [object_grasper]: Node object_grasper connected to /switch_to_trajectory_mode service.
+[INFO] [1775505394.202350595] [object_grasper]: Node object_grasper connected to /switch_to_position_mode service.
+[INFO] [1775505394.204578623] [object_grasper]: Node object_grasper connected to /switch_to_navigation_mode service.
+[INFO] [1775505394.274504094] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /home_the_robot service.
+[INFO] [1775505394.282256385] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /stow_the_robot service.
+[INFO] [1775505394.294573961] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /stop_the_robot service.
+[INFO] [1775505394.299942714] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_trajectory_mode service.
+[INFO] [1775505394.303083943] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_position_mode service.
+[INFO] [1775505394.304853266] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_navigation_mode service.
+[INFO] [1775505394.305236577] [aruco_base_frame_estimator]: Moving head camera to detection orientation...
+[WARN] [1775505394.305516490] [aruco_base_frame_estimator]: Currently in navigation mode. Recommend switching either to position or trajectory mode
+[WARN] [1775505394.305742363] [aruco_base_frame_estimator]: Commanding joint trajectory server in position mode
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_mast is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+[stretch_driver-3] [0m[INFO] [1775505394.308235699] [stretch_driver]: Received goal request[0m
+[amcl-9] [INFO] [1775505394.315047202] [amcl]: createLaserObject
+[stretch_driver-3] [0m[INFO] [1775505394.318726311] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_head_pan', 'joint_head_tilt'][0m
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775505394.333389097] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775505394.335677828] [aruco_base_frame_estimator]: Head camera at detection pose — starting ArUco detection.
+[INFO] [1775505394.355728914] [aruco_base_frame_estimator]: Waiting for camera TF (base_link -> camera_color_optical_frame)...
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_arm_l4 is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+[INFO] [1775505394.377040031] [aruco_base_frame_estimator]: Camera pose acquired:
+[INFO] [1775505394.377452146] [aruco_base_frame_estimator]:   Position  : X=+0.0062  Y=-0.0517  Z=+1.2870  (m)
+[INFO] [1775505394.377782734] [aruco_base_frame_estimator]:   RPY (deg) : R=-179.03  P=+59.78  Y=+89.23
+[INFO] [1775505394.381015471] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775505394.381269118] [aruco_base_frame_estimator]: ArUco Base Frame Estimator Started
+[INFO] [1775505394.384665499] [aruco_base_frame_estimator]: Target Marker ID: 202
+[INFO] [1775505394.384904035] [aruco_base_frame_estimator]: Marker size: 2.8 cm
+[INFO] [1775505394.385090911] [aruco_base_frame_estimator]: Marker offset (cam frame): X=0.0  Y=0.0  Z=0.0
+[INFO] [1775505394.385268049] [aruco_base_frame_estimator]: Publishing target on: /aruco/target_base_link
+[INFO] [1775505394.385438576] [aruco_base_frame_estimator]: ============================================================
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_wrist_yaw_bottom is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_gripper_s3_body is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_grasp_center is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link Base link (index: 0) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_mast (index: 2) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_arm_l4 (index: 4) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_wrist_yaw_bottom (index: 10) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_gripper_s3_body (index: 13) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_grasp_center (index: 14) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+[INFO] [1775505394.461770871] [object_grasper]: ============================================================
+[INFO] [1775505394.462645728] [object_grasper]: ObjectGrasper ready — waiting for ArUco detections
+[INFO] [1775505394.464362516] [object_grasper]: Listening on: /aruco/target_base_link
+[INFO] [1775505394.470164708] [object_grasper]: Call service: ros2 service call /grasp_object std_srvs/srv/Trigger {}
+[INFO] [1775505394.473574719] [object_grasper]: ============================================================
+[controller_server-11] [INFO] [1775505394.513225489] [local_costmap.local_costmap]: start
+AMCL localized!
+[controller_server-11] [INFO] [1775505394.715652782] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1775505394.820151901] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[lifecycle_manager-16] [INFO] [1775505394.820214373] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[planner_server-12] [INFO] [1775505394.820506873] [planner_server]: Activating
+[planner_server-12] [INFO] [1775505394.820558102] [global_costmap.global_costmap]: Activating
+[planner_server-12] [INFO] [1775505394.820580419] [global_costmap.global_costmap]: Checking transform
+[planner_server-12] [INFO] [1775505394.820667549] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 1775505394.814922 but the earliest data is at time 1775505395.168856, when looking up transform from frame [base_link] to frame [map]
+requester: making request: std_srvs.srv.Trigger_Request()
+
+[stretch_driver-3] [0m[INFO] [1775505395.026638395] [stretch_driver]: Changed to mode = navigation[0m
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+[planner_server-12] [INFO] [1775505395.320708911] [global_costmap.global_costmap]: start
+Waiting for controller_server...
+[rviz2-17] [INFO] [1775505395.496633981] [rviz2]: Trying to create a map of size 60 x 60 using 1 swatches
+[realsense2_camera_node-1] [0m[INFO] [1775505396.237983583] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775505396.238049377] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505396.238070504] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505396.238264229] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775505396.238294198] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[planner_server-12] [INFO] [1775505396.373939143] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[planner_server-12] [INFO] [1775505396.376236252] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1775505396.483128478] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[lifecycle_manager-16] [INFO] [1775505396.483268277] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[behavior_server-13] [INFO] [1775505396.483754738] [behavior_server]: Activating
+[behavior_server-13] [INFO] [1775505396.483788960] [behavior_server]: Activating spin
+[behavior_server-13] [INFO] [1775505396.483800781] [behavior_server]: Activating backup
+[behavior_server-13] [INFO] [1775505396.483809969] [behavior_server]: Activating drive_on_heading
+[behavior_server-13] [INFO] [1775505396.483822452] [behavior_server]: Activating assisted_teleop
+[behavior_server-13] [INFO] [1775505396.483830259] [behavior_server]: Activating wait
+[behavior_server-13] [INFO] [1775505396.483842122] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[rviz2-17] [INFO] [1775505396.506775257] [rviz2]: Trying to create a map of size 416 x 249 using 1 swatches
+[lifecycle_manager-16] [INFO] [1775505396.588278492] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[lifecycle_manager-16] [INFO] [1775505396.588370953] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[bt_navigator-14] [INFO] [1775505396.589108109] [bt_navigator]: Activating
+[bt_navigator-14] [INFO] [1775505396.666792558] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1775505396.771715765] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[lifecycle_manager-16] [INFO] [1775505396.771756348] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[waypoint_follower-15] [INFO] [1775505396.772159369] [waypoint_follower]: Activating
+[waypoint_follower-15] [INFO] [1775505396.772204845] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1775505396.876103950] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[lifecycle_manager-16] [INFO] [1775505396.876149902] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-16] [INFO] [1775505396.876168093] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+Set parameter successful
+Yaw tolerance set.
+Resetting arm position...
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+[stretch_driver-3] [0m[INFO] [1775505398.235172106] [stretch_driver]: Changed to mode = position[0m
+[INFO] [1775505400.036749932] [reset_pose]: reset_pose started
+[INFO] [1775505400.101747792] [reset_pose]: Node reset_pose connected to /home_the_robot service.
+[INFO] [1775505400.106861514] [reset_pose]: Node reset_pose connected to /stow_the_robot service.
+[INFO] [1775505400.108563215] [reset_pose]: Node reset_pose connected to /stop_the_robot service.
+[INFO] [1775505400.110107969] [reset_pose]: Node reset_pose connected to /switch_to_trajectory_mode service.
+[INFO] [1775505400.111582486] [reset_pose]: Node reset_pose connected to /switch_to_position_mode service.
+[INFO] [1775505400.113205168] [reset_pose]: Node reset_pose connected to /switch_to_navigation_mode service.
+[INFO] [1775505400.113565821] [reset_pose]: Moving to default pose...
+[stretch_driver-3] [0m[INFO] [1775505400.119692535] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775505400.126342720] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_lift', 'joint_arm', 'joint_wrist_yaw', 'joint_wrist_pitch', 'joint_wrist_roll', 'joint_gripper_finger_left'][0m
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775505400.306404748] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775505400.309543427] [reset_pose]: Arm reset done.
+[INFO] [1775505400.310113810] [reset_pose]: Skipping rotation (ROTATE_DEG=0).
+[INFO] [1775505400.310346778] [reset_pose]: Done.
+waiting for service to become available...
+requester: making request: std_srvs.srv.Trigger_Request()
+
+[stretch_driver-3] [0m[INFO] [1775505401.224560907] [stretch_driver]: Changed to mode = navigation[0m
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+=== Docking to table ===
+[stretch_driver-3] [0m[INFO] [1775505402.073478946] [stretch_driver]: Changed to mode = navigation[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505402.305486226] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775505402.305549192] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505402.305569795] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505402.305788951] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775505402.305816538] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775505403.907920775] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505394.714 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-17] [INFO] [1775505403.908049207] [rviz]: Message Filter dropping message: frame 'odom' at time 1775505394.681 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-17] [INFO] [1775505405.586749475] [rviz]: Message Filter dropping message: frame 'laser' at time 1775505394.033 for reason 'discarding message because the queue is full'
+[bt_navigator-14] [INFO] [1775505407.170065412] [bt_navigator]: Begin navigating from current location (0.02, 0.01) to (0.57, 1.66)
+[controller_server-11] [INFO] [1775505407.190831555] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-11] [WARN] [1775505407.190913311] [controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+[controller_server-11] [INFO] [1775505408.241159079] [controller_server]: Passing new path to controller.
+[realsense2_camera_node-1] [0m[INFO] [1775505408.377958379] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775505408.378030914] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505408.378043300] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505408.378235685] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775505408.378255655] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[controller_server-11] [INFO] [1775505409.291150251] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775505410.291150660] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775505411.341150066] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775505412.341159017] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775505413.391152431] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775505414.441157101] [controller_server]: Passing new path to controller.
+[realsense2_camera_node-1] [0m[INFO] [1775505414.444187500] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775505414.444242659] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505414.444264072] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505414.444434317] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775505414.444476956] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775505415.441152757] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775505416.491110372] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775505417.491153332] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775505418.541151063] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775505419.591160445] [controller_server]: Passing new path to controller.
+[realsense2_camera_node-1] [0m[INFO] [1775505420.512276354] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775505420.512339292] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505420.512353290] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505420.513785502] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775505420.513880725] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[controller_server-11] [INFO] [1775505420.591153230] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775505421.641149529] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775505422.641147740] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775505423.691153178] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775505424.741154083] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775505425.094065264] [controller_server]: Reached the goal!
+[bt_navigator-14] [INFO] [1775505425.130398528] [bt_navigator]: Goal succeeded
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+Set parameter successful
+Waiting for an action server to become available...
+Sending goal:
+     pose:
+  header:
+    stamp:
+      sec: 0
+      nanosec: 0
+    frame_id: map
+  pose:
+    position:
+      x: 0.5688
+      y: 1.6601
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: -0.707
+      w: 0.707
+behavior_tree: ''
+
+Goal accepted with ID: 21f7f7c6461c4b97bf69a832518a65f5
+
+Result:
+    result: {}
+
+Goal finished with status: SUCCEEDED
+Navigation succeeded!
+Waiting for grasp service...
+Traceback (most recent call last):
+  File "/opt/ros/humble/bin/ros2", line 33, in <module>
+    sys.exit(load_entry_point('ros2cli==0.18.18', 'console_scripts', 'ros2')())
+  File "/opt/ros/humble/lib/python3.10/site-packages/ros2cli/cli.py", line 91, in main
+    rc = extension.main(parser=parser, args=args)
+  File "/opt/ros/humble/lib/python3.10/site-packages/ros2service/command/service.py", line 41, in main
+    return extension.main(args=args)
+  File "/opt/ros/humble/lib/python3.10/site-packages/ros2service/verb/list.py", line 51, in main
+    print(msg)
+BrokenPipeError: [Errno 32] Broken pipe
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+Grasp service is ready!
+=== Triggering grasp ===
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.14
+requester: making request: std_srvs.srv.Trigger_Request()
+
+[stretch_driver-3] [0m[INFO] [1775505426.242383985] [stretch_driver]: Changed to mode = position[0m
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+[realsense2_camera_node-1] [0m[INFO] [1775505426.581044035] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775505426.581107540] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505426.581116939] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775505426.581258943] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775505426.581274773] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+requester: making request: std_srvs.srv.Trigger_Request()
+
+[ERROR] [1775505429.001357506] [object_grasper]: No ArUco detection — aborting grasp
+response:
+std_srvs.srv.Trigger_Response(success=False, message='')
+
+Grasp triggered!
+[ERROR] [1775505429.742351540] [object_grasper]: No ArUco detection — aborting grasp
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=False, message='')
+ERROR: Grasp failed.
+=== Cleaning up... ===
+Traceback (most recent call last):
+  File "/home/willy/tf.py", line 307, in <module>
+    main()
+  File "/home/willy/tf.py", line 304, in main
+    rclpy.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 130, in shutdown
+    _shutdown(context=context)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
+    return context.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
+    self.__context.shutdown()
+rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241
+Done!
+=== Cleanup done ===

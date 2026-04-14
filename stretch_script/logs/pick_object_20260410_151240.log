@@ -1,0 +1,49 @@
+=== pick_object.sh started at Fri Apr 10 03:12:40 PM EDT 2026 ===
+Target ArUco marker ID: 202
+Waiting for nodes to be ready (launch_nodes.sh)...
+Nodes are ready!
+Setting target marker ID to 202...
+Set parameter successful
+Resetting arm position for camera view...
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+[INFO] [1775848363.852396975] [reset_pose]: reset_pose started
+[INFO] [1775848363.909262609] [reset_pose]: Node reset_pose connected to /home_the_robot service.
+[INFO] [1775848363.911782601] [reset_pose]: Node reset_pose connected to /stow_the_robot service.
+[INFO] [1775848363.913666060] [reset_pose]: Node reset_pose connected to /stop_the_robot service.
+[INFO] [1775848363.915270915] [reset_pose]: Node reset_pose connected to /switch_to_trajectory_mode service.
+[INFO] [1775848363.919293237] [reset_pose]: Node reset_pose connected to /switch_to_position_mode service.
+[INFO] [1775848363.921233198] [reset_pose]: Node reset_pose connected to /switch_to_navigation_mode service.
+[INFO] [1775848363.922436858] [reset_pose]: Moving to default pose...
+[INFO] [1775848373.999864274] [reset_pose]: Arm reset done.
+[INFO] [1775848374.000168697] [reset_pose]: Skipping rotation (ROTATE_DEG=0).
+[INFO] [1775848374.000345397] [reset_pose]: Done.
+Arm reset complete.
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+Waiting for live marker detection (confirming stamp is advancing)...
+Live detection confirmed! (stamp advancing: 1775848376 → 1775848377)
+Live pose:
+  x: 0.08727584416026721
+  y: -0.7987951248956789
+  z: 0.8971805802377979
+Waiting for grasp service...
+Grasp service ready!
+=== Triggering grasp ===
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='')
+Grasp succeeded!
+=== pick_object.sh finished at Fri Apr 10 03:13:23 PM EDT 2026 ===

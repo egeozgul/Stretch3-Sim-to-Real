@@ -1,0 +1,67 @@
+=== dock_pos.sh started at Fri Apr 10 05:16:20 PM EDT 2026 ===
+Using named pose 'origin': x=0.0 y=0.0 yaw=0°
+Goal: x=0.0  y=0.0  yaw=0° (z=0.0, w=1.0)
+Waiting for nodes to be ready (launch_nodes.sh)...
+Nodes are ready!
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+Waiting for controller_server...
+Set parameter successful
+Yaw tolerance set.
+Resetting arm position...
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+[INFO] [1775855786.303993989] [reset_pose]: reset_pose started
+[INFO] [1775855786.358709360] [reset_pose]: Node reset_pose connected to /home_the_robot service.
+[INFO] [1775855786.360196135] [reset_pose]: Node reset_pose connected to /stow_the_robot service.
+[INFO] [1775855786.361417064] [reset_pose]: Node reset_pose connected to /stop_the_robot service.
+[INFO] [1775855786.362521480] [reset_pose]: Node reset_pose connected to /switch_to_trajectory_mode service.
+[INFO] [1775855786.363739705] [reset_pose]: Node reset_pose connected to /switch_to_position_mode service.
+[INFO] [1775855786.364869421] [reset_pose]: Node reset_pose connected to /switch_to_navigation_mode service.
+[INFO] [1775855786.365229057] [reset_pose]: Moving to default pose...
+[WARN] [1775855786.365557051] [reset_pose]: Currently in  mode. Recommend switching either to position or trajectory mode
+[WARN] [1775855786.365813445] [reset_pose]: Commanding joint trajectory server in position mode
+[INFO] [1775855786.429250237] [reset_pose]: Arm reset done.
+[INFO] [1775855786.429676469] [reset_pose]: Skipping rotation (ROTATE_DEG=0).
+[INFO] [1775855786.430052832] [reset_pose]: Done.
+Arm reset complete (exit 0).
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+=== Navigating to x=0.0 y=0.0 yaw=0° ===
+Waiting for an action server to become available...
+Sending goal:
+     pose:
+  header:
+    stamp:
+      sec: 0
+      nanosec: 0
+    frame_id: map
+  pose:
+    position:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      w: 1.0
+behavior_tree: ''
+
+Goal accepted with ID: a184a5d8f4f34e1da5120b9cea5624ce
+
+Result:
+    result: {}
+
+Goal finished with status: SUCCEEDED
+Navigation succeeded!
+=== dock_pos.sh finished at Fri Apr 10 05:16:40 PM EDT 2026 ===

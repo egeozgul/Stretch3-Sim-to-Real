@@ -1,0 +1,82 @@
+=== run_task.sh started at Tue Apr  7 03:51:24 PM EDT 2026 ===
+Waiting for nodes to be ready (launch_nodes.sh)...
+Nodes are ready!
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+Waiting for controller_server...
+Set parameter successful
+Yaw tolerance set.
+Resetting arm position...
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+[INFO] [1775591489.759750126] [reset_pose]: reset_pose started
+[INFO] [1775591489.818190414] [reset_pose]: Node reset_pose connected to /home_the_robot service.
+[INFO] [1775591489.821212991] [reset_pose]: Node reset_pose connected to /stow_the_robot service.
+[INFO] [1775591489.823011882] [reset_pose]: Node reset_pose connected to /stop_the_robot service.
+[INFO] [1775591489.824940435] [reset_pose]: Node reset_pose connected to /switch_to_trajectory_mode service.
+[INFO] [1775591489.826545115] [reset_pose]: Node reset_pose connected to /switch_to_position_mode service.
+[INFO] [1775591489.828084769] [reset_pose]: Node reset_pose connected to /switch_to_navigation_mode service.
+[INFO] [1775591489.828639625] [reset_pose]: Moving to default pose...
+[INFO] [1775591490.316746902] [reset_pose]: Arm reset done.
+[INFO] [1775591490.320417786] [reset_pose]: Skipping rotation (ROTATE_DEG=0).
+[INFO] [1775591490.320944429] [reset_pose]: Done.
+Arm reset complete (exit 0).
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+=== Navigating to table ===
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+Set parameter successful
+Waiting for an action server to become available...
+Sending goal:
+     pose:
+  header:
+    stamp:
+      sec: 0
+      nanosec: 0
+    frame_id: map
+  pose:
+    position:
+      x: 0.5688
+      y: 1.6601
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: -0.707
+      w: 0.707
+behavior_tree: ''
+
+Goal accepted with ID: 1db461ed0a0f42daade94ee82c6b844b
+
+Result:
+    result: {}
+
+Goal finished with status: SUCCEEDED
+Navigation succeeded!
+Waiting for grasp service...
+Grasp service ready!
+=== Triggering grasp ===
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='')
+Grasp succeeded!
+=== run_task.sh finished at Tue Apr  7 03:52:16 PM EDT 2026 ===

@@ -1,0 +1,1751 @@
+=== launch_nodes.sh started at Fri Apr 10 05:02:18 PM EDT 2026 ===
+Freeing robot process...
+Done!
+Checking if robot needs homing...
+Robot not homed. Homing now (this may take ~30s)...
+For use with S T R E T C H (R) from Hello Robot Inc.
+---------------------------------------------------------------------
+
+Unable to load URDF: /home/willy/.local/lib/python3.10/site-packages/stretch_urdf/RE2V0/stretch_description_RE2V0_tool_stretch_dex_wrist.urdf. Disabling collision system.
+[INFO] [robot_monitor]: Guarded contact lift
+[INFO] [robot_monitor]: Wrist single tap: 22
+[INFO] [robot_monitor]: Base bump event
+[INFO] [robot_monitor]: Base bump event
+[INFO] [robot_monitor]: Base bump event
+[INFO] [robot_monitor]: Base bump event
+[INFO] [robot_monitor]: Base bump event
+[INFO] [robot_monitor]: Base bump event
+[INFO] [robot_monitor]: Base bump event
+[INFO] [robot_monitor]: Guarded contact arm
+[INFO] [robot_monitor]: Wrist single tap: 24
+[INFO] [robot_monitor]: Wrist single tap: 25
+--------- Homing Head ----
+--------- Homing Lift ----
+Homing Lift...
+Hardstop detected at motor position (rad) 115.6182861328125
+Marking Lift position to 1.099527 (m)
+Marking Lift position to 0.000000 (m)
+Lift homing successful
+--------- Homing Arm ----
+Homing Arm...
+Hardstop detected at motor position (rad) 0.04014262557029724
+Marking Arm position to 0.000000 (m)
+Arm homing successful
+Moving to first hardstop...
+First hardstop contact at position (ticks): -21
+-----
+Homing offset was 2254
+Marking current position to zero ticks
+Homing offset is now  2271 (ticks)
+-----
+Current position (ticks): 23
+Moving to calibrated zero: (rad)
+Moving to first hardstop...
+First hardstop contact at position (ticks): 82
+-----
+Homing offset was 4895
+Marking current position to zero ticks
+Homing offset is now  4810 (ticks)
+-----
+Current position (ticks): 29
+Moving to calibrated zero: (rad)
+Homing complete.
+Launching Nav2...
+Launching D435i camera...
+Launching ArUco detector...
+Launching Grasper...
+Waiting for Nav2 action server...
+[INFO] [launch]: All log files can be found below /home/willy/.ros/log/2026-04-10-17-02-52-669057-stretch-re2-2204-11201
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch]: All log files can be found below /home/willy/.ros/log/2026-04-10-17-02-52-699552-stretch-re2-2204-11202
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: D435i launched in high resolution
+[INFO] [realsense2_camera_node-1]: process started with pid [11268]
+[INFO] [d435i_accel_correction-2]: process started with pid [11270]
+Nav2 is up!
+Waiting for D435i camera...
+[realsense2_camera_node-1] [0m[INFO] [1775854973.135538018] [camera]: RealSense ROS v4.55.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775854973.135644328] [camera]: Built with LibRealSense v2.56.4[0m
+[realsense2_camera_node-1] [0m[INFO] [1775854973.135661219] [camera]: Running with LibRealSense v2.56.4[0m
+[realsense2_camera_node-1] [0m[INFO] [1775854973.173665311] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775854973.173745618] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775854973.173758764] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775854973.173944572] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775854973.173961944] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1775854973.173972987] [camera]: Resetting device...[0m
+[INFO] [1775854973.320529134] [aruco_base_frame_estimator]: aruco_base_frame_estimator started
+[d435i_accel_correction-2] [INFO] [1775854973.362342149] [d435i_accel_correction_node]: d435i_accel_correction_node started
+[INFO] [stretch_driver-3]: process started with pid [11486]
+[INFO] [joint_state_publisher-1]: process started with pid [11481]
+[INFO] [robot_state_publisher-2]: process started with pid [11483]
+[INFO] [sllidar_node-4]: process started with pid [11489]
+[INFO] [scan_to_scan_filter_chain-5]: process started with pid [11492]
+[INFO] [joy_node-6]: process started with pid [11498]
+[INFO] [teleop_node-7]: process started with pid [11501]
+[INFO] [map_server-8]: process started with pid [11503]
+[INFO] [amcl-9]: process started with pid [11506]
+[INFO] [lifecycle_manager-10]: process started with pid [11509]
+[INFO] [controller_server-11]: process started with pid [11512]
+[INFO] [planner_server-12]: process started with pid [11515]
+[INFO] [behavior_server-13]: process started with pid [11518]
+[INFO] [bt_navigator-14]: process started with pid [11526]
+[INFO] [waypoint_follower-15]: process started with pid [11528]
+[INFO] [lifecycle_manager-16]: process started with pid [11641]
+[INFO] [rviz2-17]: process started with pid [11651]
+[sllidar_node-4] [INFO] [1775854973.767882529] [sllidar_node]: SLLidar running on ROS2 package SLLidar.ROS2 SDK Version:1.0.1, SLLIDAR SDK Version:2.1.0
+[sllidar_node-4] [INFO] [1775854973.779657049] [sllidar_node]: SLLidar S/N: C394ED93C0EA98C9A5E698F2564A4669
+[sllidar_node-4] [INFO] [1775854973.779714512] [sllidar_node]: Firmware Ver: 1.29
+[sllidar_node-4] [INFO] [1775854973.779725008] [sllidar_node]: Hardware Rev: 7
+[sllidar_node-4] [INFO] [1775854973.781819425] [sllidar_node]: SLLidar health status : 0
+[sllidar_node-4] [INFO] [1775854973.781893705] [sllidar_node]: SLLidar health status : OK.
+[scan_to_scan_filter_chain-5] [INFO] [1775854973.776779285] [laser_filter]: In shadow configure done
+[scan_to_scan_filter_chain-5] [WARN] [1775854973.777096217] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[teleop_node-7] [INFO] [1775854973.779050233] [TeleopTwistJoy]: Teleop enable button 4.
+[teleop_node-7] [INFO] [1775854973.779141590] [TeleopTwistJoy]: Linear axis x on 4 at scale 0.500000.
+[teleop_node-7] [INFO] [1775854973.779156921] [TeleopTwistJoy]: Angular axis yaw on 3 at scale 0.500000.
+[amcl-9] [INFO] [1775854973.782473320] [amcl]: 
+[amcl-9] 	amcl lifecycle node launched. 
+[amcl-9] 	Waiting on external lifecycle transitions to activate
+[amcl-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-9] [INFO] [1775854973.783681469] [amcl]: Creating
+[lifecycle_manager-10] [INFO] [1775854973.790768909] [lifecycle_manager_localization]: Creating
+[lifecycle_manager-10] [INFO] [1775854973.793236154] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[controller_server-11] [INFO] [1775854973.783021301] [controller_server]: 
+[controller_server-11] 	controller_server lifecycle node launched. 
+[controller_server-11] 	Waiting on external lifecycle transitions to activate
+[controller_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-8] [INFO] [1775854973.798788534] [map_server]: 
+[map_server-8] 	map_server lifecycle node launched. 
+[map_server-8] 	Waiting on external lifecycle transitions to activate
+[map_server-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-8] [INFO] [1775854973.798938085] [map_server]: Creating
+[controller_server-11] [INFO] [1775854973.799498247] [controller_server]: Creating controller server
+[controller_server-11] [INFO] [1775854973.813589739] [local_costmap.local_costmap]: 
+[controller_server-11] 	local_costmap lifecycle node launched. 
+[controller_server-11] 	Waiting on external lifecycle transitions to activate
+[controller_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-16] [INFO] [1775854973.817408734] [lifecycle_manager_navigation]: Creating
+[lifecycle_manager-16] [INFO] [1775854973.820529616] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[bt_navigator-14] [INFO] [1775854973.822802114] [bt_navigator]: 
+[bt_navigator-14] 	bt_navigator lifecycle node launched. 
+[bt_navigator-14] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-14] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-14] [INFO] [1775854973.823793614] [bt_navigator]: Creating
+[waypoint_follower-15] [INFO] [1775854973.823629913] [waypoint_follower]: 
+[waypoint_follower-15] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-15] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-15] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-11] [INFO] [1775854973.824396096] [local_costmap.local_costmap]: Creating Costmap
+[behavior_server-13] [INFO] [1775854973.834104733] [behavior_server]: 
+[behavior_server-13] 	behavior_server lifecycle node launched. 
+[behavior_server-13] 	Waiting on external lifecycle transitions to activate
+[behavior_server-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1775854973.834861115] [planner_server]: 
+[planner_server-12] 	planner_server lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-15] [INFO] [1775854973.836622254] [waypoint_follower]: Creating
+[planner_server-12] [INFO] [1775854973.840986797] [planner_server]: Creating
+[planner_server-12] [INFO] [1775854973.855013966] [global_costmap.global_costmap]: 
+[planner_server-12] 	global_costmap lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1775854973.855793289] [global_costmap.global_costmap]: Creating Costmap
+[lifecycle_manager-16] [INFO] [1775854973.861530380] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-16] [INFO] [1775854973.861589543] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-11] [INFO] [1775854973.861795023] [controller_server]: Configuring controller interface
+[controller_server-11] [INFO] [1775854973.861921336] [controller_server]: getting goal checker plugins..
+[controller_server-11] [INFO] [1775854973.862023011] [controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-11] [INFO] [1775854973.862056266] [local_costmap.local_costmap]: Configuring
+[controller_server-11] [INFO] [1775854973.864736023] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[controller_server-11] [INFO] [1775854973.867509320] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-11] [INFO] [1775854973.869342092] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-11] [INFO] [1775854973.869445328] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[controller_server-11] [INFO] [1775854973.869967558] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-11] [INFO] [1775854973.872238666] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-11] [INFO] [1775854973.872280728] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-11] [INFO] [1775854973.872795415] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-11] [INFO] [1775854973.877050943] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-11] [INFO] [1775854973.877803575] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-11] [INFO] [1775854973.878064291] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-11] [INFO] [1775854973.879728155] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-11] [INFO] [1775854973.880452502] [controller_server]: Setting transform_tolerance to 0.200000
+[controller_server-11] [INFO] [1775854973.887545343] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[controller_server-11] [INFO] [1775854973.888185859] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775854973.888303537] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-11] [INFO] [1775854973.888576871] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775854973.888645530] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[controller_server-11] [INFO] [1775854973.888745970] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775854973.888810054] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-11] [INFO] [1775854973.888998208] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775854973.889063491] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-11] [INFO] [1775854973.889265173] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775854973.889328294] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-11] [INFO] [1775854973.889441647] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775854973.889504123] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-11] [INFO] [1775854973.889610801] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775854973.889672105] [controller_server]: Using critic "PreferForward" (dwb_critics::PreferForwardCritic)
+[controller_server-11] [INFO] [1775854973.889897775] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775854973.889913522] [controller_server]: Controller Server has FollowPath  controllers available.
+[lifecycle_manager-16] [INFO] [1775854973.894065494] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[lifecycle_manager-10] [INFO] [1775854973.922662566] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-10] [INFO] [1775854973.922726104] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[map_server-8] [INFO] [1775854973.922948634] [map_server]: Configuring
+[map_server-8] [INFO] [1775854973.923017577] [map_io]: Loading yaml file: /home/willy/stretch_user/maps/testing_map.yaml
+[map_server-8] [INFO] [1775854973.923304363] [map_io]: resolution: 0.05
+[map_server-8] [INFO] [1775854973.923314655] [map_io]: origin[0]: -11.5
+[map_server-8] [INFO] [1775854973.923320118] [map_io]: origin[1]: -1.71
+[map_server-8] [INFO] [1775854973.923325223] [map_io]: origin[2]: 0
+[map_server-8] [INFO] [1775854973.923330494] [map_io]: free_thresh: 0.25
+[map_server-8] [INFO] [1775854973.923335609] [map_io]: occupied_thresh: 0.65
+[map_server-8] [INFO] [1775854973.923341197] [map_io]: mode: trinary
+[map_server-8] [INFO] [1775854973.923347052] [map_io]: negate: 0
+[map_server-8] [INFO] [1775854973.923526039] [map_io]: Loading image_file: /home/willy/stretch_user/maps/testing_map.pgm
+[map_server-8] [INFO] [1775854973.954622626] [map_io]: Read map /home/willy/stretch_user/maps/testing_map.pgm: 416 X 249 map @ 0.05 m/cell
+[planner_server-12] [INFO] [1775854973.961225013] [planner_server]: Configuring
+[planner_server-12] [INFO] [1775854973.961274577] [global_costmap.global_costmap]: Configuring
+[lifecycle_manager-10] [INFO] [1775854973.964176653] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[amcl-9] [INFO] [1775854973.964461214] [amcl]: Configuring
+[amcl-9] [INFO] [1775854973.964550425] [amcl]: initTransforms
+[planner_server-12] [INFO] [1775854973.971862349] [global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-12] [INFO] [1775854973.982932349] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[amcl-9] [INFO] [1775854973.983116759] [amcl]: initPubSub
+[planner_server-12] [INFO] [1775854973.985048389] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-12] [INFO] [1775854973.985083552] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[sllidar_node-4] [INFO] [1775854973.986071279] [sllidar_node]: current scan mode: Boost, sample rate: 8 Khz, max_distance: 12.0 m, scan frequency:10.0 Hz, 
+[planner_server-12] [INFO] [1775854973.986856349] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[amcl-9] [INFO] [1775854973.991952657] [amcl]: Subscribed to map topic.
+[planner_server-12] [INFO] [1775854973.996549105] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-12] [INFO] [1775854973.996589090] [global_costmap.global_costmap]: Using plugin "voxel_layer"
+[planner_server-12] [INFO] [1775854973.999759531] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[lifecycle_manager-10] [INFO] [1775854974.000714614] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[map_server-8] [INFO] [1775854974.000981538] [map_server]: Activating
+[map_server-8] [INFO] [1775854974.001588366] [map_server]: Creating bond (map_server) to lifecycle manager.
+[amcl-9] [INFO] [1775854974.001816663] [amcl]: Received a 416 X 249 map @ 0.050 m/pix
+[planner_server-12] [INFO] [1775854974.013829385] [global_costmap.global_costmap]: Initialized plugin "voxel_layer"
+[planner_server-12] [INFO] [1775854974.013880241] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-12] [INFO] [1775854974.018760423] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-12] [INFO] [1775854974.030200237] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[planner_server-12] [INFO] [1775854974.030257406] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-12] [INFO] [1775854974.030568014] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 416 X 249 at 0.050000 m/pix
+[planner_server-12] [INFO] [1775854974.034947970] [planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-16] [INFO] [1775854974.047550044] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-13] [INFO] [1775854974.047898994] [behavior_server]: Configuring
+[behavior_server-13] [INFO] [1775854974.056360506] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-13] [INFO] [1775854974.057729702] [behavior_server]: Configuring spin
+[behavior_server-13] [INFO] [1775854974.066907118] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-13] [INFO] [1775854974.068001343] [behavior_server]: Configuring backup
+[behavior_server-13] [INFO] [1775854974.070868342] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[behavior_server-13] [INFO] [1775854974.071922047] [behavior_server]: Configuring drive_on_heading
+[behavior_server-13] [INFO] [1775854974.081765864] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
+[behavior_server-13] [INFO] [1775854974.083931405] [behavior_server]: Configuring assisted_teleop
+[behavior_server-13] [INFO] [1775854974.092894582] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-13] [INFO] [1775854974.094557090] [behavior_server]: Configuring wait
+[lifecycle_manager-16] [INFO] [1775854974.100865695] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[bt_navigator-14] [INFO] [1775854974.101156361] [bt_navigator]: Configuring
+[lifecycle_manager-10] [INFO] [1775854974.114003467] [lifecycle_manager_localization]: Server map_server connected with bond.
+[lifecycle_manager-10] [INFO] [1775854974.114056964] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+[amcl-9] [INFO] [1775854974.114526217] [amcl]: Activating
+[amcl-9] [INFO] [1775854974.114574404] [amcl]: Creating bond (amcl) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1775854974.151255335] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[waypoint_follower-15] [INFO] [1775854974.151531851] [waypoint_follower]: Configuring
+[waypoint_follower-15] [INFO] [1775854974.157575160] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[lifecycle_manager-16] [INFO] [1775854974.158481811] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[controller_server-11] [INFO] [1775854974.158666890] [controller_server]: Activating
+[controller_server-11] [INFO] [1775854974.158719891] [local_costmap.local_costmap]: Activating
+[controller_server-11] [INFO] [1775854974.158739925] [local_costmap.local_costmap]: Checking transform
+[controller_server-11] [INFO] [1775854974.158805015] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[lifecycle_manager-10] [INFO] [1775854974.219724565] [lifecycle_manager_localization]: Server amcl connected with bond.
+[lifecycle_manager-10] [INFO] [1775854974.219777935] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-10] [INFO] [1775854974.219790131] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[INFO] [1775854974.492914129] [object_grasper]: object_grasper started
+[joy_node-6] [INFO] [1775854974.501197079] [joy_node]: No haptic (rumble) available, skipping initialization
+[joy_node-6] [INFO] [1775854974.501320969] [joy_node]: Opened joystick: 3Dconnexion Universal Receiver.  deadzone: 0.050000
+[controller_server-11] [INFO] [1775854974.658876377] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[scan_to_scan_filter_chain-5] [WARN] [1775854974.772966810] [laser_filter]: diagnostic_updater: No HW_ID was set. This is probably a bug. Please report it. For devices that do not have a HW_ID, set this value to 'none'. This warning only occurs once all diagnostics are OK. It is okay to wait until the device is open before calling setHardwareID.
+[stretch_driver-3] [0m[INFO] [1775854975.062814850] [stretch_driver]: For use with S T R E T C H (TM) RESEARCH EDITION from Hello Robot Inc.[0m
+[stretch_driver-3] [0m[INFO] [1775854975.063114964] [stretch_driver]: stretch_driver started[0m
+[controller_server-11] [INFO] [1775854975.159023978] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775854975.658978793] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[stretch_driver-3] Key mapped to End-Of-Arm Tool: tool_stretch_dex_wrist
+[stretch_driver-3] Unable to load URDF: /home/willy/.local/lib/python3.10/site-packages/stretch_urdf/RE2V0/stretch_description_RE2V0_tool_stretch_dex_wrist.urdf. Disabling collision system.
+[controller_server-11] [INFO] [1775854976.158892482] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [INFO] [1775854976.347158003] [amcl]: Message Filter dropping message: frame 'laser' at time 1775854973.986 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-17] [INFO] [1775854976.406801222] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-17] [INFO] [1775854976.406860824] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[controller_server-11] [INFO] [1775854976.659013219] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775854976.695432739] [rviz2]: Stereo is NOT SUPPORTED
+[amcl-9] [WARN] [1775854976.764553530] [amcl]: New subscription discovered on topic '/particle_cloud', requesting incompatible QoS. No messages will be sent to it. Last incompatible policy: RELIABILITY_QOS_POLICY
+[stretch_driver-3] [0m[INFO] [1775854976.812029681] [stretch_driver]: broadcast_odom_tf = True[0m
+[stretch_driver-3] [0m[INFO] [1775854976.851022852] [stretch_driver]: rate = 30.0 Hz[0m
+[stretch_driver-3] [0m[INFO] [1775854976.853079015] [stretch_driver]: twist timeout = 0.5 s[0m
+[stretch_driver-3] [0m[INFO] [1775854976.853731104] [stretch_driver]: base_frame_id = base_link[0m
+[stretch_driver-3] [0m[INFO] [1775854976.854992122] [stretch_driver]: odom_frame_id = odom[0m
+[stretch_driver-3] [0m[INFO] [1775854976.901665861] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1775854977.053516961] [object_grasper]: Node object_grasper connected to /home_the_robot service.
+[INFO] [1775854977.055667512] [object_grasper]: Node object_grasper connected to /stow_the_robot service.
+[INFO] [1775854977.057427231] [object_grasper]: Node object_grasper connected to /stop_the_robot service.
+[INFO] [1775854977.058899672] [object_grasper]: Node object_grasper connected to /switch_to_trajectory_mode service.
+[INFO] [1775854977.060151272] [object_grasper]: Node object_grasper connected to /switch_to_position_mode service.
+[INFO] [1775854977.061330548] [object_grasper]: Node object_grasper connected to /switch_to_navigation_mode service.
+[amcl-9] [INFO] [1775854977.091017873] [amcl]: createLaserObject
+[amcl-9] [WARN] [1775854977.115934179] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[INFO] [1775854977.132266924] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /home_the_robot service.
+[INFO] [1775854977.134642455] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /stow_the_robot service.
+[INFO] [1775854977.136656579] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /stop_the_robot service.
+[INFO] [1775854977.141580535] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_trajectory_mode service.
+[INFO] [1775854977.143635138] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_position_mode service.
+[INFO] [1775854977.145772200] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_navigation_mode service.
+[INFO] [1775854977.146499034] [aruco_base_frame_estimator]: Moving head camera to detection orientation...
+[WARN] [1775854977.147085011] [aruco_base_frame_estimator]: Currently in navigation mode. Recommend switching either to position or trajectory mode
+[WARN] [1775854977.147647951] [aruco_base_frame_estimator]: Commanding joint trajectory server in position mode
+[stretch_driver-3] [0m[INFO] [1775854977.153382647] [stretch_driver]: Received goal request[0m
+[controller_server-11] [INFO] [1775854977.158973913] [local_costmap.local_costmap]: start
+[stretch_driver-3] [0m[INFO] [1775854977.165865282] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_head_pan', 'joint_head_tilt'][0m
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_mast is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_arm_l4 is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_wrist_yaw_bottom is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_gripper_s3_body is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_grasp_center is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link Base link (index: 0) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_mast (index: 2) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_arm_l4 (index: 4) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_wrist_yaw_bottom (index: 10) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_gripper_s3_body (index: 13) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_grasp_center (index: 14) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+[INFO] [1775854977.348438449] [object_grasper]: ============================================================
+[INFO] [1775854977.348814892] [object_grasper]: ObjectGrasper ready — waiting for ArUco detections
+[INFO] [1775854977.349113763] [object_grasper]: Listening on: /aruco/target_base_link
+[INFO] [1775854977.349360379] [object_grasper]: Call service: ros2 service call /grasp_object std_srvs/srv/Trigger {}
+[INFO] [1775854977.349825424] [object_grasper]: ============================================================
+[controller_server-11] [INFO] [1775854977.360512007] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1775854977.464739699] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[lifecycle_manager-16] [INFO] [1775854977.464848558] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[planner_server-12] [INFO] [1775854977.465325384] [planner_server]: Activating
+[planner_server-12] [INFO] [1775854977.465416219] [global_costmap.global_costmap]: Activating
+[planner_server-12] [INFO] [1775854977.465451315] [global_costmap.global_costmap]: Checking transform
+[planner_server-12] [INFO] [1775854977.465502293] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775854977.965545132] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775854978.010200995] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775854978.015180156] [aruco_base_frame_estimator]: Head camera at detection pose — starting ArUco detection.
+[INFO] [1775854978.021345807] [aruco_base_frame_estimator]: Waiting for camera TF (base_link -> camera_color_optical_frame)...
+[INFO] [1775854978.083107187] [aruco_base_frame_estimator]: Camera pose acquired:
+[INFO] [1775854978.083386707] [aruco_base_frame_estimator]:   Position  : X=+0.0070  Y=-0.0517  Z=+1.2865  (m)
+[INFO] [1775854978.083613288] [aruco_base_frame_estimator]:   RPY (deg) : R=-179.07  P=+59.15  Y=+90.32
+[INFO] [1775854978.087550727] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775854978.087958614] [aruco_base_frame_estimator]: ArUco Base Frame Estimator Started
+[INFO] [1775854978.088327132] [aruco_base_frame_estimator]: Target Marker ID: 202
+[INFO] [1775854978.088702400] [aruco_base_frame_estimator]: Marker size: 2.8 cm
+[INFO] [1775854978.089059267] [aruco_base_frame_estimator]: Detection timeout: 0.0s (0 = live frames only)
+[INFO] [1775854978.089418118] [aruco_base_frame_estimator]: Publishing target on: /aruco/target_base_link
+[INFO] [1775854978.089759035] [aruco_base_frame_estimator]: ============================================================
+[planner_server-12] [INFO] [1775854978.465539788] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775854978.965538963] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [WARN] [1775854979.215552830] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[realsense2_camera_node-1] [0m[INFO] [1775854979.257591726] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775854979.257663101] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775854979.257675774] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775854979.257896386] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775854979.257954835] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1775854979.258048625] [camera]: getParameters...[0m
+[planner_server-12] [INFO] [1775854979.465580207] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775854979.521302263] [rviz2]: Trying to create a map of size 416 x 249 using 1 swatches
+[realsense2_camera_node-1] [0m[INFO] [1775854979.548873307] [camera]: JSON file is loaded! (/home/willy/ament_ws/install/stretch_core/share/stretch_core/config/HighAccuracyPreset.json)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775854979.548960760] [camera]: Device Name: Intel RealSense D435I[0m
+[realsense2_camera_node-1] [0m[INFO] [1775854979.548988913] [camera]: Device Serial No: 239722071445[0m
+[realsense2_camera_node-1] [0m[INFO] [1775854979.549014637] [camera]: Device physical port: /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0[0m
+[realsense2_camera_node-1] [0m[INFO] [1775854979.549038464] [camera]: Device FW version: 5.16.0.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775854979.549060328] [camera]: Device Product ID: 0x0B3A[0m
+[realsense2_camera_node-1] [0m[INFO] [1775854979.549080926] [camera]: Sync Mode: On[0m
+[realsense2_camera_node-1] [33m[WARN] [1775854979.636264371] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775854979.637568238] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775854979.650512245] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775854979.651776622] [camera]: Given value, 63 is invalid. Set ROS param back to: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775854979.667452733] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775854979.667552442] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775854979.667587692] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775854979.683686431] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775854979.686584786] [camera]: Open profile: stream_type: Depth(0), Format: Z16, Width: 1280, Height: 720, FPS: 15[0m
+[realsense2_camera_node-1] [0m[INFO] [1775854979.691674251] [camera]: Starting Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775854979.694020586] [camera]: Open profile: stream_type: Color(0), Format: RGB8, Width: 1280, Height: 720, FPS: 15[0m
+[realsense2_camera_node-1] [0m[INFO] [1775854979.721834350] [camera]: Starting Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775854979.723866256] [camera]: Open profile: stream_type: Accel(0)Format: MOTION_XYZ32F, FPS: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775854979.723905083] [camera]: Open profile: stream_type: Gyro(0)Format: MOTION_XYZ32F, FPS: 200[0m
+[realsense2_camera_node-1] [0m[INFO] [1775854979.725620457] [camera]: RealSense Node Is Up![0m
+[rviz2-17] [ERROR] [1775854979.750768157] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[rviz2-17] active samplers with a different type refer to the same texture image unit
+[planner_server-12] [INFO] [1775854979.965565892] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775854980.465543648] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+Camera ready!
+Setting initial pose...
+[planner_server-12] [INFO] [1775854980.965593951] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1775854981.107743631] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775854981.jpg
+[amcl-9] [WARN] [1775854981.217622891] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-12] [INFO] [1775854981.465600297] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+publisher: beginning loop
+publishing #1: geometry_msgs.msg.PoseWithCovarianceStamped(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0), frame_id='map'), pose=geometry_msgs.msg.PoseWithCovariance(pose=geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0), orientation=geometry_msgs.msg.Quaternion(x=0.0, y=0.0, z=0.0, w=1.0)), covariance=array([0.25, 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.25, 0.  , 0.  , 0.  ,
+       0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  ,
+       0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  ,
+       0.  , 0.  , 0.07])))
+
+[amcl-9] [INFO] [1775854981.904569957] [amcl]: initialPoseReceived
+[amcl-9] [WARN] [1775854981.904721226] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1775854981.904628 but the latest data is at time 1775854981.902974, when looking up transform from frame [base_footprint] to frame [odom])
+[amcl-9] [INFO] [1775854981.904749482] [amcl]: Setting pose (1775854981.904749): 0.000 0.000 0.000
+[planner_server-12] [INFO] [1775854981.966417372] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775854982.111008256] [rviz]: Message Filter dropping message: frame 'laser' at time 1775854978.012 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775854982.111195971] [rviz]: Message Filter dropping message: frame 'odom' at time 1775854977.736 for reason 'discarding message because the queue is full'
+Waiting for AMCL to localize...
+[planner_server-12] [INFO] [1775854982.465599439] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 1775854982.435826 but the earliest data is at time 1775854982.880818, when looking up transform from frame [base_link] to frame [map]
+[planner_server-12] [INFO] [1775854982.965655583] [global_costmap.global_costmap]: start
+AMCL localized!
+=== All nodes ready. Writing flag: /tmp/stretch_nodes_ready ===
+[rviz2-17] [INFO] [1775854983.649723617] [rviz2]: Trying to create a map of size 60 x 60 using 1 swatches
+[planner_server-12] [INFO] [1775854984.016770070] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[planner_server-12] [INFO] [1775854984.018713814] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1775854984.122627504] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[lifecycle_manager-16] [INFO] [1775854984.122707882] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[behavior_server-13] [INFO] [1775854984.123097573] [behavior_server]: Activating
+[behavior_server-13] [INFO] [1775854984.123141982] [behavior_server]: Activating spin
+[behavior_server-13] [INFO] [1775854984.123167852] [behavior_server]: Activating backup
+[behavior_server-13] [INFO] [1775854984.123185223] [behavior_server]: Activating drive_on_heading
+[behavior_server-13] [INFO] [1775854984.123201976] [behavior_server]: Activating assisted_teleop
+[behavior_server-13] [INFO] [1775854984.123217019] [behavior_server]: Activating wait
+[behavior_server-13] [INFO] [1775854984.123237510] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1775854984.226409133] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[lifecycle_manager-16] [INFO] [1775854984.226537877] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[bt_navigator-14] [INFO] [1775854984.227049599] [bt_navigator]: Activating
+[INFO] [1775854984.251185824] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775854984.jpg
+[bt_navigator-14] [INFO] [1775854984.265411348] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[rviz2-17] [INFO] [1775854984.291372526] [rviz2]: Trying to create a map of size 416 x 249 using 1 swatches
+[lifecycle_manager-16] [INFO] [1775854984.368434689] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[lifecycle_manager-16] [INFO] [1775854984.368549239] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[waypoint_follower-15] [INFO] [1775854984.369004288] [waypoint_follower]: Activating
+[waypoint_follower-15] [INFO] [1775854984.369061245] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1775854984.472771157] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[lifecycle_manager-16] [INFO] [1775854984.472906888] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-16] [INFO] [1775854984.472932313] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[INFO] [1775854987.316126507] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775854987.jpg
+[rviz2-17] [INFO] [1775854987.741904129] [rviz]: Message Filter dropping message: frame 'odom' at time 1775854978.560 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-17] [INFO] [1775854989.336519786] [rviz]: Message Filter dropping message: frame 'odom' at time 1775854980.136 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1775854990.377890967] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775854990.jpg
+[rviz2-17] [INFO] [1775854990.810407965] [rviz]: Message Filter dropping message: frame 'odom' at time 1775854981.560 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1775854993.394334207] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775854993.jpg
+[INFO] [1775854996.448821218] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775854996.jpg
+[INFO] [1775854999.450824130] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775854999.jpg
+[INFO] [1775855002.475523354] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855002.jpg
+[INFO] [1775855005.534692314] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855005.jpg
+[INFO] [1775855008.532922827] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855008.jpg
+[INFO] [1775855011.594073862] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855011.jpg
+[INFO] [1775855014.604961300] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855014.jpg
+[INFO] [1775855017.666321821] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855017.jpg
+[INFO] [1775855020.668728186] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855020.jpg
+[INFO] [1775855023.672384404] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855023.jpg
+[INFO] [1775855026.733651780] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855026.jpg
+[INFO] [1775855029.755180675] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855029.jpg
+[INFO] [1775855032.818232697] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855032.jpg
+[INFO] [1775855035.822946877] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855035.jpg
+[INFO] [1775855038.888459932] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855038.jpg
+[INFO] [1775855041.891567078] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855041.jpg
+[INFO] [1775855044.957843812] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855044.jpg
+[INFO] [1775855048.020140372] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855048.jpg
+[INFO] [1775855051.035995728] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855051.jpg
+[INFO] [1775855054.166918234] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855054.jpg
+[INFO] [1775855057.225856057] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855057.jpg
+[INFO] [1775855060.295822573] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855060.jpg
+[INFO] [1775855063.303073280] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855063.jpg
+[INFO] [1775855066.304676012] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855066.jpg
+[INFO] [1775855069.308792605] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855069.jpg
+[INFO] [1775855072.375371451] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855072.jpg
+[INFO] [1775855075.378425651] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855075.jpg
+[INFO] [1775855078.382022045] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855078.jpg
+[INFO] [1775855081.446608094] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855081.jpg
+[INFO] [1775855084.454125134] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855084.jpg
+[INFO] [1775855087.514063537] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855087.jpg
+[INFO] [1775855090.528286099] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855090.jpg
+[INFO] [1775855093.528529456] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855093.jpg
+[INFO] [1775855096.603711083] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855096.jpg
+[INFO] [1775855099.681076565] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855099.jpg
+[INFO] [1775855102.731815539] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855102.jpg
+[INFO] [1775855105.803963089] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855105.jpg
+[INFO] [1775855108.875488481] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855108.jpg
+[INFO] [1775855111.934029468] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855111.jpg
+[INFO] [1775855115.008356197] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855115.jpg
+[INFO] [1775855118.093564525] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855118.jpg
+[INFO] [1775855121.143688752] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855121.jpg
+[INFO] [1775855124.214165620] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855124.jpg
+[INFO] [1775855127.216122830] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855127.jpg
+[INFO] [1775855130.287457699] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855130.jpg
+[INFO] [1775855133.355129890] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855133.jpg
+[INFO] [1775855136.401054068] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855136.jpg
+[INFO] [1775855139.424306586] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855139.jpg
+[INFO] [1775855142.495003853] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855142.jpg
+[INFO] [1775855145.560288097] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855145.jpg
+[INFO] [1775855148.562383505] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855148.jpg
+[INFO] [1775855151.563362725] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855151.jpg
+[INFO] [1775855154.566249011] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855154.jpg
+[INFO] [1775855157.639011633] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855157.jpg
+[INFO] [1775855160.717265239] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855160.jpg
+[INFO] [1775855163.779427522] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855163.jpg
+[INFO] [1775855166.782416067] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855166.jpg
+[INFO] [1775855169.854808679] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855169.jpg
+[INFO] [1775855172.911317066] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855172.jpg
+[INFO] [1775855175.914222477] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855175.jpg
+[INFO] [1775855178.923818946] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855178.jpg
+[INFO] [1775855181.947188888] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855181.jpg
+[stretch_driver-3] [0m[INFO] [1775855184.939124636] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1775855184.945557168] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855184.jpg
+[INFO] [1775855187.985332284] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855187.jpg
+[INFO] [1775855191.001341720] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855190.jpg
+[INFO] [1775855194.057698293] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855194.jpg
+[INFO] [1775855197.138861288] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855197.jpg
+[INFO] [1775855200.196928214] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855200.jpg
+[INFO] [1775855203.209629208] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855203.jpg
+[INFO] [1775855206.266435282] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855206.jpg
+[INFO] [1775855209.342896063] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855209.jpg
+[INFO] [1775855212.405743707] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855212.jpg
+[INFO] [1775855215.407029778] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855215.jpg
+[INFO] [1775855218.433137761] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855218.jpg
+[INFO] [1775855221.476180479] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855221.jpg
+[INFO] [1775855224.492126248] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855224.jpg
+[INFO] [1775855227.495668878] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855227.jpg
+[INFO] [1775855230.560380768] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855230.jpg
+[INFO] [1775855233.620887359] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855233.jpg
+[INFO] [1775855236.632274597] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855236.jpg
+[INFO] [1775855239.700249345] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855239.jpg
+[INFO] [1775855242.775564983] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855242.jpg
+[INFO] [1775855245.841781483] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855245.jpg
+[INFO] [1775855248.900753824] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855248.jpg
+[INFO] [1775855251.900969886] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855251.jpg
+[INFO] [1775855254.901334604] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855254.jpg
+[INFO] [1775855257.905992157] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855257.jpg
+[INFO] [1775855260.927132528] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855260.jpg
+[INFO] [1775855263.981725065] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855263.jpg
+[stretch_driver-3] [0m[INFO] [1775855266.044404398] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1775855266.986434603] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855266.jpg
+[INFO] [1775855270.051842459] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855270.jpg
+[INFO] [1775855273.061157704] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855273.jpg
+[INFO] [1775855276.120298665] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855276.jpg
+[INFO] [1775855279.122195109] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855279.jpg
+[INFO] [1775855282.129848317] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855282.jpg
+[INFO] [1775855285.194511327] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855285.jpg
+[INFO] [1775855288.194759622] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855288.jpg
+[INFO] [1775855291.196142889] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855291.jpg
+[INFO] [1775855294.277791821] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855294.jpg
+[INFO] [1775855297.334129740] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855297.jpg
+[INFO] [1775855300.400729469] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855300.jpg
+[INFO] [1775855303.412972907] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855303.jpg
+[INFO] [1775855306.415076817] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855306.jpg
+[INFO] [1775855309.483972578] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855309.jpg
+[INFO] [1775855312.533480085] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855312.jpg
+[rviz2-17] Start navigation
+[rviz2-17] [INFO] [1775855313.441103478] [rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[bt_navigator-14] [INFO] [1775855313.442213968] [bt_navigator]: Begin navigating from current location (0.02, -0.02) to (-0.82, 0.25)
+[controller_server-11] [INFO] [1775855313.463504046] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-11] [WARN] [1775855313.463638445] [controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+[controller_server-11] [INFO] [1775855314.513976833] [controller_server]: Passing new path to controller.
+[INFO] [1775855315.542015323] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855315.jpg
+[controller_server-11] [INFO] [1775855315.563947054] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855316.564080578] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855317.613944235] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Wrist single tap: 27
+[INFO] [1775855318.554090427] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855318.jpg
+[controller_server-11] [INFO] [1775855318.613934334] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855319.664009155] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775855320.713954171] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[INFO] [1775855321.611189808] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855321.jpg
+[controller_server-11] [INFO] [1775855321.713937893] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855322.764081099] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855323.763942098] [controller_server]: Passing new path to controller.
+[INFO] [1775855324.626483794] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855324.jpg
+[controller_server-11] [INFO] [1775855324.813948226] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855325.863947747] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855326.863943371] [controller_server]: Passing new path to controller.
+[INFO] [1775855327.694720254] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855327.jpg
+[controller_server-11] [INFO] [1775855327.913947312] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855328.913939845] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855329.417497925] [controller_server]: Reached the goal!
+[bt_navigator-14] [INFO] [1775855329.452636624] [bt_navigator]: Goal succeeded
+[INFO] [1775855330.703058494] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855330.jpg
+[INFO] [1775855333.762431059] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855333.jpg
+[rviz2-17] Start navigation
+[rviz2-17] [INFO] [1775855335.068718048] [rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[bt_navigator-14] [INFO] [1775855335.069368540] [bt_navigator]: Begin navigating from current location (-0.72, 0.21) to (-1.18, 0.08)
+[controller_server-11] [INFO] [1775855335.090020674] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-11] [INFO] [1775855336.140250594] [controller_server]: Passing new path to controller.
+[INFO] [1775855336.827690201] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855336.jpg
+[controller_server-11] [INFO] [1775855337.190246323] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855338.190235933] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855339.240232942] [controller_server]: Passing new path to controller.
+[INFO] [1775855339.877353861] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855339.jpg
+[controller_server-11] [INFO] [1775855340.240234075] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855341.290237372] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855342.340241128] [controller_server]: Passing new path to controller.
+[INFO] [1775855342.905263488] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855342.jpg
+[controller_server-11] [INFO] [1775855343.340237886] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855344.390240669] [controller_server]: Passing new path to controller.
+[controller_server-11] [ERROR] [1775855345.090324762] [controller_server]: Failed to make progress
+[controller_server-11] [WARN] [1775855345.090521019] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-11] [INFO] [1775855345.109735601] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-11] [INFO] [1775855345.110526796] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-11] [WARN] [1775855345.164757126] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-11] [INFO] [1775855345.410752331] [controller_server]: Passing new path to controller.
+[INFO] [1775855345.906850519] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855345.jpg
+[controller_server-11] [INFO] [1775855346.410747706] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855347.460742915] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855348.164304017] [controller_server]: Reached the goal!
+[bt_navigator-14] [INFO] [1775855348.199653873] [bt_navigator]: Goal succeeded
+[INFO] [1775855348.907106877] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855348.jpg
+[INFO] [1775855351.913913463] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855351.jpg
+[rviz2-17] Start navigation
+[rviz2-17] [INFO] [1775855352.532663483] [rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[bt_navigator-14] [INFO] [1775855352.533252206] [bt_navigator]: Begin navigating from current location (-0.96, 0.23) to (-0.97, 0.09)
+[controller_server-11] [INFO] [1775855352.554313987] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-11] [INFO] [1775855353.604868907] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855354.654897592] [controller_server]: Passing new path to controller.
+[INFO] [1775855354.932286792] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855354.jpg
+[controller_server-11] [INFO] [1775855355.654914409] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855356.704878818] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855357.704914662] [controller_server]: Passing new path to controller.
+[INFO] [1775855357.958073865] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855357.jpg
+/home/willy/tf.py:220: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  cx, cy, cz = float(tvec[0]), float(tvec[1]), float(tvec[2])
+/home/willy/tf.py:155: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  t.transform.translation.x = float(tvec_offset[0])
+/home/willy/tf.py:156: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  t.transform.translation.y = float(tvec_offset[1])
+/home/willy/tf.py:157: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  t.transform.translation.z = float(tvec_offset[2])
+[controller_server-11] [INFO] [1775855358.754912772] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855358.958608090] [controller_server]: Reached the goal!
+[bt_navigator-14] [INFO] [1775855358.993512971] [bt_navigator]: Goal succeeded
+[WARN] [1775855359.593685259] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+/home/willy/tf.py:226: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  bx, by, bz = self.transform_camera_to_base(float(tvec[0]), float(tvec[1]), float(tvec[2]))
+[INFO] [1775855359.595766266] [object_grasper]: [ArUco] target updated → X=+0.342  Y=-0.986  Z=+0.896
+[WARN] [1775855360.629185893] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[INFO] [1775855360.647476052] [object_grasper]: [ArUco] target updated → X=+0.332  Y=-0.969  Z=+0.904
+[rviz2-17] Start navigation
+[rviz2-17] [INFO] [1775855361.474608277] [rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[bt_navigator-14] [INFO] [1775855361.474939635] [bt_navigator]: Begin navigating from current location (-1.01, 0.25) to (-1.04, -0.02)
+[controller_server-11] [INFO] [1775855361.495588191] [controller_server]: Received a goal, begin computing control effort.
+[WARN] [1775855361.664076291] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[INFO] [1775855361.666104809] [object_grasper]: [ArUco] target updated → X=+0.309  Y=-0.984  Z=+0.901
+[INFO] [1775855361.671041120] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855361.jpg
+[controller_server-11] [INFO] [1775855362.545982131] [controller_server]: Passing new path to controller.
+[WARN] [1775855362.699498104] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[INFO] [1775855362.710305107] [object_grasper]: [ArUco] target updated → X=+0.309  Y=-0.984  Z=+0.901
+[stretch_driver-3] [INFO] [robot_monitor]: Wrist single tap: 29
+[controller_server-11] [INFO] [1775855363.595997318] [controller_server]: Passing new path to controller.
+[WARN] [1775855364.454441379] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[INFO] [1775855364.456290211] [object_grasper]: [ArUco] target updated → X=-0.382  Y=-0.979  Z=+0.890
+[controller_server-11] [INFO] [1775855364.595979837] [controller_server]: Passing new path to controller.
+[WARN] [1775855365.484481683] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[INFO] [1775855365.487142629] [object_grasper]: [ArUco] target updated → X=-0.376  Y=-0.960  Z=+0.900
+[INFO] [1775855365.489732855] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855365.jpg
+[controller_server-11] [INFO] [1775855365.646130349] [controller_server]: Passing new path to controller.
+[INFO] [1775855366.510686926] [aruco_base_frame_estimator]: Marker 202 not visible (1.0s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855366.696010847] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855367.696004103] [controller_server]: Passing new path to controller.
+[INFO] [1775855368.513505952] [aruco_base_frame_estimator]: Marker 202 not visible (3.0s since last detection) — not publishing
+[INFO] [1775855368.517329152] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855368.jpg
+[controller_server-11] [INFO] [1775855368.745976609] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855369.745985408] [controller_server]: Passing new path to controller.
+[INFO] [1775855370.516297184] [aruco_base_frame_estimator]: Marker 202 not visible (5.0s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855370.796115038] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855371.050427423] [controller_server]: Reached the goal!
+[bt_navigator-14] [INFO] [1775855371.085352591] [bt_navigator]: Goal succeeded
+[INFO] [1775855371.517626746] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855371.jpg
+[INFO] [1775855372.577598723] [aruco_base_frame_estimator]: Marker 202 not visible (7.1s since last detection) — not publishing
+[INFO] [1775855374.519365070] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855374.jpg
+[INFO] [1775855374.600449746] [aruco_base_frame_estimator]: Marker 202 not visible (9.1s since last detection) — not publishing
+[rviz2-17] Start navigation
+[rviz2-17] [INFO] [1775855376.465556758] [rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[bt_navigator-14] [INFO] [1775855376.466121629] [bt_navigator]: Begin navigating from current location (-0.96, 0.13) to (-0.93, -0.15)
+[controller_server-11] [INFO] [1775855376.486719493] [controller_server]: Received a goal, begin computing control effort.
+[INFO] [1775855376.727238544] [aruco_base_frame_estimator]: Marker 202 not visible (11.2s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855377.536962796] [controller_server]: Passing new path to controller.
+[INFO] [1775855377.589947715] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855377.jpg
+[controller_server-11] [INFO] [1775855378.586971787] [controller_server]: Passing new path to controller.
+[INFO] [1775855378.793303160] [aruco_base_frame_estimator]: Marker 202 not visible (13.3s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855379.586972797] [controller_server]: Passing new path to controller.
+[INFO] [1775855380.600567827] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855380.jpg
+[controller_server-11] [INFO] [1775855380.636963183] [controller_server]: Passing new path to controller.
+[INFO] [1775855380.859737078] [aruco_base_frame_estimator]: Marker 202 not visible (15.4s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855381.636972572] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855382.686965587] [controller_server]: Passing new path to controller.
+[INFO] [1775855382.925800103] [aruco_base_frame_estimator]: Marker 202 not visible (17.4s since last detection) — not publishing
+[INFO] [1775855383.727774596] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855383.jpg
+[controller_server-11] [INFO] [1775855383.736963420] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855384.736998713] [controller_server]: Passing new path to controller.
+[INFO] [1775855384.926953394] [aruco_base_frame_estimator]: Marker 202 not visible (19.4s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855385.786981674] [controller_server]: Passing new path to controller.
+[controller_server-11] [ERROR] [1775855386.487078474] [controller_server]: Failed to make progress
+[controller_server-11] [WARN] [1775855386.487236572] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-11] [INFO] [1775855386.506561165] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-11] [INFO] [1775855386.507276711] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-11] [WARN] [1775855386.571725868] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[INFO] [1775855386.734668942] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855386.jpg
+[controller_server-11] [INFO] [1775855386.807533769] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855386.910839755] [controller_server]: Reached the goal!
+[bt_navigator-14] [INFO] [1775855386.946512776] [bt_navigator]: Goal succeeded
+[INFO] [1775855386.997828566] [aruco_base_frame_estimator]: Marker 202 not visible (21.5s since last detection) — not publishing
+[INFO] [1775855389.002947874] [aruco_base_frame_estimator]: Marker 202 not visible (23.5s since last detection) — not publishing
+[INFO] [1775855389.737232053] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855389.jpg
+[INFO] [1775855391.065244835] [aruco_base_frame_estimator]: Marker 202 not visible (25.6s since last detection) — not publishing
+[INFO] [1775855392.739269232] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855392.jpg
+[INFO] [1775855393.073030104] [aruco_base_frame_estimator]: Marker 202 not visible (27.6s since last detection) — not publishing
+[WARN] [1775855395.827512491] [aruco_base_frame_estimator]: TF lookup failed: Lookup would require extrapolation into the past.  Requested time 1775855364.470925 but the earliest data is at time 1775855384.769430, when looking up transform from frame [fruit_marker] to frame [base_link]
+[INFO] [1775855395.830075638] [object_grasper]: [ArUco] target updated → X=+0.400  Y=-1.318  Z=+0.872
+[INFO] [1775855395.835401541] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855395.jpg
+[INFO] [1775855396.880957813] [aruco_base_frame_estimator]: Marker 202 not visible (1.1s since last detection) — not publishing
+[rviz2-17] Start navigation
+[rviz2-17] [INFO] [1775855396.915873880] [rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[bt_navigator-14] [INFO] [1775855396.916561277] [bt_navigator]: Begin navigating from current location (-1.02, -0.06) to (-0.96, -0.08)
+[controller_server-11] [INFO] [1775855396.937165922] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-11] [INFO] [1775855396.941840583] [controller_server]: Reached the goal!
+[bt_navigator-14] [INFO] [1775855396.976922888] [bt_navigator]: Goal succeeded
+[INFO] [1775855398.879215005] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855398.jpg
+[INFO] [1775855398.937451394] [aruco_base_frame_estimator]: Marker 202 not visible (3.1s since last detection) — not publishing
+[INFO] [1775855400.989046196] [aruco_base_frame_estimator]: Marker 202 not visible (5.2s since last detection) — not publishing
+[INFO] [1775855401.900151402] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855401.jpg
+[INFO] [1775855403.008153175] [aruco_base_frame_estimator]: Marker 202 not visible (7.2s since last detection) — not publishing
+[INFO] [1775855404.906411205] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855404.jpg
+[INFO] [1775855405.076257887] [aruco_base_frame_estimator]: Marker 202 not visible (9.2s since last detection) — not publishing
+[INFO] [1775855407.088069897] [aruco_base_frame_estimator]: Marker 202 not visible (11.3s since last detection) — not publishing
+[INFO] [1775855407.960252974] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855407.jpg
+[INFO] [1775855409.157721533] [aruco_base_frame_estimator]: Marker 202 not visible (13.3s since last detection) — not publishing
+[INFO] [1775855411.017520994] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855411.jpg
+[INFO] [1775855411.177101958] [aruco_base_frame_estimator]: Marker 202 not visible (15.3s since last detection) — not publishing
+[INFO] [1775855413.222837669] [aruco_base_frame_estimator]: Marker 202 not visible (17.4s since last detection) — not publishing
+[INFO] [1775855414.020502963] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855414.jpg
+[INFO] [1775855415.292771780] [aruco_base_frame_estimator]: Marker 202 not visible (19.5s since last detection) — not publishing
+[INFO] [1775855417.024992879] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855417.jpg
+[INFO] [1775855417.351243622] [aruco_base_frame_estimator]: Marker 202 not visible (21.5s since last detection) — not publishing
+[INFO] [1775855419.354605536] [aruco_base_frame_estimator]: Marker 202 not visible (23.5s since last detection) — not publishing
+[INFO] [1775855420.034813580] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855420.jpg
+[INFO] [1775855421.359874411] [aruco_base_frame_estimator]: Marker 202 not visible (25.5s since last detection) — not publishing
+[INFO] [1775855423.101922602] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855423.jpg
+[INFO] [1775855423.361036756] [aruco_base_frame_estimator]: Marker 202 not visible (27.5s since last detection) — not publishing
+[INFO] [1775855425.429559247] [aruco_base_frame_estimator]: Marker 202 not visible (29.6s since last detection) — not publishing
+[INFO] [1775855426.160448726] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855426.jpg
+[INFO] [1775855427.497674189] [aruco_base_frame_estimator]: Marker 202 not visible (31.7s since last detection) — not publishing
+[INFO] [1775855429.165686898] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855429.jpg
+[INFO] [1775855429.502335083] [aruco_base_frame_estimator]: Marker 202 not visible (33.7s since last detection) — not publishing
+[WARN] [1775855432.190213658] [aruco_base_frame_estimator]: TF lookup failed: Lookup would require extrapolation into the past.  Requested time 1775855394.805366 but the earliest data is at time 1775855421.136195, when looking up transform from frame [fruit_marker] to frame [base_link]
+[INFO] [1775855432.192239371] [object_grasper]: [ArUco] target updated → X=+0.392  Y=-1.289  Z=+0.882
+[INFO] [1775855432.197839236] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855432.jpg
+[INFO] [1775855433.295160131] [aruco_base_frame_estimator]: Marker 202 not visible (1.1s since last detection) — not publishing
+[INFO] [1775855435.287938138] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855435.jpg
+[INFO] [1775855435.298648948] [aruco_base_frame_estimator]: Marker 202 not visible (3.1s since last detection) — not publishing
+[INFO] [1775855437.307606107] [aruco_base_frame_estimator]: Marker 202 not visible (5.1s since last detection) — not publishing
+[INFO] [1775855438.379988609] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855438.jpg
+[INFO] [1775855439.315794382] [aruco_base_frame_estimator]: Marker 202 not visible (7.1s since last detection) — not publishing
+[INFO] [1775855441.432307455] [aruco_base_frame_estimator]: Marker 202 not visible (9.2s since last detection) — not publishing
+[INFO] [1775855441.436117111] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855441.jpg
+[INFO] [1775855443.437932031] [aruco_base_frame_estimator]: Marker 202 not visible (11.2s since last detection) — not publishing
+[INFO] [1775855444.436754616] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855444.jpg
+[INFO] [1775855445.438399989] [aruco_base_frame_estimator]: Marker 202 not visible (13.2s since last detection) — not publishing
+[INFO] [1775855447.441321252] [aruco_base_frame_estimator]: Marker 202 not visible (15.3s since last detection) — not publishing
+[INFO] [1775855447.445299721] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855447.jpg
+[INFO] [1775855449.452576748] [aruco_base_frame_estimator]: Marker 202 not visible (17.3s since last detection) — not publishing
+[INFO] [1775855450.459251358] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855450.jpg
+[INFO] [1775855451.510683292] [aruco_base_frame_estimator]: Marker 202 not visible (19.3s since last detection) — not publishing
+[INFO] [1775855453.558983248] [aruco_base_frame_estimator]: Marker 202 not visible (21.4s since last detection) — not publishing
+[INFO] [1775855453.562608421] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855453.jpg
+[INFO] [1775855455.602221913] [aruco_base_frame_estimator]: Marker 202 not visible (23.4s since last detection) — not publishing
+[INFO] [1775855456.593279697] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855456.jpg
+[INFO] [1775855457.630594222] [aruco_base_frame_estimator]: Marker 202 not visible (25.4s since last detection) — not publishing
+[INFO] [1775855459.720994064] [aruco_base_frame_estimator]: Marker 202 not visible (27.5s since last detection) — not publishing
+[INFO] [1775855459.724969364] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855459.jpg
+[INFO] [1775855461.723890262] [aruco_base_frame_estimator]: Marker 202 not visible (29.5s since last detection) — not publishing
+[INFO] [1775855462.728532763] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855462.jpg
+[INFO] [1775855463.763758657] [aruco_base_frame_estimator]: Marker 202 not visible (31.6s since last detection) — not publishing
+[INFO] [1775855465.729566086] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855465.jpg
+[INFO] [1775855465.787216688] [aruco_base_frame_estimator]: Marker 202 not visible (33.6s since last detection) — not publishing
+[INFO] [1775855467.860505891] [aruco_base_frame_estimator]: Marker 202 not visible (35.7s since last detection) — not publishing
+[INFO] [1775855468.734753904] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855468.jpg
+[INFO] [1775855469.919915990] [aruco_base_frame_estimator]: Marker 202 not visible (37.7s since last detection) — not publishing
+[INFO] [1775855471.796014495] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855471.jpg
+[INFO] [1775855471.991001296] [aruco_base_frame_estimator]: Marker 202 not visible (39.8s since last detection) — not publishing
+[INFO] [1775855474.046700098] [aruco_base_frame_estimator]: Marker 202 not visible (41.9s since last detection) — not publishing
+[INFO] [1775855474.870213838] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855474.jpg
+[INFO] [1775855476.136104179] [aruco_base_frame_estimator]: Marker 202 not visible (43.9s since last detection) — not publishing
+[INFO] [1775855477.931554498] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855477.jpg
+[INFO] [1775855478.268650275] [aruco_base_frame_estimator]: Marker 202 not visible (46.1s since last detection) — not publishing
+[INFO] [1775855480.341147159] [aruco_base_frame_estimator]: Marker 202 not visible (48.2s since last detection) — not publishing
+[INFO] [1775855480.986228775] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855480.jpg
+[INFO] [1775855482.396967706] [aruco_base_frame_estimator]: Marker 202 not visible (50.2s since last detection) — not publishing
+[INFO] [1775855484.007288168] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855484.jpg
+[INFO] [1775855484.463029709] [aruco_base_frame_estimator]: Marker 202 not visible (52.3s since last detection) — not publishing
+[INFO] [1775855486.575692078] [aruco_base_frame_estimator]: Marker 202 not visible (54.4s since last detection) — not publishing
+[INFO] [1775855487.019534891] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855487.jpg
+[INFO] [1775855488.603830737] [aruco_base_frame_estimator]: Marker 202 not visible (56.4s since last detection) — not publishing
+[INFO] [1775855490.071003801] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855490.jpg
+[INFO] [1775855490.605408486] [aruco_base_frame_estimator]: Marker 202 not visible (58.4s since last detection) — not publishing
+[INFO] [1775855492.608309145] [aruco_base_frame_estimator]: Marker 202 not visible (60.4s since last detection) — not publishing
+[INFO] [1775855493.074904552] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855493.jpg
+[INFO] [1775855494.690648189] [aruco_base_frame_estimator]: Marker 202 not visible (62.5s since last detection) — not publishing
+[INFO] [1775855496.087424633] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855496.jpg
+[INFO] [1775855496.740316423] [aruco_base_frame_estimator]: Marker 202 not visible (64.5s since last detection) — not publishing
+[INFO] [1775855498.746191402] [aruco_base_frame_estimator]: Marker 202 not visible (66.6s since last detection) — not publishing
+[INFO] [1775855499.094720607] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855499.jpg
+[INFO] [1775855500.754250661] [aruco_base_frame_estimator]: Marker 202 not visible (68.6s since last detection) — not publishing
+[INFO] [1775855502.145407202] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855502.jpg
+[INFO] [1775855502.762006768] [aruco_base_frame_estimator]: Marker 202 not visible (70.6s since last detection) — not publishing
+[INFO] [1775855504.825663852] [aruco_base_frame_estimator]: Marker 202 not visible (72.6s since last detection) — not publishing
+[INFO] [1775855505.148361516] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855505.jpg
+[INFO] [1775855506.887158185] [aruco_base_frame_estimator]: Marker 202 not visible (74.7s since last detection) — not publishing
+[INFO] [1775855508.202709928] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855508.jpg
+[INFO] [1775855508.949178612] [aruco_base_frame_estimator]: Marker 202 not visible (76.8s since last detection) — not publishing
+[INFO] [1775855510.952521171] [aruco_base_frame_estimator]: Marker 202 not visible (78.8s since last detection) — not publishing
+[INFO] [1775855511.203803369] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855511.jpg
+[INFO] [1775855512.971045050] [aruco_base_frame_estimator]: Marker 202 not visible (80.8s since last detection) — not publishing
+[INFO] [1775855514.226985999] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855514.jpg
+[INFO] [1775855515.020755869] [aruco_base_frame_estimator]: Marker 202 not visible (82.8s since last detection) — not publishing
+[INFO] [1775855517.022726542] [aruco_base_frame_estimator]: Marker 202 not visible (84.8s since last detection) — not publishing
+[INFO] [1775855517.297849922] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855517.jpg
+[INFO] [1775855519.023690744] [aruco_base_frame_estimator]: Marker 202 not visible (86.8s since last detection) — not publishing
+[INFO] [1775855520.293814560] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855520.jpg
+[INFO] [1775855521.032754361] [aruco_base_frame_estimator]: Marker 202 not visible (88.8s since last detection) — not publishing
+[INFO] [1775855523.096694965] [aruco_base_frame_estimator]: Marker 202 not visible (90.9s since last detection) — not publishing
+[INFO] [1775855523.296534957] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855523.jpg
+[INFO] [1775855525.102193571] [aruco_base_frame_estimator]: Marker 202 not visible (92.9s since last detection) — not publishing
+[INFO] [1775855526.305961753] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855526.jpg
+[INFO] [1775855527.162793087] [aruco_base_frame_estimator]: Marker 202 not visible (95.0s since last detection) — not publishing
+[INFO] [1775855529.239587045] [aruco_base_frame_estimator]: Marker 202 not visible (97.0s since last detection) — not publishing
+[INFO] [1775855529.372823671] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855529.jpg
+[INFO] [1775855531.243044366] [aruco_base_frame_estimator]: Marker 202 not visible (99.1s since last detection) — not publishing
+[INFO] [1775855532.377354534] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855532.jpg
+[INFO] [1775855533.306485410] [aruco_base_frame_estimator]: Marker 202 not visible (101.1s since last detection) — not publishing
+[INFO] [1775855535.311837039] [aruco_base_frame_estimator]: Marker 202 not visible (103.1s since last detection) — not publishing
+[INFO] [1775855535.571205507] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855535.jpg
+[INFO] [1775855537.383780111] [aruco_base_frame_estimator]: Marker 202 not visible (105.2s since last detection) — not publishing
+[INFO] [1775855538.651971825] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855538.jpg
+[INFO] [1775855539.432698179] [aruco_base_frame_estimator]: Marker 202 not visible (107.2s since last detection) — not publishing
+[INFO] [1775855541.441005962] [aruco_base_frame_estimator]: Marker 202 not visible (109.2s since last detection) — not publishing
+[INFO] [1775855541.713450945] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855541.jpg
+[INFO] [1775855543.451411016] [aruco_base_frame_estimator]: Marker 202 not visible (111.3s since last detection) — not publishing
+[INFO] [1775855544.719238682] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855544.jpg
+[INFO] [1775855545.520488656] [aruco_base_frame_estimator]: Marker 202 not visible (113.3s since last detection) — not publishing
+[INFO] [1775855547.526611926] [aruco_base_frame_estimator]: Marker 202 not visible (115.3s since last detection) — not publishing
+[INFO] [1775855547.727899474] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855547.jpg
+[INFO] [1775855549.587460667] [aruco_base_frame_estimator]: Marker 202 not visible (117.4s since last detection) — not publishing
+[INFO] [1775855550.764248877] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855550.jpg
+[INFO] [1775855551.650557261] [aruco_base_frame_estimator]: Marker 202 not visible (119.5s since last detection) — not publishing
+[INFO] [1775855553.726237154] [aruco_base_frame_estimator]: Marker 202 not visible (121.5s since last detection) — not publishing
+[INFO] [1775855553.794189850] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855553.jpg
+[INFO] [1775855555.785247810] [aruco_base_frame_estimator]: Marker 202 not visible (123.6s since last detection) — not publishing
+[INFO] [1775855556.854198456] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855556.jpg
+[INFO] [1775855557.796341348] [aruco_base_frame_estimator]: Marker 202 not visible (125.6s since last detection) — not publishing
+[INFO] [1775855559.857655512] [aruco_base_frame_estimator]: Marker 202 not visible (127.7s since last detection) — not publishing
+[INFO] [1775855559.861116724] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855559.jpg
+[WARN] [1775855562.868033913] [aruco_base_frame_estimator]: TF lookup failed: Lookup would require extrapolation into the past.  Requested time 1775855394.805366 but the earliest data is at time 1775855551.802976, when looking up transform from frame [fruit_marker] to frame [base_link]
+[INFO] [1775855562.872500371] [object_grasper]: [ArUco] target updated → X=+0.404  Y=-1.330  Z=+0.868
+[INFO] [1775855562.873156407] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855562.jpg
+[INFO] [1775855563.923418853] [aruco_base_frame_estimator]: Marker 202 not visible (1.1s since last detection) — not publishing
+[INFO] [1775855565.936976882] [aruco_base_frame_estimator]: Marker 202 not visible (3.1s since last detection) — not publishing
+[INFO] [1775855565.941035231] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855565.jpg
+[INFO] [1775855567.943874753] [aruco_base_frame_estimator]: Marker 202 not visible (5.1s since last detection) — not publishing
+[INFO] [1775855568.998943082] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855568.jpg
+[INFO] [1775855569.980537042] [aruco_base_frame_estimator]: Marker 202 not visible (7.1s since last detection) — not publishing
+[INFO] [1775855572.046937688] [aruco_base_frame_estimator]: Marker 202 not visible (9.2s since last detection) — not publishing
+[INFO] [1775855572.051012446] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855572.jpg
+[INFO] [1775855574.048061572] [aruco_base_frame_estimator]: Marker 202 not visible (11.2s since last detection) — not publishing
+[INFO] [1775855575.214298305] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855575.jpg
+[INFO] [1775855576.066352753] [aruco_base_frame_estimator]: Marker 202 not visible (13.2s since last detection) — not publishing
+[INFO] [1775855578.144041892] [aruco_base_frame_estimator]: Marker 202 not visible (15.3s since last detection) — not publishing
+[INFO] [1775855578.267028108] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855578.jpg
+[INFO] [1775855580.198138646] [aruco_base_frame_estimator]: Marker 202 not visible (17.3s since last detection) — not publishing
+[WARN] [1775855582.225851235] [aruco_base_frame_estimator]: TF lookup failed: Lookup would require extrapolation into the past.  Requested time 1775855561.853625 but the earliest data is at time 1775855571.136307, when looking up transform from frame [fruit_marker] to frame [base_link]
+[INFO] [1775855582.228051392] [object_grasper]: [ArUco] target updated → X=+0.392  Y=-1.289  Z=+0.882
+[INFO] [1775855582.231022807] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855582.jpg
+[INFO] [1775855583.268052660] [aruco_base_frame_estimator]: Marker 202 not visible (1.0s since last detection) — not publishing
+[WARN] [1775855584.362654451] [aruco_base_frame_estimator]: TF lookup failed: Lookup would require extrapolation into the past.  Requested time 1775855561.853625 but the earliest data is at time 1775855573.302703, when looking up transform from frame [fruit_marker] to frame [base_link]
+[INFO] [1775855584.364846478] [object_grasper]: [ArUco] target updated → X=+0.392  Y=-1.289  Z=+0.882
+[INFO] [1775855585.278908115] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855585.jpg
+[INFO] [1775855585.407933809] [aruco_base_frame_estimator]: Marker 202 not visible (1.0s since last detection) — not publishing
+[INFO] [1775855587.415363908] [aruco_base_frame_estimator]: Marker 202 not visible (3.1s since last detection) — not publishing
+[INFO] [1775855588.418935075] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855588.jpg
+[INFO] [1775855589.545636856] [aruco_base_frame_estimator]: Marker 202 not visible (5.2s since last detection) — not publishing
+[INFO] [1775855591.419136870] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855591.jpg
+[INFO] [1775855591.546665366] [aruco_base_frame_estimator]: Marker 202 not visible (7.2s since last detection) — not publishing
+[INFO] [1775855593.549003134] [aruco_base_frame_estimator]: Marker 202 not visible (9.2s since last detection) — not publishing
+[INFO] [1775855594.575821969] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855594.jpg
+[INFO] [1775855595.558179015] [aruco_base_frame_estimator]: Marker 202 not visible (11.2s since last detection) — not publishing
+[INFO] [1775855597.613788851] [aruco_base_frame_estimator]: Marker 202 not visible (13.3s since last detection) — not publishing
+[INFO] [1775855597.623106330] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855597.jpg
+[INFO] [1775855599.623596124] [aruco_base_frame_estimator]: Marker 202 not visible (15.3s since last detection) — not publishing
+[INFO] [1775855600.622665380] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855600.jpg
+[INFO] [1775855601.683309043] [aruco_base_frame_estimator]: Marker 202 not visible (17.3s since last detection) — not publishing
+[INFO] [1775855603.625728972] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855603.jpg
+[INFO] [1775855603.690111250] [aruco_base_frame_estimator]: Marker 202 not visible (19.3s since last detection) — not publishing
+[INFO] [1775855605.763748093] [aruco_base_frame_estimator]: Marker 202 not visible (21.4s since last detection) — not publishing
+[INFO] [1775855606.628419294] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855606.jpg
+[INFO] [1775855607.830716805] [aruco_base_frame_estimator]: Marker 202 not visible (23.5s since last detection) — not publishing
+[INFO] [1775855609.631538712] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855609.jpg
+[INFO] [1775855609.891836416] [aruco_base_frame_estimator]: Marker 202 not visible (25.5s since last detection) — not publishing
+[INFO] [1775855611.896141819] [aruco_base_frame_estimator]: Marker 202 not visible (27.5s since last detection) — not publishing
+[INFO] [1775855612.692010415] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855612.jpg
+[INFO] [1775855613.969505056] [aruco_base_frame_estimator]: Marker 202 not visible (29.6s since last detection) — not publishing
+[INFO] [1775855615.833645150] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855615.jpg
+[INFO] [1775855616.044786274] [aruco_base_frame_estimator]: Marker 202 not visible (31.7s since last detection) — not publishing
+[INFO] [1775855618.099966993] [aruco_base_frame_estimator]: Marker 202 not visible (33.7s since last detection) — not publishing
+[INFO] [1775855618.954509960] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855618.jpg
+[WARN] [1775855621.030868763] [aruco_base_frame_estimator]: TF lookup failed: Lookup would require extrapolation into the past.  Requested time 1775855583.346074 but the earliest data is at time 1775855610.002850, when looking up transform from frame [fruit_marker] to frame [base_link]
+[INFO] [1775855621.032805904] [object_grasper]: [ArUco] target updated → X=+0.389  Y=-1.279  Z=+0.885
+[INFO] [1775855621.979858687] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855621.jpg
+[INFO] [1775855622.032541414] [aruco_base_frame_estimator]: Marker 202 not visible (1.0s since last detection) — not publishing
+[INFO] [1775855624.168124789] [aruco_base_frame_estimator]: Marker 202 not visible (3.1s since last detection) — not publishing
+[INFO] [1775855624.990186340] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855624.jpg
+[INFO] [1775855626.246550489] [aruco_base_frame_estimator]: Marker 202 not visible (5.2s since last detection) — not publishing
+[INFO] [1775855626.954307267] [object_grasper]: [ArUco] target updated → X=+0.365  Y=-1.291  Z=+0.903
+[INFO] [1775855628.063021849] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855628.jpg
+[INFO] [1775855628.317331384] [aruco_base_frame_estimator]: Marker 202 not visible (1.4s since last detection) — not publishing
+[INFO] [1775855630.382660622] [aruco_base_frame_estimator]: Marker 202 not visible (3.4s since last detection) — not publishing
+[INFO] [1775855631.090072665] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855631.jpg
+[INFO] [1775855632.443920115] [aruco_base_frame_estimator]: Marker 202 not visible (5.5s since last detection) — not publishing
+[INFO] [1775855634.111692258] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855634.jpg
+[INFO] [1775855634.445455592] [aruco_base_frame_estimator]: Marker 202 not visible (7.5s since last detection) — not publishing
+[INFO] [1775855636.525790490] [aruco_base_frame_estimator]: Marker 202 not visible (9.6s since last detection) — not publishing
+[INFO] [1775855637.181678610] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855637.jpg
+[INFO] [1775855638.584292734] [aruco_base_frame_estimator]: Marker 202 not visible (11.6s since last detection) — not publishing
+[INFO] [1775855640.249370423] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855640.jpg
+[INFO] [1775855640.645233232] [aruco_base_frame_estimator]: Marker 202 not visible (13.7s since last detection) — not publishing
+[INFO] [1775855642.653095659] [aruco_base_frame_estimator]: Marker 202 not visible (15.7s since last detection) — not publishing
+[INFO] [1775855643.255195557] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855643.jpg
+[INFO] [1775855644.653798808] [aruco_base_frame_estimator]: Marker 202 not visible (17.7s since last detection) — not publishing
+[INFO] [1775855646.257726392] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855646.jpg
+[INFO] [1775855646.716068473] [aruco_base_frame_estimator]: Marker 202 not visible (19.8s since last detection) — not publishing
+[WARN] [1775855649.542069801] [aruco_base_frame_estimator]: TF lookup failed: Lookup would require extrapolation into the past.  Requested time 1775855626.951297 but the earliest data is at time 1775855638.469807, when looking up transform from frame [fruit_marker] to frame [base_link]
+[INFO] [1775855649.543862701] [object_grasper]: [ArUco] target updated → X=+0.404  Y=-1.330  Z=+0.868
+[INFO] [1775855649.546938121] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855649.jpg
+[INFO] [1775855650.595134021] [aruco_base_frame_estimator]: Marker 202 not visible (1.1s since last detection) — not publishing
+[INFO] [1775855652.664729130] [aruco_base_frame_estimator]: Marker 202 not visible (3.1s since last detection) — not publishing
+[INFO] [1775855652.668618629] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855652.jpg
+[INFO] [1775855654.669197550] [aruco_base_frame_estimator]: Marker 202 not visible (5.1s since last detection) — not publishing
+[INFO] [1775855655.727696773] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855655.jpg
+[INFO] [1775855656.676342529] [aruco_base_frame_estimator]: Marker 202 not visible (7.1s since last detection) — not publishing
+[INFO] [1775855658.736657533] [aruco_base_frame_estimator]: Marker 202 not visible (9.2s since last detection) — not publishing
+[INFO] [1775855658.741126359] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855658.jpg
+[INFO] [1775855660.805694335] [aruco_base_frame_estimator]: Marker 202 not visible (11.3s since last detection) — not publishing
+[INFO] [1775855661.743794374] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855661.jpg
+[INFO] [1775855662.805850084] [aruco_base_frame_estimator]: Marker 202 not visible (13.3s since last detection) — not publishing
+[INFO] [1775855664.807152732] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855664.jpg
+[INFO] [1775855664.867562795] [aruco_base_frame_estimator]: Marker 202 not visible (15.3s since last detection) — not publishing
+[INFO] [1775855666.880559126] [aruco_base_frame_estimator]: Marker 202 not visible (17.3s since last detection) — not publishing
+[INFO] [1775855667.807551879] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855667.jpg
+[INFO] [1775855668.936660503] [aruco_base_frame_estimator]: Marker 202 not visible (19.4s since last detection) — not publishing
+[INFO] [1775855670.815362125] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855670.jpg
+[INFO] [1775855671.002458380] [aruco_base_frame_estimator]: Marker 202 not visible (21.5s since last detection) — not publishing
+[INFO] [1775855673.065626253] [aruco_base_frame_estimator]: Marker 202 not visible (23.5s since last detection) — not publishing
+[INFO] [1775855673.819134837] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855673.jpg
+[INFO] [1775855675.138511714] [aruco_base_frame_estimator]: Marker 202 not visible (25.6s since last detection) — not publishing
+[INFO] [1775855676.875790960] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855676.jpg
+[INFO] [1775855677.159671916] [aruco_base_frame_estimator]: Marker 202 not visible (27.6s since last detection) — not publishing
+[INFO] [1775855679.223743230] [aruco_base_frame_estimator]: Marker 202 not visible (29.7s since last detection) — not publishing
+[INFO] [1775855679.944848868] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855679.jpg
+[INFO] [1775855681.259007813] [aruco_base_frame_estimator]: Marker 202 not visible (31.7s since last detection) — not publishing
+[INFO] [1775855682.945504289] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855682.jpg
+[INFO] [1775855683.275008028] [aruco_base_frame_estimator]: Marker 202 not visible (33.7s since last detection) — not publishing
+[INFO] [1775855685.285191434] [aruco_base_frame_estimator]: Marker 202 not visible (35.7s since last detection) — not publishing
+[WARN] [1775855686.574418091] [aruco_base_frame_estimator]: TF lookup failed: Lookup would require extrapolation into the past.  Requested time 1775855648.527659 but the earliest data is at time 1775855675.536878, when looking up transform from frame [fruit_marker] to frame [base_link]
+[INFO] [1775855686.576485106] [object_grasper]: [ArUco] target updated → X=+0.404  Y=-1.330  Z=+0.868
+[INFO] [1775855686.581195931] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855686.jpg
+[INFO] [1775855687.625957858] [aruco_base_frame_estimator]: Marker 202 not visible (1.1s since last detection) — not publishing
+[INFO] [1775855689.629336589] [aruco_base_frame_estimator]: Marker 202 not visible (3.1s since last detection) — not publishing
+[INFO] [1775855689.633939067] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855689.jpg
+[INFO] [1775855691.690632914] [aruco_base_frame_estimator]: Marker 202 not visible (5.1s since last detection) — not publishing
+[INFO] [1775855692.692773450] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855692.jpg
+[INFO] [1775855693.699247199] [aruco_base_frame_estimator]: Marker 202 not visible (7.1s since last detection) — not publishing
+[INFO] [1775855695.772306565] [aruco_base_frame_estimator]: Marker 202 not visible (9.2s since last detection) — not publishing
+[INFO] [1775855695.780368190] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855695.jpg
+[INFO] [1775855697.823469180] [aruco_base_frame_estimator]: Marker 202 not visible (11.2s since last detection) — not publishing
+[INFO] [1775855698.836822196] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855698.jpg
+[INFO] [1775855699.826627886] [aruco_base_frame_estimator]: Marker 202 not visible (13.3s since last detection) — not publishing
+[INFO] [1775855701.838462072] [aruco_base_frame_estimator]: Marker 202 not visible (15.3s since last detection) — not publishing
+[INFO] [1775855701.844532472] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855701.jpg
+[WARN] [1775855704.378581791] [aruco_base_frame_estimator]: TF lookup failed: Lookup would require extrapolation into the past.  Requested time 1775855648.527659 but the earliest data is at time 1775855693.302762, when looking up transform from frame [fruit_marker] to frame [base_link]
+[INFO] [1775855704.380939361] [object_grasper]: [ArUco] target updated → X=+0.404  Y=-1.330  Z=+0.868
+[stretch_driver-3] [0m[INFO] [1775855704.799550384] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1775855704.897968407] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855704.jpg
+[INFO] [1775855705.447750741] [aruco_base_frame_estimator]: Marker 202 not visible (1.1s since last detection) — not publishing
+[INFO] [1775855707.498700596] [aruco_base_frame_estimator]: Marker 202 not visible (3.1s since last detection) — not publishing
+[INFO] [1775855707.944024337] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855707.jpg
+[stretch_driver-3] [0m[INFO] [1775855707.960293927] [stretch_driver]: Changed to mode = position[0m
+[INFO] [1775855709.520938122] [aruco_base_frame_estimator]: Marker 202 not visible (5.1s since last detection) — not publishing
+[stretch_driver-3] [0m[INFO] [1775855709.868062154] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775855709.888128709] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_lift', 'joint_arm', 'joint_wrist_yaw', 'joint_wrist_pitch', 'joint_wrist_roll', 'joint_gripper_finger_left'][0m
+[INFO] [1775855710.975718820] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855710.jpg
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775855711.300956677] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775855711.614586506] [aruco_base_frame_estimator]: Marker 202 not visible (7.2s since last detection) — not publishing
+[stretch_driver-3] [0m[INFO] [1775855712.082542564] [stretch_driver]: Changed to mode = navigation[0m
+[bt_navigator-14] [INFO] [1775855713.250473787] [bt_navigator]: Begin navigating from current location (-1.02, -0.06) to (0.00, 0.00)
+[controller_server-11] [INFO] [1775855713.271436306] [controller_server]: Received a goal, begin computing control effort.
+[INFO] [1775855713.698023278] [aruco_base_frame_estimator]: Marker 202 not visible (9.3s since last detection) — not publishing
+[INFO] [1775855714.047904207] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855714.jpg
+[controller_server-11] [INFO] [1775855714.321765546] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855715.371887023] [controller_server]: Passing new path to controller.
+[INFO] [1775855715.703031273] [aruco_base_frame_estimator]: Marker 202 not visible (11.3s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855716.371754381] [controller_server]: Passing new path to controller.
+[INFO] [1775855717.112359009] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855717.jpg
+[controller_server-11] [INFO] [1775855717.421795442] [controller_server]: Passing new path to controller.
+[INFO] [1775855717.776336642] [aruco_base_frame_estimator]: Marker 202 not visible (13.4s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855718.421783808] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855719.471809603] [controller_server]: Passing new path to controller.
+[INFO] [1775855719.839879708] [aruco_base_frame_estimator]: Marker 202 not visible (15.5s since last detection) — not publishing
+[INFO] [1775855720.118407241] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855720.jpg
+[controller_server-11] [INFO] [1775855720.471802490] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855721.521791598] [controller_server]: Passing new path to controller.
+[INFO] [1775855721.853107429] [aruco_base_frame_estimator]: Marker 202 not visible (17.5s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855722.571757807] [controller_server]: Passing new path to controller.
+[INFO] [1775855723.119432962] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855723.jpg
+[controller_server-11] [ERROR] [1775855723.271810416] [controller_server]: Failed to make progress
+[controller_server-11] [WARN] [1775855723.271948909] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-11] [INFO] [1775855723.291116947] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-11] [INFO] [1775855723.292218590] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-11] [WARN] [1775855723.366319805] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-11] [INFO] [1775855723.592670226] [controller_server]: Passing new path to controller.
+[INFO] [1775855723.908389025] [aruco_base_frame_estimator]: Marker 202 not visible (19.5s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855724.592671270] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855725.642675422] [controller_server]: Passing new path to controller.
+[INFO] [1775855725.930084614] [aruco_base_frame_estimator]: Marker 202 not visible (21.6s since last detection) — not publishing
+[INFO] [1775855726.246534515] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855726.jpg
+[controller_server-11] [INFO] [1775855726.692714483] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775855727.692698569] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[INFO] [1775855727.958500877] [aruco_base_frame_estimator]: Marker 202 not visible (23.6s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855728.742678920] [controller_server]: Passing new path to controller.
+[INFO] [1775855729.249274736] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855729.jpg
+[controller_server-11] [INFO] [1775855729.742690269] [controller_server]: Passing new path to controller.
+[INFO] [1775855729.971952846] [aruco_base_frame_estimator]: Marker 202 not visible (25.6s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855730.792670918] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855731.842669931] [controller_server]: Passing new path to controller.
+[INFO] [1775855731.984346115] [aruco_base_frame_estimator]: Marker 202 not visible (27.6s since last detection) — not publishing
+[INFO] [1775855732.331782663] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855732.jpg
+[controller_server-11] [INFO] [1775855732.842702425] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855733.892680623] [controller_server]: Passing new path to controller.
+[INFO] [1775855734.056078436] [aruco_base_frame_estimator]: Marker 202 not visible (29.7s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855734.892671017] [controller_server]: Passing new path to controller.
+[INFO] [1775855735.336164313] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855735.jpg
+[controller_server-11] [INFO] [1775855735.942669931] [controller_server]: Passing new path to controller.
+[INFO] [1775855736.059587046] [aruco_base_frame_estimator]: Marker 202 not visible (31.7s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855736.746151905] [controller_server]: Reached the goal!
+[bt_navigator-14] [INFO] [1775855736.780859796] [bt_navigator]: Goal succeeded
+[INFO] [1775855738.119118626] [aruco_base_frame_estimator]: Marker 202 not visible (33.7s since last detection) — not publishing
+[INFO] [1775855738.389094646] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855738.jpg
+[INFO] [1775855740.121113630] [aruco_base_frame_estimator]: Marker 202 not visible (35.7s since last detection) — not publishing
+[INFO] [1775855741.395606637] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855741.jpg
+[INFO] [1775855742.121748300] [aruco_base_frame_estimator]: Marker 202 not visible (37.7s since last detection) — not publishing
+[INFO] [1775855744.122136841] [aruco_base_frame_estimator]: Marker 202 not visible (39.7s since last detection) — not publishing
+[INFO] [1775855744.531997063] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855744.jpg
+[INFO] [1775855746.129990426] [aruco_base_frame_estimator]: Marker 202 not visible (41.8s since last detection) — not publishing
+[INFO] [1775855747.635562622] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855747.jpg
+[stretch_driver-3] [0m[INFO] [1775855747.669713927] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1775855748.131192234] [aruco_base_frame_estimator]: Marker 202 not visible (43.8s since last detection) — not publishing
+[INFO] [1775855750.190957657] [aruco_base_frame_estimator]: Marker 202 not visible (45.8s since last detection) — not publishing
+[INFO] [1775855750.674925542] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855750.jpg
+[stretch_driver-3] [0m[INFO] [1775855750.910574620] [stretch_driver]: Changed to mode = position[0m
+[INFO] [1775855752.264613432] [aruco_base_frame_estimator]: Marker 202 not visible (47.9s since last detection) — not publishing
+[stretch_driver-3] [0m[INFO] [1775855752.883780367] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775855752.895831651] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_lift', 'joint_arm', 'joint_wrist_yaw', 'joint_wrist_pitch', 'joint_wrist_roll', 'joint_gripper_finger_left'][0m
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775855752.948826578] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[stretch_driver-3] [0m[INFO] [1775855753.590291252] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1775855753.675266065] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855753.jpg
+[INFO] [1775855754.293818816] [aruco_base_frame_estimator]: Marker 202 not visible (49.9s since last detection) — not publishing
+[bt_navigator-14] [INFO] [1775855754.484261766] [bt_navigator]: Begin navigating from current location (-0.09, -0.09) to (-1.02, -0.06)
+[controller_server-11] [INFO] [1775855754.505303073] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-11] [INFO] [1775855755.555999221] [controller_server]: Passing new path to controller.
+[INFO] [1775855756.343313472] [aruco_base_frame_estimator]: Marker 202 not visible (52.0s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855756.605986064] [controller_server]: Passing new path to controller.
+[INFO] [1775855756.746325401] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855756.jpg
+[controller_server-11] [INFO] [1775855757.606025689] [controller_server]: Passing new path to controller.
+[INFO] [1775855758.386461046] [aruco_base_frame_estimator]: Marker 202 not visible (54.0s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855758.656034151] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855759.655985655] [controller_server]: Passing new path to controller.
+[INFO] [1775855759.804763088] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855759.jpg
+[INFO] [1775855760.410093519] [aruco_base_frame_estimator]: Marker 202 not visible (56.0s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855760.706016776] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855761.756132031] [controller_server]: Passing new path to controller.
+[INFO] [1775855762.472444318] [aruco_base_frame_estimator]: Marker 202 not visible (58.1s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855762.756020958] [controller_server]: Passing new path to controller.
+[INFO] [1775855762.805896774] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855762.jpg
+[controller_server-11] [INFO] [1775855763.806010039] [controller_server]: Passing new path to controller.
+[controller_server-11] [ERROR] [1775855764.506082256] [controller_server]: Failed to make progress
+[controller_server-11] [WARN] [1775855764.506290514] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-11] [INFO] [1775855764.524617635] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-11] [INFO] [1775855764.525285642] [controller_server]: Received a goal, begin computing control effort.
+[INFO] [1775855764.554231465] [aruco_base_frame_estimator]: Marker 202 not visible (60.2s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855764.825591639] [controller_server]: Passing new path to controller.
+[INFO] [1775855765.807106548] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855765.jpg
+[controller_server-11] [INFO] [1775855765.875607808] [controller_server]: Passing new path to controller.
+[INFO] [1775855766.599191079] [aruco_base_frame_estimator]: Marker 202 not visible (62.2s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855766.779891155] [controller_server]: Reached the goal!
+[bt_navigator-14] [INFO] [1775855766.814571597] [bt_navigator]: Goal succeeded
+[INFO] [1775855768.616199677] [aruco_base_frame_estimator]: Marker 202 not visible (64.2s since last detection) — not publishing
+[INFO] [1775855768.859595103] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855768.jpg
+[INFO] [1775855770.623054803] [aruco_base_frame_estimator]: Marker 202 not visible (66.2s since last detection) — not publishing
+[INFO] [1775855771.886204500] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855771.jpg
+[INFO] [1775855772.682801512] [aruco_base_frame_estimator]: Marker 202 not visible (68.3s since last detection) — not publishing
+[INFO] [1775855774.687407194] [aruco_base_frame_estimator]: Marker 202 not visible (70.3s since last detection) — not publishing
+[INFO] [1775855775.084073228] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855775.jpg
+[INFO] [1775855776.695599228] [aruco_base_frame_estimator]: Marker 202 not visible (72.3s since last detection) — not publishing
+[INFO] [1775855778.169205243] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855778.jpg
+[INFO] [1775855778.751587364] [aruco_base_frame_estimator]: Marker 202 not visible (74.4s since last detection) — not publishing
+[INFO] [1775855780.754607490] [aruco_base_frame_estimator]: Marker 202 not visible (76.4s since last detection) — not publishing
+[INFO] [1775855781.247964198] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855781.jpg
+[stretch_driver-3] [0m[INFO] [1775855781.394599402] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1775855782.755540810] [aruco_base_frame_estimator]: Marker 202 not visible (78.4s since last detection) — not publishing
+[INFO] [1775855784.461126813] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855784.jpg
+[stretch_driver-3] [0m[INFO] [1775855784.556358393] [stretch_driver]: Changed to mode = position[0m
+[INFO] [1775855784.756085418] [aruco_base_frame_estimator]: Marker 202 not visible (80.4s since last detection) — not publishing
+[stretch_driver-3] [0m[INFO] [1775855786.373268119] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775855786.379148964] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_lift', 'joint_arm', 'joint_wrist_yaw', 'joint_wrist_pitch', 'joint_wrist_roll', 'joint_gripper_finger_left'][0m
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775855786.424638627] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775855786.770664567] [aruco_base_frame_estimator]: Marker 202 not visible (82.4s since last detection) — not publishing
+[stretch_driver-3] [0m[INFO] [1775855786.949938527] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1775855787.654994849] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855787.jpg
+[bt_navigator-14] [INFO] [1775855787.855544231] [bt_navigator]: Begin navigating from current location (-0.80, 0.06) to (0.00, 0.00)
+[controller_server-11] [INFO] [1775855787.876137381] [controller_server]: Received a goal, begin computing control effort.
+[INFO] [1775855788.829935231] [aruco_base_frame_estimator]: Marker 202 not visible (84.5s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855788.926431850] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855789.976397764] [controller_server]: Passing new path to controller.
+[INFO] [1775855790.703033635] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855790.jpg
+[INFO] [1775855790.901240622] [aruco_base_frame_estimator]: Marker 202 not visible (86.5s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855790.976400229] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855792.026439160] [controller_server]: Passing new path to controller.
+[INFO] [1775855792.955688739] [aruco_base_frame_estimator]: Marker 202 not visible (88.6s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855793.026394521] [controller_server]: Passing new path to controller.
+[INFO] [1775855793.760451888] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855793.jpg
+[controller_server-11] [INFO] [1775855794.076393874] [controller_server]: Passing new path to controller.
+[INFO] [1775855794.962814702] [aruco_base_frame_estimator]: Marker 202 not visible (90.6s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855795.126425144] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855796.126442194] [controller_server]: Passing new path to controller.
+[INFO] [1775855796.779985171] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855796.jpg
+[INFO] [1775855797.026410912] [aruco_base_frame_estimator]: Marker 202 not visible (92.6s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855797.176400393] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855798.176392715] [controller_server]: Passing new path to controller.
+[INFO] [1775855799.034692840] [aruco_base_frame_estimator]: Marker 202 not visible (94.7s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855799.226424086] [controller_server]: Passing new path to controller.
+[INFO] [1775855799.771198630] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855799.jpg
+[controller_server-11] [INFO] [1775855800.180349738] [controller_server]: Reached the goal!
+[bt_navigator-14] [INFO] [1775855800.215920099] [bt_navigator]: Goal succeeded
+[INFO] [1775855801.108761967] [aruco_base_frame_estimator]: Marker 202 not visible (96.7s since last detection) — not publishing
+[INFO] [1775855802.835478509] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855802.jpg
+[INFO] [1775855803.166529208] [aruco_base_frame_estimator]: Marker 202 not visible (98.8s since last detection) — not publishing
+[INFO] [1775855805.179009532] [aruco_base_frame_estimator]: Marker 202 not visible (100.8s since last detection) — not publishing
+[INFO] [1775855805.913602727] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855805.jpg
+[stretch_driver-3] [0m[INFO] [1775855806.047156434] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1775855807.233589436] [aruco_base_frame_estimator]: Marker 202 not visible (102.9s since last detection) — not publishing
+[INFO] [1775855808.911615965] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855808.jpg
+[INFO] [1775855809.268510226] [aruco_base_frame_estimator]: Marker 202 not visible (104.9s since last detection) — not publishing
+[stretch_driver-3] [0m[INFO] [1775855809.376975573] [stretch_driver]: Changed to mode = position[0m
+[INFO] [1775855811.329316239] [aruco_base_frame_estimator]: Marker 202 not visible (106.9s since last detection) — not publishing
+[stretch_driver-3] [0m[INFO] [1775855811.334611066] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775855811.345209514] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_lift', 'joint_arm', 'joint_wrist_yaw', 'joint_wrist_pitch', 'joint_wrist_roll', 'joint_gripper_finger_left'][0m
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775855811.399958980] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775855811.918541166] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855811.jpg
+[stretch_driver-3] [0m[INFO] [1775855812.178820879] [stretch_driver]: Changed to mode = navigation[0m
+[bt_navigator-14] [INFO] [1775855813.070909763] [bt_navigator]: Begin navigating from current location (-0.14, -0.02) to (-1.02, -0.06)
+[controller_server-11] [INFO] [1775855813.091818939] [controller_server]: Received a goal, begin computing control effort.
+[INFO] [1775855813.460881699] [aruco_base_frame_estimator]: Marker 202 not visible (109.1s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855814.142506339] [controller_server]: Passing new path to controller.
+[INFO] [1775855814.934307075] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855814.jpg
+[controller_server-11] [INFO] [1775855815.192502608] [controller_server]: Passing new path to controller.
+[INFO] [1775855815.513640114] [aruco_base_frame_estimator]: Marker 202 not visible (111.1s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855816.192510473] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855817.242519148] [controller_server]: Passing new path to controller.
+[INFO] [1775855817.572420429] [aruco_base_frame_estimator]: Marker 202 not visible (113.2s since last detection) — not publishing
+[INFO] [1775855817.991844117] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855817.jpg
+[controller_server-11] [INFO] [1775855818.242536301] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855819.292563023] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[INFO] [1775855819.643513083] [aruco_base_frame_estimator]: Marker 202 not visible (115.3s since last detection) — not publishing
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775855820.342542900] [controller_server]: Passing new path to controller.
+[INFO] [1775855821.028108193] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855821.jpg
+[controller_server-11] [INFO] [1775855821.342503266] [controller_server]: Passing new path to controller.
+[INFO] [1775855821.652836786] [aruco_base_frame_estimator]: Marker 202 not visible (117.3s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855822.392504739] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855823.392498471] [controller_server]: Passing new path to controller.
+[INFO] [1775855823.707996033] [aruco_base_frame_estimator]: Marker 202 not visible (119.3s since last detection) — not publishing
+[INFO] [1775855824.055177232] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855824.jpg
+[controller_server-11] [INFO] [1775855824.442542876] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775855825.492577544] [controller_server]: Passing new path to controller.
+[INFO] [1775855825.713268732] [aruco_base_frame_estimator]: Marker 202 not visible (121.3s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855826.494254882] [controller_server]: Passing new path to controller.
+[INFO] [1775855827.058363904] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855827.jpg
+[controller_server-11] [INFO] [1775855827.542505490] [controller_server]: Passing new path to controller.
+[INFO] [1775855827.761148538] [aruco_base_frame_estimator]: Marker 202 not visible (123.4s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855828.542518997] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855829.592501788] [controller_server]: Passing new path to controller.
+[WARN] [1775855830.539358924] [aruco_base_frame_estimator]: TF lookup failed: Lookup would require extrapolation into the past.  Requested time 1775855703.361673 but the earliest data is at time 1775855819.469243, when looking up transform from frame [fruit_marker] to frame [base_link]
+[INFO] [1775855830.542807456] [object_grasper]: [ArUco] target updated → X=+0.271  Y=-1.339  Z=+0.871
+[INFO] [1775855830.545801060] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855830.jpg
+[controller_server-11] [INFO] [1775855830.592535795] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855830.995807629] [controller_server]: Reached the goal!
+[bt_navigator-14] [INFO] [1775855831.031331383] [bt_navigator]: Goal succeeded
+[INFO] [1775855831.665675214] [aruco_base_frame_estimator]: Marker 202 not visible (1.1s since last detection) — not publishing
+[INFO] [1775855832.261365971] [object_grasper]: [ArUco] target updated → X=+0.247  Y=-1.349  Z=+0.890
+[INFO] [1775855833.586760654] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855833.jpg
+[INFO] [1775855833.795548978] [object_grasper]: [ArUco] target updated → X=+0.367  Y=-1.337  Z=+0.885
+[INFO] [1775855835.401059164] [aruco_base_frame_estimator]: Marker 202 not visible (1.1s since last detection) — not publishing
+[INFO] [1775855835.861153689] [object_grasper]: [ArUco] target updated → X=+0.346  Y=-1.263  Z=+0.909
+[INFO] [1775855836.724094643] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855836.jpg
+[INFO] [1775855837.480973805] [aruco_base_frame_estimator]: Marker 202 not visible (1.6s since last detection) — not publishing
+[INFO] [1775855839.534887508] [aruco_base_frame_estimator]: Marker 202 not visible (3.7s since last detection) — not publishing
+[INFO] [1775855839.725065641] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855839.jpg
+[INFO] [1775855841.599933449] [aruco_base_frame_estimator]: Marker 202 not visible (5.7s since last detection) — not publishing
+[INFO] [1775855842.738417288] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855842.jpg
+[INFO] [1775855843.605041198] [aruco_base_frame_estimator]: Marker 202 not visible (7.7s since last detection) — not publishing
+[INFO] [1775855844.741939719] [object_grasper]: [ArUco] target updated → X=+0.369  Y=-1.346  Z=+0.883
+[INFO] [1775855845.752371919] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855845.jpg
+[INFO] [1775855846.196172544] [aruco_base_frame_estimator]: Marker 202 not visible (1.0s since last detection) — not publishing
+[INFO] [1775855847.284035492] [object_grasper]: [ArUco] target updated → X=+0.355  Y=-1.295  Z=+0.898
+[INFO] [1775855848.402753694] [aruco_base_frame_estimator]: Marker 202 not visible (1.1s since last detection) — not publishing
+[INFO] [1775855848.675583705] [object_grasper]: [ArUco] target updated → X=+0.380  Y=-1.383  Z=+0.871
+[INFO] [1775855848.934970750] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855848.jpg
+[INFO] [1775855850.536257242] [aruco_base_frame_estimator]: Marker 202 not visible (1.0s since last detection) — not publishing
+[INFO] [1775855851.999595742] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855851.jpg
+[INFO] [1775855852.274856485] [object_grasper]: [ArUco] target updated → X=+0.355  Y=-1.295  Z=+0.898
+[INFO] [1775855853.536320818] [aruco_base_frame_estimator]: Marker 202 not visible (1.3s since last detection) — not publishing
+[INFO] [1775855855.009442721] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855855.jpg
+[INFO] [1775855855.601065971] [aruco_base_frame_estimator]: Marker 202 not visible (3.3s since last detection) — not publishing
+[INFO] [1775855857.351660154] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775855857.351898612] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775855857.352077059] [aruco_base_frame_estimator]:   [CAMERA raw] X=-0.296m  Y=+0.401m  Z=+1.313m  dist=1.404m
+[INFO] [1775855857.352283346] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.355m  Y=-1.295m  Z=+0.898m  → published
+[INFO] [1775855857.352453494] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775855857.353060029] [object_grasper]: [ArUco] target updated → X=+0.355  Y=-1.295  Z=+0.898
+[INFO] [1775855858.010757471] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855858.jpg
+[INFO] [1775855858.413807499] [aruco_base_frame_estimator]: Marker 202 not visible (1.1s since last detection) — not publishing
+[INFO] [1775855859.542137743] [object_grasper]: [ArUco] target updated → X=+0.369  Y=-1.346  Z=+0.883
+[INFO] [1775855861.018389017] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855861.jpg
+[INFO] [1775855861.411023090] [aruco_base_frame_estimator]: Marker 202 not visible (1.0s since last detection) — not publishing
+[INFO] [1775855863.455980310] [aruco_base_frame_estimator]: Marker 202 not visible (3.0s since last detection) — not publishing
+[INFO] [1775855863.544470251] [object_grasper]: [ArUco] target updated → X=+0.355  Y=-1.295  Z=+0.898
+[INFO] [1775855864.022491556] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855864.jpg
+[INFO] [1775855864.746806381] [object_grasper]: [ArUco] target updated → X=+0.356  Y=-1.298  Z=+0.898
+[stretch_driver-3] [0m[INFO] [1775855865.474980066] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1775855865.751011329] [aruco_base_frame_estimator]: Marker 202 not visible (1.0s since last detection) — not publishing
+[INFO] [1775855865.950589993] [object_grasper]: [ArUco] target updated → X=+0.355  Y=-1.295  Z=+0.898
+[INFO] [1775855867.021273672] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855867.jpg
+[INFO] [1775855867.809141563] [aruco_base_frame_estimator]: Marker 202 not visible (1.9s since last detection) — not publishing
+[stretch_driver-3] [0m[INFO] [1775855868.608373040] [stretch_driver]: Changed to mode = position[0m
+[INFO] [1775855869.159819911] [object_grasper]: [ArUco] target updated → X=+0.356  Y=-1.298  Z=+0.898
+[INFO] [1775855870.086596051] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855870.jpg
+[INFO] [1775855870.282022548] [aruco_base_frame_estimator]: Marker 202 not visible (1.1s since last detection) — not publishing
+[INFO] [1775855870.624416003] [object_grasper]: [ArUco] target updated → X=+0.355  Y=-1.295  Z=+0.898
+[stretch_driver-3] [0m[INFO] [1775855870.657929857] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775855870.663247215] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_lift', 'joint_arm', 'joint_wrist_yaw', 'joint_wrist_pitch', 'joint_wrist_roll', 'joint_gripper_finger_left'][0m
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775855870.726397777] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[stretch_driver-3] [0m[INFO] [1775855871.315255228] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1775855871.708191834] [object_grasper]: [ArUco] target updated → X=+0.355  Y=-1.295  Z=+0.898
+[bt_navigator-14] [INFO] [1775855872.212002156] [bt_navigator]: Begin navigating from current location (-1.00, -0.02) to (-1.02, -0.07)
+[controller_server-11] [INFO] [1775855872.232827433] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-11] [INFO] [1775855872.237436306] [controller_server]: Reached the goal!
+[bt_navigator-14] [INFO] [1775855872.272284343] [bt_navigator]: Goal succeeded
+[INFO] [1775855872.733835480] [aruco_base_frame_estimator]: Marker 202 not visible (1.0s since last detection) — not publishing
+[INFO] [1775855873.094705389] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855873.jpg
+[INFO] [1775855873.156502049] [object_grasper]: [ArUco] target updated → X=+0.346  Y=-1.263  Z=+0.909
+[INFO] [1775855874.752795654] [aruco_base_frame_estimator]: Marker 202 not visible (1.6s since last detection) — not publishing
+[INFO] [1775855876.103169734] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855876.jpg
+[INFO] [1775855876.157660176] [object_grasper]: [ArUco] target updated → X=+0.380  Y=-1.383  Z=+0.871
+[INFO] [1775855877.360045640] [aruco_base_frame_estimator]: Marker 202 not visible (1.2s since last detection) — not publishing
+[stretch_driver-3] [0m[INFO] [1775855878.695228904] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1775855879.171301640] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855879.jpg
+[INFO] [1775855879.395420268] [aruco_base_frame_estimator]: Marker 202 not visible (3.2s since last detection) — not publishing
+[INFO] [1775855879.563100666] [object_grasper]: [ArUco] target updated → X=+0.355  Y=-1.295  Z=+0.898
+[INFO] [1775855881.426178899] [aruco_base_frame_estimator]: Marker 202 not visible (1.9s since last detection) — not publishing
+[stretch_driver-3] [0m[INFO] [1775855881.968773266] [stretch_driver]: Changed to mode = position[0m
+[INFO] [1775855882.247820820] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855882.jpg
+[INFO] [1775855883.295810937] [object_grasper]: [ArUco] target updated → X=+0.355  Y=-1.295  Z=+0.898
+[stretch_driver-3] [0m[INFO] [1775855883.855595127] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775855883.867868121] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_lift', 'joint_arm', 'joint_wrist_yaw', 'joint_wrist_pitch', 'joint_wrist_roll', 'joint_gripper_finger_left'][0m
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775855883.925995919] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775855884.300220144] [object_grasper]: [ArUco] target updated → X=+0.355  Y=-1.295  Z=+0.898
+[stretch_driver-3] [0m[INFO] [1775855884.537112967] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1775855885.293377528] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855885.jpg
+[bt_navigator-14] [INFO] [1775855885.454035668] [bt_navigator]: Begin navigating from current location (-1.00, -0.02) to (0.00, 0.00)
+[controller_server-11] [INFO] [1775855885.476707699] [controller_server]: Received a goal, begin computing control effort.
+[INFO] [1775855885.946021918] [aruco_base_frame_estimator]: Marker 202 not visible (1.0s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855886.527346557] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855887.527313830] [controller_server]: Passing new path to controller.
+[INFO] [1775855887.959830985] [aruco_base_frame_estimator]: Marker 202 not visible (3.1s since last detection) — not publishing
+[INFO] [1775855888.297084682] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855888.jpg
+[controller_server-11] [INFO] [1775855888.577319619] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855889.627341836] [controller_server]: Passing new path to controller.
+[INFO] [1775855889.967514813] [aruco_base_frame_estimator]: Marker 202 not visible (5.1s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855890.627324866] [controller_server]: Passing new path to controller.
+[INFO] [1775855891.304869194] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855891.jpg
+[controller_server-11] [INFO] [1775855891.677317307] [controller_server]: Passing new path to controller.
+[INFO] [1775855892.034439407] [aruco_base_frame_estimator]: Marker 202 not visible (7.1s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855892.677360577] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775855893.727307838] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[INFO] [1775855894.090486497] [aruco_base_frame_estimator]: Marker 202 not visible (9.2s since last detection) — not publishing
+[INFO] [1775855894.363443726] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855894.jpg
+[controller_server-11] [INFO] [1775855894.777312455] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855895.777313895] [controller_server]: Passing new path to controller.
+[INFO] [1775855896.166863070] [aruco_base_frame_estimator]: Marker 202 not visible (11.3s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855896.827329753] [controller_server]: Passing new path to controller.
+[INFO] [1775855897.368702572] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855897.jpg
+[controller_server-11] [INFO] [1775855897.827331696] [controller_server]: Passing new path to controller.
+[INFO] [1775855898.170832094] [aruco_base_frame_estimator]: Marker 202 not visible (13.3s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855898.877313582] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855899.731811585] [controller_server]: Reached the goal!
+[bt_navigator-14] [INFO] [1775855899.764672226] [bt_navigator]: Goal succeeded
+[INFO] [1775855900.189102635] [aruco_base_frame_estimator]: Marker 202 not visible (15.3s since last detection) — not publishing
+[INFO] [1775855900.401411581] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855900.jpg
+[INFO] [1775855902.243487086] [aruco_base_frame_estimator]: Marker 202 not visible (17.3s since last detection) — not publishing
+[INFO] [1775855903.456214656] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855903.jpg
+[stretch_driver-3] [0m[INFO] [1775855903.917276542] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1775855904.250180410] [aruco_base_frame_estimator]: Marker 202 not visible (19.3s since last detection) — not publishing
+[INFO] [1775855906.318438969] [aruco_base_frame_estimator]: Marker 202 not visible (21.4s since last detection) — not publishing
+[INFO] [1775855906.515790838] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855906.jpg
+[stretch_driver-3] [0m[INFO] [1775855907.189278531] [stretch_driver]: Changed to mode = position[0m
+[INFO] [1775855908.375582898] [aruco_base_frame_estimator]: Marker 202 not visible (23.5s since last detection) — not publishing
+[stretch_driver-3] [0m[INFO] [1775855909.255443318] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775855909.258891935] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_lift', 'joint_arm', 'joint_wrist_yaw', 'joint_wrist_pitch', 'joint_wrist_roll', 'joint_gripper_finger_left'][0m
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775855909.319204740] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775855909.520932178] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855909.jpg
+[stretch_driver-3] [0m[INFO] [1775855909.938509616] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1775855910.381811725] [aruco_base_frame_estimator]: Marker 202 not visible (25.5s since last detection) — not publishing
+[bt_navigator-14] [INFO] [1775855910.791279012] [bt_navigator]: Begin navigating from current location (-0.15, -0.07) to (-1.02, -0.07)
+[controller_server-11] [INFO] [1775855910.812467208] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-11] [INFO] [1775855911.862989099] [controller_server]: Passing new path to controller.
+[INFO] [1775855912.447447383] [aruco_base_frame_estimator]: Marker 202 not visible (27.5s since last detection) — not publishing
+[INFO] [1775855912.525781517] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855912.jpg
+[controller_server-11] [INFO] [1775855912.912889753] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855913.912875228] [controller_server]: Passing new path to controller.
+[INFO] [1775855914.448362215] [aruco_base_frame_estimator]: Marker 202 not visible (29.5s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855914.962899055] [controller_server]: Passing new path to controller.
+[INFO] [1775855915.543918212] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855915.jpg
+[controller_server-11] [INFO] [1775855915.962875152] [controller_server]: Passing new path to controller.
+[INFO] [1775855916.530540656] [aruco_base_frame_estimator]: Marker 202 not visible (31.6s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855917.012887510] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855918.062874992] [controller_server]: Passing new path to controller.
+[INFO] [1775855918.585359411] [aruco_base_frame_estimator]: Marker 202 not visible (33.7s since last detection) — not publishing
+[INFO] [1775855918.589142790] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855918.jpg
+[controller_server-11] [INFO] [1775855919.062908161] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855920.112904557] [controller_server]: Passing new path to controller.
+[INFO] [1775855920.649036686] [aruco_base_frame_estimator]: Marker 202 not visible (35.7s since last detection) — not publishing
+[controller_server-11] [ERROR] [1775855920.813009336] [controller_server]: Failed to make progress
+[controller_server-11] [WARN] [1775855920.813199811] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-11] [INFO] [1775855920.831757922] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-11] [INFO] [1775855920.832709868] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-11] [WARN] [1775855920.966484435] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-11] [INFO] [1775855921.125193812] [controller_server]: Passing new path to controller.
+[INFO] [1775855921.603257010] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855921.jpg
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775855922.166560407] [controller_server]: Passing new path to controller.
+[INFO] [1775855922.719298349] [aruco_base_frame_estimator]: Marker 202 not visible (37.8s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855923.216565657] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855923.271138684] [controller_server]: Reached the goal!
+[bt_navigator-14] [INFO] [1775855923.301924038] [bt_navigator]: Goal succeeded
+[INFO] [1775855924.656518089] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855924.jpg
+[INFO] [1775855924.791108545] [aruco_base_frame_estimator]: Marker 202 not visible (39.9s since last detection) — not publishing
+[INFO] [1775855926.801146832] [aruco_base_frame_estimator]: Marker 202 not visible (41.9s since last detection) — not publishing
+[INFO] [1775855927.665808755] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855927.jpg
+[INFO] [1775855928.804895426] [aruco_base_frame_estimator]: Marker 202 not visible (43.9s since last detection) — not publishing
+[INFO] [1775855930.737525530] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855930.jpg
+[INFO] [1775855930.888085137] [aruco_base_frame_estimator]: Marker 202 not visible (46.0s since last detection) — not publishing
+[INFO] [1775855932.994032794] [aruco_base_frame_estimator]: Marker 202 not visible (48.1s since last detection) — not publishing
+[INFO] [1775855933.780445059] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855933.jpg
+[INFO] [1775855934.997066651] [aruco_base_frame_estimator]: Marker 202 not visible (50.1s since last detection) — not publishing
+[INFO] [1775855936.797007974] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855936.jpg
+[INFO] [1775855937.002287362] [aruco_base_frame_estimator]: Marker 202 not visible (52.1s since last detection) — not publishing
+[INFO] [1775855939.065500744] [aruco_base_frame_estimator]: Marker 202 not visible (54.2s since last detection) — not publishing
+[INFO] [1775855939.802622626] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855939.jpg
+[INFO] [1775855941.133953785] [aruco_base_frame_estimator]: Marker 202 not visible (56.2s since last detection) — not publishing
+[INFO] [1775855942.815391394] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855942.jpg
+[INFO] [1775855943.204393419] [aruco_base_frame_estimator]: Marker 202 not visible (58.3s since last detection) — not publishing
+[INFO] [1775855945.267699957] [aruco_base_frame_estimator]: Marker 202 not visible (60.4s since last detection) — not publishing
+[INFO] [1775855945.881654555] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855945.jpg
+[INFO] [1775855947.335674020] [aruco_base_frame_estimator]: Marker 202 not visible (62.4s since last detection) — not publishing
+[INFO] [1775855948.921433418] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855948.jpg
+[INFO] [1775855949.338814758] [aruco_base_frame_estimator]: Marker 202 not visible (64.4s since last detection) — not publishing
+[INFO] [1775855951.347901226] [aruco_base_frame_estimator]: Marker 202 not visible (66.4s since last detection) — not publishing
+[INFO] [1775855952.007530880] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855952.jpg
+[INFO] [1775855953.423625848] [aruco_base_frame_estimator]: Marker 202 not visible (68.5s since last detection) — not publishing
+[stretch_driver-3] [0m[INFO] [1775855954.558897323] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1775855955.021319979] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855955.jpg
+[INFO] [1775855955.477213056] [aruco_base_frame_estimator]: Marker 202 not visible (70.6s since last detection) — not publishing
+[INFO] [1775855957.485918372] [aruco_base_frame_estimator]: Marker 202 not visible (72.6s since last detection) — not publishing
+[stretch_driver-3] [0m[INFO] [1775855957.812288983] [stretch_driver]: Changed to mode = position[0m
+[INFO] [1775855958.098289812] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855958.jpg
+[INFO] [1775855959.613700204] [aruco_base_frame_estimator]: Marker 202 not visible (74.7s since last detection) — not publishing
+[stretch_driver-3] [0m[INFO] [1775855959.626051224] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775855959.643200762] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_lift', 'joint_arm', 'joint_wrist_yaw', 'joint_wrist_pitch', 'joint_wrist_roll', 'joint_gripper_finger_left'][0m
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775855959.701908999] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[stretch_driver-3] [0m[INFO] [1775855960.326306673] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1775855961.161201780] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855961.jpg
+[bt_navigator-14] [INFO] [1775855961.223775743] [bt_navigator]: Begin navigating from current location (-0.80, 0.02) to (-1.02, -0.04)
+[controller_server-11] [INFO] [1775855961.244568218] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-11] [INFO] [1775855961.248602963] [controller_server]: Reached the goal!
+[bt_navigator-14] [INFO] [1775855961.284132021] [bt_navigator]: Goal succeeded
+[INFO] [1775855961.614164730] [aruco_base_frame_estimator]: Marker 202 not visible (76.7s since last detection) — not publishing
+[INFO] [1775855963.621270378] [aruco_base_frame_estimator]: Marker 202 not visible (78.7s since last detection) — not publishing
+[INFO] [1775855964.174431310] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855964.jpg
+[INFO] [1775855965.626459613] [aruco_base_frame_estimator]: Marker 202 not visible (80.7s since last detection) — not publishing
+[stretch_driver-3] [0m[INFO] [1775855966.915453833] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1775855967.240449153] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855967.jpg
+[INFO] [1775855967.656496800] [aruco_base_frame_estimator]: Marker 202 not visible (82.8s since last detection) — not publishing
+[INFO] [1775855969.692453474] [aruco_base_frame_estimator]: Marker 202 not visible (84.8s since last detection) — not publishing
+[stretch_driver-3] [0m[INFO] [1775855970.085363997] [stretch_driver]: Changed to mode = position[0m
+[INFO] [1775855970.356457033] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855970.jpg
+[INFO] [1775855971.774295661] [aruco_base_frame_estimator]: Marker 202 not visible (86.9s since last detection) — not publishing
+[stretch_driver-3] [0m[INFO] [1775855971.865906307] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775855971.883247974] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_lift', 'joint_arm', 'joint_wrist_yaw', 'joint_wrist_pitch', 'joint_wrist_roll', 'joint_gripper_finger_left'][0m
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775855971.926487753] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[stretch_driver-3] [0m[INFO] [1775855972.647386494] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1775855973.405558158] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855973.jpg
+[bt_navigator-14] [INFO] [1775855973.623081129] [bt_navigator]: Begin navigating from current location (-0.80, 0.02) to (0.00, 0.00)
+[controller_server-11] [INFO] [1775855973.643835005] [controller_server]: Received a goal, begin computing control effort.
+[INFO] [1775855973.828042146] [aruco_base_frame_estimator]: Marker 202 not visible (88.9s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855974.694121253] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855975.744117036] [controller_server]: Passing new path to controller.
+[INFO] [1775855975.894468764] [aruco_base_frame_estimator]: Marker 202 not visible (91.0s since last detection) — not publishing
+[INFO] [1775855976.422425409] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855976.jpg
+[controller_server-11] [INFO] [1775855976.744109857] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855977.794150691] [controller_server]: Passing new path to controller.
+[INFO] [1775855977.899418523] [aruco_base_frame_estimator]: Marker 202 not visible (93.0s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855978.794101959] [controller_server]: Passing new path to controller.
+[INFO] [1775855979.430743893] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855979.jpg
+[controller_server-11] [INFO] [1775855979.844140735] [controller_server]: Passing new path to controller.
+[INFO] [1775855979.956240577] [aruco_base_frame_estimator]: Marker 202 not visible (95.1s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855980.894160471] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855981.894152880] [controller_server]: Passing new path to controller.
+[INFO] [1775855981.958079355] [aruco_base_frame_estimator]: Marker 202 not visible (97.1s since last detection) — not publishing
+[INFO] [1775855982.438176898] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855982.jpg
+[controller_server-11] [INFO] [1775855982.946780931] [controller_server]: Passing new path to controller.
+[controller_server-11] [ERROR] [1775855983.644152270] [controller_server]: Failed to make progress
+[controller_server-11] [WARN] [1775855983.644248337] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-11] [INFO] [1775855983.666492080] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-11] [INFO] [1775855983.667820273] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-11] [WARN] [1775855983.770418828] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[INFO] [1775855983.966644254] [aruco_base_frame_estimator]: Marker 202 not visible (99.1s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855983.986036850] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775855985.020526958] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[INFO] [1775855985.483247878] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855985.jpg
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[INFO] [1775855985.968135032] [aruco_base_frame_estimator]: Marker 202 not visible (101.1s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855986.020527875] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855987.070496511] [controller_server]: Passing new path to controller.
+[INFO] [1775855987.971507815] [aruco_base_frame_estimator]: Marker 202 not visible (103.1s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855988.070498909] [controller_server]: Passing new path to controller.
+[INFO] [1775855988.504280233] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855988.jpg
+[controller_server-11] [INFO] [1775855989.120555948] [controller_server]: Passing new path to controller.
+[INFO] [1775855990.045184978] [aruco_base_frame_estimator]: Marker 202 not visible (105.1s since last detection) — not publishing
+[controller_server-11] [INFO] [1775855990.120492197] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775855990.574930087] [controller_server]: Reached the goal!
+[bt_navigator-14] [INFO] [1775855990.613551589] [bt_navigator]: Goal succeeded
+[INFO] [1775855991.506079105] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855991.jpg
+[INFO] [1775855992.099845940] [aruco_base_frame_estimator]: Marker 202 not visible (107.2s since last detection) — not publishing
+[stretch_driver-3] [0m[INFO] [1775855993.961066956] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1775855994.102462264] [aruco_base_frame_estimator]: Marker 202 not visible (109.2s since last detection) — not publishing
+[INFO] [1775855994.655855251] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855994.jpg
+[INFO] [1775855996.104185394] [aruco_base_frame_estimator]: Marker 202 not visible (111.2s since last detection) — not publishing
+[stretch_driver-3] [0m[INFO] [1775855997.133274023] [stretch_driver]: Changed to mode = position[0m
+[INFO] [1775855997.715569378] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775855997.jpg
+[INFO] [1775855998.112620659] [aruco_base_frame_estimator]: Marker 202 not visible (113.2s since last detection) — not publishing
+[stretch_driver-3] [0m[INFO] [1775855998.998973961] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775855999.010184443] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_lift', 'joint_arm', 'joint_wrist_yaw', 'joint_wrist_pitch', 'joint_wrist_roll', 'joint_gripper_finger_left'][0m
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775855999.058819143] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[stretch_driver-3] [0m[INFO] [1775855999.767915568] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1775856000.125000982] [aruco_base_frame_estimator]: Marker 202 not visible (115.2s since last detection) — not publishing
+[bt_navigator-14] [INFO] [1775856000.661507025] [bt_navigator]: Begin navigating from current location (-0.17, -0.01) to (-1.02, -0.04)
+[controller_server-11] [INFO] [1775856000.682575832] [controller_server]: Received a goal, begin computing control effort.
+[INFO] [1775856000.722925580] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856000.jpg
+[controller_server-11] [INFO] [1775856001.733056812] [controller_server]: Passing new path to controller.
+[INFO] [1775856002.179956131] [aruco_base_frame_estimator]: Marker 202 not visible (117.3s since last detection) — not publishing
+[controller_server-11] [INFO] [1775856002.783045217] [controller_server]: Passing new path to controller.
+[INFO] [1775856003.779286111] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856003.jpg
+[controller_server-11] [INFO] [1775856003.783085456] [controller_server]: Passing new path to controller.
+[INFO] [1775856004.255926786] [aruco_base_frame_estimator]: Marker 202 not visible (119.4s since last detection) — not publishing
+[controller_server-11] [INFO] [1775856004.833084024] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775856005.833076382] [controller_server]: Passing new path to controller.
+[INFO] [1775856006.311769194] [aruco_base_frame_estimator]: Marker 202 not visible (121.4s since last detection) — not publishing
+[INFO] [1775856006.786220826] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856006.jpg
+[controller_server-11] [INFO] [1775856006.883073591] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775856007.883063581] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[INFO] [1775856008.318624065] [aruco_base_frame_estimator]: Marker 202 not visible (123.4s since last detection) — not publishing
+[controller_server-11] [INFO] [1775856008.933095845] [controller_server]: Passing new path to controller.
+[INFO] [1775856009.792878216] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856009.jpg
+[controller_server-11] [INFO] [1775856009.983070451] [controller_server]: Passing new path to controller.
+[INFO] [1775856010.378361426] [aruco_base_frame_estimator]: Marker 202 not visible (125.5s since last detection) — not publishing
+[controller_server-11] [INFO] [1775856010.983058604] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775856012.033079540] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775856013.033103558] [controller_server]: Passing new path to controller.
+[WARN] [1775856013.199142300] [aruco_base_frame_estimator]: TF lookup failed: Lookup would require extrapolation into the past.  Requested time 1775855884.899234 but the earliest data is at time 1775856002.136538, when looking up transform from frame [fruit_marker] to frame [base_link]
+[INFO] [1775856013.200668591] [object_grasper]: [ArUco] target updated → X=-0.400  Y=-1.186  Z=+0.892
+[INFO] [1775856013.206510811] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856013.jpg
+[controller_server-11] [INFO] [1775856014.083045595] [controller_server]: Passing new path to controller.
+[WARN] [1775856014.240559886] [aruco_base_frame_estimator]: TF lookup failed: Lookup would require extrapolation into the past.  Requested time 1775855884.899234 but the earliest data is at time 1775856002.136538, when looking up transform from frame [fruit_marker] to frame [base_link]
+[INFO] [1775856014.251972771] [object_grasper]: [ArUco] target updated → X=-0.399  Y=-1.186  Z=+0.892
+[controller_server-11] [INFO] [1775856015.083044972] [controller_server]: Passing new path to controller.
+[WARN] [1775856015.999726727] [aruco_base_frame_estimator]: TF lookup failed: Lookup would require extrapolation into the past.  Requested time 1775855884.899234 but the earliest data is at time 1775856004.936196, when looking up transform from frame [fruit_marker] to frame [base_link]
+[INFO] [1775856016.001556648] [object_grasper]: [ArUco] target updated → X=+0.361  Y=-1.213  Z=+0.890
+[controller_server-11] [INFO] [1775856016.133050371] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775856016.836543518] [controller_server]: Reached the goal!
+[bt_navigator-14] [INFO] [1775856016.871810857] [bt_navigator]: Goal succeeded
+[WARN] [1775856017.051788133] [aruco_base_frame_estimator]: TF lookup failed: Lookup would require extrapolation into the past.  Requested time 1775855884.899234 but the earliest data is at time 1775856004.969857, when looking up transform from frame [fruit_marker] to frame [base_link]
+[INFO] [1775856017.057311349] [object_grasper]: [ArUco] target updated → X=+0.375  Y=-1.214  Z=+0.888
+[INFO] [1775856017.057481170] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856017.jpg
+[INFO] [1775856018.123464019] [aruco_base_frame_estimator]: Marker 202 not visible (1.1s since last detection) — not publishing
+[INFO] [1775856020.057811978] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856020.jpg
+[INFO] [1775856020.128621470] [aruco_base_frame_estimator]: Marker 202 not visible (3.1s since last detection) — not publishing
+[INFO] [1775856022.190017806] [aruco_base_frame_estimator]: Marker 202 not visible (5.1s since last detection) — not publishing
+[INFO] [1775856023.132388193] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856023.jpg
+[INFO] [1775856024.193799550] [aruco_base_frame_estimator]: Marker 202 not visible (7.1s since last detection) — not publishing
+[INFO] [1775856026.195136218] [aruco_base_frame_estimator]: Marker 202 not visible (9.1s since last detection) — not publishing
+[INFO] [1775856026.201840823] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856026.jpg
+[INFO] [1775856028.230987679] [aruco_base_frame_estimator]: Marker 202 not visible (11.2s since last detection) — not publishing
+[INFO] [1775856029.204269296] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856029.jpg
+[INFO] [1775856030.251265304] [aruco_base_frame_estimator]: Marker 202 not visible (13.2s since last detection) — not publishing
+[INFO] [1775856032.265098990] [aruco_base_frame_estimator]: Marker 202 not visible (15.2s since last detection) — not publishing
+[INFO] [1775856032.268866201] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856032.jpg
+[INFO] [1775856034.326737313] [aruco_base_frame_estimator]: Marker 202 not visible (17.3s since last detection) — not publishing
+[INFO] [1775856035.338379308] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856035.jpg
+[INFO] [1775856036.332611715] [aruco_base_frame_estimator]: Marker 202 not visible (19.3s since last detection) — not publishing
+[INFO] [1775856038.348799051] [aruco_base_frame_estimator]: Marker 202 not visible (21.3s since last detection) — not publishing
+[INFO] [1775856038.353047429] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856038.jpg
+[INFO] [1775856040.406016028] [aruco_base_frame_estimator]: Marker 202 not visible (23.4s since last detection) — not publishing
+[INFO] [1775856041.410832062] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856041.jpg
+[INFO] [1775856042.475817849] [aruco_base_frame_estimator]: Marker 202 not visible (25.4s since last detection) — not publishing
+[INFO] [1775856044.411664633] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856044.jpg
+[INFO] [1775856044.475894823] [aruco_base_frame_estimator]: Marker 202 not visible (27.4s since last detection) — not publishing
+[INFO] [1775856046.476081933] [aruco_base_frame_estimator]: Marker 202 not visible (29.4s since last detection) — not publishing
+[INFO] [1775856047.411413725] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856047.jpg
+[rviz2-17] Start navigation
+[rviz2-17] [INFO] [1775856047.899080879] [rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[bt_navigator-14] [INFO] [1775856047.899882338] [bt_navigator]: Begin navigating from current location (-1.02, 0.05) to (-1.25, 0.03)
+[controller_server-11] [INFO] [1775856047.920843663] [controller_server]: Received a goal, begin computing control effort.
+[INFO] [1775856048.504402698] [aruco_base_frame_estimator]: Marker 202 not visible (31.5s since last detection) — not publishing
+[controller_server-11] [INFO] [1775856048.971108887] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775856050.021116155] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775856050.474977822] [controller_server]: Reached the goal!
+[bt_navigator-14] [INFO] [1775856050.510217285] [bt_navigator]: Goal succeeded
+[WARN] [1775856050.898639794] [aruco_base_frame_estimator]: TF lookup failed: Lookup would require extrapolation into the past.  Requested time 1775855884.899234 but the earliest data is at time 1775856039.802784, when looking up transform from frame [fruit_marker] to frame [base_link]
+[INFO] [1775856050.900790257] [object_grasper]: [ArUco] target updated → X=+0.409  Y=-1.221  Z=+0.883
+[INFO] [1775856050.906049042] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856050.jpg
+[INFO] [1775856052.077250026] [aruco_base_frame_estimator]: Marker 202 not visible (1.1s since last detection) — not publishing
+[INFO] [1775856053.892829409] [object_grasper]: [ArUco] target updated → X=+0.350  Y=-1.258  Z=+0.897
+[INFO] [1775856053.967710490] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856053.jpg
+[INFO] [1775856054.947359035] [aruco_base_frame_estimator]: Marker 202 not visible (1.1s since last detection) — not publishing
+[rviz2-17] Start navigation
+[rviz2-17] [INFO] [1775856055.464251020] [rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[bt_navigator-14] [INFO] [1775856055.465066373] [bt_navigator]: Begin navigating from current location (-1.02, 0.05) to (-1.30, 0.03)
+[controller_server-11] [INFO] [1775856055.485776417] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-11] [INFO] [1775856055.489194171] [controller_server]: Reached the goal!
+[bt_navigator-14] [INFO] [1775856055.525396848] [bt_navigator]: Goal succeeded
+[INFO] [1775856056.954216612] [aruco_base_frame_estimator]: Marker 202 not visible (3.1s since last detection) — not publishing
+[INFO] [1775856057.023638449] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856057.jpg
+[INFO] [1775856058.623050756] [object_grasper]: [ArUco] target updated → X=+0.358  Y=-1.337  Z=+0.872
+[INFO] [1775856059.694782682] [aruco_base_frame_estimator]: Marker 202 not visible (1.1s since last detection) — not publishing
+[INFO] [1775856060.031734926] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856060.jpg
+[INFO] [1775856060.222028377] [object_grasper]: [ArUco] target updated → X=+0.358  Y=-1.337  Z=+0.872
+[INFO] [1775856061.356127375] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775856061.356398863] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775856061.356572475] [object_grasper]: [ArUco] target updated → X=+0.335  Y=-1.254  Z=+0.899
+[INFO] [1775856061.356586159] [aruco_base_frame_estimator]:   [CAMERA raw] X=-0.263m  Y=+0.364m  Z=+1.226m  dist=1.306m
+[INFO] [1775856061.356762587] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.335m  Y=-1.254m  Z=+0.899m  → published
+[INFO] [1775856061.356936019] [aruco_base_frame_estimator]: ============================================================
+[rviz2-17] Start navigation
+[rviz2-17] [INFO] [1775856061.605926378] [rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[bt_navigator-14] [INFO] [1775856061.606757683] [bt_navigator]: Begin navigating from current location (-1.02, 0.05) to (-1.39, 0.03)
+[controller_server-11] [INFO] [1775856061.627692597] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-11] [INFO] [1775856061.631447502] [controller_server]: Reached the goal!
+[bt_navigator-14] [INFO] [1775856061.667539023] [bt_navigator]: Goal succeeded
+[INFO] [1775856062.555554942] [aruco_base_frame_estimator]: Marker 202 not visible (1.1s since last detection) — not publishing
+[INFO] [1775856063.093836616] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856063.jpg
+[INFO] [1775856063.156304544] [object_grasper]: [ArUco] target updated → X=+0.335  Y=-1.254  Z=+0.899
+[INFO] [1775856064.683947204] [aruco_base_frame_estimator]: Marker 202 not visible (1.3s since last detection) — not publishing
+[INFO] [1775856066.096182521] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856066.jpg
+[INFO] [1775856066.761051721] [aruco_base_frame_estimator]: Marker 202 not visible (3.4s since last detection) — not publishing
+[INFO] [1775856068.830452630] [aruco_base_frame_estimator]: Marker 202 not visible (5.5s since last detection) — not publishing
+[INFO] [1775856069.178165707] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856069.jpg
+[stretch_driver-3] [0m[INFO] [1775856069.231114492] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1775856069.362320678] [object_grasper]: [ArUco] target updated → X=+0.335  Y=-1.254  Z=+0.899
+[INFO] [1775856070.431734054] [object_grasper]: [ArUco] target updated → X=+0.358  Y=-1.337  Z=+0.872
+[INFO] [1775856071.839579677] [aruco_base_frame_estimator]: Marker 202 not visible (1.1s since last detection) — not publishing
+[INFO] [1775856072.235650730] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856072.jpg
+[stretch_driver-3] [0m[INFO] [1775856072.426577148] [stretch_driver]: Changed to mode = position[0m
+[INFO] [1775856072.832961915] [object_grasper]: [ArUco] target updated → X=+0.358  Y=-1.337  Z=+0.872
+[stretch_driver-3] [0m[INFO] [1775856074.219878475] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775856074.232494883] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_lift', 'joint_arm', 'joint_wrist_yaw', 'joint_wrist_pitch', 'joint_wrist_roll', 'joint_gripper_finger_left'][0m
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775856074.280380386] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775856074.802079449] [aruco_base_frame_estimator]: Marker 202 not visible (1.1s since last detection) — not publishing
+[stretch_driver-3] [0m[INFO] [1775856074.850062403] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1775856074.926115213] [object_grasper]: [ArUco] target updated → X=+0.335  Y=-1.254  Z=+0.899
+[INFO] [1775856075.276991497] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856075.jpg
+[bt_navigator-14] [INFO] [1775856075.716205438] [bt_navigator]: Begin navigating from current location (-1.02, 0.05) to (-1.02, -0.04)
+[controller_server-11] [INFO] [1775856075.737719101] [controller_server]: Received a goal, begin computing control effort.
+[INFO] [1775856076.508720215] [object_grasper]: [ArUco] target updated → X=+0.358  Y=-1.337  Z=+0.872
+[controller_server-11] [INFO] [1775856076.788062766] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775856077.838058737] [controller_server]: Passing new path to controller.
+[INFO] [1775856078.232143508] [aruco_base_frame_estimator]: Marker 202 not visible (1.1s since last detection) — not publishing
+[controller_server-11] [INFO] [1775856078.241065862] [controller_server]: Reached the goal!
+[bt_navigator-14] [INFO] [1775856078.276681294] [bt_navigator]: Goal succeeded
+[INFO] [1775856078.351517841] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856078.jpg
+[INFO] [1775856080.251198173] [aruco_base_frame_estimator]: Marker 202 not visible (3.1s since last detection) — not publishing
+[INFO] [1775856081.371552594] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856081.jpg
+[INFO] [1775856082.298109338] [aruco_base_frame_estimator]: Marker 202 not visible (5.1s since last detection) — not publishing
+[INFO] [1775856084.306969656] [aruco_base_frame_estimator]: Marker 202 not visible (7.1s since last detection) — not publishing
+[INFO] [1775856084.396693991] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856084.jpg
+[INFO] [1775856086.368304192] [aruco_base_frame_estimator]: Marker 202 not visible (9.2s since last detection) — not publishing
+[INFO] [1775856087.453428245] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856087.jpg
+[INFO] [1775856088.376213932] [aruco_base_frame_estimator]: Marker 202 not visible (11.2s since last detection) — not publishing
+[INFO] [1775856090.388476093] [aruco_base_frame_estimator]: Marker 202 not visible (13.2s since last detection) — not publishing
+[INFO] [1775856090.457825541] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856090.jpg
+[INFO] [1775856092.441570263] [aruco_base_frame_estimator]: Marker 202 not visible (15.3s since last detection) — not publishing
+[INFO] [1775856093.465994739] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856093.jpg
+[INFO] [1775856094.443894930] [aruco_base_frame_estimator]: Marker 202 not visible (17.3s since last detection) — not publishing
+[INFO] [1775856096.512928537] [aruco_base_frame_estimator]: Marker 202 not visible (19.3s since last detection) — not publishing
+[INFO] [1775856096.517400019] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856096.jpg
+[INFO] [1775856098.514258114] [aruco_base_frame_estimator]: Marker 202 not visible (21.3s since last detection) — not publishing
+[INFO] [1775856099.520148672] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856099.jpg
+[INFO] [1775856100.562756282] [aruco_base_frame_estimator]: Marker 202 not visible (23.4s since last detection) — not publishing
+[INFO] [1775856102.523452034] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856102.jpg
+[INFO] [1775856102.593853729] [aruco_base_frame_estimator]: Marker 202 not visible (25.4s since last detection) — not publishing
+[INFO] [1775856104.727532774] [aruco_base_frame_estimator]: Marker 202 not visible (27.6s since last detection) — not publishing
+[INFO] [1775856105.595121827] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856105.jpg
+[INFO] [1775856106.788800603] [aruco_base_frame_estimator]: Marker 202 not visible (29.6s since last detection) — not publishing
+[INFO] [1775856108.657584429] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856108.jpg
+[INFO] [1775856108.857033023] [aruco_base_frame_estimator]: Marker 202 not visible (31.7s since last detection) — not publishing
+[INFO] [1775856110.992051440] [aruco_base_frame_estimator]: Marker 202 not visible (33.8s since last detection) — not publishing
+[INFO] [1775856111.656763454] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856111.jpg
+[INFO] [1775856113.189353882] [aruco_base_frame_estimator]: Marker 202 not visible (36.0s since last detection) — not publishing
+[INFO] [1775856114.681918103] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856114.jpg
+[INFO] [1775856115.192748457] [aruco_base_frame_estimator]: Marker 202 not visible (38.0s since last detection) — not publishing
+[INFO] [1775856117.195994388] [aruco_base_frame_estimator]: Marker 202 not visible (40.0s since last detection) — not publishing
+[INFO] [1775856117.738032730] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856117.jpg
+[INFO] [1775856119.262460564] [aruco_base_frame_estimator]: Marker 202 not visible (42.1s since last detection) — not publishing
+[INFO] [1775856120.850997212] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856120.jpg
+[INFO] [1775856121.341140171] [aruco_base_frame_estimator]: Marker 202 not visible (44.2s since last detection) — not publishing
+[INFO] [1775856123.397228657] [aruco_base_frame_estimator]: Marker 202 not visible (46.2s since last detection) — not publishing
+[INFO] [1775856123.874598973] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856123.jpg
+[INFO] [1775856125.405425094] [aruco_base_frame_estimator]: Marker 202 not visible (48.2s since last detection) — not publishing
+[INFO] [1775856126.918903189] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856126.jpg
+[INFO] [1775856127.547197821] [aruco_base_frame_estimator]: Marker 202 not visible (50.4s since last detection) — not publishing
+[INFO] [1775856129.547655909] [aruco_base_frame_estimator]: Marker 202 not visible (52.4s since last detection) — not publishing
+[INFO] [1775856129.940248871] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856129.jpg
+[INFO] [1775856131.606414204] [aruco_base_frame_estimator]: Marker 202 not visible (54.4s since last detection) — not publishing
+[INFO] [1775856132.948575248] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856132.jpg
+[INFO] [1775856133.738950921] [aruco_base_frame_estimator]: Marker 202 not visible (56.6s since last detection) — not publishing
+[INFO] [1775856135.873575892] [aruco_base_frame_estimator]: Marker 202 not visible (58.7s since last detection) — not publishing
+[INFO] [1775856136.011558616] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856136.jpg
+[INFO] [1775856137.880627664] [aruco_base_frame_estimator]: Marker 202 not visible (60.7s since last detection) — not publishing
+[INFO] [1775856139.011272272] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856139.jpg
+[INFO] [1775856139.943222174] [aruco_base_frame_estimator]: Marker 202 not visible (62.8s since last detection) — not publishing
+[INFO] [1775856141.943290339] [aruco_base_frame_estimator]: Marker 202 not visible (64.8s since last detection) — not publishing
+[INFO] [1775856142.012381260] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856142.jpg
+[INFO] [1775856143.961011177] [aruco_base_frame_estimator]: Marker 202 not visible (66.8s since last detection) — not publishing
+[INFO] [1775856145.159455357] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856145.jpg
+[INFO] [1775856146.010188787] [aruco_base_frame_estimator]: Marker 202 not visible (68.8s since last detection) — not publishing
+[INFO] [1775856148.016411107] [aruco_base_frame_estimator]: Marker 202 not visible (70.8s since last detection) — not publishing
+[INFO] [1775856148.226915258] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856148.jpg
+[INFO] [1775856150.081717490] [aruco_base_frame_estimator]: Marker 202 not visible (72.9s since last detection) — not publishing
+[INFO] [1775856151.306444862] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856151.jpg
+[INFO] [1775856152.092508566] [aruco_base_frame_estimator]: Marker 202 not visible (74.9s since last detection) — not publishing
+[INFO] [1775856154.161836191] [aruco_base_frame_estimator]: Marker 202 not visible (77.0s since last detection) — not publishing
+[INFO] [1775856154.336617849] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775856154.jpg
+Traceback (most recent call last):
+  File "/home/willy/tf.py", line 323, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 808, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 797, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 780, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 681, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/willy/tf.py", line 331, in <module>
+    main()
+  File "/home/willy/tf.py", line 328, in main
+    rclpy.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 130, in shutdown
+    _shutdown(context=context)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
+    return context.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
+    self.__context.shutdown()
+rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241

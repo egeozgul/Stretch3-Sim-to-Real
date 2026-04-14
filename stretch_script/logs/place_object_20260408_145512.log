@@ -1,0 +1,37 @@
+=== place_object.sh started at Wed Apr  8 02:55:12 PM EDT 2026 ===
+Switching to position mode...
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+Extending arm to place position (extend 25cm, lower 8cm)...
+[INFO] [1775674514.459853491] [place_object]: place_object started
+[INFO] [1775674514.509672418] [place_object]: Node place_object connected to /home_the_robot service.
+[INFO] [1775674514.511548058] [place_object]: Node place_object connected to /stow_the_robot service.
+[INFO] [1775674514.512730218] [place_object]: Node place_object connected to /stop_the_robot service.
+[INFO] [1775674514.513748505] [place_object]: Node place_object connected to /switch_to_trajectory_mode service.
+[INFO] [1775674514.520340290] [place_object]: Node place_object connected to /switch_to_position_mode service.
+[INFO] [1775674514.521916299] [place_object]: Node place_object connected to /switch_to_navigation_mode service.
+[INFO] [1775674514.522391654] [place_object]: Moving to place position...
+[INFO] [1775674517.083274917] [place_object]: Place position reached.
+[INFO] [1775674517.083807951] [place_object]: Opening gripper to release object...
+[INFO] [1775674520.541058324] [place_object]: Gripper opened, object released.
+[INFO] [1775674520.541851000] [place_object]: Retracting arm...
+[INFO] [1775674523.105397996] [place_object]: Arm retracted.
+[INFO] [1775674523.105706117] [place_object]: Done.
+Object placed successfully.
+Resetting arm to travel position...
+[INFO] [1775674523.901489619] [reset_pose]: reset_pose started
+[INFO] [1775674523.955369027] [reset_pose]: Node reset_pose connected to /home_the_robot service.
+[INFO] [1775674523.957162719] [reset_pose]: Node reset_pose connected to /stow_the_robot service.
+[INFO] [1775674523.958636915] [reset_pose]: Node reset_pose connected to /stop_the_robot service.
+[INFO] [1775674523.959656392] [reset_pose]: Node reset_pose connected to /switch_to_trajectory_mode service.
+[INFO] [1775674523.960855045] [reset_pose]: Node reset_pose connected to /switch_to_position_mode service.
+[INFO] [1775674523.963026884] [reset_pose]: Node reset_pose connected to /switch_to_navigation_mode service.
+[INFO] [1775674523.963505408] [reset_pose]: Moving to default pose...
+[INFO] [1775674527.953081312] [reset_pose]: Arm reset done.
+[INFO] [1775674527.953354478] [reset_pose]: Skipping rotation (ROTATE_DEG=0).
+[INFO] [1775674527.953595318] [reset_pose]: Done.
+Arm reset complete.
+=== place_object.sh finished at Wed Apr  8 02:55:28 PM EDT 2026 ===

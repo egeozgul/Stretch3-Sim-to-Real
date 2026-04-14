@@ -1,0 +1,19 @@
+=== launch_nodes.sh started at Tue Apr  7 04:10:18 PM EDT 2026 ===
+Freeing robot process...
+Done!
+Checking if robot needs homing...
+Robot not homed. Homing now (this may take ~30s)...
+For use with S T R E T C H (R) from Hello Robot Inc.
+---------------------------------------------------------------------
+
+Unable to load URDF: /home/willy/.local/lib/python3.10/site-packages/stretch_urdf/RE2V0/stretch_description_RE2V0_tool_stretch_dex_wrist.urdf. Disabling collision system.
+[INFO] [robot_monitor]: Guarded contact lift
+[INFO] [robot_monitor]: Wrist single tap: 31
+[INFO] [robot_monitor]: Base bump event
+[INFO] [robot_monitor]: Base bump event
+[INFO] [robot_monitor]: Base bump event
+[INFO] [robot_monitor]: Base bump event
+[INFO] [robot_monitor]: Wrist single tap: 34
+[INFO] [robot_monitor]: Guarded contact arm
+[INFO] [robot_monitor]: Wrist single tap: 37
+[INFO] [robot_monitor]: Wrist single tap: 38

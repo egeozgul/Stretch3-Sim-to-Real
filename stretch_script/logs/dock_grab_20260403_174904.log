@@ -1,0 +1,1585 @@
+=== dock_grab.sh started at Fri Apr  3 05:49:04 PM EDT 2026 ===
+Freeing robot process...
+Done!
+=== Launching all nodes ===
+Waiting for Nav2 action server...
+[INFO] [launch]: All log files can be found below /home/willy/.ros/log/2026-04-03-17-49-06-861746-stretch-re2-2204-20381
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch]: All log files can be found below /home/willy/.ros/log/2026-04-03-17-49-06-900106-stretch-re2-2204-20382
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: D435i launched in high resolution
+[INFO] [realsense2_camera_node-1]: process started with pid [20486]
+[INFO] [d435i_accel_correction-2]: process started with pid [20488]
+[INFO] [1775252947.174608661] [aruco_base_frame_estimator]: aruco_base_frame_estimator started
+Nav2 is up!
+Setting initial pose...
+[realsense2_camera_node-1] [0m[INFO] [1775252947.371971190] [camera]: RealSense ROS v4.55.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252947.372193179] [camera]: Built with LibRealSense v2.56.4[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252947.372218360] [camera]: Running with LibRealSense v2.56.4[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252947.418422058] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252947.418519287] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252947.418543619] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252947.418737490] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252947.418768439] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252947.418793170] [camera]: Resetting device...[0m
+[d435i_accel_correction-2] [INFO] [1775252947.596363744] [d435i_accel_correction_node]: d435i_accel_correction_node started
+[INFO] [stretch_driver-3]: process started with pid [20589]
+[INFO] [joint_state_publisher-1]: process started with pid [20585]
+[INFO] [robot_state_publisher-2]: process started with pid [20587]
+[INFO] [sllidar_node-4]: process started with pid [20591]
+[INFO] [scan_to_scan_filter_chain-5]: process started with pid [20593]
+[INFO] [joy_node-6]: process started with pid [20595]
+[INFO] [teleop_node-7]: process started with pid [20597]
+[INFO] [map_server-8]: process started with pid [20599]
+[INFO] [amcl-9]: process started with pid [20601]
+[INFO] [lifecycle_manager-10]: process started with pid [20603]
+[INFO] [controller_server-11]: process started with pid [20605]
+[INFO] [planner_server-12]: process started with pid [20609]
+[INFO] [behavior_server-13]: process started with pid [20613]
+[INFO] [bt_navigator-14]: process started with pid [20624]
+[INFO] [waypoint_follower-15]: process started with pid [20637]
+[INFO] [lifecycle_manager-16]: process started with pid [20878]
+[INFO] [rviz2-17]: process started with pid [20881]
+[sllidar_node-4] [INFO] [1775252948.009905779] [sllidar_node]: SLLidar running on ROS2 package SLLidar.ROS2 SDK Version:1.0.1, SLLIDAR SDK Version:2.1.0
+[sllidar_node-4] [INFO] [1775252948.135983068] [sllidar_node]: SLLidar S/N: C394ED93C0EA98C9A5E698F2564A4669
+[sllidar_node-4] [INFO] [1775252948.136049621] [sllidar_node]: Firmware Ver: 1.29
+[sllidar_node-4] [INFO] [1775252948.136059551] [sllidar_node]: Hardware Rev: 7
+[sllidar_node-4] [INFO] [1775252948.138501656] [sllidar_node]: SLLidar health status : 0
+[sllidar_node-4] [INFO] [1775252948.138535492] [sllidar_node]: SLLidar health status : OK.
+[scan_to_scan_filter_chain-5] [INFO] [1775252948.005002668] [laser_filter]: In shadow configure done
+[scan_to_scan_filter_chain-5] [WARN] [1775252948.005452309] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[teleop_node-7] [INFO] [1775252948.046763220] [TeleopTwistJoy]: Teleop enable button 4.
+[teleop_node-7] [INFO] [1775252948.046870104] [TeleopTwistJoy]: Linear axis x on 4 at scale 0.500000.
+[teleop_node-7] [INFO] [1775252948.046887701] [TeleopTwistJoy]: Angular axis yaw on 3 at scale 0.500000.
+[map_server-8] [INFO] [1775252948.153827913] [map_server]: 
+[map_server-8] 	map_server lifecycle node launched. 
+[map_server-8] 	Waiting on external lifecycle transitions to activate
+[map_server-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-8] [INFO] [1775252948.153975419] [map_server]: Creating
+[amcl-9] [INFO] [1775252948.031414602] [amcl]: 
+[amcl-9] 	amcl lifecycle node launched. 
+[amcl-9] 	Waiting on external lifecycle transitions to activate
+[amcl-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-9] [INFO] [1775252948.032465819] [amcl]: Creating
+[lifecycle_manager-10] [INFO] [1775252948.044654137] [lifecycle_manager_localization]: Creating
+[lifecycle_manager-10] [INFO] [1775252948.057628539] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[lifecycle_manager-10] [INFO] [1775252948.156274073] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-10] [INFO] [1775252948.156335555] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[controller_server-11] [INFO] [1775252948.080654680] [controller_server]: 
+[controller_server-11] 	controller_server lifecycle node launched. 
+[controller_server-11] 	Waiting on external lifecycle transitions to activate
+[controller_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-11] [INFO] [1775252948.096085173] [controller_server]: Creating controller server
+[controller_server-11] [INFO] [1775252948.102157460] [local_costmap.local_costmap]: 
+[controller_server-11] 	local_costmap lifecycle node launched. 
+[controller_server-11] 	Waiting on external lifecycle transitions to activate
+[controller_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-11] [INFO] [1775252948.106701626] [local_costmap.local_costmap]: Creating Costmap
+[planner_server-12] [INFO] [1775252948.082768591] [planner_server]: 
+[planner_server-12] 	planner_server lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1775252948.092875153] [planner_server]: Creating
+[planner_server-12] [INFO] [1775252948.100914151] [global_costmap.global_costmap]: 
+[planner_server-12] 	global_costmap lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1775252948.102342497] [global_costmap.global_costmap]: Creating Costmap
+[behavior_server-13] [INFO] [1775252948.115866784] [behavior_server]: 
+[behavior_server-13] 	behavior_server lifecycle node launched. 
+[behavior_server-13] 	Waiting on external lifecycle transitions to activate
+[behavior_server-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-14] [INFO] [1775252948.037761465] [bt_navigator]: 
+[bt_navigator-14] 	bt_navigator lifecycle node launched. 
+[bt_navigator-14] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-14] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-14] [INFO] [1775252948.037940788] [bt_navigator]: Creating
+[waypoint_follower-15] [INFO] [1775252948.138419575] [waypoint_follower]: 
+[waypoint_follower-15] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-15] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-15] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-15] [INFO] [1775252948.140431921] [waypoint_follower]: Creating
+[lifecycle_manager-10] [ERROR] [1775252948.239322852] [lifecycle_manager_localization]: Failed to change state for node: map_server
+[lifecycle_manager-10] [ERROR] [1775252948.239452597] [lifecycle_manager_localization]: Failed to bring up all requested nodes. Aborting bringup.
+[lifecycle_manager-16] [INFO] [1775252948.287259129] [lifecycle_manager_navigation]: Creating
+[lifecycle_manager-16] [INFO] [1775252948.292921462] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[sllidar_node-4] [INFO] [1775252948.351802492] [sllidar_node]: current scan mode: Boost, sample rate: 8 Khz, max_distance: 12.0 m, scan frequency:10.0 Hz, 
+[lifecycle_manager-16] [INFO] [1775252948.424927016] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-16] [INFO] [1775252948.425000097] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[lifecycle_manager-16] [ERROR] [1775252948.456178281] [lifecycle_manager_navigation]: Failed to change state for node: controller_server
+[lifecycle_manager-16] [ERROR] [1775252948.456258273] [lifecycle_manager_navigation]: Failed to bring up all requested nodes. Aborting bringup.
+[joy_node-6] [INFO] [1775252948.760567770] [joy_node]: Opened joystick: Controller 1.05.  deadzone: 0.050000
+[scan_to_scan_filter_chain-5] [WARN] [1775252949.001460814] [laser_filter]: diagnostic_updater: No HW_ID was set. This is probably a bug. Please report it. For devices that do not have a HW_ID, set this value to 'none'. This warning only occurs once all diagnostics are OK. It is okay to wait until the device is open before calling setHardwareID.
+[INFO] [1775252949.062984795] [object_grasper]: object_grasper started
+publisher: beginning loop
+publishing #1: geometry_msgs.msg.PoseWithCovarianceStamped(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0), frame_id='map'), pose=geometry_msgs.msg.PoseWithCovariance(pose=geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0), orientation=geometry_msgs.msg.Quaternion(x=0.0, y=0.0, z=0.0, w=1.0)), covariance=array([0.25, 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.25, 0.  , 0.  , 0.  ,
+       0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  ,
+       0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  ,
+       0.  , 0.  , 0.07])))
+
+Waiting for AMCL to localize...
+[stretch_driver-3] [0m[INFO] [1775252949.561810648] [stretch_driver]: For use with S T R E T C H (TM) RESEARCH EDITION from Hello Robot Inc.[0m
+[stretch_driver-3] [0m[INFO] [1775252949.562638754] [stretch_driver]: stretch_driver started[0m
+[stretch_driver-3] Key mapped to End-Of-Arm Tool: tool_stretch_dex_wrist
+[stretch_driver-3] Unable to load URDF: /home/willy/.local/lib/python3.10/site-packages/stretch_urdf/RE2V0/stretch_description_RE2V0_tool_stretch_dex_wrist.urdf. Disabling collision system.
+AMCL localized!
+waiting for service to become available...
+[stretch_driver-3] [0m[INFO] [1775252951.352591125] [stretch_driver]: broadcast_odom_tf = True[0m
+[stretch_driver-3] [0m[INFO] [1775252951.399393970] [stretch_driver]: rate = 30.0 Hz[0m
+[stretch_driver-3] [0m[INFO] [1775252951.402428222] [stretch_driver]: twist timeout = 0.5 s[0m
+[stretch_driver-3] [0m[INFO] [1775252951.405150900] [stretch_driver]: base_frame_id = base_link[0m
+[stretch_driver-3] [0m[INFO] [1775252951.405577791] [stretch_driver]: odom_frame_id = odom[0m
+[stretch_driver-3] [0m[INFO] [1775252951.488071444] [stretch_driver]: Changed to mode = navigation[0m
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+[stretch_driver-3] [0m[INFO] [1775252951.515120755] [stretch_driver]: Changed to mode = navigation[0m
+
+[INFO] [1775252951.628226221] [object_grasper]: Node object_grasper connected to /home_the_robot service.
+[INFO] [1775252951.643343881] [object_grasper]: Node object_grasper connected to /stow_the_robot service.
+[INFO] [1775252951.645274526] [object_grasper]: Node object_grasper connected to /stop_the_robot service.
+[INFO] [1775252951.652884578] [object_grasper]: Node object_grasper connected to /switch_to_trajectory_mode service.
+[INFO] [1775252951.657062690] [object_grasper]: Node object_grasper connected to /switch_to_position_mode service.
+[INFO] [1775252951.666059220] [object_grasper]: Node object_grasper connected to /switch_to_navigation_mode service.
+[INFO] [1775252951.783581775] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /home_the_robot service.
+[INFO] [1775252951.786162318] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /stow_the_robot service.
+[INFO] [1775252951.788543736] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /stop_the_robot service.
+[INFO] [1775252951.795502101] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_trajectory_mode service.
+Waiting for controller_server...
+[INFO] [1775252951.802894181] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_position_mode service.
+[INFO] [1775252951.805295281] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_navigation_mode service.
+[INFO] [1775252951.806958377] [aruco_base_frame_estimator]: Moving head camera to detection orientation...
+[WARN] [1775252951.807734589] [aruco_base_frame_estimator]: Currently in navigation mode. Recommend switching either to position or trajectory mode
+[WARN] [1775252951.808168961] [aruco_base_frame_estimator]: Commanding joint trajectory server in position mode
+[stretch_driver-3] [0m[INFO] [1775252951.814998797] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775252951.820647171] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_head_pan', 'joint_head_tilt'][0m
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775252951.849031254] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775252951.851991378] [aruco_base_frame_estimator]: Head camera at detection pose — starting ArUco detection.
+[INFO] [1775252951.867143691] [aruco_base_frame_estimator]: Waiting for camera TF (base_link -> camera_color_optical_frame)...
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_mast is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+[INFO] [1775252951.901570726] [aruco_base_frame_estimator]: Camera pose acquired:
+[INFO] [1775252951.902136059] [aruco_base_frame_estimator]:   Position  : X=+0.0062  Y=-0.0517  Z=+1.2870  (m)
+[INFO] [1775252951.902584483] [aruco_base_frame_estimator]:   RPY (deg) : R=-179.03  P=+59.78  Y=+89.23
+[INFO] [1775252951.906239410] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775252951.906927635] [aruco_base_frame_estimator]: ArUco Base Frame Estimator Started
+[INFO] [1775252951.909080174] [aruco_base_frame_estimator]: Target Marker ID: 202
+[INFO] [1775252951.909376700] [aruco_base_frame_estimator]: Marker size: 2.8 cm
+[INFO] [1775252951.909601188] [aruco_base_frame_estimator]: Marker offset (cam frame): X=0.0  Y=0.0  Z=0.0
+[INFO] [1775252951.909803429] [aruco_base_frame_estimator]: Publishing target on: /aruco/target_base_link
+[INFO] [1775252951.909989890] [aruco_base_frame_estimator]: ============================================================
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_arm_l4 is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_wrist_yaw_bottom is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+[rviz2-17] [INFO] [1775252952.054298830] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-17] [INFO] [1775252952.054427917] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_gripper_s3_body is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_grasp_center is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link Base link (index: 0) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_mast (index: 2) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_arm_l4 (index: 4) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_wrist_yaw_bottom (index: 10) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_gripper_s3_body (index: 13) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_grasp_center (index: 14) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+[INFO] [1775252952.131085381] [object_grasper]: ============================================================
+[INFO] [1775252952.131528489] [object_grasper]: ObjectGrasper ready — waiting for ArUco detections
+[INFO] [1775252952.131884235] [object_grasper]: Listening on: /aruco/target_base_link
+[INFO] [1775252952.132230890] [object_grasper]: Call service: ros2 service call /grasp_object std_srvs/srv/Trigger {}
+[INFO] [1775252952.132589068] [object_grasper]: ============================================================
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/willy/ament_ws/build/hello_helpers/src/hello_helpers/hello_misc.py", line 125, in spin_thread
+    executor.spin()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 323, in spin
+    self.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 863, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 844, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 780, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 699, in _wait_for_ready_callbacks
+    if wt in waitables and wt.is_ready(wait_set):
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/action/client.py", line 233, in is_ready
+    ready_entities = self._client_handle.is_ready(wait_set)
+rclpy._rclpy_pybind11.RCLError: Failed to get number of ready entities for action client: wait set index for status subscription is out of bounds, at ./src/rcl_action/action_client.c:623
+[rviz2-17] [INFO] [1775252952.516082996] [rviz2]: Stereo is NOT SUPPORTED
+[controller_server-11] [WARN] [1775252952.894099644] [rclcpp]: Failed to get parameters: general_goal_checker.yaw_goal_tolerance
+[rviz2-17] [INFO] [1775252953.161720669] [rviz2]: Trying to create a map of size 416 x 249 using 1 swatches
+[rviz2-17] [INFO] [1775252953.163627400] [rviz2]: Trying to create a map of size 416 x 249 using 1 swatches
+[rviz2-17] [ERROR] [1775252953.183528397] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[rviz2-17] active samplers with a different type refer to the same texture image unit
+[realsense2_camera_node-1] [0m[INFO] [1775252953.516701057] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252953.516772029] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252953.516803709] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252953.516992704] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252953.517024179] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252953.517251449] [camera]: getParameters...[0m
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.16
+[controller_server-11] [WARN] [1775252954.229704906] [rclcpp]: Failed to set parameter: parameter 'general_goal_checker.yaw_goal_tolerance' cannot be set because it was not declared
+Setting parameter failed: parameter 'general_goal_checker.yaw_goal_tolerance' cannot be set because it was not declared
+[rviz2-17] [INFO] [1775252954.478972866] [rviz2]: Trying to create a map of size 60 x 60 using 1 swatches
+Yaw tolerance set.
+Resetting arm position...
+[realsense2_camera_node-1] [0m[INFO] [1775252954.627517770] [camera]: JSON file is loaded! (/home/willy/ament_ws/install/stretch_core/share/stretch_core/config/HighAccuracyPreset.json)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252954.627743336] [camera]: Device Name: Intel RealSense D435I[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252954.627772152] [camera]: Device Serial No: 239722071445[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252954.627806909] [camera]: Device physical port: /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252954.627825257] [camera]: Device FW version: 5.16.0.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252954.627843697] [camera]: Device Product ID: 0x0B3A[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252954.627860295] [camera]: Sync Mode: On[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252954.738011194] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252954.740288479] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252954.770306743] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252954.776750316] [camera]: Given value, 63 is invalid. Set ROS param back to: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252954.814873192] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252954.815002081] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252954.815040788] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252954.854589808] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252954.855535698] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252954.855676751] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] Failed to start device: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy
+[realsense2_camera_node-1] [0m[INFO] [1775252954.855922241] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252954.856100532] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252954.856151767] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252954.875841441] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252954.883985063] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252954.884012564] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252954.884288034] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252954.884304258] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252954.884538280] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252954.884566487] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252954.884208798] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252954.886086531] [camera]: Error updating the sensors: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[INFO] [1775252955.032744097] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252955.jpg
+[INFO] [1775252955.171223260] [reset_pose]: reset_pose started
+[INFO] [1775252955.273704295] [reset_pose]: Node reset_pose connected to /home_the_robot service.
+[INFO] [1775252955.278546080] [reset_pose]: Node reset_pose connected to /stow_the_robot service.
+[INFO] [1775252955.290593455] [reset_pose]: Node reset_pose connected to /stop_the_robot service.
+[INFO] [1775252955.293286010] [reset_pose]: Node reset_pose connected to /switch_to_trajectory_mode service.
+[INFO] [1775252955.296547568] [reset_pose]: Node reset_pose connected to /switch_to_position_mode service.
+[INFO] [1775252955.298654179] [reset_pose]: Node reset_pose connected to /switch_to_navigation_mode service.
+[INFO] [1775252955.299525186] [reset_pose]: Moving to default pose...
+[WARN] [1775252955.299871683] [reset_pose]: Currently in navigation mode. Recommend switching either to position or trajectory mode
+[WARN] [1775252955.300202836] [reset_pose]: Commanding joint trajectory server in position mode
+[stretch_driver-3] [0m[INFO] [1775252955.307148026] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775252955.314019354] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_lift', 'joint_arm', 'joint_wrist_yaw', 'joint_wrist_pitch', 'joint_wrist_roll', 'joint_gripper_finger_left'][0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252955.568551505] [camera]: The device has been disconnected![0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252955.856804339] [camera]: Error starting device: null pointer passed for argument "dev"[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252955.873827627] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252955.873875566] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252955.873884458] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252955.874030314] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252955.874042223] [camera]: The requested device with serial number 239722071445 and device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252956.438079148] [camera]: Checking new devices...[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252956.451437822] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252956.451515334] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252956.451534983] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252956.451717780] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252956.451759666] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252956.451792847] [camera]: getParameters...[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252956.800052888] [camera]: JSON file is loaded! (/home/willy/ament_ws/install/stretch_core/share/stretch_core/config/HighAccuracyPreset.json)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252956.800140829] [camera]: Device Name: Intel RealSense D435I[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252956.800154939] [camera]: Device Serial No: 239722071445[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252956.800166131] [camera]: Device physical port: /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252956.800177205] [camera]: Device FW version: 5.16.0.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252956.800188540] [camera]: Device Product ID: 0x0B3A[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252956.800198529] [camera]: Sync Mode: On[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252956.954041652] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252956.954717424] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252956.967253374] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252956.970719325] [camera]: Given value, 63 is invalid. Set ROS param back to: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252956.990991772] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252956.991102191] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252956.991151959] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252957.012095511] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252957.025649969] [camera]: Open profile: stream_type: Depth(0), Format: Z16, Width: 1280, Height: 720, FPS: 15[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252957.038118324] [camera]: Starting Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252957.041203990] [camera]: Open profile: stream_type: Color(0), Format: RGB8, Width: 1280, Height: 720, FPS: 15[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252957.071965725] [camera]: Starting Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252957.073908842] [camera]: Open profile: stream_type: Accel(0)Format: MOTION_XYZ32F, FPS: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252957.073946107] [camera]: Open profile: stream_type: Gyro(0)Format: MOTION_XYZ32F, FPS: 200[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252957.076601210] [camera]: RealSense Node Is Up![0m
+[realsense2_camera_node-1] [33m[WARN] [1775252958.015423660] [camera]: XXX Hardware Notification:Motion Module force pause,1.77525e+12,Error,Hardware Error[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252958.015589316] [camera]: Hardware Notification:Motion Module force pause,1.77525e+12,Error,Hardware Error[0m
+[INFO] [1775252958.197825358] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252958.jpg
+[realsense2_camera_node-1] [31m[ERROR] [1775252958.705741755] [camera]: The device has been disconnected![0m
+[realsense2_camera_node-1] [0m[INFO] [1775252958.705956427] [camera]: Stop Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252958.705976497] [camera]: Close Sensor. [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252958.706185837] [camera]: Close Sensor - Done. [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252958.706200150] [camera]: Stop Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252958.706208719] [camera]: Close Sensor. [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252958.707222070] [camera]: Close Sensor - Done. [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252958.707253936] [camera]: Stop Sensor: Motion Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252958.707514732] [camera]: Exception: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/ros_sensor.cpp:307:Failed to enable_sensor /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.5/0003:8086:0B3A.000D/HID-SENSOR-2000e1.4.auto/enable_sensor Last Error: No such file or directory[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252958.707551277] [camera]: Close Sensor. [0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252958.707576538] [camera]: Exception: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/ros_sensor.cpp:316:close() failed. Hid device is streaming![0m
+[realsense2_camera_node-1] [0m[INFO] [1775252958.707586798] [camera]: Close Sensor - Done. [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252958.707711882] [camera]: Stop Sensor: Motion Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252958.707737578] [camera]: Exception: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/ros_sensor.cpp:307:Failed to enable_sensor /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.5/0003:8086:0B3A.000D/HID-SENSOR-2000e1.4.auto/enable_sensor Last Error: No such file or directory[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252958.707749165] [camera]: Close Sensor. [0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252958.707763290] [camera]: Exception: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/ros_sensor.cpp:316:close() failed. Hid device is streaming![0m
+[realsense2_camera_node-1] [0m[INFO] [1775252958.707771663] [camera]: Close Sensor - Done. [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252959.498128210] [camera]: Checking new devices...[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252959.511334345] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252959.511408592] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252959.511430542] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252959.511633666] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252959.511666204] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252959.511709899] [camera]: getParameters...[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252959.874903121] [camera]: JSON file is loaded! (/home/willy/ament_ws/install/stretch_core/share/stretch_core/config/HighAccuracyPreset.json)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252959.874982732] [camera]: Device Name: Intel RealSense D435I[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252959.875004115] [camera]: Device Serial No: 239722071445[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252959.875021806] [camera]: Device physical port: /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252959.875038914] [camera]: Device FW version: 5.16.0.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252959.875055087] [camera]: Device Product ID: 0x0B3A[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252959.875070566] [camera]: Sync Mode: On[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252960.032191986] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252960.032862696] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252960.049694576] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252960.052922332] [camera]: Given value, 63 is invalid. Set ROS param back to: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252960.068361951] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252960.068528521] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252960.068553348] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252960.083286976] [camera]: Starting Sensor: Depth Module[0m
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[realsense2_camera_node-1] [0m[INFO] [1775252960.085990993] [camera]: Open profile: stream_type: Depth(0), Format: Z16, Width: 1280, Height: 720, FPS: 15[0m
+[stretch_driver-3] [0m[INFO] [1775252960.085906178] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775252960.093076901] [reset_pose]: Arm reset done.
+[realsense2_camera_node-1] [0m[INFO] [1775252960.097496455] [camera]: Starting Sensor: RGB Camera[0m
+[INFO] [1775252960.098423205] [reset_pose]: Rotating base 0°...
+[WARN] [1775252960.099113515] [reset_pose]: Currently in navigation mode. Recommend switching either to position or trajectory mode
+[WARN] [1775252960.099709519] [reset_pose]: Commanding joint trajectory server in position mode
+[realsense2_camera_node-1] [0m[INFO] [1775252960.100094330] [camera]: Open profile: stream_type: Color(0), Format: RGB8, Width: 1280, Height: 720, FPS: 15[0m
+[stretch_driver-3] [0m[INFO] [1775252960.104748642] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775252960.111251564] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['rotate_mobile_base'][0m
+[stretch_driver-3] [33m[WARN] [1775252960.115379175] [stretch_driver]: MobileBaseCommandGroup.update: Must be in position mode to receive a command for the ['rotate_mobile_base'] joint(s). Current mode = navigation.[0m
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Errored goal
+[stretch_driver-3] [0m[INFO] [1775252960.119282729] [stretch_driver]: stretch_driver joint_traj action: joint names violated one of command group's requirements[0m
+[INFO] [1775252960.121892472] [reset_pose]: Done.
+terminate called without an active exception
+[realsense2_camera_node-1] [0m[INFO] [1775252960.134397962] [camera]: Starting Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252960.136409309] [camera]: Open profile: stream_type: Accel(0)Format: MOTION_XYZ32F, FPS: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252960.136471679] [camera]: Open profile: stream_type: Gyro(0)Format: MOTION_XYZ32F, FPS: 200[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252960.139714739] [camera]: RealSense Node Is Up![0m
+./dock_grab.sh: line 88: 21461 Aborted                 (core dumped) python3 ../test1.py
+=== Docking to table ===
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.31
+[realsense2_camera_node-1] [33m[WARN] [1775252961.087220461] [camera]: XXX Hardware Notification:Motion Module force pause,1.77525e+12,Error,Hardware Error[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252961.087472773] [camera]: Hardware Notification:Motion Module force pause,1.77525e+12,Error,Hardware Error[0m
+[stretch_driver-3] [0m[INFO] [1775252961.127442791] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1775252961.297816762] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252961.jpg
+[realsense2_camera_node-1] [31m[ERROR] [1775252961.520560317] [camera]: The device has been disconnected![0m
+[realsense2_camera_node-1] [0m[INFO] [1775252961.520935859] [camera]: Stop Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252961.520989290] [camera]: Close Sensor. [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252961.521142787] [camera]: Close Sensor - Done. [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252961.521196783] [camera]: Stop Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252961.521217570] [camera]: Close Sensor. [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252961.521628456] [camera]: Close Sensor - Done. [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252961.521678326] [camera]: Stop Sensor: Motion Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252961.522024265] [camera]: Exception: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/ros_sensor.cpp:307:Failed to enable_sensor /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.5/0003:8086:0B3A.000E/HID-SENSOR-2000e1.4.auto/enable_sensor Last Error: No such file or directory[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252961.522083375] [camera]: Close Sensor. [0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252961.522131305] [camera]: Exception: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/ros_sensor.cpp:316:close() failed. Hid device is streaming![0m
+[realsense2_camera_node-1] [0m[INFO] [1775252961.522158010] [camera]: Close Sensor - Done. [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252961.522370368] [camera]: Stop Sensor: Motion Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252961.522451113] [camera]: Exception: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/ros_sensor.cpp:307:Failed to enable_sensor /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.5/0003:8086:0B3A.000E/HID-SENSOR-2000e1.4.auto/enable_sensor Last Error: No such file or directory[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252961.522496044] [camera]: Close Sensor. [0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252961.522534447] [camera]: Exception: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/ros_sensor.cpp:316:close() failed. Hid device is streaming![0m
+[realsense2_camera_node-1] [0m[INFO] [1775252961.522558761] [camera]: Close Sensor - Done. [0m
+[rviz2-17] [INFO] [1775252961.779863201] [rviz]: Message Filter dropping message: frame 'odom' at time 1775252952.501 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[realsense2_camera_node-1] [0m[INFO] [1775252961.889000466] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252961.889053401] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252961.889061741] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252961.889197574] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252961.889208969] [camera]: The requested device with serial number 239722071445 and device name containing d435 is NOT found. Will Try again.[0m
+[rviz2-17] [INFO] [1775252962.062992069] [rviz]: Message Filter dropping message: frame 'odom' at time 1775252952.877 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[realsense2_camera_node-1] [0m[INFO] [1775252962.299197742] [camera]: Checking new devices...[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252962.313029136] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252962.313077839] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252962.313088328] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252962.313220896] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252962.313235339] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252962.313259747] [camera]: getParameters...[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252962.661850975] [camera]: JSON file is loaded! (/home/willy/ament_ws/install/stretch_core/share/stretch_core/config/HighAccuracyPreset.json)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252962.661950660] [camera]: Device Name: Intel RealSense D435I[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252962.661981983] [camera]: Device Serial No: 239722071445[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252962.662007755] [camera]: Device physical port: /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252962.662032228] [camera]: Device FW version: 5.16.0.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252962.662055645] [camera]: Device Product ID: 0x0B3A[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252962.662083583] [camera]: Sync Mode: On[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252962.819627820] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252962.820520141] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252962.839419251] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252962.842978786] [camera]: Given value, 63 is invalid. Set ROS param back to: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252962.855812326] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252962.855906503] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252962.855925139] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252962.863556336] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252962.877081614] [camera]: Open profile: stream_type: Depth(0), Format: Z16, Width: 1280, Height: 720, FPS: 15[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252962.887120957] [camera]: Starting Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252962.890451528] [camera]: Open profile: stream_type: Color(0), Format: RGB8, Width: 1280, Height: 720, FPS: 15[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252962.923873773] [camera]: Starting Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252962.925949110] [camera]: Open profile: stream_type: Accel(0)Format: MOTION_XYZ32F, FPS: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252962.926016656] [camera]: Open profile: stream_type: Gyro(0)Format: MOTION_XYZ32F, FPS: 200[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252962.928229543] [camera]: RealSense Node Is Up![0m
+[realsense2_camera_node-1] [33m[WARN] [1775252963.864077909] [camera]: XXX Hardware Notification:Motion Module force pause,1.77525e+12,Error,Hardware Error[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252963.864382347] [camera]: Hardware Notification:Motion Module force pause,1.77525e+12,Error,Hardware Error[0m
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.12
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.65
+[realsense2_camera_node-1] [31m[ERROR] [1775252964.302769894] [camera]: The device has been disconnected![0m
+[realsense2_camera_node-1] [0m[INFO] [1775252964.303008339] [camera]: Stop Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252964.303032643] [camera]: Close Sensor. [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252964.303129131] [camera]: Close Sensor - Done. [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252964.303143970] [camera]: Stop Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252964.303154482] [camera]: Close Sensor. [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252964.303434926] [camera]: Close Sensor - Done. [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252964.303473120] [camera]: Stop Sensor: Motion Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252964.303718168] [camera]: Exception: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/ros_sensor.cpp:307:Failed to enable_sensor /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.5/0003:8086:0B3A.000F/HID-SENSOR-2000e1.4.auto/enable_sensor Last Error: No such file or directory[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252964.303755443] [camera]: Close Sensor. [0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252964.303779072] [camera]: Exception: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/ros_sensor.cpp:316:close() failed. Hid device is streaming![0m
+[realsense2_camera_node-1] [0m[INFO] [1775252964.303801247] [camera]: Close Sensor - Done. [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252964.308938143] [camera]: Stop Sensor: Motion Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252964.309168048] [camera]: Exception: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/ros_sensor.cpp:307:Failed to enable_sensor /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.5/0003:8086:0B3A.000F/HID-SENSOR-2000e1.4.auto/enable_sensor Last Error: No such file or directory[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252964.309212237] [camera]: Close Sensor. [0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252964.309236761] [camera]: Exception: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/ros_sensor.cpp:316:close() failed. Hid device is streaming![0m
+[realsense2_camera_node-1] [0m[INFO] [1775252964.309246610] [camera]: Close Sensor - Done. [0m
+[controller_server-11] [WARN] [1775252964.600440694] [rclcpp]: Failed to set parameter: parameter 'general_goal_checker.yaw_goal_tolerance' cannot be set because it was not declared
+[realsense2_camera_node-1] [0m[INFO] [1775252966.512265940] [camera]: Checking new devices...[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252966.514378891] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252966.514558642] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252966.514586156] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252966.514953389] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252966.515057852] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252966.515154487] [camera]: getParameters...[0m
+[INFO] [1775252966.739101968] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252966.jpg
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.32
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.02
+[realsense2_camera_node-1] [0m[INFO] [1775252967.932437607] [camera]: JSON file is loaded! (/home/willy/ament_ws/install/stretch_core/share/stretch_core/config/HighAccuracyPreset.json)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252967.932560374] [camera]: Device Name: Intel RealSense D435I[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252967.932584497] [camera]: Device Serial No: 239722071445[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252967.932603939] [camera]: Device physical port: /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252967.932623037] [camera]: Device FW version: 5.16.0.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252967.932640892] [camera]: Device Product ID: 0x0B3A[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252967.932658095] [camera]: Sync Mode: On[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252968.058100063] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252968.058818517] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252968.081759761] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252968.088646511] [camera]: Given value, 63 is invalid. Set ROS param back to: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252968.111266652] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252968.111437679] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252968.111470757] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252968.127180471] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252968.128248709] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252968.128394615] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] Failed to start device: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy
+[realsense2_camera_node-1] [0m[INFO] [1775252968.128629610] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252968.128930302] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252968.128995629] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252968.137402954] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252968.138668490] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252968.138768388] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252968.138818103] [camera]: Error updating the sensors: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.01
+[realsense2_camera_node-1] [0m[INFO] [1775252969.787086370] [camera]: Checking new devices...[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252969.821284820] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252969.821341728] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252969.821351269] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252969.821514364] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252969.821529422] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252970.130545283] [camera]: getParameters...[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252970.750363778] [camera]: JSON file is loaded! (/home/willy/ament_ws/install/stretch_core/share/stretch_core/config/HighAccuracyPreset.json)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252970.750436157] [camera]: Device Name: Intel RealSense D435I[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252970.750455547] [camera]: Device Serial No: 239722071445[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252970.750471925] [camera]: Device physical port: /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252970.750487773] [camera]: Device FW version: 5.16.0.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252970.750509479] [camera]: Device Product ID: 0x0B3A[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252970.750523167] [camera]: Sync Mode: On[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252970.877249654] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252970.878033220] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252970.889122747] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252970.892193131] [camera]: Given value, 63 is invalid. Set ROS param back to: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252970.911762108] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252970.911938195] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252970.911967355] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252970.918926674] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252970.919512639] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252970.919612015] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] Failed to start device: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy
+[realsense2_camera_node-1] [0m[INFO] [1775252970.919690449] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252970.919773845] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252970.919795910] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252970.924544722] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252970.925413184] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252970.925538831] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252970.925565670] [camera]: Error updating the sensors: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[INFO] [1775252971.017457853] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252971.jpg
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[realsense2_camera_node-1] [0m[INFO] [1775252972.439976108] [camera]: Checking new devices...[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252972.453759051] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252972.453815827] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252972.453824008] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252972.453959348] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252972.453970951] [camera]: Device USB type: 3.2[0m
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[realsense2_camera_node-1] [0m[INFO] [1775252972.920238835] [camera]: getParameters...[0m
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[realsense2_camera_node-1] [0m[INFO] [1775252973.549796182] [camera]: JSON file is loaded! (/home/willy/ament_ws/install/stretch_core/share/stretch_core/config/HighAccuracyPreset.json)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252973.549878053] [camera]: Device Name: Intel RealSense D435I[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252973.549899490] [camera]: Device Serial No: 239722071445[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252973.549917678] [camera]: Device physical port: /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252973.549935450] [camera]: Device FW version: 5.16.0.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252973.549953836] [camera]: Device Product ID: 0x0B3A[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252973.549969355] [camera]: Sync Mode: On[0m
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[realsense2_camera_node-1] [33m[WARN] [1775252973.673742548] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252973.674648156] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252973.687465459] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252973.690617710] [camera]: Given value, 63 is invalid. Set ROS param back to: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252973.708084297] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252973.708194224] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252973.708232306] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252973.714441958] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252973.715029271] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252973.715105218] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] Failed to start device: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy
+[realsense2_camera_node-1] [0m[INFO] [1775252973.715201130] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252973.715334457] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252973.715358604] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252973.721174422] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252973.722146715] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252973.722278046] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252973.722324513] [camera]: Error updating the sensors: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[INFO] [1775252974.020067810] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252974.jpg
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[realsense2_camera_node-1] [0m[INFO] [1775252975.241486918] [camera]: Checking new devices...[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252975.255219995] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252975.255299987] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252975.255327458] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252975.255533046] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252975.255562405] [camera]: Device USB type: 3.2[0m
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[realsense2_camera_node-1] [0m[INFO] [1775252975.715926457] [camera]: getParameters...[0m
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[realsense2_camera_node-1] [0m[INFO] [1775252976.560224929] [camera]: JSON file is loaded! (/home/willy/ament_ws/install/stretch_core/share/stretch_core/config/HighAccuracyPreset.json)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252976.560369500] [camera]: Device Name: Intel RealSense D435I[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252976.560398835] [camera]: Device Serial No: 239722071445[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252976.560422635] [camera]: Device physical port: /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252976.560442093] [camera]: Device FW version: 5.16.0.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252976.560461096] [camera]: Device Product ID: 0x0B3A[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252976.560480091] [camera]: Sync Mode: On[0m
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[realsense2_camera_node-1] [33m[WARN] [1775252976.666895556] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252976.668210118] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252976.690069867] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252976.697043659] [camera]: Given value, 63 is invalid. Set ROS param back to: 100[0m
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[realsense2_camera_node-1] [0m[INFO] [1775252976.720453740] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252976.720627501] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252976.720678884] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252976.763465370] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252976.774529525] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252976.774688801] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] Failed to start device: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy
+[realsense2_camera_node-1] [0m[INFO] [1775252976.774837604] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252976.774986504] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252976.775029236] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252976.783954784] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252976.785211169] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252976.785356968] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252976.785403403] [camera]: Error updating the sensors: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[INFO] [1775252977.048668107] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252977.jpg
+[realsense2_camera_node-1] [0m[INFO] [1775252978.345618572] [camera]: Checking new devices...[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252978.359696297] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252978.359752615] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252978.359775433] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252978.359990745] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252978.360037917] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252978.764947041] [camera]: getParameters...[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252979.359721039] [camera]: JSON file is loaded! (/home/willy/ament_ws/install/stretch_core/share/stretch_core/config/HighAccuracyPreset.json)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252979.359813106] [camera]: Device Name: Intel RealSense D435I[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252979.359837310] [camera]: Device Serial No: 239722071445[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252979.359862149] [camera]: Device physical port: /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252979.359879158] [camera]: Device FW version: 5.16.0.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252979.359896199] [camera]: Device Product ID: 0x0B3A[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252979.359911577] [camera]: Sync Mode: On[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252979.472609154] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252979.473683804] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252979.496880652] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252979.503384054] [camera]: Given value, 63 is invalid. Set ROS param back to: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252979.516441592] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252979.516584834] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252979.516617745] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252979.522178958] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252979.522918708] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252979.522999522] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] Failed to start device: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy
+[realsense2_camera_node-1] [0m[INFO] [1775252979.523101992] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252979.523246050] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252979.523285448] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252979.529467603] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252979.530598685] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252979.530710972] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252979.530747521] [camera]: Error updating the sensors: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[INFO] [1775252980.051050456] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252980.jpg
+[realsense2_camera_node-1] [0m[INFO] [1775252981.047011831] [camera]: Checking new devices...[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252981.061131978] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252981.061326658] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252981.061360935] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252981.061607690] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252981.061650240] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252981.523936027] [camera]: getParameters...[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252982.124547229] [camera]: JSON file is loaded! (/home/willy/ament_ws/install/stretch_core/share/stretch_core/config/HighAccuracyPreset.json)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252982.124638451] [camera]: Device Name: Intel RealSense D435I[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252982.124660653] [camera]: Device Serial No: 239722071445[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252982.124678978] [camera]: Device physical port: /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252982.124697904] [camera]: Device FW version: 5.16.0.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252982.124716999] [camera]: Device Product ID: 0x0B3A[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252982.124732844] [camera]: Sync Mode: On[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252982.230416920] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252982.231189181] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252982.251091319] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252982.256210427] [camera]: Given value, 63 is invalid. Set ROS param back to: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252982.277999318] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252982.278144105] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252982.278182457] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252982.283196497] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252982.283633808] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252982.283688796] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252982.283720542] [camera]: Error updating the sensors: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252982.283762700] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252982.283871001] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252982.283909315] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252982.289125363] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252982.290131824] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252982.290262702] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] Failed to start device: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy
+/home/willy/tf.py:207: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  cx, cy, cz = float(tvec[0]), float(tvec[1]), float(tvec[2])
+/home/willy/tf.py:139: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  t.transform.translation.x = float(tvec_offset[0])
+/home/willy/tf.py:140: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  t.transform.translation.y = float(tvec_offset[1])
+/home/willy/tf.py:141: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  t.transform.translation.z = float(tvec_offset[2])
+[WARN] [1775252983.366437641] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+/home/willy/tf.py:215: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  bx, by, bz = self.transform_camera_to_base(float(tvec[0]), float(tvec[1]), float(tvec[2]))
+[INFO] [1775252983.366883947] [object_grasper]: [ArUco] target updated → X=+0.230  Y=-0.600  Z=+0.936
+[INFO] [1775252983.375009944] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252983.jpg
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.30
+[realsense2_camera_node-1] [0m[INFO] [1775252983.836984742] [camera]: Checking new devices...[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252983.880544334] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252983.880593208] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252983.880603351] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252983.880741619] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252983.880753947] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252984.285327953] [camera]: getParameters...[0m
+[INFO] [1775252984.414508517] [object_grasper]: [ArUco] target updated → X=+0.236  Y=-0.636  Z=+0.914
+[WARN] [1775252984.416543401] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[realsense2_camera_node-1] [0m[INFO] [1775252985.143532831] [camera]: JSON file is loaded! (/home/willy/ament_ws/install/stretch_core/share/stretch_core/config/HighAccuracyPreset.json)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252985.143605782] [camera]: Device Name: Intel RealSense D435I[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252985.143625185] [camera]: Device Serial No: 239722071445[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252985.143643322] [camera]: Device physical port: /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252985.143659268] [camera]: Device FW version: 5.16.0.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252985.143674243] [camera]: Device Product ID: 0x0B3A[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252985.143687988] [camera]: Sync Mode: On[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252985.248313835] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252985.251636131] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252985.270076542] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252985.273552449] [camera]: Given value, 63 is invalid. Set ROS param back to: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252985.287948131] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252985.288158299] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252985.288204621] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252985.297582222] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252985.298246787] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252985.298344886] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] Failed to start device: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy
+[realsense2_camera_node-1] [0m[INFO] [1775252985.298477493] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252985.298661227] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252985.298691342] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252985.308080175] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252985.309637286] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252985.309848043] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252985.309904116] [camera]: Error updating the sensors: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[INFO] [1775252985.450471310] [object_grasper]: [ArUco] target updated → X=+0.224  Y=-0.626  Z=+0.922
+[WARN] [1775252985.454385128] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+Set parameter successful
+Waiting for an action server to become available...
+Sending goal:
+     pose:
+  header:
+    stamp:
+      sec: 0
+      nanosec: 0
+    frame_id: map
+  pose:
+    position:
+      x: 0.5688
+      y: 1.6601
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: -0.707
+      w: 0.707
+behavior_tree: ''
+
+Goal accepted with ID: e5cad936230342f4b452a024d7918b8b
+
+Result:
+    result: {}
+
+Goal finished with status: SUCCEEDED
+Navigation succeeded!
+Waiting for grasp service...
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.30
+Grasp service is ready!
+=== Triggering grasp ===
+[WARN] [1775252986.494722282] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[INFO] [1775252986.496810056] [object_grasper]: [ArUco] target updated → X=+0.218  Y=-0.647  Z=+0.911
+[INFO] [1775252986.516865741] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252986.jpg
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+[stretch_driver-3] [0m[INFO] [1775252986.706325596] [stretch_driver]: Changed to mode = position[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252986.858369650] [camera]: Checking new devices...[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252986.871570927] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252986.871642244] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252986.871664938] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252986.871870225] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252986.871901732] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252987.299169555] [camera]: getParameters...[0m
+[WARN] [1775252987.584337002] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[INFO] [1775252987.584919631] [object_grasper]: [ArUco] target updated → X=+0.087  Y=-0.662  Z=+0.919
+[realsense2_camera_node-1] [0m[INFO] [1775252987.932763953] [camera]: JSON file is loaded! (/home/willy/ament_ws/install/stretch_core/share/stretch_core/config/HighAccuracyPreset.json)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252987.932840020] [camera]: Device Name: Intel RealSense D435I[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252987.932851634] [camera]: Device Serial No: 239722071445[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252987.932861352] [camera]: Device physical port: /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252987.932870482] [camera]: Device FW version: 5.16.0.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252987.932878815] [camera]: Device Product ID: 0x0B3A[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252987.932886598] [camera]: Sync Mode: On[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252988.052891685] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252988.053736848] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252988.075761436] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252988.079881680] [camera]: Given value, 63 is invalid. Set ROS param back to: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252988.092081764] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252988.092273077] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252988.092310274] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252988.099670008] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252988.100567600] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252988.100701978] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] Failed to start device: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy
+[realsense2_camera_node-1] [0m[INFO] [1775252988.100882540] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252988.101117762] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252988.101169345] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252988.110879440] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252988.111927766] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252988.112024125] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252988.112067602] [camera]: Error updating the sensors: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[WARN] [1775252988.626492501] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[INFO] [1775252988.630072732] [object_grasper]: [ArUco] target updated → X=+0.017  Y=-0.671  Z=+0.926
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.48
+requester: making request: std_srvs.srv.Trigger_Request()
+
+[INFO] [1775252989.407283822] [object_grasper]: Using LIVE target: X=+0.085  Y=-0.664  Z=+0.918
+[INFO] [1775252989.407619485] [object_grasper]: Solving IK for grasp target: [0.085, -0.664, 0.918]
+[INFO] [1775252989.407890846] [object_grasper]: IK attempt 1/150
+[INFO] [1775252989.473369969] [object_grasper]: IK error: 0.0000m
+[INFO] [1775252989.473724417] [object_grasper]: base_trans=+0.0000m  lift=0.8895m  arm=0.2901m
+[INFO] [1775252989.473970082] [object_grasper]: Solving IK for approach target: [0.085, -0.664, 0.998]
+[INFO] [1775252989.474225508] [object_grasper]: IK attempt 1/150
+[INFO] [1775252989.536882690] [object_grasper]: IK error: 0.0000m
+[INFO] [1775252989.537377081] [object_grasper]: base_trans=+0.0000m  lift=0.9895m  arm=0.2891m
+[INFO] [1775252989.537627415] [object_grasper]: === GRASP SEQUENCE START ===
+[INFO] [1775252989.537847234] [object_grasper]: Step 1: Move to approach height (0.998m) + set wrist
+[INFO] [1775252989.538110486] [object_grasper]: → Lift=0.989m  yaw=1.391  pitch=-0.300  roll=-0.003
+[stretch_driver-3] [0m[INFO] [1775252989.542924933] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775252989.547866029] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_lift', 'joint_wrist_yaw', 'joint_wrist_pitch', 'joint_wrist_roll'][0m
+[WARN] [1775252989.681516528] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[realsense2_camera_node-1] [0m[INFO] [1775252989.686103178] [camera]: Checking new devices...[0m
+[INFO] [1775252989.688036817] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252989.jpg
+[realsense2_camera_node-1] [0m[INFO] [1775252989.701320967] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252989.701606097] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252989.701640625] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252989.701994958] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252989.702052692] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252990.101259303] [camera]: getParameters...[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252990.707483001] [camera]: JSON file is loaded! (/home/willy/ament_ws/install/stretch_core/share/stretch_core/config/HighAccuracyPreset.json)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252990.707605273] [camera]: Device Name: Intel RealSense D435I[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252990.707633412] [camera]: Device Serial No: 239722071445[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252990.707655296] [camera]: Device physical port: /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252990.707676734] [camera]: Device FW version: 5.16.0.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252990.707696487] [camera]: Device Product ID: 0x0B3A[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252990.707712733] [camera]: Sync Mode: On[0m
+[WARN] [1775252990.733520824] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[realsense2_camera_node-1] [33m[WARN] [1775252990.837271261] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252990.838111713] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252990.855185518] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252990.859920423] [camera]: Given value, 63 is invalid. Set ROS param back to: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252990.879009696] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252990.879175617] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252990.879220881] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252990.888663502] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252990.889264858] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252990.889360791] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] Failed to start device: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy
+[realsense2_camera_node-1] [0m[INFO] [1775252990.889488817] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252990.889686964] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252990.889741486] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252990.897946277] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252990.898718513] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252990.898901354] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252990.898943691] [camera]: Error updating the sensors: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[WARN] [1775252991.765132488] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[realsense2_camera_node-1] [0m[INFO] [1775252992.466711158] [camera]: Checking new devices...[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252992.480973645] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252992.481046981] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252992.481068821] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252992.481273222] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252992.481310568] [camera]: Device USB type: 3.2[0m
+[WARN] [1775252992.798710698] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[INFO] [1775252992.803206984] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252992.jpg
+[realsense2_camera_node-1] [0m[INFO] [1775252992.890915057] [camera]: getParameters...[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252993.520770931] [camera]: JSON file is loaded! (/home/willy/ament_ws/install/stretch_core/share/stretch_core/config/HighAccuracyPreset.json)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252993.520944523] [camera]: Device Name: Intel RealSense D435I[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252993.521000027] [camera]: Device Serial No: 239722071445[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252993.521042913] [camera]: Device physical port: /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252993.521084757] [camera]: Device FW version: 5.16.0.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252993.521122914] [camera]: Device Product ID: 0x0B3A[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252993.521160473] [camera]: Sync Mode: On[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252993.621277428] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252993.622051412] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252993.635745097] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252993.638115060] [camera]: Given value, 63 is invalid. Set ROS param back to: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252993.652720960] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252993.652874768] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252993.652901059] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252993.657479716] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252993.658119856] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252993.658201260] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] Failed to start device: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy
+[realsense2_camera_node-1] [0m[INFO] [1775252993.658336245] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252993.658423481] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252993.658442162] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252993.663816057] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252993.666100277] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252993.666503688] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252993.666733729] [camera]: Error updating the sensors: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[WARN] [1775252993.838030681] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775252994.215437840] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775252994.218376578] [object_grasper]: Step 2: Open gripper
+[INFO] [1775252994.218637780] [object_grasper]: → Opening gripper
+[stretch_driver-3] [0m[INFO] [1775252994.221941375] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775252994.234537685] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_gripper_finger_left'][0m
+[WARN] [1775252994.866486314] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[realsense2_camera_node-1] [0m[INFO] [1775252995.277683853] [camera]: Checking new devices...[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252995.292076870] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252995.292172010] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252995.292202239] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252995.292432351] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252995.292484230] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252995.658993701] [camera]: getParameters...[0m
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775252995.777552098] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775252995.781690893] [object_grasper]: Step 3: Extend arm to target x,y (approach height)
+[INFO] [1775252995.782235964] [object_grasper]: → Extending arm to 0.262m
+[stretch_driver-3] [0m[INFO] [1775252995.785126309] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775252995.800458204] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_arm'][0m
+[WARN] [1775252995.898691150] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[INFO] [1775252995.907364534] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252995.jpg
+[realsense2_camera_node-1] [0m[INFO] [1775252996.304495774] [camera]: JSON file is loaded! (/home/willy/ament_ws/install/stretch_core/share/stretch_core/config/HighAccuracyPreset.json)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252996.304572358] [camera]: Device Name: Intel RealSense D435I[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252996.304594210] [camera]: Device Serial No: 239722071445[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252996.304613779] [camera]: Device physical port: /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252996.304631854] [camera]: Device FW version: 5.16.0.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252996.304647948] [camera]: Device Product ID: 0x0B3A[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252996.304663261] [camera]: Sync Mode: On[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252996.410425942] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252996.411431684] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252996.430280255] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252996.433294115] [camera]: Given value, 63 is invalid. Set ROS param back to: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252996.444780276] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252996.444912674] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252996.444934034] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252996.450064426] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252996.450435236] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252996.450483000] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] Failed to start device: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy
+[realsense2_camera_node-1] [0m[INFO] [1775252996.450554693] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252996.450645905] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252996.450669839] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252996.455725954] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252996.456803117] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252996.457045596] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252996.457074753] [camera]: Error updating the sensors: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[WARN] [1775252996.949676695] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[WARN] [1775252998.011470167] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[realsense2_camera_node-1] [0m[INFO] [1775252998.087161084] [camera]: Checking new devices...[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252998.100259069] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252998.100301423] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252998.100309026] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252998.100447217] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252998.100463552] [camera]: Device USB type: 3.2[0m
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775252998.410602496] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775252998.413027358] [object_grasper]: Step 4: Lower lift to grasp height (0.889m)
+[stretch_driver-3] [0m[INFO] [1775252998.418582132] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775252998.425752121] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_lift'][0m
+[realsense2_camera_node-1] [0m[INFO] [1775252998.451609182] [camera]: getParameters...[0m
+[WARN] [1775252999.043993698] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[INFO] [1775252999.051332075] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252999.jpg
+[realsense2_camera_node-1] [0m[INFO] [1775252999.071334716] [camera]: JSON file is loaded! (/home/willy/ament_ws/install/stretch_core/share/stretch_core/config/HighAccuracyPreset.json)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252999.071488538] [camera]: Device Name: Intel RealSense D435I[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252999.071513213] [camera]: Device Serial No: 239722071445[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252999.071528409] [camera]: Device physical port: /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252999.071541967] [camera]: Device FW version: 5.16.0.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252999.071554167] [camera]: Device Product ID: 0x0B3A[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252999.071564725] [camera]: Sync Mode: On[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252999.172544625] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252999.173849788] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252999.197945562] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252999.202341913] [camera]: Given value, 63 is invalid. Set ROS param back to: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252999.219895539] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252999.220066396] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252999.220113243] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252999.227026847] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252999.227713998] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252999.227838874] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] Failed to start device: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy
+[realsense2_camera_node-1] [0m[INFO] [1775252999.227983422] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252999.228110667] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252999.228156378] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252999.235534910] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252999.236744104] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252999.236900107] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252999.236931514] [camera]: Error updating the sensors: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775252999.452183089] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775252999.455471109] [object_grasper]: Step 5: Close gripper
+[INFO] [1775252999.455963964] [object_grasper]: → Closing gripper
+[stretch_driver-3] [0m[INFO] [1775252999.463450628] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775252999.474617854] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_gripper_finger_left'][0m
+[WARN] [1775253000.090647820] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[realsense2_camera_node-1] [0m[INFO] [1775253000.875066896] [camera]: Checking new devices...[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253000.920691352] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253000.920817788] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253000.920848382] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253000.921102682] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253000.921151941] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253001.228286496] [camera]: getParameters...[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253001.576797072] [camera]: JSON file is loaded! (/home/willy/ament_ws/install/stretch_core/share/stretch_core/config/HighAccuracyPreset.json)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253001.577025037] [camera]: Device Name: Intel RealSense D435I[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253001.577064591] [camera]: Device Serial No: 239722071445[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253001.577090437] [camera]: Device physical port: /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253001.577111913] [camera]: Device FW version: 5.16.0.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253001.577130704] [camera]: Device Product ID: 0x0B3A[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253001.577149773] [camera]: Sync Mode: On[0m
+[realsense2_camera_node-1] [33m[WARN] [1775253001.684554746] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775253001.686196426] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775253001.704843410] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253001.708348266] [camera]: Given value, 63 is invalid. Set ROS param back to: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253001.725518557] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253001.725662927] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253001.725706662] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253001.733194418] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253001.733804023] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253001.733874054] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] Failed to start device: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy
+[realsense2_camera_node-1] [0m[INFO] [1775253001.733977677] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253001.734145971] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253001.734176810] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253001.744474868] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253001.755905652] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253001.756106219] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253001.756157310] [camera]: Error updating the sensors: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[INFO] [1775253002.086440069] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775253002.jpg
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.16
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775253002.981898033] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775253002.984302520] [object_grasper]: Step 6: Lift up to 0.989m
+[stretch_driver-3] [0m[INFO] [1775253002.995480214] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775253003.003624087] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_lift'][0m
+[realsense2_camera_node-1] [0m[INFO] [1775253003.286723322] [camera]: Checking new devices...[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253003.328326359] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253003.328433852] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253003.328461525] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253003.328823583] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253003.328884501] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253003.734629524] [camera]: getParameters...[0m
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775253004.018410956] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775253004.021650460] [object_grasper]: Step 7: Retract arm
+[INFO] [1775253004.021938460] [object_grasper]: → Retracting arm
+[stretch_driver-3] [0m[INFO] [1775253004.033703779] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775253004.039911213] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_arm'][0m
+[realsense2_camera_node-1] [0m[INFO] [1775253004.354687887] [camera]: JSON file is loaded! (/home/willy/ament_ws/install/stretch_core/share/stretch_core/config/HighAccuracyPreset.json)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253004.354772561] [camera]: Device Name: Intel RealSense D435I[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253004.354802851] [camera]: Device Serial No: 239722071445[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253004.354821738] [camera]: Device physical port: /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253004.354839271] [camera]: Device FW version: 5.16.0.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253004.354855884] [camera]: Device Product ID: 0x0B3A[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253004.354871013] [camera]: Sync Mode: On[0m
+[realsense2_camera_node-1] [33m[WARN] [1775253004.454654272] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775253004.455371584] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775253004.469632919] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253004.472453156] [camera]: Given value, 63 is invalid. Set ROS param back to: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253004.494184156] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253004.494293268] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253004.494311531] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253004.504819013] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253004.505655625] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253004.505853246] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] Failed to start device: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy
+[realsense2_camera_node-1] [0m[INFO] [1775253004.508130409] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253004.508569944] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253004.508667802] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253004.524817294] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253004.525941535] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253004.526099306] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253004.526147980] [camera]: Error updating the sensors: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[INFO] [1775253005.090343481] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775253005.jpg
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.02
+[realsense2_camera_node-1] [0m[INFO] [1775253006.097166800] [camera]: Checking new devices...[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253006.110971856] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253006.111047684] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253006.111070916] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253006.111298161] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253006.111347435] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253006.506536081] [camera]: getParameters...[0m
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775253006.693564164] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775253006.696567178] [object_grasper]: === GRASP SEQUENCE COMPLETE ===
+response:
+std_srvs.srv.Trigger_Response(success=True, message='')
+
+[INFO] [1775253006.698989379] [object_grasper]: [ArUco] target updated → X=+0.006  Y=-0.665  Z=+0.930
+Grasp triggered!
+=== dock_grab.sh finished at Fri Apr  3 05:50:06 PM EDT 2026 ===
+[realsense2_camera_node-1] [0m[INFO] [1775253007.149874568] [camera]: JSON file is loaded! (/home/willy/ament_ws/install/stretch_core/share/stretch_core/config/HighAccuracyPreset.json)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253007.149973185] [camera]: Device Name: Intel RealSense D435I[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253007.149996977] [camera]: Device Serial No: 239722071445[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253007.150016104] [camera]: Device physical port: /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253007.150034487] [camera]: Device FW version: 5.16.0.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253007.150053024] [camera]: Device Product ID: 0x0B3A[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253007.150069021] [camera]: Sync Mode: On[0m
+[realsense2_camera_node-1] [33m[WARN] [1775253007.243521965] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775253007.244966093] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775253007.263262516] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253007.266313221] [camera]: Given value, 63 is invalid. Set ROS param back to: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253007.282234122] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253007.282346988] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253007.282386135] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253007.289401555] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253007.289901324] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253007.289991166] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] Failed to start device: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy
+[realsense2_camera_node-1] [0m[INFO] [1775253007.290115673] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253007.290294254] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253007.290339028] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253007.296547654] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253007.297490503] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253007.297627004] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253007.297663326] [camera]: Error updating the sensors: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[WARN] [1775253008.329243567] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[INFO] [1775253008.332797408] [object_grasper]: [ArUco] target updated → X=+0.025  Y=-0.642  Z=+0.928
+[INFO] [1775253008.336545493] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775253008.jpg
+[realsense2_camera_node-1] [0m[INFO] [1775253008.939565383] [camera]: Checking new devices...[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253008.962779601] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253008.962834545] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253008.962843211] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253008.962975651] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253008.962985855] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253009.290828161] [camera]: getParameters...[0m
+[WARN] [1775253009.365941576] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[INFO] [1775253009.367474964] [object_grasper]: [ArUco] target updated → X=+0.025  Y=-0.640  Z=+0.929
+[realsense2_camera_node-1] [0m[INFO] [1775253009.929347741] [camera]: JSON file is loaded! (/home/willy/ament_ws/install/stretch_core/share/stretch_core/config/HighAccuracyPreset.json)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253009.929487110] [camera]: Device Name: Intel RealSense D435I[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253009.929503915] [camera]: Device Serial No: 239722071445[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253009.929511598] [camera]: Device physical port: /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253009.929519918] [camera]: Device FW version: 5.16.0.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253009.929526153] [camera]: Device Product ID: 0x0B3A[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253009.929532408] [camera]: Sync Mode: On[0m
+[realsense2_camera_node-1] [33m[WARN] [1775253010.032772152] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775253010.034099852] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775253010.056529171] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253010.061656964] [camera]: Given value, 63 is invalid. Set ROS param back to: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253010.077391676] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253010.077540766] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253010.077583033] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253010.082309987] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253010.093177264] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253010.093248921] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] Failed to start device: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy
+[realsense2_camera_node-1] [0m[INFO] [1775253010.093375823] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253010.093452016] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253010.093470467] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253010.100182759] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253010.101219535] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:487:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253010.101343991] [camera]: /home/willy/ament_ws/src/realsense-ros/realsense2_camera/src/rs_node_setup.cpp:369:An exception has been thrown: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775253010.101378302] [camera]: Error updating the sensors: xioctl(VIDIOC_S_FMT) failed, errno=16 Last Error: Device or resource busy[0m
+[WARN] [1775253010.403350378] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[INFO] [1775253010.406104847] [object_grasper]: [ArUco] target updated → X=+0.025  Y=-0.640  Z=+0.929
+[WARN] [1775253011.441212409] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[INFO] [1775253011.443040088] [object_grasper]: [ArUco] target updated → X=+0.025  Y=-0.629  Z=+0.936
+[INFO] [1775253011.446065345] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775253011.jpg
+[realsense2_camera_node-1] [0m[INFO] [1775253011.590430375] [camera]: Checking new devices...[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253011.603725216] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775253011.603803636] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253011.603822774] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253011.604006909] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775253011.604033398] [camera]: Device USB type: 3.2[0m
+[WARN] [1775253012.478738939] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[INFO] [1775253012.484610909] [object_grasper]: [ArUco] target updated → X=+0.025  Y=-0.629  Z=+0.936
+[WARN] [1775253013.505457077] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[INFO] [1775253013.507515352] [object_grasper]: [ArUco] target updated → X=+0.025  Y=-0.629  Z=+0.936
+[WARN] [1775253014.533030764] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[INFO] [1775253014.534364036] [object_grasper]: [ArUco] target updated → X=+0.025  Y=-0.629  Z=+0.936
+[INFO] [1775253014.537763124] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775253014.jpg
+[WARN] [1775253015.561522029] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[INFO] [1775253015.563403948] [object_grasper]: [ArUco] target updated → X=+0.025  Y=-0.629  Z=+0.936
+[WARN] [1775253016.589308786] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[INFO] [1775253016.593848778] [object_grasper]: [ArUco] target updated → X=+0.025  Y=-0.629  Z=+0.936
+[realsense2_camera_node-1] [0m[INFO] [1775253017.454925283] [camera]: getParameters...[0m
+[WARN] [1775253017.620331594] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[INFO] [1775253017.622294253] [object_grasper]: [ArUco] target updated → X=+0.025  Y=-0.629  Z=+0.936
+[INFO] [1775253017.625883707] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775253017.jpg
+[WARN] [1775253018.653504931] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[INFO] [1775253018.655168055] [object_grasper]: [ArUco] target updated → X=+0.025  Y=-0.631  Z=+0.934
+[WARN] [1775253019.682942293] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[INFO] [1775253019.684611952] [object_grasper]: [ArUco] target updated → X=+0.025  Y=-0.629  Z=+0.936
+[WARN] [1775253020.716500731] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[INFO] [1775253020.717845388] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775253020.717949933] [object_grasper]: [ArUco] target updated → X=+0.025  Y=-0.629  Z=+0.936
+[INFO] [1775253020.718259541] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775253020.718633425] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.013m  Y=+0.038m  Z=+0.675m  dist=0.676m
+[INFO] [1775253020.719005747] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.025m  Y=-0.629m  Z=+0.936m  → published
+[INFO] [1775253020.719371802] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775253020.724717205] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775253020.jpg
+[WARN] [1775253021.751967934] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[INFO] [1775253021.753615507] [object_grasper]: [ArUco] target updated → X=+0.025  Y=-0.629  Z=+0.936
+[realsense2_camera_node-1] Failed to start device: set_xu(...). xioctl(UVCIOC_CTRL_QUERY) failed Last Error: Connection timed out
+[stretch_driver-3] [0m[INFO] [1775253233.077373214] [stretch_driver]: Changed to mode = navigation[0m
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.10
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.31
+[controller_server-11] [WARN] [1775253237.642462493] [rclcpp]: Failed to set parameter: parameter 'general_goal_checker.yaw_goal_tolerance' cannot be set because it was not declared
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.12
+[stretch_driver-3] Caught signal 15
+[stretch_driver-3] Caught signal 15
+[stretch_driver-3] Caught signal 15
+[stretch_driver-3] Traceback (most recent call last):
+[stretch_driver-3]   File "/home/willy/ament_ws/install/stretch_core/lib/python3.10/site-packages/stretch_core/stretch_driver.py", line 1119, in main
+[stretch_driver-3]     executor.spin()
+[stretch_driver-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 323, in spin
+[stretch_driver-3]     self.spin_once()
+[stretch_driver-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 863, in spin_once
+[stretch_driver-3]     self._spin_once_impl(timeout_sec)
+[stretch_driver-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 844, in _spin_once_impl
+[stretch_driver-3]     handler, entity, node = self.wait_for_ready_callbacks(
+[stretch_driver-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 780, in wait_for_ready_callbacks
+[stretch_driver-3]     return next(self._cb_iter)
+[stretch_driver-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 677, in _wait_for_ready_callbacks
+[stretch_driver-3]     wait_set.wait(timeout_nsec)
+[stretch_driver-3]   File "/home/willy/.local/lib/python3.10/site-packages/stretch_body/hello_utils.py", line 301, in thread_service_shutdown
+[stretch_driver-3]     raise ThreadServiceExit
+[stretch_driver-3] stretch_body.hello_utils.ThreadServiceExit
+[stretch_driver-3] 
+[stretch_driver-3] During handling of the above exception, another exception occurred:
+[stretch_driver-3] 
+[stretch_driver-3] Traceback (most recent call last):
+[stretch_driver-3]   File "/home/willy/ament_ws/install/stretch_core/lib/python3.10/site-packages/stretch_core/stretch_driver.py", line 1122, in main
+[stretch_driver-3]     node.destroy_node()
+[stretch_driver-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 1691, in destroy_node
+[stretch_driver-3]     self.destroy_service(self._services[0])
+[stretch_driver-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 1615, in destroy_service
+[stretch_driver-3]     service.destroy()
+[stretch_driver-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/service.py", line 93, in destroy
+[stretch_driver-3]     self.__service.destroy_when_not_in_use()
+[stretch_driver-3]   File "/home/willy/.local/lib/python3.10/site-packages/stretch_body/hello_utils.py", line 301, in thread_service_shutdown
+[stretch_driver-3]     raise ThreadServiceExit
+[stretch_driver-3] stretch_body.hello_utils.ThreadServiceExit
+[stretch_driver-3] 
+[stretch_driver-3] During handling of the above exception, another exception occurred:
+[stretch_driver-3] 
+[stretch_driver-3] Traceback (most recent call last):
+[stretch_driver-3]   File "/home/willy/ament_ws/install/stretch_core/lib/stretch_core/stretch_driver", line 33, in <module>
+[stretch_driver-3]     sys.exit(load_entry_point('stretch-core==0.2.0', 'console_scripts', 'stretch_driver')())
+[stretch_driver-3]   File "/home/willy/ament_ws/install/stretch_core/lib/python3.10/site-packages/stretch_core/stretch_driver.py", line 1124, in main
+[stretch_driver-3]     node.gamepad_teleop.stop()
+[stretch_driver-3]   File "/home/willy/.local/lib/python3.10/site-packages/stretch_body/gamepad_teleop.py", line 433, in stop
+[stretch_driver-3]     self.gamepad_controller.join(1)
+[stretch_driver-3]   File "/usr/lib/python3.10/threading.py", line 1100, in join
+[stretch_driver-3]     self._wait_for_tstate_lock(timeout=max(timeout, 0))
+[stretch_driver-3]   File "/usr/lib/python3.10/threading.py", line 1116, in _wait_for_tstate_lock
+[stretch_driver-3]     if lock.acquire(block, timeout):
+[stretch_driver-3]   File "/home/willy/.local/lib/python3.10/site-packages/stretch_body/hello_utils.py", line 301, in thread_service_shutdown
+[stretch_driver-3]     raise ThreadServiceExit
+[stretch_driver-3] stretch_body.hello_utils.ThreadServiceExit
+[ERROR] [stretch_driver-3]: process has died [pid 20589, exit code 1, cmd '/home/willy/ament_ws/install/stretch_core/lib/stretch_core/stretch_driver --ros-args --params-file /tmp/launch_params_ljj5u7f5 -r cmd_vel:=/stretch/cmd_vel -r joint_states:=/stretch/joint_states'].
+[map_server-8] [INFO] [1775253294.691198355] [map_server]: Configuring
+[map_server-8] [INFO] [1775253294.691313529] [map_io]: Loading yaml file: /home/willy/stretch_user/maps/testing_map.yaml
+[map_server-8] [INFO] [1775253294.691694230] [map_io]: resolution: 0.05
+[map_server-8] [INFO] [1775253294.691709365] [map_io]: origin[0]: -11.5
+[map_server-8] [INFO] [1775253294.691714310] [map_io]: origin[1]: -1.71
+[map_server-8] [INFO] [1775253294.691718993] [map_io]: origin[2]: 0
+[map_server-8] [INFO] [1775253294.691723616] [map_io]: free_thresh: 0.25
+[map_server-8] [INFO] [1775253294.691727685] [map_io]: occupied_thresh: 0.65
+[map_server-8] [INFO] [1775253294.691733354] [map_io]: mode: trinary
+[map_server-8] [INFO] [1775253294.691739132] [map_io]: negate: 0
+[map_server-8] [INFO] [1775253294.691988480] [map_io]: Loading image_file: /home/willy/stretch_user/maps/testing_map.pgm
+[map_server-8] [INFO] [1775253294.793704033] [map_io]: Read map /home/willy/stretch_user/maps/testing_map.pgm: 416 X 249 map @ 0.05 m/cell
+[amcl-9] [INFO] [1775253294.858454046] [amcl]: Configuring
+[amcl-9] [INFO] [1775253294.858594422] [amcl]: initTransforms
+[amcl-9] [INFO] [1775253294.947350175] [amcl]: initPubSub
+[map_server-8] [INFO] [1775253294.995473547] [map_server]: Activating
+[map_server-8] [INFO] [1775253295.002553205] [map_server]: Creating bond (map_server) to lifecycle manager.
+[amcl-9] [INFO] [1775253295.014715018] [amcl]: Subscribed to map topic.
+[amcl-9] [INFO] [1775253295.049691958] [amcl]: Received a 416 X 249 map @ 0.050 m/pix
+[amcl-9] [INFO] [1775253295.059315700] [amcl]: Received a 416 X 249 map @ 0.050 m/pix
+[rviz2-17] [INFO] [1775253295.156975580] [rviz]: Message Filter dropping message: frame 'laser' at time 1775252952.728 for reason 'discarding message because the queue is full'
+[controller_server-11] [INFO] [1775253295.230180456] [controller_server]: Configuring controller interface
+[controller_server-11] [INFO] [1775253295.230734938] [controller_server]: getting goal checker plugins..
+[controller_server-11] [INFO] [1775253295.231185816] [controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-11] [INFO] [1775253295.231245916] [local_costmap.local_costmap]: Configuring
+[controller_server-11] [INFO] [1775253295.287460640] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[controller_server-11] [INFO] [1775253295.298618522] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[amcl-9] [INFO] [1775253295.301295308] [amcl]: initialPoseReceived
+[amcl-9] [WARN] [1775253295.301506128] [amcl]: Received initial pose request, but AMCL is not yet in the active state
+[controller_server-11] [INFO] [1775253295.332085861] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-11] [INFO] [1775253295.332201122] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[controller_server-11] [INFO] [1775253295.334124842] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-11] [INFO] [1775253295.395410901] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-11] [INFO] [1775253295.395501135] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-11] [INFO] [1775253295.407216407] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-11] [INFO] [1775253295.438610970] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-11] [INFO] [1775253295.454189925] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-11] [INFO] [1775253295.464438464] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-11] [INFO] [1775253295.472001620] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-11] [INFO] [1775253295.481676379] [controller_server]: Setting transform_tolerance to 0.200000
+[controller_server-11] [INFO] [1775253295.570986457] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[controller_server-11] [INFO] [1775253295.575964516] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775253295.583477961] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-11] [INFO] [1775253295.595512829] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775253295.598071354] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[controller_server-11] [INFO] [1775253295.601839100] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775253295.604675678] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-11] [INFO] [1775253295.605784793] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775253295.610113764] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-11] [INFO] [1775253295.621160911] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775253295.625059875] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-11] [INFO] [1775253295.627267438] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775253295.627652478] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-11] [INFO] [1775253295.628241412] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775253295.631478020] [controller_server]: Using critic "PreferForward" (dwb_critics::PreferForwardCritic)
+[controller_server-11] [INFO] [1775253295.645811575] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775253295.645933703] [controller_server]: Controller Server has FollowPath  controllers available.
+[realsense2_camera_node-1] [31m[ERROR] [1775253296.274508702] [camera]: The device has been disconnected![0m
+[rviz2-17] [INFO] [1775253299.369058486] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253293.302 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253301.349164315] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253298.874 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253301.889262765] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253295.705 for reason 'discarding message because the queue is full'
+[amcl-9] [WARN] [1775253302.511998662] [amcl]: New subscription discovered on topic '/particle_cloud', requesting incompatible QoS. No messages will be sent to it. Last incompatible policy: RELIABILITY_QOS_POLICY
+[rviz2-17] [INFO] [1775253303.863877692] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253301.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253304.788370467] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253298.701 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253306.504893105] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253303.473 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253307.770940530] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253301.700 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253309.081260896] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253305.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253310.712154797] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253304.701 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253311.714090427] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253308.473 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253314.015260830] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253307.700 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253314.253217505] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253310.879 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253316.941771945] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253313.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253316.942234655] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253310.700 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253319.495818964] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253316.073 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253319.787463384] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253313.700 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253322.099411072] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253318.472 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253322.349559208] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253316.100 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253324.637388123] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253321.073 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253325.158720419] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253319.100 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253327.269517457] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253323.674 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253327.755482329] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253321.500 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253329.867669732] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253326.073 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253330.354862119] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253323.900 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253332.471057194] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253328.473 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253332.982902481] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253326.902 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253335.009559752] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253331.473 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253336.038821155] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253329.901 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253337.724263437] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253333.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253339.054376399] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253332.900 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253340.256471901] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253336.873 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253342.037859365] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253335.900 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253342.922750442] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253339.273 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253345.157415535] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253338.901 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253345.611301458] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253342.273 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253347.937717916] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253341.900 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253348.169336677] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253344.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253350.949008851] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253347.473 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253350.949991271] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253344.900 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253353.526390838] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253350.273 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253353.527627013] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253347.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253356.111863117] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253352.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253356.364658507] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253350.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253358.704592422] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253355.273 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253359.440953699] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253353.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253361.410387800] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253358.073 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253362.416196271] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253356.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253364.160223773] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253360.874 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253365.544942032] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253359.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253366.783339492] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253363.472 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253368.340768609] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253362.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253369.325483931] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253365.873 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253371.006554109] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253364.700 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253372.039299944] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253368.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253374.002551888] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253367.100 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253374.745065144] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253371.474 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253376.828465658] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253369.500 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253377.283799900] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253374.073 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253379.433199425] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253371.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253379.920678145] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253376.273 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253382.419975790] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253375.500 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253382.609295728] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253379.273 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253385.295585480] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253382.073 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253385.297986027] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253379.100 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253387.883780766] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253384.273 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253388.629837359] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253382.100 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253390.555586778] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253387.273 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253391.271991179] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253385.100 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253393.127017795] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253389.873 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253394.141840960] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253388.100 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253395.655706457] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253392.273 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253397.226091321] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253391.100 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253398.289596945] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253394.873 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253400.229394192] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253394.100 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253400.998151024] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253397.672 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253402.970970601] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253396.500 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253403.744676977] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253400.273 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253405.543974120] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253399.500 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253406.431915605] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253403.072 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253409.002148456] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253405.473 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253409.002980262] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253401.900 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253411.656294804] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253408.273 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253411.658327996] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253404.900 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253414.352502568] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253411.073 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253414.615242762] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253408.500 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253416.909572700] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253413.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253418.114517325] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253411.501 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253419.593439895] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253416.273 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253421.242488403] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253413.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253422.251025126] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253418.873 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253424.388523960] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253416.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253424.824482920] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253421.473 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253427.156917045] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253421.100 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253427.424817047] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253423.874 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253429.924930568] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253426.478 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253430.977169008] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253424.100 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253432.584158141] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253429.274 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253433.897594968] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253427.100 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253435.247243857] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253431.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253436.749319261] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253429.500 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253437.926953082] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253434.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253440.485169700] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253437.073 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253441.028460621] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253433.100 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253443.233029599] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253439.873 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253444.146224864] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253436.100 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253445.977371955] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253442.674 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253446.681199614] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253438.500 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253448.510526281] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253444.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253449.768346793] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253443.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253451.204812811] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253447.072 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253452.908995411] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253445.700 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253453.773157887] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253449.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253455.855576633] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253447.500 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253456.381456674] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253452.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253458.716714787] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253449.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253459.052550127] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253455.273 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253461.654175074] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253457.873 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253461.659133918] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253454.100 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253464.292429922] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253460.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253464.533967255] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253458.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253467.020705845] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253463.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253467.502245408] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253460.700 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253469.614294432] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253466.273 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253470.375484269] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253463.100 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253472.187411341] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253468.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253473.718408125] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253464.900 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253474.984907205] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253471.473 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253476.463625579] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253467.901 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253477.621795603] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253474.272 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253479.842972944] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253470.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253480.362404933] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253476.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253482.468407096] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253474.500 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253483.035441844] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253479.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253485.122954485] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253476.900 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253485.605442065] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253482.073 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253488.361317564] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253484.873 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253488.366214059] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253480.500 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253491.014222003] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253487.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253492.053494690] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253482.900 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253493.773375989] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253490.273 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253495.312269733] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253485.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253496.286109907] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253492.873 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253497.922368081] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253488.900 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253498.811440006] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253495.473 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253501.436365276] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253497.875 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253502.088719335] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253492.500 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253503.961806641] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253500.273 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253504.782849086] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253495.500 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253506.654797550] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253503.073 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253507.662012003] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253499.100 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253509.216460272] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253505.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253510.220045987] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253502.700 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253511.855582256] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253508.473 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253513.245250988] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253506.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253514.510672307] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253511.073 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253516.893590322] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253508.701 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253517.214323187] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253513.873 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253519.560139118] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253509.900 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253519.870893931] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253516.273 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253522.393181704] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253518.873 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253523.617216516] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253511.100 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253525.171483725] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253521.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253526.381261000] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253514.100 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253527.853445877] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253524.275 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253529.353546588] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253517.700 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253530.571336732] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253527.073 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253532.160822465] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253525.500 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253533.135302723] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253529.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253534.780496028] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253527.900 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253535.754187749] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253531.873 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253537.329576321] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253529.700 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253538.527634208] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253535.073 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253539.922314699] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253533.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253541.341208687] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253537.873 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253542.675622710] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253535.700 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253543.919433120] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253540.473 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253545.445085125] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253536.900 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253546.453686232] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253543.073 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253548.911171207] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253539.900 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253549.152655580] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253545.874 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253551.483606889] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253542.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253551.753974873] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253548.273 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253554.242864394] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253545.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253554.389364298] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253551.073 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253557.114658392] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253553.673 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253557.836682919] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253547.100 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253559.659560889] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253556.273 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253560.717853806] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253549.500 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253562.330297684] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253558.640 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253563.218084972] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253551.300 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253564.855033769] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253558.640 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775253565.886656069] [rviz]: Message Filter dropping message: frame 'odom' at time 1775253557.300 for reason 'discarding message because the queue is full'

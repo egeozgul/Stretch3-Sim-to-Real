@@ -1,0 +1,502 @@
+=== dock_grab.sh started at Tue Apr  7 02:36:42 PM EDT 2026 ===
+Freeing robot process...
+Done!
+=== Launching all nodes ===
+Waiting for Nav2 action server...
+[INFO] [launch]: All log files can be found below /home/willy/.ros/log/2026-04-07-14-36-43-219851-stretch-re2-2204-21981
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: D435i launched in high resolution
+[INFO] [realsense2_camera_node-1]: process started with pid [22041]
+[INFO] [d435i_accel_correction-2]: process started with pid [22043]
+[INFO] [launch]: All log files can be found below /home/willy/.ros/log/2026-04-07-14-36-43-273694-stretch-re2-2204-21980
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [1775587003.680016875] [aruco_base_frame_estimator]: aruco_base_frame_estimator started
+[d435i_accel_correction-2] [INFO] [1775587003.749786152] [d435i_accel_correction_node]: d435i_accel_correction_node started
+[realsense2_camera_node-1] [0m[INFO] [1775587003.888237988] [camera]: RealSense ROS v4.55.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587003.888319337] [camera]: Built with LibRealSense v2.56.4[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587003.888327661] [camera]: Running with LibRealSense v2.56.4[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587003.911633090] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775587003.911743980] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587003.911751186] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587003.911887585] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587003.911897637] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587003.911903857] [camera]: Resetting device...[0m
+Nav2 is up!
+Setting initial pose...
+[INFO] [stretch_driver-3]: process started with pid [22217]
+[INFO] [joint_state_publisher-1]: process started with pid [22213]
+[INFO] [robot_state_publisher-2]: process started with pid [22215]
+[INFO] [sllidar_node-4]: process started with pid [22219]
+[INFO] [scan_to_scan_filter_chain-5]: process started with pid [22221]
+[INFO] [joy_node-6]: process started with pid [22223]
+[INFO] [teleop_node-7]: process started with pid [22225]
+[INFO] [map_server-8]: process started with pid [22227]
+[INFO] [amcl-9]: process started with pid [22229]
+[INFO] [lifecycle_manager-10]: process started with pid [22231]
+[INFO] [controller_server-11]: process started with pid [22233]
+[INFO] [planner_server-12]: process started with pid [22235]
+[INFO] [behavior_server-13]: process started with pid [22237]
+[INFO] [bt_navigator-14]: process started with pid [22239]
+[INFO] [waypoint_follower-15]: process started with pid [22251]
+[INFO] [lifecycle_manager-16]: process started with pid [22363]
+[INFO] [rviz2-17]: process started with pid [22365]
+[sllidar_node-4] [INFO] [1775587004.146285403] [sllidar_node]: SLLidar running on ROS2 package SLLidar.ROS2 SDK Version:1.0.1, SLLIDAR SDK Version:2.1.0
+[sllidar_node-4] [INFO] [1775587004.157698754] [sllidar_node]: SLLidar S/N: C394ED93C0EA98C9A5E698F2564A4669
+[sllidar_node-4] [INFO] [1775587004.157767257] [sllidar_node]: Firmware Ver: 1.29
+[sllidar_node-4] [INFO] [1775587004.157782900] [sllidar_node]: Hardware Rev: 7
+[sllidar_node-4] [INFO] [1775587004.159278215] [sllidar_node]: SLLidar health status : 0
+[sllidar_node-4] [INFO] [1775587004.159336058] [sllidar_node]: SLLidar health status : OK.
+[scan_to_scan_filter_chain-5] [INFO] [1775587004.165454915] [laser_filter]: In shadow configure done
+[scan_to_scan_filter_chain-5] [WARN] [1775587004.167312204] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[teleop_node-7] [INFO] [1775587004.151632275] [TeleopTwistJoy]: Teleop enable button 4.
+[teleop_node-7] [INFO] [1775587004.151707817] [TeleopTwistJoy]: Linear axis x on 4 at scale 0.500000.
+[teleop_node-7] [INFO] [1775587004.151724309] [TeleopTwistJoy]: Angular axis yaw on 3 at scale 0.500000.
+[map_server-8] [INFO] [1775587004.171457562] [map_server]: 
+[map_server-8] 	map_server lifecycle node launched. 
+[map_server-8] 	Waiting on external lifecycle transitions to activate
+[map_server-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-8] [INFO] [1775587004.171599657] [map_server]: Creating
+[amcl-9] [INFO] [1775587004.172773603] [amcl]: 
+[amcl-9] 	amcl lifecycle node launched. 
+[amcl-9] 	Waiting on external lifecycle transitions to activate
+[amcl-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-9] [INFO] [1775587004.173752593] [amcl]: Creating
+[lifecycle_manager-10] [INFO] [1775587004.148808461] [lifecycle_manager_localization]: Creating
+[lifecycle_manager-10] [INFO] [1775587004.152133552] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[controller_server-11] [INFO] [1775587004.153888182] [controller_server]: 
+[controller_server-11] 	controller_server lifecycle node launched. 
+[controller_server-11] 	Waiting on external lifecycle transitions to activate
+[controller_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-11] [INFO] [1775587004.175733529] [controller_server]: Creating controller server
+[controller_server-11] [INFO] [1775587004.193674974] [local_costmap.local_costmap]: 
+[controller_server-11] 	local_costmap lifecycle node launched. 
+[controller_server-11] 	Waiting on external lifecycle transitions to activate
+[controller_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-11] [INFO] [1775587004.194658997] [local_costmap.local_costmap]: Creating Costmap
+[planner_server-12] [INFO] [1775587004.186434458] [planner_server]: 
+[planner_server-12] 	planner_server lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[behavior_server-13] [INFO] [1775587004.190273267] [behavior_server]: 
+[behavior_server-13] 	behavior_server lifecycle node launched. 
+[behavior_server-13] 	Waiting on external lifecycle transitions to activate
+[behavior_server-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-15] [INFO] [1775587004.188758632] [waypoint_follower]: 
+[waypoint_follower-15] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-15] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-15] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-15] [INFO] [1775587004.189990581] [waypoint_follower]: Creating
+[planner_server-12] [INFO] [1775587004.197304427] [planner_server]: Creating
+[lifecycle_manager-16] [INFO] [1775587004.198307009] [lifecycle_manager_navigation]: Creating
+[lifecycle_manager-16] [INFO] [1775587004.200442640] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[bt_navigator-14] [INFO] [1775587004.203396422] [bt_navigator]: 
+[bt_navigator-14] 	bt_navigator lifecycle node launched. 
+[bt_navigator-14] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-14] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-14] [INFO] [1775587004.203526568] [bt_navigator]: Creating
+[planner_server-12] [INFO] [1775587004.220725515] [global_costmap.global_costmap]: 
+[planner_server-12] 	global_costmap lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1775587004.221830891] [global_costmap.global_costmap]: Creating Costmap
+[rviz2-17] Authorization required, but no authorization protocol specified
+[rviz2-17] qt.qpa.xcb: could not connect to display :0
+[rviz2-17] qt.qpa.plugin: Could not load the Qt platform plugin "xcb" in "/usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqxcb.so" even though it was found.
+[rviz2-17] This application failed to start because no Qt platform plugin could be initialized. Reinstalling the application may fix this problem.
+[rviz2-17] 
+[rviz2-17] Available platform plugins are: eglfs, linuxfb, minimal, minimalegl, offscreen, vnc, xcb.
+[rviz2-17] 
+[lifecycle_manager-10] [INFO] [1775587004.284094302] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-10] [INFO] [1775587004.284168488] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[map_server-8] [INFO] [1775587004.284451857] [map_server]: Configuring
+[map_server-8] [INFO] [1775587004.284530178] [map_io]: Loading yaml file: /home/willy/stretch_user/maps/testing_map.yaml
+[map_server-8] [INFO] [1775587004.284825219] [map_io]: resolution: 0.05
+[map_server-8] [INFO] [1775587004.284840384] [map_io]: origin[0]: -11.5
+[map_server-8] [INFO] [1775587004.284848214] [map_io]: origin[1]: -1.71
+[map_server-8] [INFO] [1775587004.284855199] [map_io]: origin[2]: 0
+[map_server-8] [INFO] [1775587004.284862190] [map_io]: free_thresh: 0.25
+[map_server-8] [INFO] [1775587004.284869495] [map_io]: occupied_thresh: 0.65
+[map_server-8] [INFO] [1775587004.284877035] [map_io]: mode: trinary
+[map_server-8] [INFO] [1775587004.284884385] [map_io]: negate: 0
+[map_server-8] [INFO] [1775587004.285071304] [map_io]: Loading image_file: /home/willy/stretch_user/maps/testing_map.pgm
+[map_server-8] [INFO] [1775587004.306944113] [map_io]: Read map /home/willy/stretch_user/maps/testing_map.pgm: 416 X 249 map @ 0.05 m/cell
+[lifecycle_manager-16] [INFO] [1775587004.313247065] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-16] [INFO] [1775587004.313306590] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-11] [INFO] [1775587004.314682008] [controller_server]: Configuring controller interface
+[controller_server-11] [INFO] [1775587004.315104194] [controller_server]: getting goal checker plugins..
+[controller_server-11] [INFO] [1775587004.315748950] [controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-11] [INFO] [1775587004.315831744] [local_costmap.local_costmap]: Configuring
+[lifecycle_manager-10] [INFO] [1775587004.325023677] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[amcl-9] [INFO] [1775587004.325247690] [amcl]: Configuring
+[amcl-9] [INFO] [1775587004.325345291] [amcl]: initTransforms
+[controller_server-11] [INFO] [1775587004.331411316] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[amcl-9] [INFO] [1775587004.344270122] [amcl]: initPubSub
+[controller_server-11] [INFO] [1775587004.346137422] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[amcl-9] [INFO] [1775587004.359699800] [amcl]: Subscribed to map topic.
+[controller_server-11] [INFO] [1775587004.362026334] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-11] [INFO] [1775587004.362069261] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[controller_server-11] [INFO] [1775587004.362700730] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[sllidar_node-4] [INFO] [1775587004.362938153] [sllidar_node]: current scan mode: Boost, sample rate: 8 Khz, max_distance: 12.0 m, scan frequency:10.0 Hz, 
+[lifecycle_manager-10] [INFO] [1775587004.375462867] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[controller_server-11] [INFO] [1775587004.376147149] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-11] [INFO] [1775587004.376182805] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[map_server-8] [INFO] [1775587004.376927682] [map_server]: Activating
+[amcl-9] [INFO] [1775587004.378188481] [amcl]: Received a 416 X 249 map @ 0.050 m/pix
+[map_server-8] [INFO] [1775587004.379571082] [map_server]: Creating bond (map_server) to lifecycle manager.
+[controller_server-11] [INFO] [1775587004.380141194] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-11] [INFO] [1775587004.400656421] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-11] [INFO] [1775587004.404254710] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-11] [INFO] [1775587004.406893398] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-11] [INFO] [1775587004.410009725] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-11] [INFO] [1775587004.414375502] [controller_server]: Setting transform_tolerance to 0.200000
+[controller_server-11] [INFO] [1775587004.434335153] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[controller_server-11] [INFO] [1775587004.434912682] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775587004.435049930] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-11] [INFO] [1775587004.438927675] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775587004.439652313] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[controller_server-11] [INFO] [1775587004.441067589] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775587004.441797184] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-11] [INFO] [1775587004.444118752] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775587004.444763451] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-11] [INFO] [1775587004.446991881] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775587004.447930605] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-11] [INFO] [1775587004.449459992] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775587004.450113245] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-11] [INFO] [1775587004.451598728] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775587004.452284499] [controller_server]: Using critic "PreferForward" (dwb_critics::PreferForwardCritic)
+[controller_server-11] [INFO] [1775587004.453494800] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775587004.453550519] [controller_server]: Controller Server has FollowPath  controllers available.
+[lifecycle_manager-16] [INFO] [1775587004.457689538] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-12] [INFO] [1775587004.457857470] [planner_server]: Configuring
+[planner_server-12] [INFO] [1775587004.457897987] [global_costmap.global_costmap]: Configuring
+[planner_server-12] [INFO] [1775587004.461747740] [global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-12] [INFO] [1775587004.465782943] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[planner_server-12] [INFO] [1775587004.466903004] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-12] [INFO] [1775587004.466942754] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-12] [INFO] [1775587004.467686995] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-12] [INFO] [1775587004.471397141] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-12] [INFO] [1775587004.471482927] [global_costmap.global_costmap]: Using plugin "voxel_layer"
+[planner_server-12] [INFO] [1775587004.472381210] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-12] [INFO] [1775587004.479129961] [global_costmap.global_costmap]: Initialized plugin "voxel_layer"
+[planner_server-12] [INFO] [1775587004.479198134] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-12] [INFO] [1775587004.480225243] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[lifecycle_manager-10] [INFO] [1775587004.489108049] [lifecycle_manager_localization]: Server map_server connected with bond.
+[lifecycle_manager-10] [INFO] [1775587004.489188628] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+[amcl-9] [INFO] [1775587004.489575401] [amcl]: Activating
+[amcl-9] [INFO] [1775587004.489634085] [amcl]: Creating bond (amcl) to lifecycle manager.
+[planner_server-12] [INFO] [1775587004.494993193] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 416 X 249 at 0.050000 m/pix
+[planner_server-12] [INFO] [1775587004.495795706] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[planner_server-12] [INFO] [1775587004.495868154] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-12] [INFO] [1775587004.497497872] [planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-16] [INFO] [1775587004.504717384] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-13] [INFO] [1775587004.505011650] [behavior_server]: Configuring
+[behavior_server-13] [INFO] [1775587004.511101957] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-13] [INFO] [1775587004.512308788] [behavior_server]: Configuring spin
+[behavior_server-13] [INFO] [1775587004.515073114] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-13] [INFO] [1775587004.515811483] [behavior_server]: Configuring backup
+[behavior_server-13] [INFO] [1775587004.520389741] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[behavior_server-13] [INFO] [1775587004.521645573] [behavior_server]: Configuring drive_on_heading
+[behavior_server-13] [INFO] [1775587004.525227143] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
+[behavior_server-13] [INFO] [1775587004.528111103] [behavior_server]: Configuring assisted_teleop
+[behavior_server-13] [INFO] [1775587004.532218092] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-13] [INFO] [1775587004.533382221] [behavior_server]: Configuring wait
+[lifecycle_manager-16] [INFO] [1775587004.536359248] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[bt_navigator-14] [INFO] [1775587004.536608337] [bt_navigator]: Configuring
+[lifecycle_manager-16] [INFO] [1775587004.586717028] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[waypoint_follower-15] [INFO] [1775587004.586994601] [waypoint_follower]: Configuring
+[waypoint_follower-15] [INFO] [1775587004.593239131] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[lifecycle_manager-10] [INFO] [1775587004.593453088] [lifecycle_manager_localization]: Server amcl connected with bond.
+[lifecycle_manager-10] [INFO] [1775587004.593516415] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-10] [INFO] [1775587004.593534345] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[lifecycle_manager-16] [INFO] [1775587004.594096382] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[controller_server-11] [INFO] [1775587004.594227495] [controller_server]: Activating
+[controller_server-11] [INFO] [1775587004.594267182] [local_costmap.local_costmap]: Activating
+[controller_server-11] [INFO] [1775587004.594282544] [local_costmap.local_costmap]: Checking transform
+[controller_server-11] [INFO] [1775587004.594360947] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1775587004.806696354] [object_grasper]: object_grasper started
+[joy_node-6] [INFO] [1775587004.884663170] [joy_node]: Opened joystick: Controller 1.05.  deadzone: 0.050000
+[controller_server-11] [INFO] [1775587005.094356786] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[scan_to_scan_filter_chain-5] [WARN] [1775587005.154491395] [laser_filter]: diagnostic_updater: No HW_ID was set. This is probably a bug. Please report it. For devices that do not have a HW_ID, set this value to 'none'. This warning only occurs once all diagnostics are OK. It is okay to wait until the device is open before calling setHardwareID.
+[stretch_driver-3] [0m[INFO] [1775587005.304272237] [stretch_driver]: For use with S T R E T C H (TM) RESEARCH EDITION from Hello Robot Inc.[0m
+[stretch_driver-3] [0m[INFO] [1775587005.304537086] [stretch_driver]: stretch_driver started[0m
+[ERROR] [rviz2-17]: process has died [pid 22365, exit code -6, cmd '/opt/ros/humble/lib/rviz2/rviz2 -d /opt/ros/humble/share/nav2_bringup/rviz/nav2_default_view.rviz --ros-args'].
+[INFO] [lifecycle_manager-16]: sending signal 'SIGINT' to process[lifecycle_manager-16]
+[INFO] [waypoint_follower-15]: sending signal 'SIGINT' to process[waypoint_follower-15]
+[INFO] [bt_navigator-14]: sending signal 'SIGINT' to process[bt_navigator-14]
+[INFO] [behavior_server-13]: sending signal 'SIGINT' to process[behavior_server-13]
+[INFO] [planner_server-12]: sending signal 'SIGINT' to process[planner_server-12]
+[INFO] [controller_server-11]: sending signal 'SIGINT' to process[controller_server-11]
+[INFO] [lifecycle_manager-10]: sending signal 'SIGINT' to process[lifecycle_manager-10]
+[INFO] [amcl-9]: sending signal 'SIGINT' to process[amcl-9]
+[INFO] [map_server-8]: sending signal 'SIGINT' to process[map_server-8]
+[INFO] [teleop_node-7]: sending signal 'SIGINT' to process[teleop_node-7]
+[INFO] [joy_node-6]: sending signal 'SIGINT' to process[joy_node-6]
+[INFO] [scan_to_scan_filter_chain-5]: sending signal 'SIGINT' to process[scan_to_scan_filter_chain-5]
+[INFO] [sllidar_node-4]: sending signal 'SIGINT' to process[sllidar_node-4]
+[INFO] [stretch_driver-3]: sending signal 'SIGINT' to process[stretch_driver-3]
+[INFO] [robot_state_publisher-2]: sending signal 'SIGINT' to process[robot_state_publisher-2]
+[INFO] [joint_state_publisher-1]: sending signal 'SIGINT' to process[joint_state_publisher-1]
+[lifecycle_manager-16] [INFO] [1775587005.365099069] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[lifecycle_manager-16] [INFO] [1775587005.365171148] [lifecycle_manager_navigation]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)
+[waypoint_follower-15] [INFO] [1775587005.366145710] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[waypoint_follower-15] [INFO] [1775587005.366200270] [waypoint_follower]: Running Nav2 LifecycleNode rcl preshutdown (waypoint_follower)
+[waypoint_follower-15] [INFO] [1775587005.366258135] [waypoint_follower]: Cleaning up
+[bt_navigator-14] [INFO] [1775587005.368475687] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[bt_navigator-14] [INFO] [1775587005.368576229] [bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+[bt_navigator-14] [INFO] [1775587005.368623409] [bt_navigator]: Cleaning up
+[behavior_server-13] [INFO] [1775587005.372715753] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[behavior_server-13] [INFO] [1775587005.372944441] [behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[behavior_server-13] [INFO] [1775587005.373072439] [behavior_server]: Cleaning up
+[waypoint_follower-15] [INFO] [1775587005.374921223] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[planner_server-12] [INFO] [1775587005.376594663] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[planner_server-12] [INFO] [1775587005.376712717] [planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[planner_server-12] [INFO] [1775587005.376805826] [planner_server]: Cleaning up
+[behavior_server-13] [INFO] [1775587005.378140553] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[controller_server-11] [INFO] [1775587005.379096212] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[controller_server-11] [INFO] [1775587005.379236264] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[controller_server-11] [INFO] [1775587005.379294566] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[controller_server-11] [INFO] [1775587005.379499362] [local_costmap.local_costmap]: start
+[controller_server-11] [ERROR] [1775587005.379743468] [local_costmap.local_costmap]: Caught exception in callback for transition 13
+[controller_server-11] [ERROR] [1775587005.379751726] [local_costmap.local_costmap]: Original error: could not create subscription: rcl node's context is invalid, at ./src/rcl/node.c:428
+[controller_server-11] [ERROR] [1775587005.379775647] [local_costmap.local_costmap]: Failed to finish transition 3. Current state is now: errorprocessing (Could not publish transition: publisher's context is invalid, at ./src/rcl/publisher.c:389, at ./src/rcl_lifecycle.c:368)
+[controller_server-11] [INFO] [1775587005.379810289] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[controller_server-11] [ERROR] [1775587005.379996697] [controller_server]: Caught exception in callback for transition 13
+[controller_server-11] [ERROR] [1775587005.380002472] [controller_server]: Original error: could not create publisher: rcl node's context is invalid, at ./src/rcl/node.c:428
+[controller_server-11] [ERROR] [1775587005.380010865] [controller_server]: Failed to finish transition 3. Current state is now: errorprocessing (Could not publish transition: publisher's context is invalid, at ./src/rcl/publisher.c:389, at ./src/rcl_lifecycle.c:368)
+[lifecycle_manager-10] [INFO] [1775587005.382361129] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[lifecycle_manager-10] [INFO] [1775587005.382501527] [lifecycle_manager_localization]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_localization)
+[lifecycle_manager-10] [INFO] [1775587005.382558079] [lifecycle_manager_localization]: [34m[1mTerminating bond timer...[0m[0m
+[waypoint_follower-15] [INFO] [1775587005.384754208] [waypoint_follower]: Destroying
+[amcl-9] [INFO] [1775587005.385692850] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[amcl-9] [INFO] [1775587005.385827129] [amcl]: Running Nav2 LifecycleNode rcl preshutdown (amcl)
+[amcl-9] [INFO] [1775587005.385934576] [amcl]: Deactivating
+[amcl-9] [INFO] [1775587005.385966418] [amcl]: Destroying bond (amcl) to lifecycle manager.
+[map_server-8] [INFO] [1775587005.390020505] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[map_server-8] [INFO] [1775587005.390167408] [map_server]: Running Nav2 LifecycleNode rcl preshutdown (map_server)
+[map_server-8] [INFO] [1775587005.390276570] [map_server]: Deactivating
+[map_server-8] [INFO] [1775587005.390311303] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[teleop_node-7] [INFO] [1775587005.393219512] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[planner_server-12] [INFO] [1775587005.396077625] [global_costmap.global_costmap]: Cleaning up
+[amcl-9] [INFO] [1775587005.396330233] [amcl]: Cleaning up
+[controller_server-11] Warning: class_loader.ClassLoader: SEVERE WARNING!!! Attempting to unload library while objects created by this loader exist in the heap! You should delete your objects before attempting to unload the library or destroying the ClassLoader. The library will NOT be unloaded.
+[controller_server-11]          at line 127 in ./src/class_loader.cpp
+[controller_server-11] terminate called without an active exception
+[map_server-8] [INFO] [1775587005.400659229] [map_server]: Cleaning up
+[map_server-8] [INFO] [1775587005.400746263] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[planner_server-12] [INFO] [1775587005.400698902] [planner_server]: Cleaning up plugin GridBased of type NavfnPlanner
+[planner_server-12] [INFO] [1775587005.401040698] [planner_server]: Destroying plugin GridBased of type NavfnPlanner
+[joy_node-6] [INFO] [1775587005.401531444] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[scan_to_scan_filter_chain-5] [INFO] [1775587005.401749382] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[amcl-9] [INFO] [1775587005.405285841] [amcl]: Destroying bond (amcl) to lifecycle manager.
+[bt_navigator-14] [INFO] [1775587005.416574458] [bt_navigator]: Completed Cleaning up
+[bt_navigator-14] [INFO] [1775587005.416681175] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[bt_navigator-14] [INFO] [1775587005.419451253] [bt_navigator]: Destroying
+[planner_server-12] [INFO] [1775587005.421777419] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-12] [INFO] [1775587005.425821182] [global_costmap.global_costmap]: Destroying
+[amcl-9] [INFO] [1775587005.427531587] [amcl]: Destroying
+[behavior_server-13] [INFO] [1775587005.439111141] [behavior_server]: Destroying
+[stretch_driver-3] Traceback (most recent call last):
+[stretch_driver-3]   File "/home/willy/ament_ws/install/stretch_core/lib/stretch_core/stretch_driver", line 33, in <module>
+[stretch_driver-3]     sys.exit(load_entry_point('stretch-core==0.2.0', 'console_scripts', 'stretch_driver')())
+[stretch_driver-3]   File "/home/willy/ament_ws/install/stretch_core/lib/python3.10/site-packages/stretch_core/stretch_driver.py", line 1116, in main
+[stretch_driver-3]     node = StretchDriver()
+[stretch_driver-3]   File "/home/willy/ament_ws/install/stretch_core/lib/python3.10/site-packages/stretch_core/stretch_driver.py", line 90, in __init__
+[stretch_driver-3]     self.ros_setup()
+[stretch_driver-3]   File "/home/willy/ament_ws/install/stretch_core/lib/python3.10/site-packages/stretch_core/stretch_driver.py", line 880, in ros_setup
+[stretch_driver-3]     if not self.robot.startup(start_non_dxl_thread=False,
+[stretch_driver-3]   File "/home/willy/.local/lib/python3.10/site-packages/stretch_body/robot.py", line 299, in startup
+[stretch_driver-3]     if not self.devices[k].startup(threaded=False):
+[stretch_driver-3]   File "/home/willy/.local/lib/python3.10/site-packages/stretch_body/head.py", line 24, in startup
+[stretch_driver-3]     return DynamixelXChain.startup(self, threaded=threaded)
+[stretch_driver-3]   File "/home/willy/.local/lib/python3.10/site-packages/stretch_body/dynamixel_X_chain.py", line 87, in startup
+[stretch_driver-3]     if not self.motors[mk].startup(threaded=False):
+[stretch_driver-3]   File "/home/willy/.local/lib/python3.10/site-packages/stretch_body/dynamixel_hello_XL430.py", line 195, in startup
+[stretch_driver-3]     if self.motor.do_ping(verbose=False):
+[stretch_driver-3]   File "/home/willy/.local/lib/python3.10/site-packages/stretch_body/dynamixel_XL430.py", line 304, in do_ping
+[stretch_driver-3]     with DelayedKeyboardInterrupt():
+[stretch_driver-3]   File "/home/willy/.local/lib/python3.10/site-packages/stretch_body/dynamixel_XL430.py", line 129, in __exit__
+[stretch_driver-3]     self.old_handler(*self.signal_received)
+[stretch_driver-3] TypeError: 'Handlers' object is not callable
+[planner_server-12] [INFO] [1775587005.453481584] [planner_server]: Destroying
+[joint_state_publisher-1] Traceback (most recent call last):
+[joint_state_publisher-1]   File "/opt/ros/humble/lib/joint_state_publisher/joint_state_publisher", line 33, in <module>
+[joint_state_publisher-1]     sys.exit(load_entry_point('joint-state-publisher==2.4.0', 'console_scripts', 'joint_state_publisher')())
+[joint_state_publisher-1]   File "/opt/ros/humble/lib/python3.10/site-packages/joint_state_publisher/joint_state_publisher.py", line 466, in main
+[joint_state_publisher-1]     rclpy.spin(jsp)
+[joint_state_publisher-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[joint_state_publisher-1]     executor.spin_once()
+[joint_state_publisher-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 808, in spin_once
+[joint_state_publisher-1]     self._spin_once_impl(timeout_sec)
+[joint_state_publisher-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 797, in _spin_once_impl
+[joint_state_publisher-1]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[joint_state_publisher-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 780, in wait_for_ready_callbacks
+[joint_state_publisher-1]     return next(self._cb_iter)
+[joint_state_publisher-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 681, in _wait_for_ready_callbacks
+[joint_state_publisher-1]     raise ExternalShutdownException()
+[joint_state_publisher-1] rclpy.executors.ExternalShutdownException
+Waiting for at least 1 matching subscription(s)...
+[map_server-8] [INFO] [1775587005.585445018] [map_server]: Destroying
+[lifecycle_manager-10] [INFO] [1775587005.589030487] [lifecycle_manager_localization]: Destroying lifecycle_manager_localization
+[sllidar_node-4] [INFO] [1775587005.919012959] [sllidar_node]: Stop motor
+[INFO] [teleop_node-7]: process has finished cleanly [pid 22225]
+[INFO] [waypoint_follower-15]: process has finished cleanly [pid 22251]
+[INFO] [bt_navigator-14]: process has finished cleanly [pid 22239]
+[INFO] [amcl-9]: process has finished cleanly [pid 22229]
+[INFO] [scan_to_scan_filter_chain-5]: process has finished cleanly [pid 22221]
+[INFO] [behavior_server-13]: process has finished cleanly [pid 22237]
+Waiting for at least 1 matching subscription(s)...
+[INFO] [planner_server-12]: process has finished cleanly [pid 22235]
+[INFO] [joy_node-6]: process has finished cleanly [pid 22223]
+[ERROR] [controller_server-11]: process has died [pid 22233, exit code -6, cmd '/opt/ros/humble/lib/nav2_controller/controller_server --ros-args --params-file /tmp/tmpotfjnwft -r /tf:=tf -r /tf_static:=tf_static -r /cmd_vel:=/stretch/cmd_vel'].
+[ERROR] [joint_state_publisher-1]: process has died [pid 22213, exit code 1, cmd '/opt/ros/humble/lib/joint_state_publisher/joint_state_publisher --ros-args --log-level error --ros-args --params-file /tmp/launch_params_uqh4cvr6 --params-file /tmp/launch_params_yb7beecu'].
+[INFO] [lifecycle_manager-10]: process has finished cleanly [pid 22231]
+[INFO] [map_server-8]: process has finished cleanly [pid 22227]
+[ERROR] [stretch_driver-3]: process has died [pid 22217, exit code 1, cmd '/home/willy/ament_ws/install/stretch_core/lib/stretch_core/stretch_driver --ros-args --params-file /tmp/launch_params_53087elt -r cmd_vel:=/stretch/cmd_vel -r joint_states:=/stretch/joint_states'].
+[INFO] [sllidar_node-4]: process has finished cleanly [pid 22219]
+[lifecycle_manager-16] [ERROR] [1775587007.380721713] [lifecycle_manager_navigation]: Failed to change state for node: controller_server. Exception: controller_server/get_state service client: async_send_request failed.
+[lifecycle_manager-16] [ERROR] [1775587007.380919159] [lifecycle_manager_navigation]: Failed to bring up all requested nodes. Aborting bringup.
+[lifecycle_manager-16] [INFO] [1775587007.400886815] [lifecycle_manager_navigation]: Destroying lifecycle_manager_navigation
+[INFO] [robot_state_publisher-2]: process has finished cleanly [pid 22215]
+Waiting for at least 1 matching subscription(s)...
+[INFO] [lifecycle_manager-16]: process has finished cleanly [pid 22363]
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+[realsense2_camera_node-1] [0m[INFO] [1775587009.947773575] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775587009.947917527] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587009.947942710] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587009.948563719] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587009.948689816] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587009.948840860] [camera]: getParameters...[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587010.289704070] [camera]: JSON file is loaded! (/home/willy/ament_ws/install/stretch_core/share/stretch_core/config/HighAccuracyPreset.json)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587010.289920963] [camera]: Device Name: Intel RealSense D435I[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587010.289956548] [camera]: Device Serial No: 239722071445[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587010.289986809] [camera]: Device physical port: /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587010.290016398] [camera]: Device FW version: 5.16.0.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587010.290045831] [camera]: Device Product ID: 0x0B3A[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587010.290072387] [camera]: Sync Mode: On[0m
+[realsense2_camera_node-1] [33m[WARN] [1775587010.415181431] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775587010.415868993] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775587010.421792805] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775587010.422193555] [camera]: Given value, 63 is invalid. Set ROS param back to: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587010.424677854] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587010.424740556] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587010.424757219] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587010.432529468] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587010.445085511] [camera]: Open profile: stream_type: Depth(0), Format: Z16, Width: 1280, Height: 720, FPS: 15[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587010.446916193] [camera]: Starting Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587010.448987095] [camera]: Open profile: stream_type: Color(0), Format: RGB8, Width: 1280, Height: 720, FPS: 15[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587010.481483729] [camera]: Starting Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587010.483140447] [camera]: Open profile: stream_type: Accel(0)Format: MOTION_XYZ32F, FPS: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587010.483188243] [camera]: Open profile: stream_type: Gyro(0)Format: MOTION_XYZ32F, FPS: 200[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587010.484550058] [camera]: RealSense Node Is Up![0m
+Waiting for at least 1 matching subscription(s)...
+[realsense2_camera_node-1] [33m[WARN] [1775587011.433239731] [camera]: XXX Hardware Notification:Motion Module failure,1.77559e+12,Error,Hardware Error[0m
+[realsense2_camera_node-1] [33m[WARN] [1775587011.433321496] [camera]: Hardware Notification:Motion Module failure,1.77559e+12,Error,Hardware Error[0m
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+[realsense2_camera_node-1] [0m[INFO] [1775587057.226103742] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587057.226597172] [camera]: Stop Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587057.226634950] [camera]: Close Sensor. [0m
+[realsense2_camera_node-1] [0m[INFO] [1775587057.230618870] [camera]: Close Sensor - Done. [0m
+[realsense2_camera_node-1] [0m[INFO] [1775587057.230668378] [camera]: Stop Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587057.230682742] [camera]: Close Sensor. [0m
+[realsense2_camera_node-1] [0m[INFO] [1775587057.232316668] [camera]: Close Sensor - Done. [0m
+[realsense2_camera_node-1] [0m[INFO] [1775587057.232327746] [camera]: Stop Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775587057.232499079] [camera]: Close Sensor. [0m
+[d435i_accel_correction-2] Traceback (most recent call last):
+[d435i_accel_correction-2]   File "/home/willy/ament_ws/install/stretch_core/lib/stretch_core/d435i_accel_correction", line 33, in <module>
+[d435i_accel_correction-2]     sys.exit(load_entry_point('stretch-core==0.2.0', 'console_scripts', 'd435i_accel_correction')())
+[d435i_accel_correction-2]   File "/home/willy/ament_ws/install/stretch_core/lib/python3.10/site-packages/stretch_core/d435i_accel_correction.py", line 47, in main
+[d435i_accel_correction-2]     rclpy.spin(node)
+[d435i_accel_correction-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[d435i_accel_correction-2]     executor.spin_once()
+[d435i_accel_correction-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 808, in spin_once
+[d435i_accel_correction-2]     self._spin_once_impl(timeout_sec)
+[d435i_accel_correction-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 797, in _spin_once_impl
+[d435i_accel_correction-2]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[d435i_accel_correction-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 780, in wait_for_ready_callbacks
+[d435i_accel_correction-2]     return next(self._cb_iter)
+[d435i_accel_correction-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 681, in _wait_for_ready_callbacks
+[d435i_accel_correction-2]     raise ExternalShutdownException()
+[d435i_accel_correction-2] rclpy.executors.ExternalShutdownException
+Traceback (most recent call last):
+  File "/home/willy/tf.py", line 307, in <module>
+    main()
+  File "/home/willy/tf.py", line 297, in main
+    node = ArUcoBaseFrameEstimator()
+  File "/home/willy/tf.py", line 29, in __init__
+    super().main('aruco_base_frame_estimator', 'aruco_base_frame_estimator', wait_for_first_pointcloud=False)
+  File "/home/willy/ament_ws/build/hello_helpers/src/hello_helpers/hello_misc.py", line 302, in main
+    server_reached = self.trajectory_client.wait_for_server(timeout_sec=60.0)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/action/client.py", line 606, in wait_for_server
+    return self.server_is_ready()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/action/client.py", line 585, in server_is_ready
+    return self._client_handle.is_action_server_available()
+rclpy._rclpy_pybind11.RCLError: Failed to check if action server is available: rcl node's context is invalid, at ./src/rcl/node.c:428
+[realsense2_camera_node-1] [0m[INFO] [1775587057.338281814] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[d435i_accel_correction-2] [ERROR] [1775587057.497627757] [rclpy.signals]: rcl_trigger_guard_condition() failed: guard condition implementation is invalid, at ./src/rcl/guard_condition.c:172
+[realsense2_camera_node-1] [0m[INFO] [1775587057.497712063] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[ERROR] [d435i_accel_correction-2]: process has died [pid 22043, exit code 1, cmd '/home/willy/ament_ws/install/stretch_core/lib/stretch_core/d435i_accel_correction --ros-args'].
+Traceback (most recent call last):
+  File "/home/willy/ament_ws/install/stretch_perception/lib/stretch_perception/altobject", line 33, in <module>
+    sys.exit(load_entry_point('stretch-perception==0.0.0', 'console_scripts', 'altobject')())
+  File "/home/willy/ament_ws/install/stretch_perception/lib/python3.10/site-packages/stretch_perception/altobject.py", line 267, in main
+    node = ObjectGrasper()
+  File "/home/willy/ament_ws/install/stretch_perception/lib/python3.10/site-packages/stretch_perception/altobject.py", line 34, in __init__
+    super().main('object_grasper', 'object_grasper', wait_for_first_pointcloud=False)
+  File "/home/willy/ament_ws/build/hello_helpers/src/hello_helpers/hello_misc.py", line 302, in main
+    server_reached = self.trajectory_client.wait_for_server(timeout_sec=60.0)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/action/client.py", line 606, in wait_for_server
+    return self.server_is_ready()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/action/client.py", line 585, in server_is_ready
+    return self._client_handle.is_action_server_available()
+rclpy._rclpy_pybind11.RCLError: Failed to check if action server is available: rcl node's context is invalid, at ./src/rcl/node.c:428
+[ros2run]: Process exited with failure 1
+[realsense2_camera_node-1] [0m[INFO] [1775587057.972725458] [camera]: Close Sensor - Done. [0m
+[INFO] [realsense2_camera_node-1]: process has finished cleanly [pid 22041]

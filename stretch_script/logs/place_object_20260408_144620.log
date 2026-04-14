@@ -1,0 +1,79 @@
+=== place_object.sh started at Wed Apr  8 02:46:20 PM EDT 2026 ===
+Switching to position mode...
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+Extending arm to place position (extend 25cm, lower 8cm)...
+[INFO] [1775673982.765418850] [place_object]: place_object started
+[INFO] [1775673982.816099972] [place_object]: Node place_object connected to /home_the_robot service.
+[INFO] [1775673982.825219838] [place_object]: Node place_object connected to /stow_the_robot service.
+[INFO] [1775673982.827484327] [place_object]: Node place_object connected to /stop_the_robot service.
+[INFO] [1775673982.829232413] [place_object]: Node place_object connected to /switch_to_trajectory_mode service.
+[INFO] [1775673982.830727800] [place_object]: Node place_object connected to /switch_to_position_mode service.
+[INFO] [1775673982.831860918] [place_object]: Node place_object connected to /switch_to_navigation_mode service.
+[INFO] [1775673982.832142439] [place_object]: Moving to place position...
+[INFO] [1775673985.395025692] [place_object]: Place position reached.
+[INFO] [1775673985.395525539] [place_object]: Opening gripper to release object...
+[INFO] [1775673988.869016459] [place_object]: Gripper opened, object released.
+[INFO] [1775673988.869752287] [place_object]: Retracting arm...
+[INFO] [1775673991.439218416] [place_object]: Arm retracted.
+[INFO] [1775673991.439769655] [place_object]: Done.
+./place_object.sh: line 54: 39164 Segmentation fault      (core dumped) python3 - <<'EOF'
+import rclpy
+from hello_helpers.hello_misc import HelloNode
+import math
+
+class PlaceObject(HelloNode):
+    def __init__(self):
+        super().__init__()
+        super().main('place_object', 'place_object', wait_for_first_pointcloud=False)
+        self.get_logger().info("Moving to place position...")
+        self.move_to_pose({
+            'joint_lift': 0.9118,
+            'joint_arm':  0.25,
+        }, blocking=True)
+        self.get_logger().info("Place position reached.")
+
+        self.get_logger().info("Opening gripper to release object...")
+        self.move_to_pose({
+            'joint_gripper_finger_left': 0.6,
+        }, blocking=True)
+        self.get_logger().info("Gripper opened, object released.")
+
+        self.get_logger().info("Retracting arm...")
+        self.move_to_pose({
+            'joint_arm': 0.0,
+        }, blocking=True)
+        self.get_logger().info("Arm retracted.")
+
+        self.get_logger().info("Done.")
+
+def main():
+    node = PlaceObject()
+    node.destroy_node()
+    rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()
+EOF
+
+Object placed successfully.
+Resetting arm to travel position...
+[INFO] [1775673993.149857514] [reset_pose]: reset_pose started
+[INFO] [1775673993.203831661] [reset_pose]: Node reset_pose connected to /home_the_robot service.
+[INFO] [1775673993.205516511] [reset_pose]: Node reset_pose connected to /stow_the_robot service.
+[INFO] [1775673993.206797753] [reset_pose]: Node reset_pose connected to /stop_the_robot service.
+[INFO] [1775673993.208158630] [reset_pose]: Node reset_pose connected to /switch_to_trajectory_mode service.
+[INFO] [1775673993.209362227] [reset_pose]: Node reset_pose connected to /switch_to_position_mode service.
+[INFO] [1775673993.210630215] [reset_pose]: Node reset_pose connected to /switch_to_navigation_mode service.
+[INFO] [1775673993.210965135] [reset_pose]: Moving to default pose...
+[WARN] [1775673993.211267779] [reset_pose]: Currently in  mode. Recommend switching either to position or trajectory mode
+[WARN] [1775673993.211517878] [reset_pose]: Commanding joint trajectory server in position mode
+[INFO] [1775673997.175856015] [reset_pose]: Arm reset done.
+[INFO] [1775673997.176377766] [reset_pose]: Skipping rotation (ROTATE_DEG=0).
+[INFO] [1775673997.176810197] [reset_pose]: Done.
+./place_object.sh: line 66: 39231 Segmentation fault      (core dumped) python3 ~/test1.py
+Arm reset complete.
+=== place_object.sh finished at Wed Apr  8 02:46:37 PM EDT 2026 ===

@@ -1,0 +1,34 @@
+=== pick_object.sh started at Thu Apr  9 04:45:12 PM EDT 2026 ===
+Target ArUco marker ID: 202
+Waiting for nodes to be ready (launch_nodes.sh)...
+Nodes are ready!
+Setting target marker ID to 202...
+Set parameter successful
+Waiting for stale target to expire (6s)...
+Marker ID set and target cleared.
+Resetting arm position for camera view...
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+[INFO] [1775767522.444147935] [reset_pose]: reset_pose started
+[INFO] [1775767522.494263482] [reset_pose]: Node reset_pose connected to /home_the_robot service.
+[INFO] [1775767522.496078468] [reset_pose]: Node reset_pose connected to /stow_the_robot service.
+[INFO] [1775767522.498196183] [reset_pose]: Node reset_pose connected to /stop_the_robot service.
+[INFO] [1775767522.500135878] [reset_pose]: Node reset_pose connected to /switch_to_trajectory_mode service.
+[INFO] [1775767522.501813797] [reset_pose]: Node reset_pose connected to /switch_to_position_mode service.
+[INFO] [1775767522.504036556] [reset_pose]: Node reset_pose connected to /switch_to_navigation_mode service.
+[INFO] [1775767522.504614016] [reset_pose]: Moving to default pose...
+[WARN] [1775767522.505183064] [reset_pose]: Currently in  mode. Recommend switching either to position or trajectory mode
+[WARN] [1775767522.505688661] [reset_pose]: Commanding joint trajectory server in position mode
+[INFO] [1775767524.697653694] [reset_pose]: Arm reset done.
+[INFO] [1775767524.698190130] [reset_pose]: Skipping rotation (ROTATE_DEG=0).
+[INFO] [1775767524.698609584] [reset_pose]: Done.
+Arm reset complete.
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+Waiting for grasp service...

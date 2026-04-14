@@ -1,0 +1,20 @@
+=== pick_object.sh started at Thu Apr  9 12:31:31 PM EDT 2026 ===
+Target ArUco marker ID: 505
+Waiting for nodes to be ready (launch_nodes.sh)...
+Nodes are ready!
+Setting target marker ID to 505...
+Set parameter successful
+Marker ID set.
+Waiting for grasp service...
+Grasp service ready!
+=== Triggering grasp ===
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=False, message='')
+ERROR: Grasp failed.

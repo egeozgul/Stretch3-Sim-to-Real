@@ -1,0 +1,1116 @@
+=== dock_grab.sh started at Mon Apr  6 06:54:15 PM EDT 2026 ===
+Freeing robot process...
+Done!
+=== Launching all nodes ===
+Waiting for Nav2 action server...
+[INFO] [launch]: All log files can be found below /home/willy/.ros/log/2026-04-06-18-54-15-814128-stretch-re2-2204-7721
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch]: All log files can be found below /home/willy/.ros/log/2026-04-06-18-54-15-817818-stretch-re2-2204-7720
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: D435i launched in high resolution
+[INFO] [realsense2_camera_node-1]: process started with pid [7796]
+[INFO] [d435i_accel_correction-2]: process started with pid [7798]
+[INFO] [1775516056.376915464] [aruco_base_frame_estimator]: aruco_base_frame_estimator started
+[d435i_accel_correction-2] [INFO] [1775516056.376767864] [d435i_accel_correction_node]: d435i_accel_correction_node started
+Nav2 is up!
+Setting initial pose...
+[realsense2_camera_node-1] [0m[INFO] [1775516056.596747559] [camera]: RealSense ROS v4.55.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775516056.596838206] [camera]: Built with LibRealSense v2.56.4[0m
+[realsense2_camera_node-1] [0m[INFO] [1775516056.596848411] [camera]: Running with LibRealSense v2.56.4[0m
+[realsense2_camera_node-1] [0m[INFO] [1775516056.624141971] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775516056.624229062] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775516056.624246510] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775516056.624413492] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775516056.624436229] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1775516056.624448244] [camera]: Resetting device...[0m
+[INFO] [stretch_driver-3]: process started with pid [7960]
+[INFO] [joint_state_publisher-1]: process started with pid [7956]
+[INFO] [robot_state_publisher-2]: process started with pid [7958]
+[INFO] [sllidar_node-4]: process started with pid [7962]
+[INFO] [scan_to_scan_filter_chain-5]: process started with pid [7964]
+[INFO] [joy_node-6]: process started with pid [7966]
+[INFO] [teleop_node-7]: process started with pid [7968]
+[INFO] [map_server-8]: process started with pid [7970]
+[INFO] [amcl-9]: process started with pid [7972]
+[INFO] [lifecycle_manager-10]: process started with pid [7974]
+[INFO] [controller_server-11]: process started with pid [7976]
+[INFO] [planner_server-12]: process started with pid [7978]
+[INFO] [behavior_server-13]: process started with pid [7980]
+[INFO] [bt_navigator-14]: process started with pid [7982]
+[INFO] [waypoint_follower-15]: process started with pid [7986]
+[INFO] [lifecycle_manager-16]: process started with pid [8107]
+[INFO] [rviz2-17]: process started with pid [8110]
+[sllidar_node-4] [INFO] [1775516056.801183932] [sllidar_node]: SLLidar running on ROS2 package SLLidar.ROS2 SDK Version:1.0.1, SLLIDAR SDK Version:2.1.0
+[sllidar_node-4] [INFO] [1775516056.811618641] [sllidar_node]: SLLidar S/N: C394ED93C0EA98C9A5E698F2564A4669
+[sllidar_node-4] [INFO] [1775516056.811732405] [sllidar_node]: Firmware Ver: 1.29
+[sllidar_node-4] [INFO] [1775516056.811743494] [sllidar_node]: Hardware Rev: 7
+[sllidar_node-4] [INFO] [1775516056.813329923] [sllidar_node]: SLLidar health status : 0
+[sllidar_node-4] [INFO] [1775516056.813381204] [sllidar_node]: SLLidar health status : OK.
+[scan_to_scan_filter_chain-5] [INFO] [1775516056.812258115] [laser_filter]: In shadow configure done
+[scan_to_scan_filter_chain-5] [WARN] [1775516056.812567088] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[teleop_node-7] [INFO] [1775516056.803448596] [TeleopTwistJoy]: Teleop enable button 4.
+[teleop_node-7] [INFO] [1775516056.803525126] [TeleopTwistJoy]: Linear axis x on 4 at scale 0.500000.
+[teleop_node-7] [INFO] [1775516056.803541272] [TeleopTwistJoy]: Angular axis yaw on 3 at scale 0.500000.
+[amcl-9] [INFO] [1775516056.808271503] [amcl]: 
+[amcl-9] 	amcl lifecycle node launched. 
+[amcl-9] 	Waiting on external lifecycle transitions to activate
+[amcl-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-9] [INFO] [1775516056.809924365] [amcl]: Creating
+[lifecycle_manager-10] [INFO] [1775516056.806935980] [lifecycle_manager_localization]: Creating
+[lifecycle_manager-10] [INFO] [1775516056.810663626] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[controller_server-11] [INFO] [1775516056.828352638] [controller_server]: 
+[controller_server-11] 	controller_server lifecycle node launched. 
+[controller_server-11] 	Waiting on external lifecycle transitions to activate
+[controller_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-11] [INFO] [1775516056.837446918] [controller_server]: Creating controller server
+[planner_server-12] [INFO] [1775516056.809820929] [planner_server]: 
+[planner_server-12] 	planner_server lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1775516056.824500874] [planner_server]: Creating
+[planner_server-12] [INFO] [1775516056.843006216] [global_costmap.global_costmap]: 
+[planner_server-12] 	global_costmap lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-14] [INFO] [1775516056.846810645] [bt_navigator]: 
+[bt_navigator-14] 	bt_navigator lifecycle node launched. 
+[bt_navigator-14] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-14] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-14] [INFO] [1775516056.846997684] [bt_navigator]: Creating
+[waypoint_follower-15] [INFO] [1775516056.821114579] [waypoint_follower]: 
+[waypoint_follower-15] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-15] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-15] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-15] [INFO] [1775516056.832859365] [waypoint_follower]: Creating
+[planner_server-12] [INFO] [1775516056.851684043] [global_costmap.global_costmap]: Creating Costmap
+[map_server-8] [INFO] [1775516056.855765946] [map_server]: 
+[map_server-8] 	map_server lifecycle node launched. 
+[map_server-8] 	Waiting on external lifecycle transitions to activate
+[map_server-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-8] [INFO] [1775516056.857502351] [map_server]: Creating
+[controller_server-11] [INFO] [1775516056.861840296] [local_costmap.local_costmap]: 
+[controller_server-11] 	local_costmap lifecycle node launched. 
+[controller_server-11] 	Waiting on external lifecycle transitions to activate
+[controller_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-16] [INFO] [1775516056.862588636] [lifecycle_manager_navigation]: Creating
+[behavior_server-13] [INFO] [1775516056.864147267] [behavior_server]: 
+[behavior_server-13] 	behavior_server lifecycle node launched. 
+[behavior_server-13] 	Waiting on external lifecycle transitions to activate
+[behavior_server-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-16] [INFO] [1775516056.865259035] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[controller_server-11] [INFO] [1775516056.867226747] [local_costmap.local_costmap]: Creating Costmap
+[lifecycle_manager-10] [INFO] [1775516056.867291708] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-10] [INFO] [1775516056.867362029] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[map_server-8] [INFO] [1775516056.880560651] [map_server]: Configuring
+[map_server-8] [INFO] [1775516056.880675031] [map_io]: Loading yaml file: /home/willy/stretch_user/maps/testing_map.yaml
+[map_server-8] [INFO] [1775516056.881227853] [map_io]: resolution: 0.05
+[map_server-8] [INFO] [1775516056.881239932] [map_io]: origin[0]: -11.5
+[map_server-8] [INFO] [1775516056.881243445] [map_io]: origin[1]: -1.71
+[map_server-8] [INFO] [1775516056.881246384] [map_io]: origin[2]: 0
+[map_server-8] [INFO] [1775516056.881249594] [map_io]: free_thresh: 0.25
+[map_server-8] [INFO] [1775516056.881252526] [map_io]: occupied_thresh: 0.65
+[map_server-8] [INFO] [1775516056.881256383] [map_io]: mode: trinary
+[map_server-8] [INFO] [1775516056.881260859] [map_io]: negate: 0
+[map_server-8] [INFO] [1775516056.884503149] [map_io]: Loading image_file: /home/willy/stretch_user/maps/testing_map.pgm
+[map_server-8] [INFO] [1775516056.895308154] [map_io]: Read map /home/willy/stretch_user/maps/testing_map.pgm: 416 X 249 map @ 0.05 m/cell
+[lifecycle_manager-10] [INFO] [1775516056.900845274] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[amcl-9] [INFO] [1775516056.901045163] [amcl]: Configuring
+[amcl-9] [INFO] [1775516056.901147090] [amcl]: initTransforms
+[amcl-9] [INFO] [1775516056.908813510] [amcl]: initPubSub
+[amcl-9] [INFO] [1775516056.911686852] [amcl]: Subscribed to map topic.
+[lifecycle_manager-10] [INFO] [1775516056.914948621] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[map_server-8] [INFO] [1775516056.915274511] [map_server]: Activating
+[map_server-8] [INFO] [1775516056.915575915] [map_server]: Creating bond (map_server) to lifecycle manager.
+[amcl-9] [INFO] [1775516056.915769699] [amcl]: Received a 416 X 249 map @ 0.050 m/pix
+[lifecycle_manager-16] [INFO] [1775516056.997942835] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-16] [INFO] [1775516056.998009366] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-11] [INFO] [1775516056.998300073] [controller_server]: Configuring controller interface
+[controller_server-11] [INFO] [1775516056.999324092] [controller_server]: getting goal checker plugins..
+[controller_server-11] [INFO] [1775516056.999909331] [controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-11] [INFO] [1775516056.999952557] [local_costmap.local_costmap]: Configuring
+[controller_server-11] [INFO] [1775516057.009812870] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[sllidar_node-4] [INFO] [1775516057.012543976] [sllidar_node]: current scan mode: Boost, sample rate: 8 Khz, max_distance: 12.0 m, scan frequency:10.0 Hz, 
+[lifecycle_manager-10] [INFO] [1775516057.021439371] [lifecycle_manager_localization]: Server map_server connected with bond.
+[lifecycle_manager-10] [INFO] [1775516057.021495228] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+[amcl-9] [INFO] [1775516057.021684740] [amcl]: Activating
+[amcl-9] [INFO] [1775516057.021731430] [amcl]: Creating bond (amcl) to lifecycle manager.
+[controller_server-11] [INFO] [1775516057.025225987] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-11] [INFO] [1775516057.039185978] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-11] [INFO] [1775516057.039233736] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[controller_server-11] [INFO] [1775516057.043226305] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-11] [INFO] [1775516057.055241486] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-11] [INFO] [1775516057.055286733] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-11] [INFO] [1775516057.056636335] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-11] [INFO] [1775516057.071811529] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-11] [INFO] [1775516057.073903738] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-11] [INFO] [1775516057.075378131] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-11] [INFO] [1775516057.080555645] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-11] [INFO] [1775516057.085628268] [controller_server]: Setting transform_tolerance to 0.200000
+[controller_server-11] [INFO] [1775516057.109114776] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[controller_server-11] [INFO] [1775516057.111670025] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775516057.112345269] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-11] [INFO] [1775516057.113451031] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775516057.113857218] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[controller_server-11] [INFO] [1775516057.114199805] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775516057.114393457] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-11] [INFO] [1775516057.114852665] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775516057.115002629] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-11] [INFO] [1775516057.115367467] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775516057.115528066] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-11] [INFO] [1775516057.115812046] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775516057.115954909] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-11] [INFO] [1775516057.116226673] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775516057.116372630] [controller_server]: Using critic "PreferForward" (dwb_critics::PreferForwardCritic)
+[controller_server-11] [INFO] [1775516057.116931456] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775516057.116962670] [controller_server]: Controller Server has FollowPath  controllers available.
+[lifecycle_manager-16] [INFO] [1775516057.121810205] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-12] [INFO] [1775516057.121968600] [planner_server]: Configuring
+[planner_server-12] [INFO] [1775516057.122004939] [global_costmap.global_costmap]: Configuring
+[planner_server-12] [INFO] [1775516057.125809336] [global_costmap.global_costmap]: Using plugin "static_layer"
+[lifecycle_manager-10] [INFO] [1775516057.129436109] [lifecycle_manager_localization]: Server amcl connected with bond.
+[lifecycle_manager-10] [INFO] [1775516057.129517794] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-10] [INFO] [1775516057.129543701] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[planner_server-12] [INFO] [1775516057.129897201] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[planner_server-12] [INFO] [1775516057.130695686] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-12] [INFO] [1775516057.130744931] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-12] [INFO] [1775516057.131378124] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-12] [INFO] [1775516057.134361023] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-12] [INFO] [1775516057.134597264] [global_costmap.global_costmap]: Using plugin "voxel_layer"
+[planner_server-12] [INFO] [1775516057.135568912] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-12] [INFO] [1775516057.139306455] [global_costmap.global_costmap]: Initialized plugin "voxel_layer"
+[planner_server-12] [INFO] [1775516057.139362388] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-12] [INFO] [1775516057.140203708] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-12] [INFO] [1775516057.145898126] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 416 X 249 at 0.050000 m/pix
+[planner_server-12] [INFO] [1775516057.147022532] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[planner_server-12] [INFO] [1775516057.147073895] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-12] [INFO] [1775516057.147854157] [planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-16] [INFO] [1775516057.152876268] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-13] [INFO] [1775516057.153288524] [behavior_server]: Configuring
+[behavior_server-13] [INFO] [1775516057.160549464] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-13] [INFO] [1775516057.162540486] [behavior_server]: Configuring spin
+[behavior_server-13] [INFO] [1775516057.165912445] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-13] [INFO] [1775516057.167718316] [behavior_server]: Configuring backup
+[behavior_server-13] [INFO] [1775516057.170685847] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[behavior_server-13] [INFO] [1775516057.172366107] [behavior_server]: Configuring drive_on_heading
+[behavior_server-13] [INFO] [1775516057.175240923] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
+[behavior_server-13] [INFO] [1775516057.178404859] [behavior_server]: Configuring assisted_teleop
+[behavior_server-13] [INFO] [1775516057.182877154] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-13] [INFO] [1775516057.188051772] [behavior_server]: Configuring wait
+[lifecycle_manager-16] [INFO] [1775516057.198492679] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[bt_navigator-14] [INFO] [1775516057.199324940] [bt_navigator]: Configuring
+[lifecycle_manager-16] [INFO] [1775516057.338087605] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[waypoint_follower-15] [INFO] [1775516057.338372185] [waypoint_follower]: Configuring
+[waypoint_follower-15] [INFO] [1775516057.351492388] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[lifecycle_manager-16] [INFO] [1775516057.353319163] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[controller_server-11] [INFO] [1775516057.353598953] [controller_server]: Activating
+[controller_server-11] [INFO] [1775516057.353644242] [local_costmap.local_costmap]: Activating
+[controller_server-11] [INFO] [1775516057.353663251] [local_costmap.local_costmap]: Checking transform
+[controller_server-11] [INFO] [1775516057.353723243] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[joy_node-6] [INFO] [1775516057.570199620] [joy_node]: Opened joystick: Controller 1.05.  deadzone: 0.050000
+[INFO] [1775516057.585345692] [object_grasper]: object_grasper started
+[scan_to_scan_filter_chain-5] [WARN] [1775516057.807321731] [laser_filter]: diagnostic_updater: No HW_ID was set. This is probably a bug. Please report it. For devices that do not have a HW_ID, set this value to 'none'. This warning only occurs once all diagnostics are OK. It is okay to wait until the device is open before calling setHardwareID.
+[controller_server-11] [INFO] [1775516057.853834413] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775516057.905154668] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-17] [INFO] [1775516057.905262777] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[stretch_driver-3] [0m[INFO] [1775516057.997873021] [stretch_driver]: For use with S T R E T C H (TM) RESEARCH EDITION from Hello Robot Inc.[0m
+[stretch_driver-3] [0m[INFO] [1775516057.998188228] [stretch_driver]: stretch_driver started[0m
+[rviz2-17] [INFO] [1775516058.031776994] [rviz2]: Stereo is NOT SUPPORTED
+publisher: beginning loop
+publishing #1: geometry_msgs.msg.PoseWithCovarianceStamped(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0), frame_id='map'), pose=geometry_msgs.msg.PoseWithCovariance(pose=geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0), orientation=geometry_msgs.msg.Quaternion(x=0.0, y=0.0, z=0.0, w=1.0)), covariance=array([0.25, 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.25, 0.  , 0.  , 0.  ,
+       0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  ,
+       0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  ,
+       0.  , 0.  , 0.07])))
+
+[amcl-9] [INFO] [1775516058.068819291] [amcl]: initialPoseReceived
+[amcl-9] [INFO] [1775516058.069156815] [amcl]: Setting pose (1775516058.069156): 0.000 0.000 0.000
+[amcl-9] [WARN] [1775516058.118617338] [amcl]: New subscription discovered on topic '/particle_cloud', requesting incompatible QoS. No messages will be sent to it. Last incompatible policy: RELIABILITY_QOS_POLICY
+[rviz2-17] [INFO] [1775516058.318305685] [rviz2]: Trying to create a map of size 416 x 249 using 1 swatches
+[rviz2-17] [ERROR] [1775516058.323700753] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[rviz2-17] active samplers with a different type refer to the same texture image unit
+[controller_server-11] [INFO] [1775516058.353868453] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+Waiting for AMCL to localize...
+[stretch_driver-3] Key mapped to End-Of-Arm Tool: tool_stretch_dex_wrist
+[stretch_driver-3] Unable to load URDF: /home/willy/.local/lib/python3.10/site-packages/stretch_urdf/RE2V0/stretch_description_RE2V0_tool_stretch_dex_wrist.urdf. Disabling collision system.
+[controller_server-11] [INFO] [1775516058.853787349] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775516059.353781136] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [INFO] [1775516059.448973740] [amcl]: Message Filter dropping message: frame 'laser' at time 1775516057.013 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[stretch_driver-3] [0m[INFO] [1775516059.736601612] [stretch_driver]: broadcast_odom_tf = True[0m
+[stretch_driver-3] [0m[INFO] [1775516059.768116304] [stretch_driver]: rate = 30.0 Hz[0m
+[stretch_driver-3] [0m[INFO] [1775516059.768811412] [stretch_driver]: twist timeout = 0.5 s[0m
+[stretch_driver-3] [0m[INFO] [1775516059.769670392] [stretch_driver]: base_frame_id = base_link[0m
+[stretch_driver-3] [0m[INFO] [1775516059.770273325] [stretch_driver]: odom_frame_id = odom[0m
+[stretch_driver-3] [0m[INFO] [1775516059.824908425] [stretch_driver]: Changed to mode = navigation[0m
+[controller_server-11] [INFO] [1775516059.853778143] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1775516059.875601674] [object_grasper]: Node object_grasper connected to /home_the_robot service.
+[INFO] [1775516059.876792368] [object_grasper]: Node object_grasper connected to /stow_the_robot service.
+[INFO] [1775516059.877859065] [object_grasper]: Node object_grasper connected to /stop_the_robot service.
+[INFO] [1775516059.878870644] [object_grasper]: Node object_grasper connected to /switch_to_trajectory_mode service.
+[INFO] [1775516059.879906975] [object_grasper]: Node object_grasper connected to /switch_to_position_mode service.
+[INFO] [1775516059.883319555] [object_grasper]: Node object_grasper connected to /switch_to_navigation_mode service.
+[INFO] [1775516059.939226712] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /home_the_robot service.
+[INFO] [1775516059.941486755] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /stow_the_robot service.
+[INFO] [1775516059.943318324] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /stop_the_robot service.
+[INFO] [1775516059.944830797] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_trajectory_mode service.
+[INFO] [1775516059.946606759] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_position_mode service.
+[INFO] [1775516059.951156704] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_navigation_mode service.
+[INFO] [1775516059.951809724] [aruco_base_frame_estimator]: Moving head camera to detection orientation...
+[WARN] [1775516059.952426358] [aruco_base_frame_estimator]: Currently in navigation mode. Recommend switching either to position or trajectory mode
+[WARN] [1775516059.952977000] [aruco_base_frame_estimator]: Commanding joint trajectory server in position mode
+[stretch_driver-3] [0m[INFO] [1775516059.957083067] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775516059.967844309] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_head_pan', 'joint_head_tilt'][0m
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_mast is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_arm_l4 is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+[amcl-9] [INFO] [1775516060.057744897] [amcl]: createLaserObject
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_wrist_yaw_bottom is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+[rviz2-17] [INFO] [1775516060.102393762] [rviz]: Message Filter dropping message: frame 'laser' at time 1775516057.013 for reason 'discarding message because the queue is full'
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_gripper_s3_body is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_grasp_center is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link Base link (index: 0) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_mast (index: 2) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_arm_l4 (index: 4) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_wrist_yaw_bottom (index: 10) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_gripper_s3_body (index: 13) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_grasp_center (index: 14) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+[INFO] [1775516060.124231359] [object_grasper]: ============================================================
+[INFO] [1775516060.124482389] [object_grasper]: ObjectGrasper ready — waiting for ArUco detections
+[INFO] [1775516060.124687321] [object_grasper]: Listening on: /aruco/target_base_link
+[INFO] [1775516060.124883883] [object_grasper]: Call service: ros2 service call /grasp_object std_srvs/srv/Trigger {}
+[INFO] [1775516060.125071929] [object_grasper]: ============================================================
+AMCL localized!
+Waiting for D435i camera...
+[controller_server-11] [INFO] [1775516060.353857435] [local_costmap.local_costmap]: start
+[controller_server-11] [INFO] [1775516060.555123515] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1775516060.663569909] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[lifecycle_manager-16] [INFO] [1775516060.663641561] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[planner_server-12] [INFO] [1775516060.663998857] [planner_server]: Activating
+[planner_server-12] [INFO] [1775516060.664052605] [global_costmap.global_costmap]: Activating
+[planner_server-12] [INFO] [1775516060.664067987] [global_costmap.global_costmap]: Checking transform
+[planner_server-12] [INFO] [1775516060.664139613] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 1775516060.625983 but the earliest data is at time 1775516060.923002, when looking up transform from frame [base_link] to frame [map]
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775516060.812493259] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775516060.816773338] [aruco_base_frame_estimator]: Head camera at detection pose — starting ArUco detection.
+[INFO] [1775516060.822645972] [aruco_base_frame_estimator]: Waiting for camera TF (base_link -> camera_color_optical_frame)...
+[INFO] [1775516060.871394731] [aruco_base_frame_estimator]: Camera pose acquired:
+[INFO] [1775516060.871885834] [aruco_base_frame_estimator]:   Position  : X=+0.0097  Y=-0.0516  Z=+1.2865  (m)
+[INFO] [1775516060.872323655] [aruco_base_frame_estimator]:   RPY (deg) : R=-179.11  P=+59.13  Y=+93.80
+[INFO] [1775516060.875479150] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516060.875804784] [aruco_base_frame_estimator]: ArUco Base Frame Estimator Started
+[INFO] [1775516060.875994949] [aruco_base_frame_estimator]: Target Marker ID: 202
+[INFO] [1775516060.876163166] [aruco_base_frame_estimator]: Marker size: 2.8 cm
+[INFO] [1775516060.876319549] [aruco_base_frame_estimator]: Marker offset (cam frame): X=0.0  Y=0.0  Z=0.0
+[INFO] [1775516060.876473655] [aruco_base_frame_estimator]: Publishing target on: /aruco/target_base_link
+[INFO] [1775516060.876645197] [aruco_base_frame_estimator]: ============================================================
+[planner_server-12] [INFO] [1775516061.164240250] [global_costmap.global_costmap]: start
+[rviz2-17] [INFO] [1775516061.284880654] [rviz2]: Trying to create a map of size 60 x 60 using 1 swatches
+[planner_server-12] [INFO] [1775516062.215442013] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[planner_server-12] [INFO] [1775516062.216589569] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[rviz2-17] [INFO] [1775516062.281743679] [rviz2]: Trying to create a map of size 416 x 249 using 1 swatches
+[lifecycle_manager-16] [INFO] [1775516062.321159250] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[lifecycle_manager-16] [INFO] [1775516062.321210877] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[behavior_server-13] [INFO] [1775516062.321447055] [behavior_server]: Activating
+[behavior_server-13] [INFO] [1775516062.321485860] [behavior_server]: Activating spin
+[behavior_server-13] [INFO] [1775516062.321503744] [behavior_server]: Activating backup
+[behavior_server-13] [INFO] [1775516062.321531377] [behavior_server]: Activating drive_on_heading
+[behavior_server-13] [INFO] [1775516062.321567661] [behavior_server]: Activating assisted_teleop
+[behavior_server-13] [INFO] [1775516062.321585823] [behavior_server]: Activating wait
+[behavior_server-13] [INFO] [1775516062.321607083] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1775516062.424590613] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[lifecycle_manager-16] [INFO] [1775516062.424638345] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[bt_navigator-14] [INFO] [1775516062.424902581] [bt_navigator]: Activating
+[bt_navigator-14] [INFO] [1775516062.478734549] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1775516062.582944603] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[lifecycle_manager-16] [INFO] [1775516062.582996453] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[waypoint_follower-15] [INFO] [1775516062.583326657] [waypoint_follower]: Activating
+[waypoint_follower-15] [INFO] [1775516062.583372136] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1775516062.686091308] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[lifecycle_manager-16] [INFO] [1775516062.686163128] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-16] [INFO] [1775516062.686184624] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[realsense2_camera_node-1] [0m[INFO] [1775516062.707008814] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775516062.707063539] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775516062.707075534] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775516062.707224190] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775516062.707237185] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1775516062.714558129] [camera]: getParameters...[0m
+[realsense2_camera_node-1] [0m[INFO] [1775516062.999492769] [camera]: JSON file is loaded! (/home/willy/ament_ws/install/stretch_core/share/stretch_core/config/HighAccuracyPreset.json)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775516062.999578928] [camera]: Device Name: Intel RealSense D435I[0m
+[realsense2_camera_node-1] [0m[INFO] [1775516062.999594276] [camera]: Device Serial No: 239722071445[0m
+[realsense2_camera_node-1] [0m[INFO] [1775516062.999602912] [camera]: Device physical port: /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0[0m
+[realsense2_camera_node-1] [0m[INFO] [1775516062.999610123] [camera]: Device FW version: 5.16.0.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775516062.999616499] [camera]: Device Product ID: 0x0B3A[0m
+[realsense2_camera_node-1] [0m[INFO] [1775516062.999622813] [camera]: Sync Mode: On[0m
+[realsense2_camera_node-1] [33m[WARN] [1775516063.093429585] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775516063.094798464] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775516063.105599903] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775516063.106810919] [camera]: Given value, 63 is invalid. Set ROS param back to: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775516063.118700568] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775516063.118803052] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775516063.118869312] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775516063.140901337] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775516063.143324746] [camera]: Open profile: stream_type: Depth(0), Format: Z16, Width: 1280, Height: 720, FPS: 15[0m
+[realsense2_camera_node-1] [0m[INFO] [1775516063.155048696] [camera]: Starting Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775516063.158127408] [camera]: Open profile: stream_type: Color(0), Format: RGB8, Width: 1280, Height: 720, FPS: 15[0m
+[realsense2_camera_node-1] [0m[INFO] [1775516063.169172132] [camera]: Starting Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775516063.171072276] [camera]: Open profile: stream_type: Accel(0)Format: MOTION_XYZ32F, FPS: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775516063.171114121] [camera]: Open profile: stream_type: Gyro(0)Format: MOTION_XYZ32F, FPS: 200[0m
+[realsense2_camera_node-1] [0m[INFO] [1775516063.172579292] [camera]: RealSense Node Is Up![0m
+[INFO] [1775516063.919162719] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516063.jpg
+Camera ready!
+requester: making request: std_srvs.srv.Trigger_Request()
+
+[stretch_driver-3] [0m[INFO] [1775516064.601669452] [stretch_driver]: Changed to mode = navigation[0m
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+Waiting for controller_server...
+[INFO] [1775516066.990236506] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516066.jpg
+Set parameter successful
+Yaw tolerance set.
+Resetting arm position...
+requester: making request: std_srvs.srv.Trigger_Request()
+
+[stretch_driver-3] [0m[INFO] [1775516067.822671536] [stretch_driver]: Changed to mode = position[0m
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+[INFO] [1775516069.581537192] [reset_pose]: reset_pose started
+[INFO] [1775516069.640138306] [reset_pose]: Node reset_pose connected to /home_the_robot service.
+[INFO] [1775516069.641633064] [reset_pose]: Node reset_pose connected to /stow_the_robot service.
+[INFO] [1775516069.643075904] [reset_pose]: Node reset_pose connected to /stop_the_robot service.
+[INFO] [1775516069.644777512] [reset_pose]: Node reset_pose connected to /switch_to_trajectory_mode service.
+[INFO] [1775516069.647000756] [reset_pose]: Node reset_pose connected to /switch_to_position_mode service.
+[INFO] [1775516069.648689496] [reset_pose]: Node reset_pose connected to /switch_to_navigation_mode service.
+[INFO] [1775516069.649032665] [reset_pose]: Moving to default pose...
+[WARN] [1775516069.649313813] [reset_pose]: Currently in  mode. Recommend switching either to position or trajectory mode
+[WARN] [1775516069.649577293] [reset_pose]: Commanding joint trajectory server in position mode
+[stretch_driver-3] [0m[INFO] [1775516069.656371051] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775516069.671072774] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_lift', 'joint_arm', 'joint_wrist_yaw', 'joint_wrist_pitch', 'joint_wrist_roll', 'joint_gripper_finger_left'][0m
+[rviz2-17] [INFO] [1775516069.724695264] [rviz]: Message Filter dropping message: frame 'odom' at time 1775516060.555 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-17] [INFO] [1775516069.725114910] [rviz]: Message Filter dropping message: frame 'odom' at time 1775516060.526 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1775516070.058212216] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516070.jpg
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775516071.118914705] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775516071.121839909] [reset_pose]: Arm reset done.
+[INFO] [1775516071.122133951] [reset_pose]: Skipping rotation (ROTATE_DEG=0).
+[INFO] [1775516071.122385382] [reset_pose]: Done.
+Arm reset complete (exit 0).
+requester: making request: std_srvs.srv.Trigger_Request()
+
+[stretch_driver-3] [0m[INFO] [1775516071.876441856] [stretch_driver]: Changed to mode = navigation[0m
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+=== Docking to table ===
+[stretch_driver-3] [0m[INFO] [1775516072.886085669] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1775516073.121638062] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516073.jpg
+[INFO] [1775516076.196279816] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516076.jpg
+[bt_navigator-14] [INFO] [1775516078.055222875] [bt_navigator]: Begin navigating from current location (0.03, 0.02) to (0.57, 1.66)
+[controller_server-11] [INFO] [1775516078.076256276] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-11] [WARN] [1775516078.076356222] [controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+[controller_server-11] [INFO] [1775516079.126631424] [controller_server]: Passing new path to controller.
+[INFO] [1775516079.246661698] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516079.jpg
+[controller_server-11] [INFO] [1775516080.176611084] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775516081.176621958] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775516082.226619543] [controller_server]: Passing new path to controller.
+[INFO] [1775516082.384826873] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516082.jpg
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775516083.226612187] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775516084.276612195] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775516085.326611011] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[INFO] [1775516085.622581283] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516085.jpg
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775516086.326613308] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775516087.376612455] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775516088.376606652] [controller_server]: Passing new path to controller.
+[INFO] [1775516088.775993619] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516088.jpg
+[controller_server-11] [INFO] [1775516089.426635564] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775516090.426628721] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775516091.476680090] [controller_server]: Passing new path to controller.
+[INFO] [1775516091.847677425] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516091.jpg
+[controller_server-11] [INFO] [1775516092.526604101] [controller_server]: Passing new path to controller.
+/home/willy/tf.py:207: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  cx, cy, cz = float(tvec[0]), float(tvec[1]), float(tvec[2])
+/home/willy/tf.py:139: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  t.transform.translation.x = float(tvec_offset[0])
+/home/willy/tf.py:140: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  t.transform.translation.y = float(tvec_offset[1])
+/home/willy/tf.py:141: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  t.transform.translation.z = float(tvec_offset[2])
+[controller_server-11] [INFO] [1775516093.526604188] [controller_server]: Passing new path to controller.
+[WARN] [1775516093.986095842] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+/home/willy/tf.py:215: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  bx, by, bz = self.transform_camera_to_base(float(tvec[0]), float(tvec[1]), float(tvec[2]))
+[INFO] [1775516093.987500776] [object_grasper]: [ArUco] target updated → X=+0.246  Y=-0.587  Z=+0.915
+[controller_server-11] [INFO] [1775516094.576607474] [controller_server]: Passing new path to controller.
+[INFO] [1775516094.861646136] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516094.jpg
+[INFO] [1775516095.118179297] [object_grasper]: [ArUco] target updated → X=+0.094  Y=-0.618  Z=+0.933
+[controller_server-11] [INFO] [1775516095.576605031] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775516095.730734571] [controller_server]: Reached the goal!
+[bt_navigator-14] [INFO] [1775516095.765980574] [bt_navigator]: Goal succeeded
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+Set parameter successful
+Waiting for an action server to become available...
+Sending goal:
+     pose:
+  header:
+    stamp:
+      sec: 0
+      nanosec: 0
+    frame_id: map
+  pose:
+    position:
+      x: 0.5688
+      y: 1.6601
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: -0.707
+      w: 0.707
+behavior_tree: ''
+
+Goal accepted with ID: 35e997556b2e4689a5e842743d874503
+
+Result:
+    result: {}
+
+Goal finished with status: SUCCEEDED
+Navigation succeeded!
+Waiting for grasp service...
+[INFO] [1775516096.130742826] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516096.131032167] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516096.131229308] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.022m  Y=+0.076m  Z=+0.668m  dist=0.673m
+[INFO] [1775516096.131415356] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.064m  Y=-0.632m  Z=+0.926m  → published
+[INFO] [1775516096.131630013] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516096.132090449] [object_grasper]: [ArUco] target updated → X=+0.064  Y=-0.632  Z=+0.926
+Grasp service is ready!
+=== Triggering grasp ===
+requester: making request: std_srvs.srv.Trigger_Request()
+
+[stretch_driver-3] [0m[INFO] [1775516096.979708388] [stretch_driver]: Changed to mode = position[0m
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+[INFO] [1775516097.234389902] [object_grasper]: [ArUco] target updated → X=+0.064  Y=-0.622  Z=+0.932
+[INFO] [1775516097.870937302] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516097.jpg
+[INFO] [1775516098.316186167] [object_grasper]: [ArUco] target updated → X=+0.064  Y=-0.622  Z=+0.932
+[INFO] [1775516098.668024537] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516098.668265393] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516098.668471275] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.022m  Y=+0.075m  Z=+0.653m  dist=0.657m
+[INFO] [1775516098.668660810] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.064m  Y=-0.632m  Z=+0.926m  → published
+[INFO] [1775516098.668870992] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516099.394776598] [object_grasper]: [ArUco] target updated → X=+0.064  Y=-0.623  Z=+0.932
+[INFO] [1775516099.747938580] [object_grasper]: Using LIVE target: X=+0.062  Y=-0.611  Z=+0.939
+[INFO] [1775516099.748422701] [object_grasper]: Solving IK for grasp target: [0.062, -0.611, 0.939]
+[INFO] [1775516099.751124440] [object_grasper]: IK attempt 1/150
+[INFO] [1775516099.817685773] [object_grasper]: IK error: 0.0000m
+[INFO] [1775516099.818054628] [object_grasper]: base_trans=+0.0000m  lift=0.9098m  arm=0.2271m
+[INFO] [1775516099.818407090] [object_grasper]: Solving IK for approach target: [0.062, -0.611, 1.019]
+[INFO] [1775516099.818673355] [object_grasper]: IK attempt 1/150
+[INFO] [1775516099.892523247] [object_grasper]: IK error: 0.0000m
+[INFO] [1775516099.894990038] [object_grasper]: base_trans=+0.0000m  lift=1.0098m  arm=0.2261m
+[INFO] [1775516099.895640947] [object_grasper]: === GRASP SEQUENCE START ===
+[INFO] [1775516099.895873593] [object_grasper]: Step 1: Move to approach height (1.019m) + set wrist
+[INFO] [1775516099.896137156] [object_grasper]: → Lift=1.010m  yaw=1.293  pitch=-0.300  roll=-0.002
+[stretch_driver-3] [0m[INFO] [1775516099.900179119] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775516099.913579837] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_lift', 'joint_wrist_yaw', 'joint_wrist_pitch', 'joint_wrist_roll'][0m
+[INFO] [1775516100.793663447] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516100.794133582] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516100.794551603] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.022m  Y=+0.075m  Z=+0.656m  dist=0.661m
+[INFO] [1775516100.794960475] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.063m  Y=-0.612m  Z=+0.939m  → published
+[INFO] [1775516100.795330520] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516100.919926370] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516100.jpg
+[INFO] [1775516103.123036537] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516103.123302531] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516103.123482227] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.022m  Y=+0.075m  Z=+0.655m  dist=0.659m
+[INFO] [1775516103.123683799] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.062m  Y=-0.610m  Z=+0.940m  → published
+[INFO] [1775516103.123930158] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516103.921222301] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516103.jpg
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775516104.791183582] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775516104.794109870] [object_grasper]: Step 2: Open gripper
+[INFO] [1775516104.796203198] [object_grasper]: → Opening gripper
+[stretch_driver-3] [0m[INFO] [1775516104.804193992] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775516104.816090301] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_gripper_finger_left'][0m
+[INFO] [1775516105.123328750] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516105.123560968] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516105.123760036] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.022m  Y=+0.077m  Z=+0.669m  dist=0.673m
+[INFO] [1775516105.123992145] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.063m  Y=-0.611m  Z=+0.940m  → published
+[INFO] [1775516105.124180896] [aruco_base_frame_estimator]: ============================================================
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775516106.366864887] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775516106.372157405] [object_grasper]: Step 3: Extend arm to target x,y (approach height)
+[INFO] [1775516106.372734015] [object_grasper]: → Extending arm to 0.199m
+[stretch_driver-3] [0m[INFO] [1775516106.376381946] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775516106.385890131] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_arm'][0m
+[INFO] [1775516106.989729087] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516106.jpg
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775516108.589642217] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775516108.594913988] [object_grasper]: Step 4: Lower lift to grasp height (0.910m)
+[stretch_driver-3] [0m[INFO] [1775516108.597589323] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775516108.601299255] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_lift'][0m
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775516109.618116427] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775516109.626140047] [object_grasper]: Step 5: Close gripper
+[INFO] [1775516109.626737670] [object_grasper]: → Closing gripper
+[stretch_driver-3] [0m[INFO] [1775516109.636129169] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775516109.646051039] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_gripper_finger_left'][0m
+[INFO] [1775516110.000670721] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516109.jpg
+[INFO] [1775516113.060908586] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516113.jpg
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775516113.145136581] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775516113.149537997] [object_grasper]: Step 6: Lift up to 1.010m
+[stretch_driver-3] [0m[INFO] [1775516113.152198147] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775516113.165234712] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_lift'][0m
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775516114.184780269] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775516114.187734281] [object_grasper]: Step 7: Retract arm
+[INFO] [1775516114.188055223] [object_grasper]: → Retracting arm
+[stretch_driver-3] [0m[INFO] [1775516114.191048711] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775516114.203520461] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_arm'][0m
+[INFO] [1775516116.128405110] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516116.jpg
+[INFO] [1775516116.311232267] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516116.311485076] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516116.311665532] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.016m  Y=+0.099m  Z=+0.696m  dist=0.703m
+[INFO] [1775516116.311847966] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.085m  Y=-0.638m  Z=+0.931m  → published
+[INFO] [1775516116.312004034] [aruco_base_frame_estimator]: ============================================================
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775516116.354161265] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775516116.358764544] [object_grasper]: === GRASP SEQUENCE COMPLETE ===
+[INFO] [1775516116.364324000] [object_grasper]: [ArUco] target updated → X=+0.065  Y=-0.632  Z=+0.926
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='')
+Grasp succeeded!
+=== dock_grab.sh finished at Mon Apr  6 06:55:16 PM EDT 2026 ===
+[INFO] [1775516117.395478198] [object_grasper]: [ArUco] target updated → X=+0.085  Y=-0.638  Z=+0.931
+[INFO] [1775516118.395180787] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516118.395470650] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516118.395678915] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.016m  Y=+0.099m  Z=+0.696m  dist=0.703m
+[INFO] [1775516118.395861475] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.084m  Y=-0.637m  Z=+0.932m  → published
+[INFO] [1775516118.396026033] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516118.396701462] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.637  Z=+0.932
+[INFO] [1775516119.200868173] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516119.jpg
+[INFO] [1775516119.455149067] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.637  Z=+0.932
+[INFO] [1775516120.466664153] [object_grasper]: [ArUco] target updated → X=+0.083  Y=-0.627  Z=+0.938
+[INFO] [1775516120.528483463] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516120.528787642] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516120.529074765] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.016m  Y=+0.098m  Z=+0.683m  dist=0.690m
+[INFO] [1775516120.529286845] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.083m  Y=-0.627m  Z=+0.938m  → published
+[INFO] [1775516120.529475833] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516121.526017996] [object_grasper]: [ArUco] target updated → X=+0.085  Y=-0.638  Z=+0.931
+[INFO] [1775516122.253409015] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516122.jpg
+[INFO] [1775516122.529920779] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516122.530162982] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516122.530180587] [object_grasper]: [ArUco] target updated → X=+0.085  Y=-0.638  Z=+0.931
+[INFO] [1775516122.530346718] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.016m  Y=+0.098m  Z=+0.683m  dist=0.690m
+[INFO] [1775516122.530534479] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.085m  Y=-0.638m  Z=+0.931m  → published
+[INFO] [1775516122.530788751] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516123.530234490] [object_grasper]: [ArUco] target updated → X=+0.085  Y=-0.638  Z=+0.931
+[INFO] [1775516124.657790440] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516124.657947243] [object_grasper]: [ArUco] target updated → X=+0.085  Y=-0.638  Z=+0.931
+[INFO] [1775516124.658190241] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516124.658545999] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.016m  Y=+0.098m  Z=+0.683m  dist=0.690m
+[INFO] [1775516124.658904571] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.085m  Y=-0.638m  Z=+0.931m  → published
+[INFO] [1775516124.659281309] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516125.254784509] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516125.jpg
+[INFO] [1775516125.663597614] [object_grasper]: [ArUco] target updated → X=+0.085  Y=-0.638  Z=+0.931
+[INFO] [1775516126.668026228] [object_grasper]: [ArUco] target updated → X=+0.085  Y=-0.638  Z=+0.931
+[INFO] [1775516126.731163612] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516126.731426741] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516126.731630496] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.016m  Y=+0.098m  Z=+0.683m  dist=0.690m
+[INFO] [1775516126.731830381] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.085m  Y=-0.638m  Z=+0.931m  → published
+[INFO] [1775516126.732009209] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516127.678283331] [object_grasper]: [ArUco] target updated → X=+0.085  Y=-0.638  Z=+0.931
+[INFO] [1775516128.275463741] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516128.jpg
+[INFO] [1775516128.738138954] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516128.738374465] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516128.738569942] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.016m  Y=+0.098m  Z=+0.683m  dist=0.690m
+[INFO] [1775516128.738781110] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.084m  Y=-0.637m  Z=+0.932m  → published
+[INFO] [1775516128.738968238] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516128.738985410] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.637  Z=+0.932
+[INFO] [1775516129.740278264] [object_grasper]: [ArUco] target updated → X=+0.085  Y=-0.638  Z=+0.931
+[INFO] [1775516130.800115760] [object_grasper]: [ArUco] target updated → X=+0.085  Y=-0.638  Z=+0.931
+[INFO] [1775516130.868376700] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516130.868854213] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516130.869227038] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.016m  Y=+0.099m  Z=+0.696m  dist=0.703m
+[INFO] [1775516130.869570804] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.085m  Y=-0.638m  Z=+0.931m  → published
+[INFO] [1775516130.869961088] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516131.336636536] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516131.jpg
+[INFO] [1775516131.820458318] [object_grasper]: [ArUco] target updated → X=+0.086  Y=-0.649  Z=+0.925
+[INFO] [1775516132.875993377] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516132.876221723] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516132.876410893] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.097m  Z=+0.682m  dist=0.689m
+[INFO] [1775516132.876618888] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.085m  Y=-0.638m  Z=+0.931m  → published
+[INFO] [1775516132.876767346] [object_grasper]: [ArUco] target updated → X=+0.085  Y=-0.638  Z=+0.931
+[INFO] [1775516132.876853731] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516133.928830267] [object_grasper]: [ArUco] target updated → X=+0.083  Y=-0.627  Z=+0.938
+[INFO] [1775516134.338402057] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516134.jpg
+[INFO] [1775516134.934194074] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516134.934486234] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516134.934680200] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.097m  Z=+0.679m  dist=0.686m
+[INFO] [1775516134.934858232] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.084m  Y=-0.635m  Z=+0.933m  → published
+[INFO] [1775516134.935042838] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516134.935069744] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516136.003095786] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516137.008310452] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516137.008546510] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516137.008733987] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.097m  Z=+0.679m  dist=0.686m
+[INFO] [1775516137.008904604] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.084m  Y=-0.635m  Z=+0.933m  → published
+[INFO] [1775516137.008996594] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516137.009055400] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516137.346974266] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516137.jpg
+[INFO] [1775516138.009614641] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516139.005532034] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516139.005787048] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516139.005963653] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.095m  Z=+0.667m  dist=0.674m
+[INFO] [1775516139.006120187] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.084m  Y=-0.635m  Z=+0.933m  → published
+[INFO] [1775516139.006284466] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516139.068035200] [object_grasper]: [ArUco] target updated → X=+0.083  Y=-0.624  Z=+0.940
+[INFO] [1775516140.074849839] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516140.408918657] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516140.jpg
+[INFO] [1775516141.001365963] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516141.001609710] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516141.001790822] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.097m  Z=+0.679m  dist=0.686m
+[INFO] [1775516141.001973920] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.084m  Y=-0.635m  Z=+0.933m  → published
+[INFO] [1775516141.002169036] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516141.139988349] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516142.141735067] [object_grasper]: [ArUco] target updated → X=+0.083  Y=-0.624  Z=+0.940
+[INFO] [1775516143.007827306] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516143.008085468] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516143.008254300] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.097m  Z=+0.679m  dist=0.686m
+[INFO] [1775516143.008414888] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.084m  Y=-0.635m  Z=+0.933m  → published
+[INFO] [1775516143.008583914] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516143.143754441] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516143.473409679] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516143.jpg
+[INFO] [1775516144.206185533] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516145.209668447] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516145.209914627] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516145.210076167] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.097m  Z=+0.679m  dist=0.686m
+[INFO] [1775516145.210239077] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.084m  Y=-0.635m  Z=+0.933m  → published
+[INFO] [1775516145.210325894] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516145.210386312] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516146.287956846] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516146.554135057] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516146.jpg
+[INFO] [1775516147.344418337] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516147.407337448] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516147.407649229] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516147.407886969] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.097m  Z=+0.679m  dist=0.686m
+[INFO] [1775516147.408175671] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.086m  Y=-0.645m  Z=+0.927m  → published
+[INFO] [1775516147.408353475] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516148.473210424] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516149.479294384] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516149.479541237] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516149.479734603] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.097m  Z=+0.679m  dist=0.686m
+[INFO] [1775516149.479913537] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.085m  Y=-0.638m  Z=+0.932m  → published
+[INFO] [1775516149.480074872] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516149.480106543] [object_grasper]: [ArUco] target updated → X=+0.085  Y=-0.638  Z=+0.932
+[INFO] [1775516149.556377783] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516149.jpg
+[INFO] [1775516150.554582963] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516151.547632911] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516151.548003994] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516151.548237302] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.097m  Z=+0.679m  dist=0.686m
+[INFO] [1775516151.548410594] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.084m  Y=-0.635m  Z=+0.933m  → published
+[INFO] [1775516151.548576800] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516151.611257506] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516152.616263022] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516152.617605919] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516152.jpg
+[INFO] [1775516153.608398686] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516153.608668201] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516153.608894926] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.097m  Z=+0.679m  dist=0.686m
+[INFO] [1775516153.609078645] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.084m  Y=-0.635m  Z=+0.933m  → published
+[INFO] [1775516153.609276733] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516153.685692583] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516154.764925429] [object_grasper]: [ArUco] target updated → X=+0.083  Y=-0.624  Z=+0.940
+[INFO] [1775516155.625496117] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516155.625939122] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516155.626365851] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.097m  Z=+0.679m  dist=0.686m
+[INFO] [1775516155.626825040] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.086m  Y=-0.645m  Z=+0.927m  → published
+[INFO] [1775516155.627280671] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516155.631863673] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516155.jpg
+[INFO] [1775516155.879814079] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516156.885985941] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516157.828239168] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516157.828676326] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516157.829089296] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.097m  Z=+0.679m  dist=0.686m
+[INFO] [1775516157.829480428] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.084m  Y=-0.635m  Z=+0.933m  → published
+[INFO] [1775516157.829847302] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516157.950196162] [object_grasper]: [ArUco] target updated → X=+0.083  Y=-0.635  Z=+0.933
+[INFO] [1775516158.700163417] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516158.jpg
+[INFO] [1775516158.956718075] [object_grasper]: [ArUco] target updated → X=+0.083  Y=-0.624  Z=+0.940
+[INFO] [1775516159.885685643] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516159.885925514] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516159.886109642] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.016m  Y=+0.099m  Z=+0.692m  dist=0.699m
+[INFO] [1775516159.886296216] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.084m  Y=-0.635m  Z=+0.933m  → published
+[INFO] [1775516159.886522373] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516160.030182987] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516161.090958284] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516161.759196451] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516161.jpg
+[INFO] [1775516161.885126396] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516161.885365805] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516161.885557459] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.098m  Z=+0.683m  dist=0.690m
+[INFO] [1775516161.885718884] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.084m  Y=-0.635m  Z=+0.933m  → published
+[INFO] [1775516161.885874772] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516162.159496063] [object_grasper]: [ArUco] target updated → X=+0.083  Y=-0.624  Z=+0.940
+[INFO] [1775516163.164343754] [object_grasper]: [ArUco] target updated → X=+0.085  Y=-0.638  Z=+0.932
+[INFO] [1775516163.894769770] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516163.895206147] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516163.895604974] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.097m  Z=+0.679m  dist=0.686m
+[INFO] [1775516163.895997608] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.084m  Y=-0.635m  Z=+0.933m  → published
+[INFO] [1775516163.896387378] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516164.213321667] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516164.765066307] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516164.jpg
+[INFO] [1775516165.225631813] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516165.892222268] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516165.892490674] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516165.892695131] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.095m  Z=+0.667m  dist=0.674m
+[INFO] [1775516165.892859246] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.084m  Y=-0.635m  Z=+0.933m  → published
+[INFO] [1775516165.893045406] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516166.228534067] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516167.295552944] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516167.830865654] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516167.jpg
+[INFO] [1775516167.893389592] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516167.893608039] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516167.893790053] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.095m  Z=+0.667m  dist=0.674m
+[INFO] [1775516167.893969342] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.084m  Y=-0.635m  Z=+0.933m  → published
+[INFO] [1775516167.894135328] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516168.296559025] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516169.297102023] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516169.963852637] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516169.964091343] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516169.964264602] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.097m  Z=+0.679m  dist=0.686m
+[INFO] [1775516169.964435479] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.084m  Y=-0.635m  Z=+0.933m  → published
+[INFO] [1775516169.964639788] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516170.367467393] [object_grasper]: [ArUco] target updated → X=+0.083  Y=-0.625  Z=+0.939
+[INFO] [1775516170.836455657] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516170.jpg
+[INFO] [1775516171.425485336] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516171.965023406] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516171.965273430] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516171.965462883] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.097m  Z=+0.679m  dist=0.686m
+[INFO] [1775516171.965644488] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.085m  Y=-0.638m  Z=+0.932m  → published
+[INFO] [1775516171.965816178] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516172.438327313] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516173.566200671] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516173.898672271] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516173.jpg
+[INFO] [1775516174.026041215] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516174.026343272] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516174.026640888] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.097m  Z=+0.679m  dist=0.686m
+[INFO] [1775516174.026834973] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.084m  Y=-0.632m  Z=+0.935m  → published
+[INFO] [1775516174.027001502] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516174.580492540] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516175.640846886] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516176.028354160] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516176.028598787] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516176.028779721] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.097m  Z=+0.679m  dist=0.686m
+[INFO] [1775516176.028962029] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.084m  Y=-0.635m  Z=+0.933m  → published
+[INFO] [1775516176.029133831] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516176.696889718] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516176.899896699] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516176.jpg
+[INFO] [1775516177.767603487] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516178.237133776] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516178.237361525] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516178.237559427] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.097m  Z=+0.679m  dist=0.686m
+[INFO] [1775516178.237743489] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.086m  Y=-0.645m  Z=+0.927m  → published
+[INFO] [1775516178.237919136] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516178.771505008] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516179.780355089] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516179.909725093] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516179.jpg
+[INFO] [1775516180.238884582] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516180.239129110] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516180.239326041] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.097m  Z=+0.679m  dist=0.686m
+[INFO] [1775516180.239499627] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.083m  Y=-0.624m  Z=+0.940m  → published
+[INFO] [1775516180.239706294] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516180.841493835] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516181.843245645] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516182.383755413] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516182.384064327] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516182.384298937] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.097m  Z=+0.679m  dist=0.686m
+[INFO] [1775516182.384586718] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.084m  Y=-0.635m  Z=+0.933m  → published
+[INFO] [1775516182.384858129] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516182.843857001] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516182.911884769] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516182.jpg
+[INFO] [1775516183.911897863] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516184.442813296] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516184.443044357] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516184.443216849] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.095m  Z=+0.667m  dist=0.674m
+[INFO] [1775516184.443403373] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.084m  Y=-0.635m  Z=+0.933m  → published
+[INFO] [1775516184.443587276] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516184.912175337] [object_grasper]: [ArUco] target updated → X=+0.086  Y=-0.644  Z=+0.928
+[INFO] [1775516185.975139674] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516185.978066902] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516185.jpg
+[INFO] [1775516186.507398518] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516186.507667571] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516186.507864428] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.016m  Y=+0.099m  Z=+0.692m  dist=0.699m
+[INFO] [1775516186.508048420] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.084m  Y=-0.635m  Z=+0.933m  → published
+[INFO] [1775516186.508227358] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516187.037062049] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516188.044289646] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516188.571240677] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516188.571490784] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516188.571675203] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.097m  Z=+0.679m  dist=0.686m
+[INFO] [1775516188.571850999] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.085m  Y=-0.638m  Z=+0.932m  → published
+[INFO] [1775516188.572008826] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516188.983000959] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516188.jpg
+[INFO] [1775516189.113618366] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516190.173019287] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516190.587760243] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516190.588012692] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516190.588223940] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.098m  Z=+0.683m  dist=0.690m
+[INFO] [1775516190.588429618] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.085m  Y=-0.638m  Z=+0.932m  → published
+[INFO] [1775516190.588597232] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516191.178031304] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516192.053973263] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516192.jpg
+[INFO] [1775516192.182899670] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516192.639786805] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516192.640089139] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516192.640289399] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.097m  Z=+0.679m  dist=0.686m
+[INFO] [1775516192.640485505] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.084m  Y=-0.635m  Z=+0.933m  → published
+[INFO] [1775516192.640666886] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516193.245450899] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516194.246328336] [object_grasper]: [ArUco] target updated → X=+0.085  Y=-0.638  Z=+0.932
+[INFO] [1775516194.717975049] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516194.718184605] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516194.718349487] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.098m  Z=+0.683m  dist=0.690m
+[INFO] [1775516194.718501742] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.084m  Y=-0.635m  Z=+0.933m  → published
+[INFO] [1775516194.718651881] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516195.124473927] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516195.jpg
+[INFO] [1775516195.257748836] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516196.318206796] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516196.715777362] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516196.716019424] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516196.716197392] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.098m  Z=+0.683m  dist=0.690m
+[INFO] [1775516196.716368542] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.083m  Y=-0.625m  Z=+0.939m  → published
+[INFO] [1775516196.716540640] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516197.371041995] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516198.188490486] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516198.jpg
+[INFO] [1775516198.388728634] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516198.709266995] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516198.709471831] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516198.709647608] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.098m  Z=+0.683m  dist=0.690m
+[INFO] [1775516198.709816415] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.086m  Y=-0.645m  Z=+0.928m  → published
+[INFO] [1775516198.709969042] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516199.457756061] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516200.457858172] [object_grasper]: [ArUco] target updated → X=+0.083  Y=-0.624  Z=+0.940
+[INFO] [1775516200.712539144] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516200.712948197] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516200.713277424] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.016m  Y=+0.099m  Z=+0.692m  dist=0.699m
+[INFO] [1775516200.713617870] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.085m  Y=-0.638m  Z=+0.932m  → published
+[INFO] [1775516200.713998214] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516201.191384528] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516201.jpg
+[INFO] [1775516201.518952368] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516202.575959524] [object_grasper]: [ArUco] target updated → X=+0.088  Y=-0.660  Z=+0.918
+[INFO] [1775516202.714675365] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516202.714898621] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516202.715086003] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.098m  Z=+0.683m  dist=0.690m
+[INFO] [1775516202.715244984] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.086m  Y=-0.644m  Z=+0.928m  → published
+[INFO] [1775516202.715395594] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516203.580585864] [object_grasper]: [ArUco] target updated → X=+0.083  Y=-0.624  Z=+0.940
+[INFO] [1775516204.257955615] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516204.jpg
+[INFO] [1775516204.590588045] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516204.725119269] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516204.725446992] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516204.725724989] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.098m  Z=+0.683m  dist=0.690m
+[INFO] [1775516204.725904064] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.084m  Y=-0.635m  Z=+0.933m  → published
+[INFO] [1775516204.726135009] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516205.659011280] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516206.664753706] [object_grasper]: [ArUco] target updated → X=+0.087  Y=-0.648  Z=+0.925
+[INFO] [1775516206.721949017] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516206.722186228] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516206.722395214] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.097m  Z=+0.679m  dist=0.686m
+[INFO] [1775516206.722571811] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.085m  Y=-0.638m  Z=+0.932m  → published
+[INFO] [1775516206.722739802] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516207.327905261] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516207.jpg
+[INFO] [1775516207.667526353] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516208.732609751] [object_grasper]: [ArUco] target updated → X=+0.085  Y=-0.635  Z=+0.933
+[INFO] [1775516208.873697726] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516208.873947498] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516208.874125319] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.016m  Y=+0.100m  Z=+0.694m  dist=0.701m
+[INFO] [1775516208.874296175] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.084m  Y=-0.635m  Z=+0.933m  → published
+[INFO] [1775516208.874456869] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516209.739115853] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516210.331680393] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516210.jpg
+[INFO] [1775516210.802136062] [object_grasper]: [ArUco] target updated → X=+0.085  Y=-0.638  Z=+0.932
+[INFO] [1775516210.857331520] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516210.857567763] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516210.857760704] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.098m  Z=+0.683m  dist=0.690m
+[INFO] [1775516210.857938716] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.085m  Y=-0.638m  Z=+0.932m  → published
+[INFO] [1775516210.858115523] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516211.865652561] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516212.925689299] [object_grasper]: [ArUco] target updated → X=+0.083  Y=-0.627  Z=+0.938
+[INFO] [1775516212.995696557] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516212.995956301] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516212.996131891] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.097m  Z=+0.679m  dist=0.686m
+[INFO] [1775516212.996305748] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.083m  Y=-0.624m  Z=+0.940m  → published
+[INFO] [1775516212.996490979] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516213.400975127] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516213.jpg
+[INFO] [1775516213.929161465] [object_grasper]: [ArUco] target updated → X=+0.085  Y=-0.638  Z=+0.932
+[INFO] [1775516215.000766397] [object_grasper]: [ArUco] target updated → X=+0.087  Y=-0.648  Z=+0.925
+[INFO] [1775516215.063677055] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516215.063953457] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516215.064137041] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.097m  Z=+0.679m  dist=0.686m
+[INFO] [1775516215.064329615] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.084m  Y=-0.635m  Z=+0.933m  → published
+[INFO] [1775516215.064491623] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516216.063671519] [object_grasper]: [ArUco] target updated → X=+0.086  Y=-0.645  Z=+0.927
+[INFO] [1775516216.409720192] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516216.jpg
+[INFO] [1775516217.063988333] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516217.131443962] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516217.131688059] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516217.131871793] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.098m  Z=+0.683m  dist=0.690m
+[INFO] [1775516217.132074477] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.083m  Y=-0.624m  Z=+0.940m  → published
+[INFO] [1775516217.132308446] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516218.068087169] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516219.134332625] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516219.134587519] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516219.134776527] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.016m  Y=+0.100m  Z=+0.695m  dist=0.703m
+[INFO] [1775516219.134834801] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516219.134953676] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.084m  Y=-0.635m  Z=+0.933m  → published
+[INFO] [1775516219.135127556] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516219.461323077] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516219.jpg
+[INFO] [1775516220.188679379] [object_grasper]: [ArUco] target updated → X=+0.082  Y=-0.617  Z=+0.944
+[INFO] [1775516221.205249977] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516221.205490675] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516221.205684138] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.096m  Z=+0.670m  dist=0.677m
+[INFO] [1775516221.205860515] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.084m  Y=-0.635m  Z=+0.933m  → published
+[INFO] [1775516221.205857822] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516221.206028112] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516222.266703000] [object_grasper]: [ArUco] target updated → X=+0.086  Y=-0.644  Z=+0.928
+[INFO] [1775516222.470361576] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516222.jpg
+[INFO] [1775516223.272236333] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516223.272692744] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516223.272939127] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516223.273010482] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.097m  Z=+0.679m  dist=0.686m
+[INFO] [1775516223.273228111] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.084m  Y=-0.635m  Z=+0.933m  → published
+[INFO] [1775516223.273410439] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516224.330306908] [object_grasper]: [ArUco] target updated → X=+0.085  Y=-0.638  Z=+0.932
+[INFO] [1775516225.267411295] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516225.267678925] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516225.267888980] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.016m  Y=+0.100m  Z=+0.694m  dist=0.701m
+[INFO] [1775516225.268076352] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.084m  Y=-0.635m  Z=+0.933m  → published
+[INFO] [1775516225.268228589] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516225.336751607] [object_grasper]: [ArUco] target updated → X=+0.086  Y=-0.647  Z=+0.926
+[INFO] [1775516225.538789636] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516225.jpg
+[INFO] [1775516226.404061796] [object_grasper]: [ArUco] target updated → X=+0.085  Y=-0.638  Z=+0.932
+[INFO] [1775516227.396804568] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516227.397047662] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516227.397214999] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.015m  Y=+0.097m  Z=+0.679m  dist=0.686m
+[INFO] [1775516227.397381142] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.087m  Y=-0.648m  Z=+0.925m  → published
+[INFO] [1775516227.397577618] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516227.465163722] [object_grasper]: [ArUco] target updated → X=+0.084  Y=-0.635  Z=+0.933
+[INFO] [1775516228.543231104] [object_grasper]: [ArUco] target updated → X=+0.086  Y=-0.644  Z=+0.928
+[INFO] [1775516228.546313332] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775516228.jpg
+[INFO] [1775516229.401365298] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775516229.401611147] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775516229.401780740] [aruco_base_frame_estimator]:   [CAMERA raw] X=+0.016m  Y=+0.100m  Z=+0.694m  dist=0.701m
+[INFO] [1775516229.401940962] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=+0.084m  Y=-0.635m  Z=+0.933m  → published
+[INFO] [1775516229.402149213] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775516229.600039566] [object_grasper]: [ArUco] target updated → X=+0.085  Y=-0.638  Z=+0.932

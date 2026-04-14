@@ -1,0 +1,45 @@
+=== pick_object.sh started at Thu Apr  9 04:48:02 PM EDT 2026 ===
+Target ArUco marker ID: 202
+Waiting for nodes to be ready (launch_nodes.sh)...
+Nodes are ready!
+Setting target marker ID to 202...
+Set parameter successful
+Waiting for stale target to expire (6s)...
+Marker ID set and target cleared.
+Resetting arm position for camera view...
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+[INFO] [1775767692.657106095] [reset_pose]: reset_pose started
+[INFO] [1775767692.703335780] [reset_pose]: Node reset_pose connected to /home_the_robot service.
+[INFO] [1775767692.704739088] [reset_pose]: Node reset_pose connected to /stow_the_robot service.
+[INFO] [1775767692.711341072] [reset_pose]: Node reset_pose connected to /stop_the_robot service.
+[INFO] [1775767692.716582952] [reset_pose]: Node reset_pose connected to /switch_to_trajectory_mode service.
+[INFO] [1775767692.719038291] [reset_pose]: Node reset_pose connected to /switch_to_position_mode service.
+[INFO] [1775767692.721124185] [reset_pose]: Node reset_pose connected to /switch_to_navigation_mode service.
+[INFO] [1775767692.721766231] [reset_pose]: Moving to default pose...
+[INFO] [1775767697.365297509] [reset_pose]: Arm reset done.
+[INFO] [1775767697.365771773] [reset_pose]: Skipping rotation (ROTATE_DEG=0).
+[INFO] [1775767697.366165364] [reset_pose]: Done.
+Arm reset complete.
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+Waiting for grasp service...
+Grasp service ready!
+=== Triggering grasp ===
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='')
+Grasp succeeded!
+=== pick_object.sh finished at Thu Apr  9 04:48:40 PM EDT 2026 ===

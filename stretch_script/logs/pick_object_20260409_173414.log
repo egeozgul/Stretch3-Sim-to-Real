@@ -1,0 +1,50 @@
+=== pick_object.sh started at Thu Apr  9 05:34:14 PM EDT 2026 ===
+Target ArUco marker ID: 202
+Waiting for nodes to be ready (launch_nodes.sh)...
+Nodes are ready!
+Setting target marker ID to 202...
+Set parameter successful
+Resetting arm position for camera view...
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+[INFO] [1775770458.125063240] [reset_pose]: reset_pose started
+[INFO] [1775770458.172986176] [reset_pose]: Node reset_pose connected to /home_the_robot service.
+[INFO] [1775770458.174473046] [reset_pose]: Node reset_pose connected to /stow_the_robot service.
+[INFO] [1775770458.176227546] [reset_pose]: Node reset_pose connected to /stop_the_robot service.
+[INFO] [1775770458.180988343] [reset_pose]: Node reset_pose connected to /switch_to_trajectory_mode service.
+[INFO] [1775770458.182935843] [reset_pose]: Node reset_pose connected to /switch_to_position_mode service.
+[INFO] [1775770458.184781435] [reset_pose]: Node reset_pose connected to /switch_to_navigation_mode service.
+[INFO] [1775770458.185374035] [reset_pose]: Moving to default pose...
+[INFO] [1775770461.620463618] [reset_pose]: Arm reset done.
+[INFO] [1775770461.622782792] [reset_pose]: Skipping rotation (ROTATE_DEG=0).
+[INFO] [1775770461.623238305] [reset_pose]: Done.
+./pick_object.sh: line 35: 15657 Segmentation fault      (core dumped) python3 ~/test1.py
+Arm reset complete.
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+Waiting for live marker detection (confirming stamp is advancing)...
+Live detection confirmed! (stamp advancing: 1775770463 → 1775770465)
+Live pose:
+  x: -0.10972191735705247
+  y: -0.570531284480491
+  z: 0.9182985031450527
+Waiting for grasp service...
+Grasp service ready!
+=== Triggering grasp ===
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='')
+Grasp succeeded!
+=== pick_object.sh finished at Thu Apr  9 05:34:49 PM EDT 2026 ===

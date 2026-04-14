@@ -1,0 +1,1125 @@
+=== launch_nodes.sh started at Tue Apr  7 03:05:45 PM EDT 2026 ===
+Freeing robot process...
+Done!
+Launching Nav2...
+Launching D435i camera...
+Launching ArUco detector...
+Launching Grasper...
+Waiting for Nav2 action server...
+[INFO] [launch]: All log files can be found below /home/willy/.ros/log/2026-04-07-15-05-46-509635-stretch-re2-2204-36029
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch]: All log files can be found below /home/willy/.ros/log/2026-04-07-15-05-46-578329-stretch-re2-2204-36028
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: D435i launched in high resolution
+[INFO] [realsense2_camera_node-1]: process started with pid [36089]
+[INFO] [d435i_accel_correction-2]: process started with pid [36091]
+[INFO] [1775588746.932455154] [aruco_base_frame_estimator]: aruco_base_frame_estimator started
+[d435i_accel_correction-2] [INFO] [1775588747.046545477] [d435i_accel_correction_node]: d435i_accel_correction_node started
+[realsense2_camera_node-1] [0m[INFO] [1775588747.232777082] [camera]: RealSense ROS v4.55.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775588747.232878999] [camera]: Built with LibRealSense v2.56.4[0m
+[realsense2_camera_node-1] [0m[INFO] [1775588747.232893174] [camera]: Running with LibRealSense v2.56.4[0m
+[realsense2_camera_node-1] [0m[INFO] [1775588747.263159594] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775588747.263274221] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775588747.263294690] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775588747.263485470] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775588747.263520903] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1775588747.263537139] [camera]: Resetting device...[0m
+Nav2 is up!
+Waiting for D435i camera...
+[INFO] [stretch_driver-3]: process started with pid [36259]
+[INFO] [joint_state_publisher-1]: process started with pid [36255]
+[INFO] [robot_state_publisher-2]: process started with pid [36257]
+[INFO] [sllidar_node-4]: process started with pid [36261]
+[INFO] [scan_to_scan_filter_chain-5]: process started with pid [36263]
+[INFO] [joy_node-6]: process started with pid [36265]
+[INFO] [teleop_node-7]: process started with pid [36267]
+[INFO] [map_server-8]: process started with pid [36269]
+[INFO] [amcl-9]: process started with pid [36271]
+[INFO] [lifecycle_manager-10]: process started with pid [36273]
+[INFO] [controller_server-11]: process started with pid [36275]
+[INFO] [planner_server-12]: process started with pid [36277]
+[INFO] [behavior_server-13]: process started with pid [36279]
+[INFO] [bt_navigator-14]: process started with pid [36281]
+[INFO] [waypoint_follower-15]: process started with pid [36289]
+[INFO] [lifecycle_manager-16]: process started with pid [36367]
+[INFO] [rviz2-17]: process started with pid [36379]
+[sllidar_node-4] [INFO] [1775588747.481861031] [sllidar_node]: SLLidar running on ROS2 package SLLidar.ROS2 SDK Version:1.0.1, SLLIDAR SDK Version:2.1.0
+[scan_to_scan_filter_chain-5] [INFO] [1775588747.471954866] [laser_filter]: In shadow configure done
+[scan_to_scan_filter_chain-5] [WARN] [1775588747.472214697] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[planner_server-12] [INFO] [1775588747.475138638] [planner_server]: 
+[planner_server-12] 	planner_server lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1775588747.481676075] [planner_server]: Creating
+[bt_navigator-14] [INFO] [1775588747.490226813] [bt_navigator]: 
+[bt_navigator-14] 	bt_navigator lifecycle node launched. 
+[bt_navigator-14] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-14] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-9] [INFO] [1775588747.492223255] [amcl]: 
+[amcl-9] 	amcl lifecycle node launched. 
+[amcl-9] 	Waiting on external lifecycle transitions to activate
+[amcl-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-9] [INFO] [1775588747.494581278] [amcl]: Creating
+[sllidar_node-4] [INFO] [1775588747.492522167] [sllidar_node]: SLLidar S/N: C394ED93C0EA98C9A5E698F2564A4669
+[sllidar_node-4] [INFO] [1775588747.492579468] [sllidar_node]: Firmware Ver: 1.29
+[sllidar_node-4] [INFO] [1775588747.492588858] [sllidar_node]: Hardware Rev: 7
+[sllidar_node-4] [INFO] [1775588747.494092190] [sllidar_node]: SLLidar health status : 0
+[sllidar_node-4] [INFO] [1775588747.494133816] [sllidar_node]: SLLidar health status : OK.
+[teleop_node-7] [INFO] [1775588747.499874086] [TeleopTwistJoy]: Teleop enable button 4.
+[teleop_node-7] [INFO] [1775588747.499931122] [TeleopTwistJoy]: Linear axis x on 4 at scale 0.500000.
+[teleop_node-7] [INFO] [1775588747.499942953] [TeleopTwistJoy]: Angular axis yaw on 3 at scale 0.500000.
+[bt_navigator-14] [INFO] [1775588747.490337939] [bt_navigator]: Creating
+[waypoint_follower-15] [INFO] [1775588747.502172234] [waypoint_follower]: 
+[waypoint_follower-15] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-15] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-15] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1775588747.510967156] [global_costmap.global_costmap]: 
+[planner_server-12] 	global_costmap lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1775588747.512666549] [global_costmap.global_costmap]: Creating Costmap
+[waypoint_follower-15] [INFO] [1775588747.514968205] [waypoint_follower]: Creating
+[lifecycle_manager-10] [INFO] [1775588747.518711500] [lifecycle_manager_localization]: Creating
+[map_server-8] [INFO] [1775588747.519814808] [map_server]: 
+[map_server-8] 	map_server lifecycle node launched. 
+[map_server-8] 	Waiting on external lifecycle transitions to activate
+[map_server-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-8] [INFO] [1775588747.519912108] [map_server]: Creating
+[behavior_server-13] [INFO] [1775588747.522248148] [behavior_server]: 
+[behavior_server-13] 	behavior_server lifecycle node launched. 
+[behavior_server-13] 	Waiting on external lifecycle transitions to activate
+[behavior_server-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-16] [INFO] [1775588747.525183741] [lifecycle_manager_navigation]: Creating
+[lifecycle_manager-16] [INFO] [1775588747.531826680] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[lifecycle_manager-10] [INFO] [1775588747.533555236] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[controller_server-11] [INFO] [1775588747.545555525] [controller_server]: 
+[controller_server-11] 	controller_server lifecycle node launched. 
+[controller_server-11] 	Waiting on external lifecycle transitions to activate
+[controller_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-11] [INFO] [1775588747.556913650] [controller_server]: Creating controller server
+[lifecycle_manager-10] [INFO] [1775588747.565935679] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-10] [INFO] [1775588747.566013407] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[map_server-8] [INFO] [1775588747.566255997] [map_server]: Configuring
+[map_server-8] [INFO] [1775588747.566345605] [map_io]: Loading yaml file: /home/willy/stretch_user/maps/testing_map.yaml
+[map_server-8] [INFO] [1775588747.566684409] [map_io]: resolution: 0.05
+[map_server-8] [INFO] [1775588747.566696497] [map_io]: origin[0]: -11.5
+[map_server-8] [INFO] [1775588747.566702829] [map_io]: origin[1]: -1.71
+[map_server-8] [INFO] [1775588747.566708445] [map_io]: origin[2]: 0
+[map_server-8] [INFO] [1775588747.566713978] [map_io]: free_thresh: 0.25
+[map_server-8] [INFO] [1775588747.566719705] [map_io]: occupied_thresh: 0.65
+[map_server-8] [INFO] [1775588747.566725326] [map_io]: mode: trinary
+[map_server-8] [INFO] [1775588747.566732665] [map_io]: negate: 0
+[map_server-8] [INFO] [1775588747.566956036] [map_io]: Loading image_file: /home/willy/stretch_user/maps/testing_map.pgm
+[lifecycle_manager-16] [INFO] [1775588747.578942002] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-16] [INFO] [1775588747.579007366] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[map_server-8] [INFO] [1775588747.582159293] [map_io]: Read map /home/willy/stretch_user/maps/testing_map.pgm: 416 X 249 map @ 0.05 m/cell
+[controller_server-11] [INFO] [1775588747.584293566] [local_costmap.local_costmap]: 
+[controller_server-11] 	local_costmap lifecycle node launched. 
+[controller_server-11] 	Waiting on external lifecycle transitions to activate
+[controller_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-11] [INFO] [1775588747.585823763] [local_costmap.local_costmap]: Creating Costmap
+[lifecycle_manager-10] [INFO] [1775588747.586817033] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[amcl-9] [INFO] [1775588747.587087577] [amcl]: Configuring
+[amcl-9] [INFO] [1775588747.587198451] [amcl]: initTransforms
+[controller_server-11] [INFO] [1775588747.590252035] [controller_server]: Configuring controller interface
+[controller_server-11] [INFO] [1775588747.590479286] [controller_server]: getting goal checker plugins..
+[controller_server-11] [INFO] [1775588747.590637560] [controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-11] [INFO] [1775588747.590695864] [local_costmap.local_costmap]: Configuring
+[controller_server-11] [INFO] [1775588747.595282429] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[amcl-9] [INFO] [1775588747.596801786] [amcl]: initPubSub
+[controller_server-11] [INFO] [1775588747.598771445] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[amcl-9] [INFO] [1775588747.600579233] [amcl]: Subscribed to map topic.
+[controller_server-11] [INFO] [1775588747.602330549] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-11] [INFO] [1775588747.602412724] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[controller_server-11] [INFO] [1775588747.603530416] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[lifecycle_manager-10] [INFO] [1775588747.606597063] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[map_server-8] [INFO] [1775588747.606748037] [map_server]: Activating
+[map_server-8] [INFO] [1775588747.607006168] [map_server]: Creating bond (map_server) to lifecycle manager.
+[controller_server-11] [INFO] [1775588747.608701913] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-11] [INFO] [1775588747.608763529] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-11] [INFO] [1775588747.609528777] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-11] [INFO] [1775588747.617144959] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-11] [INFO] [1775588747.618241911] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-11] [INFO] [1775588747.618729718] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-11] [INFO] [1775588747.621598119] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-11] [INFO] [1775588747.622856238] [controller_server]: Setting transform_tolerance to 0.200000
+[controller_server-11] [INFO] [1775588747.629633351] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[controller_server-11] [INFO] [1775588747.630277121] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775588747.630491819] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-11] [INFO] [1775588747.630952250] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775588747.631057024] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[controller_server-11] [INFO] [1775588747.631234587] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775588747.631330622] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-11] [INFO] [1775588747.631657101] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775588747.631770837] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-11] [INFO] [1775588747.632048065] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775588747.632155602] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-11] [INFO] [1775588747.632331889] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775588747.632453104] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-11] [INFO] [1775588747.632640419] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775588747.632744293] [controller_server]: Using critic "PreferForward" (dwb_critics::PreferForwardCritic)
+[controller_server-11] [INFO] [1775588747.633182421] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775588747.633216806] [controller_server]: Controller Server has FollowPath  controllers available.
+[lifecycle_manager-16] [INFO] [1775588747.637364379] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-12] [INFO] [1775588747.637664988] [planner_server]: Configuring
+[planner_server-12] [INFO] [1775588747.637763559] [global_costmap.global_costmap]: Configuring
+[planner_server-12] [INFO] [1775588747.641848752] [global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-12] [INFO] [1775588747.645270978] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[planner_server-12] [INFO] [1775588747.645943014] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-12] [INFO] [1775588747.645989806] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-12] [INFO] [1775588747.646672752] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-12] [INFO] [1775588747.649036638] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-12] [INFO] [1775588747.649107373] [global_costmap.global_costmap]: Using plugin "voxel_layer"
+[planner_server-12] [INFO] [1775588747.649917819] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-12] [INFO] [1775588747.653718571] [global_costmap.global_costmap]: Initialized plugin "voxel_layer"
+[planner_server-12] [INFO] [1775588747.653777147] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[amcl-9] [INFO] [1775588747.653835841] [amcl]: Received a 416 X 249 map @ 0.050 m/pix
+[planner_server-12] [INFO] [1775588747.654964641] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-12] [INFO] [1775588747.660311773] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 416 X 249 at 0.050000 m/pix
+[planner_server-12] [INFO] [1775588747.660921076] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[planner_server-12] [INFO] [1775588747.660974064] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-12] [INFO] [1775588747.661722612] [planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-16] [INFO] [1775588747.671096324] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-13] [INFO] [1775588747.671372804] [behavior_server]: Configuring
+[behavior_server-13] [INFO] [1775588747.681229249] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-13] [INFO] [1775588747.682305548] [behavior_server]: Configuring spin
+[behavior_server-13] [INFO] [1775588747.692843475] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-13] [INFO] [1775588747.693861363] [behavior_server]: Configuring backup
+[sllidar_node-4] [INFO] [1775588747.698063521] [sllidar_node]: current scan mode: Boost, sample rate: 8 Khz, max_distance: 12.0 m, scan frequency:10.0 Hz, 
+[behavior_server-13] [INFO] [1775588747.703875091] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[behavior_server-13] [INFO] [1775588747.704884496] [behavior_server]: Configuring drive_on_heading
+[lifecycle_manager-10] [INFO] [1775588747.711670446] [lifecycle_manager_localization]: Server map_server connected with bond.
+[lifecycle_manager-10] [INFO] [1775588747.711724146] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+[amcl-9] [INFO] [1775588747.711937109] [amcl]: Activating
+[amcl-9] [INFO] [1775588747.711975188] [amcl]: Creating bond (amcl) to lifecycle manager.
+[behavior_server-13] [INFO] [1775588747.712559737] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
+[behavior_server-13] [INFO] [1775588747.715825845] [behavior_server]: Configuring assisted_teleop
+[behavior_server-13] [INFO] [1775588747.724887459] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-13] [INFO] [1775588747.726432399] [behavior_server]: Configuring wait
+[lifecycle_manager-16] [INFO] [1775588747.734503379] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[bt_navigator-14] [INFO] [1775588747.734800989] [bt_navigator]: Configuring
+[lifecycle_manager-16] [INFO] [1775588747.811420941] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[waypoint_follower-15] [INFO] [1775588747.812427567] [waypoint_follower]: Configuring
+[lifecycle_manager-10] [INFO] [1775588747.819002996] [lifecycle_manager_localization]: Server amcl connected with bond.
+[lifecycle_manager-10] [INFO] [1775588747.819064007] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-10] [INFO] [1775588747.819077758] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[waypoint_follower-15] [INFO] [1775588747.845202018] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[lifecycle_manager-16] [INFO] [1775588747.849199603] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[controller_server-11] [INFO] [1775588747.849570009] [controller_server]: Activating
+[controller_server-11] [INFO] [1775588747.849626988] [local_costmap.local_costmap]: Activating
+[controller_server-11] [INFO] [1775588747.849649833] [local_costmap.local_costmap]: Checking transform
+[controller_server-11] [INFO] [1775588747.849741732] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1775588748.183501347] [object_grasper]: object_grasper started
+[joy_node-6] [INFO] [1775588748.220966233] [joy_node]: Opened joystick: Controller 1.05.  deadzone: 0.050000
+[controller_server-11] [INFO] [1775588748.349826400] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[scan_to_scan_filter_chain-5] [WARN] [1775588748.469042400] [laser_filter]: diagnostic_updater: No HW_ID was set. This is probably a bug. Please report it. For devices that do not have a HW_ID, set this value to 'none'. This warning only occurs once all diagnostics are OK. It is okay to wait until the device is open before calling setHardwareID.
+[stretch_driver-3] [0m[INFO] [1775588748.661296345] [stretch_driver]: For use with S T R E T C H (TM) RESEARCH EDITION from Hello Robot Inc.[0m
+[stretch_driver-3] [0m[INFO] [1775588748.661558183] [stretch_driver]: stretch_driver started[0m
+[controller_server-11] [INFO] [1775588748.849917495] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775588749.349920569] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[stretch_driver-3] Key mapped to End-Of-Arm Tool: tool_stretch_dex_wrist
+[stretch_driver-3] Unable to load URDF: /home/willy/.local/lib/python3.10/site-packages/stretch_urdf/RE2V0/stretch_description_RE2V0_tool_stretch_dex_wrist.urdf. Disabling collision system.
+[controller_server-11] [INFO] [1775588749.849820526] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775588749.861894852] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-17] [INFO] [1775588749.861972453] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[rviz2-17] [INFO] [1775588750.152316230] [rviz2]: Stereo is NOT SUPPORTED
+[amcl-9] [INFO] [1775588750.202066339] [amcl]: Message Filter dropping message: frame 'laser' at time 1775588747.698 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-9] [WARN] [1775588750.226356516] [amcl]: New subscription discovered on topic '/particle_cloud', requesting incompatible QoS. No messages will be sent to it. Last incompatible policy: RELIABILITY_QOS_POLICY
+[controller_server-11] [INFO] [1775588750.349830625] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[stretch_driver-3] [0m[INFO] [1775588750.416398632] [stretch_driver]: broadcast_odom_tf = True[0m
+[stretch_driver-3] [0m[INFO] [1775588750.451372874] [stretch_driver]: rate = 30.0 Hz[0m
+[stretch_driver-3] [0m[INFO] [1775588750.457546065] [stretch_driver]: twist timeout = 0.5 s[0m
+[stretch_driver-3] [0m[INFO] [1775588750.459735280] [stretch_driver]: base_frame_id = base_link[0m
+[stretch_driver-3] [0m[INFO] [1775588750.460151131] [stretch_driver]: odom_frame_id = odom[0m
+[rviz2-17] [INFO] [1775588750.504913292] [rviz2]: Trying to create a map of size 416 x 249 using 1 swatches
+[rviz2-17] [ERROR] [1775588750.521279589] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[rviz2-17] active samplers with a different type refer to the same texture image unit
+[stretch_driver-3] [0m[INFO] [1775588750.547513131] [stretch_driver]: Changed to mode = navigation[0m
+[amcl-9] [INFO] [1775588750.737606177] [amcl]: createLaserObject
+[INFO] [1775588750.758384925] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /home_the_robot service.
+[INFO] [1775588750.760120947] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /stow_the_robot service.
+[INFO] [1775588750.761865289] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /stop_the_robot service.
+[INFO] [1775588750.763701769] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_trajectory_mode service.
+[INFO] [1775588750.764005292] [object_grasper]: Node object_grasper connected to /home_the_robot service.
+[INFO] [1775588750.765589204] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_position_mode service.
+[INFO] [1775588750.765785894] [object_grasper]: Node object_grasper connected to /stow_the_robot service.
+[amcl-9] [WARN] [1775588750.765918853] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[INFO] [1775588750.767040337] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_navigation_mode service.
+[INFO] [1775588750.767414886] [object_grasper]: Node object_grasper connected to /stop_the_robot service.
+[INFO] [1775588750.768260598] [aruco_base_frame_estimator]: Moving head camera to detection orientation...
+[INFO] [1775588750.768438627] [object_grasper]: Node object_grasper connected to /switch_to_trajectory_mode service.
+[WARN] [1775588750.768968912] [aruco_base_frame_estimator]: Currently in navigation mode. Recommend switching either to position or trajectory mode
+[WARN] [1775588750.769579844] [aruco_base_frame_estimator]: Commanding joint trajectory server in position mode
+[INFO] [1775588750.770277708] [object_grasper]: Node object_grasper connected to /switch_to_position_mode service.
+[INFO] [1775588750.771584612] [object_grasper]: Node object_grasper connected to /switch_to_navigation_mode service.
+[stretch_driver-3] [0m[INFO] [1775588750.776448660] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775588750.784316492] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_head_pan', 'joint_head_tilt'][0m
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775588750.798311927] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775588750.800801246] [aruco_base_frame_estimator]: Head camera at detection pose — starting ArUco detection.
+[INFO] [1775588750.805239425] [aruco_base_frame_estimator]: Waiting for camera TF (base_link -> camera_color_optical_frame)...
+[INFO] [1775588750.826335043] [aruco_base_frame_estimator]: Camera pose acquired:
+[INFO] [1775588750.826681325] [aruco_base_frame_estimator]:   Position  : X=+0.0062  Y=-0.0517  Z=+1.2870  (m)
+[INFO] [1775588750.826902856] [aruco_base_frame_estimator]:   RPY (deg) : R=-179.03  P=+59.78  Y=+89.23
+[INFO] [1775588750.830225748] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775588750.830689800] [aruco_base_frame_estimator]: ArUco Base Frame Estimator Started
+[INFO] [1775588750.831104243] [aruco_base_frame_estimator]: Target Marker ID: 202
+[INFO] [1775588750.831501707] [aruco_base_frame_estimator]: Marker size: 2.8 cm
+[INFO] [1775588750.831891439] [aruco_base_frame_estimator]: Marker offset (cam frame): X=0.0  Y=0.0  Z=0.0
+[INFO] [1775588750.832187069] [aruco_base_frame_estimator]: Publishing target on: /aruco/target_base_link
+[INFO] [1775588750.832540903] [aruco_base_frame_estimator]: ============================================================
+[controller_server-11] [INFO] [1775588750.849873161] [local_costmap.local_costmap]: start
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_mast is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_arm_l4 is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_wrist_yaw_bottom is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_gripper_s3_body is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_grasp_center is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link Base link (index: 0) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_mast (index: 2) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_arm_l4 (index: 4) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_wrist_yaw_bottom (index: 10) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_gripper_s3_body (index: 13) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_grasp_center (index: 14) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+[INFO] [1775588750.987066896] [object_grasper]: ============================================================
+[INFO] [1775588750.987331909] [object_grasper]: ObjectGrasper ready — waiting for ArUco detections
+[INFO] [1775588750.987538748] [object_grasper]: Listening on: /aruco/target_base_link
+[INFO] [1775588750.987727990] [object_grasper]: Call service: ros2 service call /grasp_object std_srvs/srv/Trigger {}
+[INFO] [1775588750.987908447] [object_grasper]: ============================================================
+[controller_server-11] [INFO] [1775588751.051142121] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1775588751.154160640] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[lifecycle_manager-16] [INFO] [1775588751.154209887] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[planner_server-12] [INFO] [1775588751.154481941] [planner_server]: Activating
+[planner_server-12] [INFO] [1775588751.154534791] [global_costmap.global_costmap]: Activating
+[planner_server-12] [INFO] [1775588751.154555554] [global_costmap.global_costmap]: Checking transform
+[planner_server-12] [INFO] [1775588751.154588184] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775588751.654646683] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775588752.115014171] [rviz]: Message Filter dropping message: frame 'laser' at time 1775588750.184 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775588752.154647237] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775588752.654640871] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [WARN] [1775588752.825132345] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[rviz2-17] [INFO] [1775588753.096671322] [rviz]: Message Filter dropping message: frame 'odom' at time 1775588751.049 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775588753.154645899] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[realsense2_camera_node-1] [0m[INFO] [1775588753.302361080] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775588753.302495999] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775588753.302519314] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775588753.302744626] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775588753.302757187] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1775588753.302835773] [camera]: getParameters...[0m
+[planner_server-12] [INFO] [1775588753.654645590] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[realsense2_camera_node-1] [0m[INFO] [1775588753.710394705] [camera]: JSON file is loaded! (/home/willy/ament_ws/install/stretch_core/share/stretch_core/config/HighAccuracyPreset.json)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775588753.710574354] [camera]: Device Name: Intel RealSense D435I[0m
+[realsense2_camera_node-1] [0m[INFO] [1775588753.710632895] [camera]: Device Serial No: 239722071445[0m
+[realsense2_camera_node-1] [0m[INFO] [1775588753.710677270] [camera]: Device physical port: /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0[0m
+[realsense2_camera_node-1] [0m[INFO] [1775588753.710702432] [camera]: Device FW version: 5.16.0.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775588753.710726071] [camera]: Device Product ID: 0x0B3A[0m
+[realsense2_camera_node-1] [0m[INFO] [1775588753.710748135] [camera]: Sync Mode: On[0m
+[realsense2_camera_node-1] [33m[WARN] [1775588753.854840109] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775588753.855243747] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775588753.865429235] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775588753.868099920] [camera]: Given value, 63 is invalid. Set ROS param back to: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775588753.887294373] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775588753.887469641] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775588753.887515386] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775588753.910031384] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775588753.912550771] [camera]: Open profile: stream_type: Depth(0), Format: Z16, Width: 1280, Height: 720, FPS: 15[0m
+[realsense2_camera_node-1] [0m[INFO] [1775588753.922180850] [camera]: Starting Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775588753.925086862] [camera]: Open profile: stream_type: Color(0), Format: RGB8, Width: 1280, Height: 720, FPS: 15[0m
+[realsense2_camera_node-1] [0m[INFO] [1775588753.947150179] [camera]: Starting Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775588753.950187185] [camera]: Open profile: stream_type: Accel(0)Format: MOTION_XYZ32F, FPS: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775588753.950249211] [camera]: Open profile: stream_type: Gyro(0)Format: MOTION_XYZ32F, FPS: 200[0m
+[realsense2_camera_node-1] [0m[INFO] [1775588753.952678982] [camera]: RealSense Node Is Up![0m
+[planner_server-12] [INFO] [1775588754.154643927] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1775588754.606497916] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775588754.jpg
+[planner_server-12] [INFO] [1775588754.654643652] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775588754.765946381] [rviz]: Message Filter dropping message: frame 'laser' at time 1775588753.107 for reason 'discarding message because the queue is full'
+Camera ready!
+=== All nodes ready. Writing flag: /tmp/stretch_nodes_ready ===
+[realsense2_camera_node-1] [33m[WARN] [1775588754.910817908] [camera]: XXX Hardware Notification:Motion Module failure,1.77559e+12,Error,Hardware Error[0m
+[realsense2_camera_node-1] [33m[WARN] [1775588754.910989630] [camera]: Hardware Notification:Motion Module failure,1.77559e+12,Error,Hardware Error[0m
+[amcl-9] [WARN] [1775588754.925056197] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-12] [INFO] [1775588755.154643956] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775588755.654642791] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775588755.680506182] [rviz]: Message Filter dropping message: frame 'odom' at time 1775588753.449 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775588756.154646636] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775588756.654708978] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [INFO] [1775588756.962310911] [amcl]: initialPoseReceived
+[amcl-9] [WARN] [1775588756.962645322] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1775588756.962379 but the latest data is at time 1775588756.949806, when looking up transform from frame [base_footprint] to frame [odom])
+[amcl-9] [INFO] [1775588756.962679581] [amcl]: Setting pose (1775588756.962679): 0.000 0.000 0.000
+[planner_server-12] [INFO] [1775588757.154712821] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 1775588757.148814 but the earliest data is at time 1775588757.877953, when looking up transform from frame [base_link] to frame [map]
+[rviz2-17] [INFO] [1775588757.170858183] [rviz]: Message Filter dropping message: frame 'odom' at time 1775588751.051 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775588757.426981506] [rviz]: Message Filter dropping message: frame 'laser' at time 1775588755.760 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775588757.654657514] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 1775588757.648288 but the earliest data is at time 1775588757.877953, when looking up transform from frame [base_link] to frame [map]
+[INFO] [1775588757.785434146] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775588757.jpg
+[stretch_driver-3] [0m[INFO] [1775588757.796702475] [stretch_driver]: Changed to mode = navigation[0m
+[planner_server-12] [INFO] [1775588758.154753981] [global_costmap.global_costmap]: start
+[rviz2-17] [INFO] [1775588758.182243849] [rviz]: Message Filter dropping message: frame 'odom' at time 1775588756.049 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775588758.421511986] [rviz2]: Trying to create a map of size 60 x 60 using 1 swatches
+[planner_server-12] [INFO] [1775588759.205972980] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[planner_server-12] [INFO] [1775588759.206540811] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[rviz2-17] [INFO] [1775588759.279841912] [rviz2]: Trying to create a map of size 416 x 249 using 1 swatches
+[lifecycle_manager-16] [INFO] [1775588759.309934728] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[lifecycle_manager-16] [INFO] [1775588759.309992791] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[behavior_server-13] [INFO] [1775588759.310352523] [behavior_server]: Activating
+[behavior_server-13] [INFO] [1775588759.310389718] [behavior_server]: Activating spin
+[behavior_server-13] [INFO] [1775588759.310404974] [behavior_server]: Activating backup
+[behavior_server-13] [INFO] [1775588759.310416849] [behavior_server]: Activating drive_on_heading
+[behavior_server-13] [INFO] [1775588759.310428458] [behavior_server]: Activating assisted_teleop
+[behavior_server-13] [INFO] [1775588759.310440467] [behavior_server]: Activating wait
+[behavior_server-13] [INFO] [1775588759.310457496] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1775588759.414189655] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[lifecycle_manager-16] [INFO] [1775588759.414252195] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[bt_navigator-14] [INFO] [1775588759.414634585] [bt_navigator]: Activating
+[bt_navigator-14] [INFO] [1775588759.469906760] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1775588759.574855780] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[lifecycle_manager-16] [INFO] [1775588759.574927661] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[waypoint_follower-15] [INFO] [1775588759.575306765] [waypoint_follower]: Activating
+[waypoint_follower-15] [INFO] [1775588759.575384473] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1775588759.678790671] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[lifecycle_manager-16] [INFO] [1775588759.678841290] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-16] [INFO] [1775588759.678858266] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[INFO] [1775588760.823597838] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775588760.jpg
+[stretch_driver-3] [0m[INFO] [1775588761.211364669] [stretch_driver]: Changed to mode = position[0m
+[rviz2-17] [INFO] [1775588762.032185044] [rviz]: Message Filter dropping message: frame 'odom' at time 1775588752.851 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[stretch_driver-3] [0m[INFO] [1775588763.291686497] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775588763.297161009] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_lift', 'joint_arm', 'joint_wrist_yaw', 'joint_wrist_pitch', 'joint_wrist_roll', 'joint_gripper_finger_left'][0m
+[INFO] [1775588763.830593979] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775588763.jpg
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775588764.747118232] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[rviz2-17] [INFO] [1775588765.095839147] [rviz]: Message Filter dropping message: frame 'odom' at time 1775588755.851 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[stretch_driver-3] [0m[INFO] [1775588765.361732717] [stretch_driver]: Changed to mode = navigation[0m
+[rviz2-17] [INFO] [1775588765.387426533] [rviz]: Message Filter dropping message: frame 'odom' at time 1775588756.220 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[stretch_driver-3] [0m[INFO] [1775588766.648875576] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1775588766.895129042] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775588766.jpg
+[INFO] [1775588769.933974928] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775588769.jpg
+[bt_navigator-14] [INFO] [1775588772.019638796] [bt_navigator]: Begin navigating from current location (-0.03, 0.04) to (0.57, 1.66)
+[controller_server-11] [INFO] [1775588772.040482825] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-11] [WARN] [1775588772.040581913] [controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+[INFO] [1775588772.957410591] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775588772.jpg
+[controller_server-11] [INFO] [1775588773.090814072] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775588774.140863876] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775588775.140845115] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[INFO] [1775588776.089656927] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775588776.jpg
+[controller_server-11] [INFO] [1775588776.190853618] [controller_server]: Passing new path to controller.
+[controller_server-11] [ERROR] [1775588776.494902468] [DWBLocalPlanner]: No valid trajectories out of 440! 
+[controller_server-11] [ERROR] [1775588776.494968669] [DWBLocalPlanner]: 1.00: BaseObstacle/Trajectory Hits Obstacle.
+[controller_server-11] [WARN] [1775588776.495129740] [controller_server]: No valid trajectories out of 440! 
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775588777.190868766] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775588778.240891648] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[INFO] [1775588779.096873204] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775588779.jpg
+[controller_server-11] [INFO] [1775588779.290849054] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775588780.290864258] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775588781.340872912] [controller_server]: Passing new path to controller.
+[INFO] [1775588782.153474747] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775588782.jpg
+[controller_server-11] [INFO] [1775588782.340830820] [controller_server]: Passing new path to controller.
+/home/willy/tf.py:207: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  cx, cy, cz = float(tvec[0]), float(tvec[1]), float(tvec[2])
+/home/willy/tf.py:139: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  t.transform.translation.x = float(tvec_offset[0])
+/home/willy/tf.py:140: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  t.transform.translation.y = float(tvec_offset[1])
+/home/willy/tf.py:141: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  t.transform.translation.z = float(tvec_offset[2])
+[controller_server-11] [INFO] [1775588783.392826016] [controller_server]: Passing new path to controller.
+[WARN] [1775588783.848872125] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+/home/willy/tf.py:215: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  bx, by, bz = self.transform_camera_to_base(float(tvec[0]), float(tvec[1]), float(tvec[2]))
+[INFO] [1775588783.851601162] [object_grasper]: [ArUco] target updated → X=-0.348  Y=-1.067  Z=+0.932
+[controller_server-11] [INFO] [1775588784.440856732] [controller_server]: Passing new path to controller.
+[WARN] [1775588784.888332864] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[INFO] [1775588784.889559997] [object_grasper]: [ArUco] target updated → X=-0.346  Y=-1.090  Z=+0.924
+[controller_server-11] [INFO] [1775588785.440821814] [controller_server]: Passing new path to controller.
+[WARN] [1775588786.104841017] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[INFO] [1775588786.106542397] [object_grasper]: [ArUco] target updated → X=-0.319  Y=-1.081  Z=+0.928
+[INFO] [1775588786.111386565] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775588786.jpg
+[controller_server-11] [INFO] [1775588786.490814093] [controller_server]: Passing new path to controller.
+[WARN] [1775588787.143227752] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[INFO] [1775588787.151857306] [object_grasper]: [ArUco] target updated → X=-0.309  Y=-1.067  Z=+0.934
+[controller_server-11] [INFO] [1775588787.490812592] [controller_server]: Passing new path to controller.
+[WARN] [1775588788.186153793] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[INFO] [1775588788.187460731] [object_grasper]: [ArUco] target updated → X=-0.307  Y=-1.084  Z=+0.929
+[controller_server-11] [INFO] [1775588788.540838524] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775588788.846428377] [controller_server]: Reached the goal!
+[bt_navigator-14] [INFO] [1775588788.880693094] [bt_navigator]: Goal succeeded
+[WARN] [1775588789.216744588] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+[INFO] [1775588789.218921536] [object_grasper]: [ArUco] target updated → X=-0.313  Y=-1.085  Z=+0.929
+[INFO] [1775588789.222555342] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775588789.jpg
+[stretch_driver-3] [0m[INFO] [1775588790.139564645] [stretch_driver]: Changed to mode = position[0m
+[INFO] [1775588792.233043201] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775588792.jpg
+[INFO] [1775588792.919156500] [object_grasper]: Using LIVE target: X=-0.313  Y=-1.085  Z=+0.929
+[INFO] [1775588792.919757242] [object_grasper]: Solving IK for grasp target: [-0.313, -1.085, 0.929]
+[INFO] [1775588792.920346660] [object_grasper]: IK attempt 1/150
+[INFO] [1775588792.996013507] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588792.996350513] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588792.996616633] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588792.996821119] [object_grasper]: IK attempt 2/150
+[INFO] [1775588793.058797610] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588793.059081389] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588793.059315019] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588793.059527659] [object_grasper]: IK attempt 3/150
+[INFO] [1775588793.096630516] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588793.096893905] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588793.097120710] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588793.097358922] [object_grasper]: IK attempt 4/150
+[INFO] [1775588793.138213710] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588793.138562782] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588793.138803981] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588793.138999236] [object_grasper]: IK attempt 5/150
+[INFO] [1775588793.198646975] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588793.198965562] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588793.199212837] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588793.199412663] [object_grasper]: IK attempt 6/150
+[INFO] [1775588793.255010982] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588793.255419968] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588793.255691173] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588793.255926666] [object_grasper]: IK attempt 7/150
+[INFO] [1775588793.332759025] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588793.333083366] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588793.333337747] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588793.333554091] [object_grasper]: IK attempt 8/150
+[INFO] [1775588793.607320580] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588793.607651751] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588793.607889072] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588793.608082416] [object_grasper]: IK attempt 9/150
+[INFO] [1775588793.670238653] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588793.670558343] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588793.670803878] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588793.670986313] [object_grasper]: IK attempt 10/150
+[INFO] [1775588793.910802327] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588793.913006435] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588793.913365971] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588793.913624196] [object_grasper]: IK attempt 11/150
+[INFO] [1775588793.966430395] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588793.966836841] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588793.967057619] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588793.967228478] [object_grasper]: IK attempt 12/150
+[INFO] [1775588794.005560086] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588794.006308224] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588794.006672104] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588794.006954130] [object_grasper]: IK attempt 13/150
+[INFO] [1775588794.067118289] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588794.067466659] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588794.067790392] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588794.068022248] [object_grasper]: IK attempt 14/150
+[INFO] [1775588794.122813041] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588794.123100920] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588794.123336372] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588794.123546160] [object_grasper]: IK attempt 15/150
+[INFO] [1775588794.388259970] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588794.388626237] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588794.388998867] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588794.389195563] [object_grasper]: IK attempt 16/150
+[INFO] [1775588794.448039312] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588794.448607248] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588794.451779581] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588794.452308824] [object_grasper]: IK attempt 17/150
+[INFO] [1775588794.486569239] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588794.486855033] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588794.487106990] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588794.487322945] [object_grasper]: IK attempt 18/150
+[INFO] [1775588794.665496908] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588794.665904449] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588794.666471702] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588794.666991187] [object_grasper]: IK attempt 19/150
+[INFO] [1775588794.725122538] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588794.725496366] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588794.725761688] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588794.725973908] [object_grasper]: IK attempt 20/150
+[INFO] [1775588794.794428634] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588794.794986206] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588794.795844704] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588794.796606453] [object_grasper]: IK attempt 21/150
+[INFO] [1775588794.862925744] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588794.863354469] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588794.863628581] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588794.863842736] [object_grasper]: IK attempt 22/150
+[INFO] [1775588794.930015217] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588794.930717194] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588794.931388051] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588794.931970415] [object_grasper]: IK attempt 23/150
+[INFO] [1775588795.141359765] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588795.141713328] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588795.141978527] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588795.142214968] [object_grasper]: IK attempt 24/150
+[INFO] [1775588795.202220136] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588795.202505409] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588795.202762797] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588795.202947844] [object_grasper]: IK attempt 25/150
+[INFO] [1775588795.247934162] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588795.248253689] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588795.248522503] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588795.248771254] [object_grasper]: IK attempt 26/150
+[INFO] [1775588795.249754303] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775588795.jpg
+[INFO] [1775588795.325096656] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588795.325404233] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588795.325657895] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588795.325864521] [object_grasper]: IK attempt 27/150
+[INFO] [1775588795.395361623] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588795.395678738] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588795.395945344] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588795.396145103] [object_grasper]: IK attempt 28/150
+[INFO] [1775588795.448839995] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588795.451416996] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588795.451968877] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588795.452205529] [object_grasper]: IK attempt 29/150
+[INFO] [1775588795.494815468] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588795.495135777] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588795.495370672] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588795.495582628] [object_grasper]: IK attempt 30/150
+[INFO] [1775588795.540412363] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588795.540719388] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588795.540956684] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588795.541143629] [object_grasper]: IK attempt 31/150
+[INFO] [1775588795.765142681] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588795.765443189] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588795.765695573] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588795.765887938] [object_grasper]: IK attempt 32/150
+[INFO] [1775588795.800665141] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588795.801012049] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588795.801270381] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588795.801484485] [object_grasper]: IK attempt 33/150
+[INFO] [1775588795.861304212] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588795.861709259] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588795.862159622] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588795.862510990] [object_grasper]: IK attempt 34/150
+[INFO] [1775588795.904858884] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588795.905159016] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588795.905536034] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588795.905864865] [object_grasper]: IK attempt 35/150
+[INFO] [1775588795.970726888] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588795.971011490] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588795.971279282] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588795.971512415] [object_grasper]: IK attempt 36/150
+[INFO] [1775588796.046721760] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588796.047198191] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588796.047504041] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588796.047711917] [object_grasper]: IK attempt 37/150
+[INFO] [1775588796.271507710] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588796.271803331] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588796.272026080] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588796.272209007] [object_grasper]: IK attempt 38/150
+[INFO] [1775588796.335113579] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588796.335576952] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588796.335850313] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588796.336051027] [object_grasper]: IK attempt 39/150
+[INFO] [1775588796.387455492] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588796.387757763] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588796.388014648] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588796.388216191] [object_grasper]: IK attempt 40/150
+[INFO] [1775588796.436451151] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588796.436933858] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588796.437432557] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588796.437881140] [object_grasper]: IK attempt 41/150
+[INFO] [1775588796.523701315] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588796.524021773] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588796.524292184] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588796.524541798] [object_grasper]: IK attempt 42/150
+[INFO] [1775588796.560393014] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588796.560688901] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588796.560937203] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588796.561141457] [object_grasper]: IK attempt 43/150
+[INFO] [1775588796.601412537] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588796.601830264] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588796.602073471] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588796.602264487] [object_grasper]: IK attempt 44/150
+[INFO] [1775588796.662199288] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588796.662522312] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588796.662783757] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588796.662990988] [object_grasper]: IK attempt 45/150
+[INFO] [1775588796.727511207] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588796.727809952] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588796.728052004] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588796.728238568] [object_grasper]: IK attempt 46/150
+[INFO] [1775588796.945669529] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588796.945962130] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588796.946179593] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588796.946378668] [object_grasper]: IK attempt 47/150
+[INFO] [1775588797.002154266] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588797.002448533] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588797.002678247] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588797.002859878] [object_grasper]: IK attempt 48/150
+[INFO] [1775588797.245497838] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588797.245830291] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588797.246056686] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588797.246243942] [object_grasper]: IK attempt 49/150
+[INFO] [1775588797.279877046] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588797.280177774] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588797.280412565] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588797.280622683] [object_grasper]: IK attempt 50/150
+[INFO] [1775588797.314018112] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588797.314462731] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588797.314742088] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588797.315030950] [object_grasper]: IK attempt 51/150
+[INFO] [1775588797.375229129] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588797.379080580] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588797.379620380] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588797.379972233] [object_grasper]: IK attempt 52/150
+[INFO] [1775588797.567697733] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588797.568091868] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588797.568363802] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588797.568570400] [object_grasper]: IK attempt 53/150
+[INFO] [1775588797.645612120] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588797.645912112] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588797.646174953] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588797.646728597] [object_grasper]: IK attempt 54/150
+[INFO] [1775588797.700789836] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588797.701076113] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588797.701351037] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588797.701573729] [object_grasper]: IK attempt 55/150
+[INFO] [1775588797.779414560] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588797.779772466] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588797.780047010] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588797.780255617] [object_grasper]: IK attempt 56/150
+[INFO] [1775588797.807924027] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588797.808471515] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588797.808950162] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588797.809418526] [object_grasper]: IK attempt 57/150
+[INFO] [1775588797.865809705] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588797.866090191] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588797.866325138] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588797.866526705] [object_grasper]: IK attempt 58/150
+[INFO] [1775588797.933936368] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588797.934276237] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588797.934529385] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588797.934730317] [object_grasper]: IK attempt 59/150
+[INFO] [1775588797.986334153] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588797.986697148] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588797.986965119] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588797.987205890] [object_grasper]: IK attempt 60/150
+[INFO] [1775588798.182290636] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588798.183148494] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588798.186724473] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588798.187163744] [object_grasper]: IK attempt 61/150
+[INFO] [1775588798.247399024] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775588798.jpg
+[INFO] [1775588798.408461397] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588798.410712850] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588798.412773945] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588798.413057663] [object_grasper]: IK attempt 62/150
+[INFO] [1775588798.455814405] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588798.456131658] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588798.456386996] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588798.456588602] [object_grasper]: IK attempt 63/150
+[INFO] [1775588798.515718029] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588798.518300953] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588798.518641821] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588798.518872959] [object_grasper]: IK attempt 64/150
+[INFO] [1775588798.723420327] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588798.723793549] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588798.724090013] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588798.724324601] [object_grasper]: IK attempt 65/150
+[INFO] [1775588798.790588833] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588798.791152909] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588798.791681202] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588798.792137155] [object_grasper]: IK attempt 66/150
+[INFO] [1775588798.859790483] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588798.860068529] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588798.860283626] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588798.860479185] [object_grasper]: IK attempt 67/150
+[INFO] [1775588798.930863099] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588798.931182790] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588798.931445023] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588798.931671542] [object_grasper]: IK attempt 68/150
+[INFO] [1775588799.186763697] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588799.187096493] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588799.187362261] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588799.187573549] [object_grasper]: IK attempt 69/150
+[INFO] [1775588799.447168893] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588799.447503144] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588799.447780247] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588799.447976248] [object_grasper]: IK attempt 70/150
+[INFO] [1775588799.725760191] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588799.726135775] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588799.726409591] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588799.726627404] [object_grasper]: IK attempt 71/150
+[INFO] [1775588799.787173031] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588799.787711513] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588799.788227529] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588799.788684712] [object_grasper]: IK attempt 72/150
+[INFO] [1775588799.855130693] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588799.855472449] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588799.855739602] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588799.855949393] [object_grasper]: IK attempt 73/150
+[INFO] [1775588800.086995649] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588800.087292732] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588800.087554731] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588800.087772299] [object_grasper]: IK attempt 74/150
+[INFO] [1775588800.137419413] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588800.137727925] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588800.137980293] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588800.138179892] [object_grasper]: IK attempt 75/150
+[INFO] [1775588800.209165723] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588800.213189769] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588800.213828692] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588800.214195165] [object_grasper]: IK attempt 76/150
+[INFO] [1775588800.268316662] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588800.268706858] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588800.268962522] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588800.269278541] [object_grasper]: IK attempt 77/150
+[INFO] [1775588800.448471431] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588800.448797331] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588800.452463604] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588800.453003866] [object_grasper]: IK attempt 78/150
+[INFO] [1775588800.513231669] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588800.513626146] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588800.513899046] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588800.514083439] [object_grasper]: IK attempt 79/150
+[INFO] [1775588800.568284255] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588800.568633648] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588800.568871987] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588800.569070691] [object_grasper]: IK attempt 80/150
+[INFO] [1775588800.602374013] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588800.602816868] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588800.603074705] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588800.603285211] [object_grasper]: IK attempt 81/150
+[INFO] [1775588800.664977636] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588800.665249958] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588800.665516080] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588800.665723887] [object_grasper]: IK attempt 82/150
+[INFO] [1775588800.727926334] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588800.728481249] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588800.728992437] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588800.729481381] [object_grasper]: IK attempt 83/150
+[INFO] [1775588800.792592960] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588800.792917220] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588800.793158954] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588800.793382183] [object_grasper]: IK attempt 84/150
+[INFO] [1775588801.000001597] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588801.000307755] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588801.000557788] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588801.000752489] [object_grasper]: IK attempt 85/150
+[INFO] [1775588801.071276506] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588801.071644631] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588801.071889954] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588801.072101874] [object_grasper]: IK attempt 86/150
+[INFO] [1775588801.125696092] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588801.126009361] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588801.126266845] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588801.126479882] [object_grasper]: IK attempt 87/150
+[INFO] [1775588801.248008795] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775588801.jpg
+[INFO] [1775588801.328807614] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588801.329143788] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588801.329397354] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588801.329609334] [object_grasper]: IK attempt 88/150
+[INFO] [1775588801.393677244] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588801.393978033] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588801.394322145] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588801.394541359] [object_grasper]: IK attempt 89/150
+[INFO] [1775588801.603371267] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588801.603712187] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588801.603947071] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588801.604143717] [object_grasper]: IK attempt 90/150
+[INFO] [1775588801.680178120] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588801.680542278] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588801.680832636] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588801.681092513] [object_grasper]: IK attempt 91/150
+[INFO] [1775588801.734228567] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588801.734569918] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588801.734831321] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588801.735020306] [object_grasper]: IK attempt 92/150
+[INFO] [1775588801.804004299] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588801.804473778] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588801.804725383] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588801.804904611] [object_grasper]: IK attempt 93/150
+[INFO] [1775588801.973427478] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588801.973783405] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588801.973999250] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588801.974153486] [object_grasper]: IK attempt 94/150
+[INFO] [1775588802.007753440] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588802.008065416] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588802.008295924] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588802.008520315] [object_grasper]: IK attempt 95/150
+[INFO] [1775588802.058658597] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588802.058987089] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588802.059240836] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588802.059453748] [object_grasper]: IK attempt 96/150
+[INFO] [1775588802.102174457] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588802.102521033] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588802.102786864] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588802.102993231] [object_grasper]: IK attempt 97/150
+[INFO] [1775588802.397188578] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588802.397547736] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588802.397850738] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588802.398094247] [object_grasper]: IK attempt 98/150
+[INFO] [1775588802.467849689] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588802.468142126] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588802.468376579] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588802.468611408] [object_grasper]: IK attempt 99/150
+[INFO] [1775588802.531183005] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588802.531764505] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588802.532336060] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588802.532672945] [object_grasper]: IK attempt 100/150
+[INFO] [1775588802.738496861] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588802.738938123] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588802.739236244] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588802.739446421] [object_grasper]: IK attempt 101/150
+[INFO] [1775588802.803622967] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588802.803927723] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588802.804162548] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588802.804389472] [object_grasper]: IK attempt 102/150
+[INFO] [1775588803.106605725] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588803.107067119] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588803.107550550] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588803.107947807] [object_grasper]: IK attempt 103/150
+[INFO] [1775588803.286128582] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588803.286443878] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588803.286708352] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588803.286912509] [object_grasper]: IK attempt 104/150
+[INFO] [1775588803.334132784] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588803.334429716] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588803.334697545] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588803.334900438] [object_grasper]: IK attempt 105/150
+[INFO] [1775588803.496165926] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588803.496437588] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588803.496691366] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588803.496883401] [object_grasper]: IK attempt 106/150
+[INFO] [1775588803.719001315] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588803.720568935] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588803.721051489] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588803.721407519] [object_grasper]: IK attempt 107/150
+[INFO] [1775588803.773578704] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588803.773884796] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588803.774116152] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588803.774288492] [object_grasper]: IK attempt 108/150
+[INFO] [1775588803.810571827] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588803.818694425] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588803.819435012] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588803.820006583] [object_grasper]: IK attempt 109/150
+[INFO] [1775588803.873752560] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588803.874110718] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588803.874383342] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588803.874631919] [object_grasper]: IK attempt 110/150
+[INFO] [1775588803.935140821] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588803.935497068] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588803.935774062] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588803.936010634] [object_grasper]: IK attempt 111/150
+[INFO] [1775588804.000758919] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588804.001039933] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588804.001269177] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588804.001510436] [object_grasper]: IK attempt 112/150
+[INFO] [1775588804.069852296] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588804.070270279] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588804.070531387] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588804.070721161] [object_grasper]: IK attempt 113/150
+[INFO] [1775588804.136312743] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588804.136616815] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588804.136856657] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588804.137055557] [object_grasper]: IK attempt 114/150
+[INFO] [1775588804.192831744] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588804.193177426] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588804.193453866] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588804.193754905] [object_grasper]: IK attempt 115/150
+[INFO] [1775588804.250528280] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775588804.jpg
+[INFO] [1775588804.402856028] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588804.403140458] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588804.403414413] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588804.403621525] [object_grasper]: IK attempt 116/150
+[INFO] [1775588804.455261738] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588804.455563517] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588804.455806867] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588804.456470758] [object_grasper]: IK attempt 117/150
+[INFO] [1775588804.489243255] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588804.489515470] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588804.489768082] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588804.489977483] [object_grasper]: IK attempt 118/150
+[INFO] [1775588804.525665909] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588804.526069141] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588804.526353135] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588804.526589467] [object_grasper]: IK attempt 119/150
+[INFO] [1775588804.588889218] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588804.589212419] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588804.589473386] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588804.589686090] [object_grasper]: IK attempt 120/150
+[INFO] [1775588804.867899919] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588804.868158532] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588804.868401489] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588804.868594093] [object_grasper]: IK attempt 121/150
+[INFO] [1775588804.915315874] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588804.915997090] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588804.916648002] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588804.917141492] [object_grasper]: IK attempt 122/150
+[INFO] [1775588804.989163560] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588804.989467831] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588804.989706320] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588804.989897783] [object_grasper]: IK attempt 123/150
+[INFO] [1775588805.181877520] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588805.183146389] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588805.188309621] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588805.189149885] [object_grasper]: IK attempt 124/150
+[INFO] [1775588805.253362313] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588805.254175816] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588805.254539764] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588805.254914521] [object_grasper]: IK attempt 125/150
+[INFO] [1775588805.291199476] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588805.305352823] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588805.305949783] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588805.306347128] [object_grasper]: IK attempt 126/150
+[INFO] [1775588805.384934398] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588805.385507695] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588805.386016282] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588805.386373947] [object_grasper]: IK attempt 127/150
+[INFO] [1775588805.461562019] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588805.462319642] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588805.462865563] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588805.463453078] [object_grasper]: IK attempt 128/150
+[INFO] [1775588805.522543185] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588805.522835904] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588805.523089296] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588805.523270053] [object_grasper]: IK attempt 129/150
+[INFO] [1775588805.557231278] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588805.557520524] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588805.557771105] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588805.557965890] [object_grasper]: IK attempt 130/150
+[INFO] [1775588805.587595495] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588805.587938727] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588805.588167659] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588805.588385085] [object_grasper]: IK attempt 131/150
+[INFO] [1775588805.636014418] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588805.636571624] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588805.637181162] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588805.637740235] [object_grasper]: IK attempt 132/150
+[INFO] [1775588805.702079314] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588805.702361195] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588805.702600952] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588805.702784579] [object_grasper]: IK attempt 133/150
+[INFO] [1775588805.925592304] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588805.925912150] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588805.926192753] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588805.926414009] [object_grasper]: IK attempt 134/150
+[INFO] [1775588805.987613431] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588805.987931823] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588805.988168485] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588805.988379432] [object_grasper]: IK attempt 135/150
+[INFO] [1775588806.046886330] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588806.047174947] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588806.047452939] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588806.047657354] [object_grasper]: IK attempt 136/150
+[INFO] [1775588806.080693243] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588806.081024218] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588806.081259407] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588806.081472591] [object_grasper]: IK attempt 137/150
+[INFO] [1775588806.131189089] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588806.131475060] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588806.131729884] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588806.131914545] [object_grasper]: IK attempt 138/150
+[INFO] [1775588806.357283535] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588806.357875945] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588806.358269954] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588806.358582045] [object_grasper]: IK attempt 139/150
+[INFO] [1775588806.406864478] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588806.407145894] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588806.407388837] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588806.407577142] [object_grasper]: IK attempt 140/150
+[INFO] [1775588806.471941426] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588806.472305121] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588806.472561327] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588806.472816293] [object_grasper]: IK attempt 141/150
+[INFO] [1775588806.529375605] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588806.529779024] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588806.530038489] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588806.530236872] [object_grasper]: IK attempt 142/150
+[INFO] [1775588806.595163432] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588806.595516843] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588806.595783500] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588806.596012601] [object_grasper]: IK attempt 143/150
+[INFO] [1775588806.655304639] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588806.655780913] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588806.656078221] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588806.656287864] [object_grasper]: IK attempt 144/150
+[INFO] [1775588806.726670685] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588806.727060390] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588806.727348913] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588806.727559880] [object_grasper]: IK attempt 145/150
+[INFO] [1775588806.794652019] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588806.794998265] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588806.795297625] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588806.795521998] [object_grasper]: IK attempt 146/150
+[INFO] [1775588806.869254115] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588806.869565216] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588806.869817760] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588806.870015813] [object_grasper]: IK attempt 147/150
+[INFO] [1775588806.927564456] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588806.927895473] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588806.928108493] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588806.928311968] [object_grasper]: IK attempt 148/150
+[INFO] [1775588806.997220018] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588806.997599615] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588806.997851816] [object_grasper]: IK error too large (0.2577m) — retrying
+[INFO] [1775588806.998050176] [object_grasper]: IK attempt 149/150
+[INFO] [1775588807.270724226] [object_grasper]: IK error: 0.5890m
+[INFO] [1775588807.271031153] [object_grasper]: base_trans=-0.0000m  lift=0.8953m  arm=0.5200m
+[WARN] [1775588807.271291902] [object_grasper]: IK error too large (0.5890m) — retrying
+[INFO] [1775588807.271521815] [object_grasper]: IK attempt 150/150
+[INFO] [1775588807.290531244] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775588807.jpg
+[INFO] [1775588807.308462029] [object_grasper]: IK error: 0.2577m
+[INFO] [1775588807.311833635] [object_grasper]: base_trans=-0.0000m  lift=0.8984m  arm=0.5200m
+[WARN] [1775588807.312678415] [object_grasper]: IK error too large (0.2577m) — retrying
+[ERROR] [1775588807.313149129] [object_grasper]: IK failed for grasp position after 150 attempts
+[INFO] [1775588810.292456490] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775588810.jpg
+[realsense2_camera_node-1] [0m[INFO] [1775588811.174394658] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+Traceback (most recent call last):
+  File "/home/willy/tf.py", line 299, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 808, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 797, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 780, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 681, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/willy/tf.py", line 307, in <module>
+    main()
+  File "/home/willy/tf.py", line 304, in main
+    rclpy.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 130, in shutdown
+    _shutdown(context=context)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
+    return context.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
+    self.__context.shutdown()
+rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241

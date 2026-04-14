@@ -1,0 +1,586 @@
+=== launch_nodes.sh started at Sun Apr 12 06:11:57 PM EDT 2026 ===
+Freeing robot process...
+Done!
+Checking if robot needs homing...
+Robot not homed. Homing now (this may take ~30s)...
+For use with S T R E T C H (R) from Hello Robot Inc.
+---------------------------------------------------------------------
+
+Unable to load URDF: /home/willy/.local/lib/python3.10/site-packages/stretch_urdf/RE2V0/stretch_description_RE2V0_tool_stretch_dex_wrist.urdf. Disabling collision system.
+[INFO] [robot_monitor]: Guarded contact lift
+[INFO] [robot_monitor]: Base bump event
+[INFO] [robot_monitor]: Wrist single tap: 34
+[INFO] [robot_monitor]: Base bump event
+[INFO] [robot_monitor]: Base bump event
+[INFO] [robot_monitor]: Base bump event
+[INFO] [robot_monitor]: Base bump event
+[INFO] [robot_monitor]: Guarded contact arm
+[INFO] [robot_monitor]: Wrist single tap: 37
+[INFO] [robot_monitor]: Wrist single tap: 39
+[INFO] [robot_monitor]: Wrist single tap: 40
+--------- Homing Head ----
+--------- Homing Lift ----
+Homing Lift...
+Hardstop detected at motor position (rad) 115.16014862060547
+Marking Lift position to 1.099527 (m)
+Marking Lift position to 0.000000 (m)
+Lift homing successful
+--------- Homing Arm ----
+Homing Arm...
+Hardstop detected at motor position (rad) -0.476998507976532
+Marking Arm position to 0.000000 (m)
+Arm homing successful
+Moving to first hardstop...
+First hardstop contact at position (ticks): -5
+-----
+Homing offset was 2286
+Marking current position to zero ticks
+Homing offset is now  2290 (ticks)
+-----
+Current position (ticks): 25
+Moving to calibrated zero: (rad)
+Moving to first hardstop...
+First hardstop contact at position (ticks): -2
+-----
+Homing offset was 4911
+Marking current position to zero ticks
+Homing offset is now  4910 (ticks)
+-----
+Current position (ticks): 43
+Moving to calibrated zero: (rad)
+Homing complete.
+Launching Nav2...
+Launching D435i camera...
+Launching ArUco detector...
+Launching Grasper...
+Waiting for Nav2 action server...
+[INFO] [launch]: All log files can be found below /home/willy/.ros/log/2026-04-12-18-12-34-202700-stretch-re2-2204-10516
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch]: All log files can be found below /home/willy/.ros/log/2026-04-12-18-12-34-233117-stretch-re2-2204-10515
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: D435i launched in high resolution
+[INFO] [realsense2_camera_node-1]: process started with pid [10576]
+[INFO] [d435i_accel_correction-2]: process started with pid [10578]
+[INFO] [1776031954.686316101] [aruco_base_frame_estimator]: aruco_base_frame_estimator started
+[d435i_accel_correction-2] [INFO] [1776031954.738562440] [d435i_accel_correction_node]: d435i_accel_correction_node started
+[realsense2_camera_node-1] [0m[INFO] [1776031954.861104683] [camera]: RealSense ROS v4.55.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1776031954.861215674] [camera]: Built with LibRealSense v2.56.4[0m
+[realsense2_camera_node-1] [0m[INFO] [1776031954.861234518] [camera]: Running with LibRealSense v2.56.4[0m
+[realsense2_camera_node-1] [0m[INFO] [1776031954.889689827] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1776031954.889777803] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1776031954.889794520] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1776031954.889975930] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1776031954.892393580] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1776031954.892410766] [camera]: Resetting device...[0m
+Nav2 is up!
+Waiting for D435i camera...
+[INFO] [stretch_driver-3]: process started with pid [10764]
+[INFO] [joint_state_publisher-1]: process started with pid [10760]
+[INFO] [robot_state_publisher-2]: process started with pid [10762]
+[INFO] [sllidar_node-4]: process started with pid [10766]
+[INFO] [scan_to_scan_filter_chain-5]: process started with pid [10768]
+[INFO] [joy_node-6]: process started with pid [10770]
+[INFO] [teleop_node-7]: process started with pid [10777]
+[INFO] [map_server-8]: process started with pid [10789]
+[INFO] [amcl-9]: process started with pid [10791]
+[INFO] [lifecycle_manager-10]: process started with pid [10795]
+[INFO] [controller_server-11]: process started with pid [10799]
+[INFO] [planner_server-12]: process started with pid [10803]
+[INFO] [behavior_server-13]: process started with pid [10805]
+[INFO] [bt_navigator-14]: process started with pid [10807]
+[INFO] [waypoint_follower-15]: process started with pid [10822]
+[INFO] [lifecycle_manager-16]: process started with pid [10926]
+[INFO] [rviz2-17]: process started with pid [10928]
+[sllidar_node-4] [INFO] [1776031955.182514221] [sllidar_node]: SLLidar running on ROS2 package SLLidar.ROS2 SDK Version:1.0.1, SLLIDAR SDK Version:2.1.0
+[sllidar_node-4] [INFO] [1776031955.195717497] [sllidar_node]: SLLidar S/N: C394ED93C0EA98C9A5E698F2564A4669
+[sllidar_node-4] [INFO] [1776031955.195767766] [sllidar_node]: Firmware Ver: 1.29
+[sllidar_node-4] [INFO] [1776031955.195777504] [sllidar_node]: Hardware Rev: 7
+[sllidar_node-4] [INFO] [1776031955.197204480] [sllidar_node]: SLLidar health status : 0
+[sllidar_node-4] [INFO] [1776031955.197246550] [sllidar_node]: SLLidar health status : OK.
+[scan_to_scan_filter_chain-5] [INFO] [1776031955.149111464] [laser_filter]: In shadow configure done
+[scan_to_scan_filter_chain-5] [WARN] [1776031955.151026131] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[teleop_node-7] [INFO] [1776031955.160501920] [TeleopTwistJoy]: Teleop enable button 4.
+[teleop_node-7] [INFO] [1776031955.160564614] [TeleopTwistJoy]: Linear axis x on 4 at scale 0.500000.
+[teleop_node-7] [INFO] [1776031955.160577718] [TeleopTwistJoy]: Angular axis yaw on 3 at scale 0.500000.
+[map_server-8] [INFO] [1776031955.240324368] [map_server]: 
+[map_server-8] 	map_server lifecycle node launched. 
+[map_server-8] 	Waiting on external lifecycle transitions to activate
+[map_server-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-9] [INFO] [1776031955.192333239] [amcl]: 
+[amcl-9] 	amcl lifecycle node launched. 
+[amcl-9] 	Waiting on external lifecycle transitions to activate
+[amcl-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-9] [INFO] [1776031955.197359891] [amcl]: Creating
+[lifecycle_manager-10] [INFO] [1776031955.156550612] [lifecycle_manager_localization]: Creating
+[lifecycle_manager-10] [INFO] [1776031955.161914056] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[controller_server-11] [INFO] [1776031955.165342656] [controller_server]: 
+[controller_server-11] 	controller_server lifecycle node launched. 
+[controller_server-11] 	Waiting on external lifecycle transitions to activate
+[controller_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-11] [INFO] [1776031955.193308516] [controller_server]: Creating controller server
+[controller_server-11] [INFO] [1776031955.230417977] [local_costmap.local_costmap]: 
+[controller_server-11] 	local_costmap lifecycle node launched. 
+[controller_server-11] 	Waiting on external lifecycle transitions to activate
+[controller_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-11] [INFO] [1776031955.233308660] [local_costmap.local_costmap]: Creating Costmap
+[planner_server-12] [INFO] [1776031955.218327568] [planner_server]: 
+[planner_server-12] 	planner_server lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1776031955.228911425] [planner_server]: Creating
+[behavior_server-13] [INFO] [1776031955.193246991] [behavior_server]: 
+[behavior_server-13] 	behavior_server lifecycle node launched. 
+[behavior_server-13] 	Waiting on external lifecycle transitions to activate
+[behavior_server-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-14] [INFO] [1776031955.227650256] [bt_navigator]: 
+[bt_navigator-14] 	bt_navigator lifecycle node launched. 
+[bt_navigator-14] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-14] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-14] [INFO] [1776031955.227811854] [bt_navigator]: Creating
+[waypoint_follower-15] [INFO] [1776031955.201827890] [waypoint_follower]: 
+[waypoint_follower-15] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-15] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-15] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-15] [INFO] [1776031955.202946891] [waypoint_follower]: Creating
+[map_server-8] [INFO] [1776031955.243008962] [map_server]: Creating
+[planner_server-12] [INFO] [1776031955.257270912] [global_costmap.global_costmap]: 
+[planner_server-12] 	global_costmap lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1776031955.259075776] [global_costmap.global_costmap]: Creating Costmap
+[lifecycle_manager-16] [INFO] [1776031955.264968068] [lifecycle_manager_navigation]: Creating
+[lifecycle_manager-16] [INFO] [1776031955.268433333] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[lifecycle_manager-16] [INFO] [1776031955.276775624] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-16] [INFO] [1776031955.276851728] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-11] [INFO] [1776031955.277168326] [controller_server]: Configuring controller interface
+[controller_server-11] [INFO] [1776031955.277409139] [controller_server]: getting goal checker plugins..
+[controller_server-11] [INFO] [1776031955.277557298] [controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-11] [INFO] [1776031955.277605871] [local_costmap.local_costmap]: Configuring
+[controller_server-11] [INFO] [1776031955.281749961] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[controller_server-11] [INFO] [1776031955.286110367] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-11] [INFO] [1776031955.288964203] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-11] [INFO] [1776031955.289038464] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[controller_server-11] [INFO] [1776031955.289871707] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-11] [INFO] [1776031955.293161811] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-11] [INFO] [1776031955.293215279] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-11] [INFO] [1776031955.294034271] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-11] [INFO] [1776031955.300425011] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-11] [INFO] [1776031955.301573066] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-11] [INFO] [1776031955.302005383] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-11] [INFO] [1776031955.304883402] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-11] [INFO] [1776031955.306161283] [controller_server]: Setting transform_tolerance to 0.200000
+[controller_server-11] [INFO] [1776031955.314228385] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[controller_server-11] [INFO] [1776031955.314984746] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1776031955.315162111] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-11] [INFO] [1776031955.315729040] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1776031955.315884742] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[controller_server-11] [INFO] [1776031955.316130977] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1776031955.316271683] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-11] [INFO] [1776031955.316690759] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1776031955.316841839] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-11] [INFO] [1776031955.317222000] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1776031955.317358211] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-11] [INFO] [1776031955.317636360] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1776031955.317819143] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-11] [INFO] [1776031955.318019028] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1776031955.318135647] [controller_server]: Using critic "PreferForward" (dwb_critics::PreferForwardCritic)
+[controller_server-11] [INFO] [1776031955.318558266] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1776031955.318582700] [controller_server]: Controller Server has FollowPath  controllers available.
+[lifecycle_manager-16] [INFO] [1776031955.321775738] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-12] [INFO] [1776031955.322007883] [planner_server]: Configuring
+[planner_server-12] [INFO] [1776031955.322056696] [global_costmap.global_costmap]: Configuring
+[planner_server-12] [INFO] [1776031955.325436860] [global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-12] [INFO] [1776031955.328468695] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[planner_server-12] [INFO] [1776031955.329086593] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-12] [INFO] [1776031955.329109804] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-12] [INFO] [1776031955.329648093] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-12] [INFO] [1776031955.342891648] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-12] [INFO] [1776031955.342950317] [global_costmap.global_costmap]: Using plugin "voxel_layer"
+[planner_server-12] [INFO] [1776031955.346966919] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-12] [INFO] [1776031955.357993258] [global_costmap.global_costmap]: Initialized plugin "voxel_layer"
+[planner_server-12] [INFO] [1776031955.358045691] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-12] [INFO] [1776031955.359938148] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-12] [INFO] [1776031955.373411212] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[planner_server-12] [INFO] [1776031955.373464587] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-12] [INFO] [1776031955.376028420] [planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-16] [INFO] [1776031955.388700435] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-13] [INFO] [1776031955.388919932] [behavior_server]: Configuring
+[sllidar_node-4] [INFO] [1776031955.391007680] [sllidar_node]: current scan mode: Boost, sample rate: 8 Khz, max_distance: 12.0 m, scan frequency:10.0 Hz, 
+[behavior_server-13] [INFO] [1776031955.406104875] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-13] [INFO] [1776031955.406989354] [behavior_server]: Configuring spin
+[behavior_server-13] [INFO] [1776031955.418820941] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-13] [INFO] [1776031955.419714154] [behavior_server]: Configuring backup
+[behavior_server-13] [INFO] [1776031955.427226694] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[behavior_server-13] [INFO] [1776031955.428091007] [behavior_server]: Configuring drive_on_heading
+[lifecycle_manager-10] [INFO] [1776031955.441573487] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-10] [INFO] [1776031955.441633582] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[map_server-8] [INFO] [1776031955.443351273] [map_server]: Configuring
+[map_server-8] [INFO] [1776031955.443508633] [map_io]: Loading yaml file: /home/willy/stretch_user/maps/testing_map.yaml
+[map_server-8] [INFO] [1776031955.443809204] [map_io]: resolution: 0.05
+[map_server-8] [INFO] [1776031955.443822622] [map_io]: origin[0]: -11.5
+[map_server-8] [INFO] [1776031955.443830770] [map_io]: origin[1]: -1.71
+[map_server-8] [INFO] [1776031955.443837763] [map_io]: origin[2]: 0
+[map_server-8] [INFO] [1776031955.443844832] [map_io]: free_thresh: 0.25
+[map_server-8] [INFO] [1776031955.443851874] [map_io]: occupied_thresh: 0.65
+[map_server-8] [INFO] [1776031955.443859004] [map_io]: mode: trinary
+[map_server-8] [INFO] [1776031955.443866548] [map_io]: negate: 0
+[map_server-8] [INFO] [1776031955.444043752] [map_io]: Loading image_file: /home/willy/stretch_user/maps/testing_map.pgm
+[behavior_server-13] [INFO] [1776031955.443617853] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
+[behavior_server-13] [INFO] [1776031955.445230106] [behavior_server]: Configuring assisted_teleop
+[behavior_server-13] [INFO] [1776031955.470518093] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-13] [INFO] [1776031955.471204198] [behavior_server]: Configuring wait
+[lifecycle_manager-16] [INFO] [1776031955.481407262] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[bt_navigator-14] [INFO] [1776031955.481642527] [bt_navigator]: Configuring
+[map_server-8] [INFO] [1776031955.482967620] [map_io]: Read map /home/willy/stretch_user/maps/testing_map.pgm: 416 X 249 map @ 0.05 m/cell
+[lifecycle_manager-10] [INFO] [1776031955.502929154] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[amcl-9] [INFO] [1776031955.503220526] [amcl]: Configuring
+[amcl-9] [INFO] [1776031955.503313184] [amcl]: initTransforms
+[amcl-9] [INFO] [1776031955.515501873] [amcl]: initPubSub
+[amcl-9] [INFO] [1776031955.518493680] [amcl]: Subscribed to map topic.
+[lifecycle_manager-10] [INFO] [1776031955.521800067] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[map_server-8] [INFO] [1776031955.522012306] [map_server]: Activating
+[map_server-8] [INFO] [1776031955.522382229] [map_server]: Creating bond (map_server) to lifecycle manager.
+[planner_server-12] [INFO] [1776031955.522651906] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 416 X 249 at 0.050000 m/pix
+[amcl-9] [INFO] [1776031955.522995906] [amcl]: Received a 416 X 249 map @ 0.050 m/pix
+[lifecycle_manager-16] [INFO] [1776031955.546440058] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[waypoint_follower-15] [INFO] [1776031955.546639992] [waypoint_follower]: Configuring
+[waypoint_follower-15] [INFO] [1776031955.552156287] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[lifecycle_manager-16] [INFO] [1776031955.553120972] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[controller_server-11] [INFO] [1776031955.553302912] [controller_server]: Activating
+[controller_server-11] [INFO] [1776031955.553354307] [local_costmap.local_costmap]: Activating
+[controller_server-11] [INFO] [1776031955.553380315] [local_costmap.local_costmap]: Checking transform
+[controller_server-11] [INFO] [1776031955.553448091] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[lifecycle_manager-10] [INFO] [1776031955.626289554] [lifecycle_manager_localization]: Server map_server connected with bond.
+[lifecycle_manager-10] [INFO] [1776031955.626334103] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+[amcl-9] [INFO] [1776031955.626596780] [amcl]: Activating
+[amcl-9] [INFO] [1776031955.626642037] [amcl]: Creating bond (amcl) to lifecycle manager.
+[INFO] [1776031955.723224579] [object_grasper]: object_grasper started
+[lifecycle_manager-10] [INFO] [1776031955.729146619] [lifecycle_manager_localization]: Server amcl connected with bond.
+[lifecycle_manager-10] [INFO] [1776031955.729182691] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-10] [INFO] [1776031955.729190143] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[joy_node-6] [INFO] [1776031955.854432483] [joy_node]: No haptic (rumble) available, skipping initialization
+[joy_node-6] [INFO] [1776031955.854540458] [joy_node]: Opened joystick: 3Dconnexion Universal Receiver.  deadzone: 0.050000
+[controller_server-11] [INFO] [1776031956.053645089] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[scan_to_scan_filter_chain-5] [WARN] [1776031956.142935030] [laser_filter]: diagnostic_updater: No HW_ID was set. This is probably a bug. Please report it. For devices that do not have a HW_ID, set this value to 'none'. This warning only occurs once all diagnostics are OK. It is okay to wait until the device is open before calling setHardwareID.
+[stretch_driver-3] [0m[INFO] [1776031956.275057608] [stretch_driver]: For use with S T R E T C H (TM) RESEARCH EDITION from Hello Robot Inc.[0m
+[stretch_driver-3] [0m[INFO] [1776031956.275266079] [stretch_driver]: stretch_driver started[0m
+[controller_server-11] [INFO] [1776031956.553499809] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1776031957.053546515] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[stretch_driver-3] Key mapped to End-Of-Arm Tool: tool_stretch_dex_wrist
+[stretch_driver-3] Unable to load URDF: /home/willy/.local/lib/python3.10/site-packages/stretch_urdf/RE2V0/stretch_description_RE2V0_tool_stretch_dex_wrist.urdf. Disabling collision system.
+[rviz2-17] [INFO] [1776031957.417383394] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-17] [INFO] [1776031957.417451547] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[controller_server-11] [INFO] [1776031957.553579099] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [INFO] [1776031957.751273996] [amcl]: Message Filter dropping message: frame 'laser' at time 1776031955.391 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-17] [INFO] [1776031957.879889250] [rviz2]: Stereo is NOT SUPPORTED
+[amcl-9] [WARN] [1776031957.981872965] [amcl]: New subscription discovered on topic '/particle_cloud', requesting incompatible QoS. No messages will be sent to it. Last incompatible policy: RELIABILITY_QOS_POLICY
+[controller_server-11] [INFO] [1776031958.053496000] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[stretch_driver-3] [0m[INFO] [1776031958.078954300] [stretch_driver]: broadcast_odom_tf = True[0m
+[stretch_driver-3] [0m[INFO] [1776031958.105919275] [stretch_driver]: rate = 30.0 Hz[0m
+[stretch_driver-3] [0m[INFO] [1776031958.106611269] [stretch_driver]: twist timeout = 0.5 s[0m
+[stretch_driver-3] [0m[INFO] [1776031958.107140844] [stretch_driver]: base_frame_id = base_link[0m
+[stretch_driver-3] [0m[INFO] [1776031958.108142971] [stretch_driver]: odom_frame_id = odom[0m
+[stretch_driver-3] [0m[INFO] [1776031958.150899357] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1776031958.229404935] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /home_the_robot service.
+[INFO] [1776031958.230703188] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /stow_the_robot service.
+[INFO] [1776031958.231998886] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /stop_the_robot service.
+[INFO] [1776031958.233162365] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_trajectory_mode service.
+[INFO] [1776031958.234313056] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_position_mode service.
+[INFO] [1776031958.235522408] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_navigation_mode service.
+[INFO] [1776031958.235889258] [aruco_base_frame_estimator]: Moving head camera to detection orientation...
+[WARN] [1776031958.236164539] [aruco_base_frame_estimator]: Currently in  mode. Recommend switching either to position or trajectory mode
+[WARN] [1776031958.236417625] [aruco_base_frame_estimator]: Commanding joint trajectory server in position mode
+[stretch_driver-3] [0m[INFO] [1776031958.242210571] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1776031958.255540227] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_head_pan', 'joint_head_tilt'][0m
+[INFO] [1776031958.268947013] [object_grasper]: Node object_grasper connected to /home_the_robot service.
+[INFO] [1776031958.270522953] [object_grasper]: Node object_grasper connected to /stow_the_robot service.
+[INFO] [1776031958.271937828] [object_grasper]: Node object_grasper connected to /stop_the_robot service.
+[INFO] [1776031958.277842592] [object_grasper]: Node object_grasper connected to /switch_to_trajectory_mode service.
+[INFO] [1776031958.279563380] [object_grasper]: Node object_grasper connected to /switch_to_position_mode service.
+[INFO] [1776031958.280888144] [object_grasper]: Node object_grasper connected to /switch_to_navigation_mode service.
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_mast is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+[amcl-9] [INFO] [1776031958.409225160] [amcl]: createLaserObject
+[amcl-9] [WARN] [1776031958.430449035] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_arm_l4 is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_wrist_yaw_bottom is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_gripper_s3_body is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_grasp_center is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link Base link (index: 0) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_mast (index: 2) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_arm_l4 (index: 4) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_wrist_yaw_bottom (index: 10) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_gripper_s3_body (index: 13) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_grasp_center (index: 14) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+[INFO] [1776031958.550298133] [object_grasper]: ============================================================
+[INFO] [1776031958.550656530] [object_grasper]: ObjectGrasper ready — waiting for ArUco detections
+[INFO] [1776031958.550875731] [object_grasper]: Listening on: /aruco/target_base_link
+[INFO] [1776031958.551062662] [object_grasper]: Call service: ros2 service call /grasp_object std_srvs/srv/Trigger {}
+[INFO] [1776031958.551667143] [object_grasper]: ============================================================
+[controller_server-11] [INFO] [1776031958.553702127] [local_costmap.local_costmap]: start
+[controller_server-11] [INFO] [1776031958.804902729] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1776031958.908215656] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[lifecycle_manager-16] [INFO] [1776031958.908265909] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[planner_server-12] [INFO] [1776031958.908532471] [planner_server]: Activating
+[planner_server-12] [INFO] [1776031958.908574858] [global_costmap.global_costmap]: Activating
+[planner_server-12] [INFO] [1776031958.908589145] [global_costmap.global_costmap]: Checking transform
+[planner_server-12] [INFO] [1776031958.908613825] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1776031959.060162134] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1776031959.062917959] [aruco_base_frame_estimator]: Head camera at detection pose — starting ArUco detection.
+[INFO] [1776031959.068183201] [aruco_base_frame_estimator]: Waiting for camera TF (base_link -> camera_color_optical_frame)...
+[INFO] [1776031959.090091420] [aruco_base_frame_estimator]: Camera pose acquired:
+[INFO] [1776031959.090665216] [aruco_base_frame_estimator]:   Position  : X=+0.0114  Y=-0.0515  Z=+1.2865  (m)
+[INFO] [1776031959.090905717] [aruco_base_frame_estimator]:   RPY (deg) : R=-179.14  P=+59.11  Y=+96.06
+[INFO] [1776031959.093837738] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1776031959.094159419] [aruco_base_frame_estimator]: ArUco Base Frame Estimator Started
+[INFO] [1776031959.094355984] [aruco_base_frame_estimator]: Target Marker ID: 202
+[INFO] [1776031959.094659894] [aruco_base_frame_estimator]: Marker size: 2.8 cm
+[INFO] [1776031959.094951972] [aruco_base_frame_estimator]: Detection timeout: 0.0s (0 = live frames only)
+[INFO] [1776031959.095249430] [aruco_base_frame_estimator]: Publishing target on: /aruco/target_base_link
+[INFO] [1776031959.095537880] [aruco_base_frame_estimator]: ============================================================
+[planner_server-12] [INFO] [1776031959.408673528] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1776031959.908667296] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1776031960.408666502] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [WARN] [1776031960.472264475] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[rviz2-17] [INFO] [1776031960.624513948] [rviz2]: Trying to create a map of size 416 x 249 using 1 swatches
+[rviz2-17] [ERROR] [1776031960.798130045] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[rviz2-17] active samplers with a different type refer to the same texture image unit
+[planner_server-12] [INFO] [1776031960.908667747] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[realsense2_camera_node-1] [0m[INFO] [1776031960.944866562] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1776031960.944912376] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1776031960.944922770] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1776031960.945053406] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1776031960.945064591] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1776031960.945123078] [camera]: getParameters...[0m
+[realsense2_camera_node-1] [0m[INFO] [1776031961.348724645] [camera]: JSON file is loaded! (/home/willy/ament_ws/install/stretch_core/share/stretch_core/config/HighAccuracyPreset.json)[0m
+[realsense2_camera_node-1] [0m[INFO] [1776031961.348822237] [camera]: Device Name: Intel RealSense D435I[0m
+[realsense2_camera_node-1] [0m[INFO] [1776031961.348861379] [camera]: Device Serial No: 239722071445[0m
+[realsense2_camera_node-1] [0m[INFO] [1776031961.348869226] [camera]: Device physical port: /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0[0m
+[realsense2_camera_node-1] [0m[INFO] [1776031961.348875935] [camera]: Device FW version: 5.16.0.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1776031961.348881692] [camera]: Device Product ID: 0x0B3A[0m
+[realsense2_camera_node-1] [0m[INFO] [1776031961.348887577] [camera]: Sync Mode: On[0m
+[planner_server-12] [INFO] [1776031961.408704381] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[realsense2_camera_node-1] [33m[WARN] [1776031961.457127507] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1776031961.457533429] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1776031961.464858979] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1776031961.466056235] [camera]: Given value, 63 is invalid. Set ROS param back to: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1776031961.479717654] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1776031961.479789722] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1776031961.479806049] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1776031961.493302822] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1776031961.496620995] [camera]: Open profile: stream_type: Depth(0), Format: Z16, Width: 1280, Height: 720, FPS: 15[0m
+[realsense2_camera_node-1] [0m[INFO] [1776031961.508441994] [camera]: Starting Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1776031961.511492075] [camera]: Open profile: stream_type: Color(0), Format: RGB8, Width: 1280, Height: 720, FPS: 15[0m
+[realsense2_camera_node-1] [0m[INFO] [1776031961.519994060] [camera]: Starting Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1776031961.521809534] [camera]: Open profile: stream_type: Accel(0)Format: MOTION_XYZ32F, FPS: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1776031961.521865320] [camera]: Open profile: stream_type: Gyro(0)Format: MOTION_XYZ32F, FPS: 200[0m
+[realsense2_camera_node-1] [0m[INFO] [1776031961.524088127] [camera]: RealSense Node Is Up![0m
+[planner_server-12] [INFO] [1776031961.908666105] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1776031962.176532862] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776031962.jpg
+[planner_server-12] [INFO] [1776031962.408689156] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+Camera ready!
+Setting initial pose...
+[realsense2_camera_node-1] [33m[WARN] [1776031962.493824821] [camera]: XXX Hardware Notification:Motion Module failure,1.77603e+12,Error,Hardware Error[0m
+[realsense2_camera_node-1] [33m[WARN] [1776031962.493905050] [camera]: Hardware Notification:Motion Module failure,1.77603e+12,Error,Hardware Error[0m
+[amcl-9] [WARN] [1776031962.548182998] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-12] [INFO] [1776031962.908671102] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1776031963.213415813] [rviz]: Message Filter dropping message: frame 'laser' at time 1776031959.232 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1776031963.213614694] [rviz]: Message Filter dropping message: frame 'odom' at time 1776031959.152 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1776031963.408675645] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+publisher: beginning loop
+publishing #1: geometry_msgs.msg.PoseWithCovarianceStamped(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0), frame_id='map'), pose=geometry_msgs.msg.PoseWithCovariance(pose=geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=1.1141, y=1.191, z=0.0), orientation=geometry_msgs.msg.Quaternion(x=0.0, y=0.0, z=0.6212, w=0.7837)), covariance=array([0.25, 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.25, 0.  , 0.  , 0.  ,
+       0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  ,
+       0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  ,
+       0.  , 0.  , 0.07])))
+
+[amcl-9] [INFO] [1776031963.753496874] [amcl]: initialPoseReceived
+[amcl-9] [WARN] [1776031963.753736140] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1776031963.753603 but the latest data is at time 1776031963.752729, when looking up transform from frame [base_footprint] to frame [odom])
+[amcl-9] [INFO] [1776031963.753780653] [amcl]: Setting pose (1776031963.753781): 1.114 1.191 1.340
+[planner_server-12] [INFO] [1776031963.908858489] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation at time 1776031963.886465, but only time 1776031964.641587 is in the buffer, when looking up transform from frame [base_link] to frame [map]
+Waiting for AMCL to localize...
+[planner_server-12] [INFO] [1776031964.409592357] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 1776031964.385359 but the earliest data is at time 1776031964.641587, when looking up transform from frame [base_link] to frame [map]
+[planner_server-12] [INFO] [1776031964.908798637] [global_costmap.global_costmap]: start
+[rviz2-17] [INFO] [1776031965.129287452] [rviz2]: Trying to create a map of size 60 x 60 using 1 swatches
+[INFO] [1776031965.319821760] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776031965.jpg
+AMCL localized!
+=== All nodes ready. Writing flag: /tmp/stretch_nodes_ready ===
+[planner_server-12] [INFO] [1776031965.960757472] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[planner_server-12] [INFO] [1776031965.961574826] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1776031966.064469288] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[lifecycle_manager-16] [INFO] [1776031966.064514158] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[behavior_server-13] [INFO] [1776031966.064759842] [behavior_server]: Activating
+[behavior_server-13] [INFO] [1776031966.064787029] [behavior_server]: Activating spin
+[behavior_server-13] [INFO] [1776031966.064797898] [behavior_server]: Activating backup
+[behavior_server-13] [INFO] [1776031966.064805638] [behavior_server]: Activating drive_on_heading
+[behavior_server-13] [INFO] [1776031966.064813789] [behavior_server]: Activating assisted_teleop
+[behavior_server-13] [INFO] [1776031966.064821567] [behavior_server]: Activating wait
+[behavior_server-13] [INFO] [1776031966.064832630] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[rviz2-17] [INFO] [1776031966.119612805] [rviz2]: Trying to create a map of size 416 x 249 using 1 swatches
+[lifecycle_manager-16] [INFO] [1776031966.167917174] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[lifecycle_manager-16] [INFO] [1776031966.167974968] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[bt_navigator-14] [INFO] [1776031966.168386183] [bt_navigator]: Activating
+[bt_navigator-14] [INFO] [1776031966.207079914] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1776031966.310850513] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[lifecycle_manager-16] [INFO] [1776031966.310970243] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[waypoint_follower-15] [INFO] [1776031966.311585834] [waypoint_follower]: Activating
+[waypoint_follower-15] [INFO] [1776031966.311690387] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1776031966.415493059] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[lifecycle_manager-16] [INFO] [1776031966.415551851] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-16] [INFO] [1776031966.415577731] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[INFO] [1776031968.591494329] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776031968.jpg
+[rviz2-17] [INFO] [1776031969.144325642] [rviz]: Message Filter dropping message: frame 'odom' at time 1776031959.955 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-17] [INFO] [1776031971.489644246] [rviz]: Message Filter dropping message: frame 'odom' at time 1776031962.352 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1776031971.770070537] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776031971.jpg
+[rviz2-17] [INFO] [1776031972.189998977] [rviz]: Message Filter dropping message: frame 'odom' at time 1776031962.955 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1776031974.870108083] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776031974.jpg
+[INFO] [1776031977.878987922] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776031977.jpg
+[INFO] [1776031981.002364247] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776031980.jpg
+[INFO] [1776031984.003517225] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776031984.jpg
+[INFO] [1776031987.015787684] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776031987.jpg
+[INFO] [1776031990.090928741] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776031990.jpg
+[INFO] [1776031993.157156464] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776031993.jpg
+[INFO] [1776031996.256032081] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776031996.jpg
+[INFO] [1776031999.296573427] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776031999.jpg
+[INFO] [1776032002.369320175] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032002.jpg
+[INFO] [1776032005.428574913] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032005.jpg
+[INFO] [1776032008.489366023] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032008.jpg
+[INFO] [1776032011.497241106] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032011.jpg
+[INFO] [1776032014.561183272] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032014.jpg
+[INFO] [1776032017.696350880] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032017.jpg
+[INFO] [1776032020.703184390] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032020.jpg
+[INFO] [1776032023.704922082] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032023.jpg
+[INFO] [1776032026.776716641] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032026.jpg
+[INFO] [1776032029.906514142] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032029.jpg
+[INFO] [1776032032.913768320] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032032.jpg
+[INFO] [1776032036.246554004] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032036.jpg
+[INFO] [1776032039.249076608] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032039.jpg
+[INFO] [1776032042.249137309] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032042.jpg
+[INFO] [1776032045.256092747] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032045.jpg
+[INFO] [1776032048.361501369] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032048.jpg
+[INFO] [1776032051.390729292] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032051.jpg
+[INFO] [1776032054.437692266] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032054.jpg
+[INFO] [1776032057.476233929] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032057.jpg
+[INFO] [1776032060.601220617] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032060.jpg
+[INFO] [1776032063.664567323] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032063.jpg
+[INFO] [1776032066.805243305] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032066.jpg
+[INFO] [1776032069.871288785] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032069.jpg
+[INFO] [1776032072.881625553] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032072.jpg
+[INFO] [1776032076.075753300] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032076.jpg
+[INFO] [1776032079.080031049] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032079.jpg
+[INFO] [1776032082.281032422] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032082.jpg
+[INFO] [1776032085.348790160] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032085.jpg
+[INFO] [1776032088.353023842] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032088.jpg
+[INFO] [1776032091.483897760] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032091.jpg
+[INFO] [1776032094.553448049] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032094.jpg
+[INFO] [1776032097.598399791] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032097.jpg
+[INFO] [1776032100.598589552] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032100.jpg
+[INFO] [1776032103.694176502] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032103.jpg
+[INFO] [1776032106.734514067] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032106.jpg
+[INFO] [1776032109.936731629] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032109.jpg
+[INFO] [1776032113.003444575] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032112.jpg
+[INFO] [1776032116.034927070] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032116.jpg
+[INFO] [1776032119.040729251] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032119.jpg
+[INFO] [1776032122.110399657] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032122.jpg
+[INFO] [1776032125.117536295] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032125.jpg
+[INFO] [1776032128.149737650] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032128.jpg
+[INFO] [1776032131.305127385] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032131.jpg
+[INFO] [1776032134.722497819] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032134.jpg
+[INFO] [1776032137.830907272] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032137.jpg
+[INFO] [1776032141.384850888] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032141.jpg
+[INFO] [1776032144.387940657] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032144.jpg
+[INFO] [1776032147.698127186] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032147.jpg
+[INFO] [1776032150.795676888] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032150.jpg
+[INFO] [1776032153.798925906] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032153.jpg
+[INFO] [1776032156.807801830] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032156.jpg
+[INFO] [1776032159.908449248] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032159.jpg
+[INFO] [1776032163.063655118] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032163.jpg
+[INFO] [1776032166.381152817] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032166.jpg
+[INFO] [1776032169.414029560] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032169.jpg
+[INFO] [1776032172.472137168] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032172.jpg
+[INFO] [1776032175.549233933] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032175.jpg
+[INFO] [1776032178.549347393] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032178.jpg
+[INFO] [1776032181.680613694] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032181.jpg
+[INFO] [1776032184.686486883] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032184.jpg
+[INFO] [1776032187.694291548] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032187.jpg
+[INFO] [1776032190.735088752] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032190.jpg
+[INFO] [1776032193.756640484] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032193.jpg
+[INFO] [1776032196.774989648] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032196.jpg
+[INFO] [1776032199.839642880] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032199.jpg
+[INFO] [1776032202.967305323] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032202.jpg
+[INFO] [1776032206.043042629] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032206.jpg
+[INFO] [1776032209.047114701] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032209.jpg
+[INFO] [1776032212.307218780] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032212.jpg
+[INFO] [1776032215.372821355] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032215.jpg
+[INFO] [1776032218.448638190] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032218.jpg
+[INFO] [1776032221.505657360] [aruco_base_frame_estimator]: Saved: base_detections/frame_1776032221.jpg
+[realsense2_camera_node-1] [0m[INFO] [1776032223.698714333] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[realsense2_camera_node-1] [0m[INFO] [1776032223.703051184] [camera]: Stop Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1776032223.703116394] [camera]: Close Sensor. [0m
+[realsense2_camera_node-1] [0m[INFO] [1776032223.715933389] [camera]: Close Sensor - Done. [0m
+[realsense2_camera_node-1] [0m[INFO] [1776032223.715998192] [camera]: Stop Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1776032223.716014046] [camera]: Close Sensor. [0m
+[realsense2_camera_node-1] [0m[INFO] [1776032223.724159859] [camera]: Close Sensor - Done. [0m
+[realsense2_camera_node-1] [0m[INFO] [1776032223.724248128] [camera]: Stop Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1776032223.726635459] [camera]: Close Sensor. [0m
+[d435i_accel_correction-2] Traceback (most recent call last):
+[d435i_accel_correction-2]   File "/home/willy/ament_ws/install/stretch_core/lib/stretch_core/d435i_accel_correction", line 33, in <module>
+[d435i_accel_correction-2]     sys.exit(load_entry_point('stretch-core==0.2.0', 'console_scripts', 'd435i_accel_correction')())
+[d435i_accel_correction-2]   File "/home/willy/ament_ws/install/stretch_core/lib/python3.10/site-packages/stretch_core/d435i_accel_correction.py", line 47, in main
+[d435i_accel_correction-2]     rclpy.spin(node)
+[d435i_accel_correction-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[d435i_accel_correction-2]     executor.spin_once()
+[d435i_accel_correction-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 808, in spin_once
+[d435i_accel_correction-2]     self._spin_once_impl(timeout_sec)
+[d435i_accel_correction-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 797, in _spin_once_impl
+[d435i_accel_correction-2]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[d435i_accel_correction-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 780, in wait_for_ready_callbacks
+[d435i_accel_correction-2]     return next(self._cb_iter)
+[d435i_accel_correction-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 681, in _wait_for_ready_callbacks
+[d435i_accel_correction-2]     raise ExternalShutdownException()
+[d435i_accel_correction-2] rclpy.executors.ExternalShutdownException
+Traceback (most recent call last):
+  File "/home/willy/tf.py", line 323, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 808, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 797, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 780, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 681, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/willy/tf.py", line 331, in <module>
+    main()
+  File "/home/willy/tf.py", line 328, in main
+    rclpy.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 130, in shutdown
+    _shutdown(context=context)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
+    return context.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
+    self.__context.shutdown()
+rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241
+[realsense2_camera_node-1] [0m[INFO] [1776032224.395151784] [camera]: Close Sensor - Done. [0m
+[ERROR] [d435i_accel_correction-2]: process has died [pid 10578, exit code 1, cmd '/home/willy/ament_ws/install/stretch_core/lib/stretch_core/d435i_accel_correction --ros-args'].
+[INFO] [realsense2_camera_node-1]: process has finished cleanly [pid 10576]

@@ -1,0 +1,17 @@
+=== pick_object.sh started at Wed Apr  8 02:45:51 PM EDT 2026 ===
+Waiting for nodes to be ready (launch_nodes.sh)...
+Nodes are ready!
+Waiting for grasp service...
+Grasp service ready!
+=== Triggering grasp ===
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='')
+Grasp succeeded!
+=== pick_object.sh finished at Wed Apr  8 02:46:12 PM EDT 2026 ===

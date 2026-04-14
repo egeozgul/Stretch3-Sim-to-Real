@@ -1,0 +1,1262 @@
+=== dock_grab.sh started at Mon Apr  6 03:02:36 PM EDT 2026 ===
+Freeing robot process...
+Done!
+=== Launching all nodes ===
+Waiting for Nav2 action server...
+[INFO] [launch]: All log files can be found below /home/willy/.ros/log/2026-04-06-15-02-36-888126-stretch-re2-2204-23091
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch]: All log files can be found below /home/willy/.ros/log/2026-04-06-15-02-36-919049-stretch-re2-2204-23090
+[INFO] [launch]: Default logging verbosity is set to INFO
+Nav2 is up!
+Setting initial pose...
+[INFO] [launch.user]: D435i launched in high resolution
+[INFO] [realsense2_camera_node-1]: process started with pid [23160]
+[INFO] [d435i_accel_correction-2]: process started with pid [23162]
+[realsense2_camera_node-1] [0m[INFO] [1775502157.258414290] [camera]: RealSense ROS v4.55.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502157.258521087] [camera]: Built with LibRealSense v2.56.4[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502157.258535969] [camera]: Running with LibRealSense v2.56.4[0m
+[INFO] [1775502157.359233040] [aruco_base_frame_estimator]: aruco_base_frame_estimator started
+[d435i_accel_correction-2] [INFO] [1775502157.481589591] [d435i_accel_correction_node]: d435i_accel_correction_node started
+[INFO] [stretch_driver-3]: process started with pid [23314]
+[INFO] [joint_state_publisher-1]: process started with pid [23310]
+[INFO] [robot_state_publisher-2]: process started with pid [23312]
+[INFO] [sllidar_node-4]: process started with pid [23316]
+[INFO] [scan_to_scan_filter_chain-5]: process started with pid [23318]
+[INFO] [joy_node-6]: process started with pid [23320]
+[INFO] [teleop_node-7]: process started with pid [23322]
+[INFO] [map_server-8]: process started with pid [23324]
+[INFO] [amcl-9]: process started with pid [23326]
+[INFO] [lifecycle_manager-10]: process started with pid [23328]
+[INFO] [controller_server-11]: process started with pid [23330]
+[INFO] [planner_server-12]: process started with pid [23332]
+[INFO] [behavior_server-13]: process started with pid [23334]
+[INFO] [bt_navigator-14]: process started with pid [23336]
+[INFO] [waypoint_follower-15]: process started with pid [23346]
+[INFO] [lifecycle_manager-16]: process started with pid [23454]
+[INFO] [rviz2-17]: process started with pid [23458]
+[sllidar_node-4] [INFO] [1775502157.908243315] [sllidar_node]: SLLidar running on ROS2 package SLLidar.ROS2 SDK Version:1.0.1, SLLIDAR SDK Version:2.1.0
+[sllidar_node-4] [INFO] [1775502157.921101387] [sllidar_node]: SLLidar S/N: C394ED93C0EA98C9A5E698F2564A4669
+[sllidar_node-4] [INFO] [1775502157.921216939] [sllidar_node]: Firmware Ver: 1.29
+[sllidar_node-4] [INFO] [1775502157.921234827] [sllidar_node]: Hardware Rev: 7
+[sllidar_node-4] [INFO] [1775502157.922835423] [sllidar_node]: SLLidar health status : 0
+[sllidar_node-4] [INFO] [1775502157.922970532] [sllidar_node]: SLLidar health status : OK.
+[scan_to_scan_filter_chain-5] [INFO] [1775502157.923344026] [laser_filter]: In shadow configure done
+[scan_to_scan_filter_chain-5] [WARN] [1775502157.923675688] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[teleop_node-7] [INFO] [1775502157.918360219] [TeleopTwistJoy]: Teleop enable button 4.
+[teleop_node-7] [INFO] [1775502157.918455755] [TeleopTwistJoy]: Linear axis x on 4 at scale 0.500000.
+[teleop_node-7] [INFO] [1775502157.918472719] [TeleopTwistJoy]: Angular axis yaw on 3 at scale 0.500000.
+[amcl-9] [INFO] [1775502157.931202892] [amcl]: 
+[amcl-9] 	amcl lifecycle node launched. 
+[amcl-9] 	Waiting on external lifecycle transitions to activate
+[amcl-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-9] [INFO] [1775502157.932462204] [amcl]: Creating
+[lifecycle_manager-10] [INFO] [1775502157.928719875] [lifecycle_manager_localization]: Creating
+[lifecycle_manager-10] [INFO] [1775502157.933695517] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[controller_server-11] [INFO] [1775502157.950337063] [controller_server]: 
+[controller_server-11] 	controller_server lifecycle node launched. 
+[controller_server-11] 	Waiting on external lifecycle transitions to activate
+[controller_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-11] [INFO] [1775502157.962811007] [controller_server]: Creating controller server
+[planner_server-12] [INFO] [1775502157.932077046] [planner_server]: 
+[planner_server-12] 	planner_server lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1775502157.940000000] [planner_server]: Creating
+[planner_server-12] [INFO] [1775502157.949622482] [global_costmap.global_costmap]: 
+[planner_server-12] 	global_costmap lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1775502157.950788262] [global_costmap.global_costmap]: Creating Costmap
+[bt_navigator-14] [INFO] [1775502157.940492202] [bt_navigator]: 
+[bt_navigator-14] 	bt_navigator lifecycle node launched. 
+[bt_navigator-14] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-14] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-14] [INFO] [1775502157.940643362] [bt_navigator]: Creating
+[waypoint_follower-15] [INFO] [1775502157.956466551] [waypoint_follower]: 
+[waypoint_follower-15] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-15] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-15] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-15] [INFO] [1775502157.957693561] [waypoint_follower]: Creating
+[lifecycle_manager-16] [INFO] [1775502157.976384053] [lifecycle_manager_navigation]: Creating
+[lifecycle_manager-16] [INFO] [1775502157.978458302] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[behavior_server-13] [INFO] [1775502157.983362431] [behavior_server]: 
+[behavior_server-13] 	behavior_server lifecycle node launched. 
+[behavior_server-13] 	Waiting on external lifecycle transitions to activate
+[behavior_server-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-8] [INFO] [1775502157.998688241] [map_server]: 
+[map_server-8] 	map_server lifecycle node launched. 
+[map_server-8] 	Waiting on external lifecycle transitions to activate
+[map_server-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-8] [INFO] [1775502157.998861372] [map_server]: Creating
+[controller_server-11] [INFO] [1775502158.004629194] [local_costmap.local_costmap]: 
+[controller_server-11] 	local_costmap lifecycle node launched. 
+[controller_server-11] 	Waiting on external lifecycle transitions to activate
+[controller_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-11] [INFO] [1775502158.009852672] [local_costmap.local_costmap]: Creating Costmap
+[lifecycle_manager-10] [INFO] [1775502158.021669731] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-10] [INFO] [1775502158.021770829] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[map_server-8] [INFO] [1775502158.032484468] [map_server]: Configuring
+[map_server-8] [INFO] [1775502158.032599327] [map_io]: Loading yaml file: /home/willy/stretch_user/maps/testing_map.yaml
+[map_server-8] [INFO] [1775502158.032926280] [map_io]: resolution: 0.05
+[map_server-8] [INFO] [1775502158.032944194] [map_io]: origin[0]: -11.5
+[map_server-8] [INFO] [1775502158.032952594] [map_io]: origin[1]: -1.71
+[map_server-8] [INFO] [1775502158.032959597] [map_io]: origin[2]: 0
+[map_server-8] [INFO] [1775502158.032980822] [map_io]: free_thresh: 0.25
+[map_server-8] [INFO] [1775502158.032988269] [map_io]: occupied_thresh: 0.65
+[map_server-8] [INFO] [1775502158.032996592] [map_io]: mode: trinary
+[map_server-8] [INFO] [1775502158.033004418] [map_io]: negate: 0
+[map_server-8] [INFO] [1775502158.033218409] [map_io]: Loading image_file: /home/willy/stretch_user/maps/testing_map.pgm
+[map_server-8] [INFO] [1775502158.043512122] [map_io]: Read map /home/willy/stretch_user/maps/testing_map.pgm: 416 X 249 map @ 0.05 m/cell
+[lifecycle_manager-10] [INFO] [1775502158.048122894] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[amcl-9] [INFO] [1775502158.048377036] [amcl]: Configuring
+[amcl-9] [INFO] [1775502158.048456241] [amcl]: initTransforms
+[amcl-9] [INFO] [1775502158.055899887] [amcl]: initPubSub
+[amcl-9] [INFO] [1775502158.058323822] [amcl]: Subscribed to map topic.
+[lifecycle_manager-10] [INFO] [1775502158.061612699] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[map_server-8] [INFO] [1775502158.061824348] [map_server]: Activating
+[map_server-8] [INFO] [1775502158.062044720] [map_server]: Creating bond (map_server) to lifecycle manager.
+[amcl-9] [INFO] [1775502158.062261686] [amcl]: Received a 416 X 249 map @ 0.050 m/pix
+[lifecycle_manager-16] [INFO] [1775502158.124085143] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-16] [INFO] [1775502158.124162972] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-11] [INFO] [1775502158.125110054] [controller_server]: Configuring controller interface
+[controller_server-11] [INFO] [1775502158.125699202] [controller_server]: getting goal checker plugins..
+[controller_server-11] [INFO] [1775502158.126932312] [controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-11] [INFO] [1775502158.126998321] [local_costmap.local_costmap]: Configuring
+[sllidar_node-4] [INFO] [1775502158.136517959] [sllidar_node]: current scan mode: Boost, sample rate: 8 Khz, max_distance: 12.0 m, scan frequency:10.0 Hz, 
+[controller_server-11] [INFO] [1775502158.138359607] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[controller_server-11] [INFO] [1775502158.145791134] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-11] [INFO] [1775502158.156363485] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-11] [INFO] [1775502158.156404772] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[controller_server-11] [INFO] [1775502158.160344932] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[lifecycle_manager-10] [INFO] [1775502158.165376893] [lifecycle_manager_localization]: Server map_server connected with bond.
+[lifecycle_manager-10] [INFO] [1775502158.165421404] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+[amcl-9] [INFO] [1775502158.165744175] [amcl]: Activating
+[amcl-9] [INFO] [1775502158.165789358] [amcl]: Creating bond (amcl) to lifecycle manager.
+[controller_server-11] [INFO] [1775502158.173103020] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-11] [INFO] [1775502158.173145794] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-11] [INFO] [1775502158.175386577] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-11] [INFO] [1775502158.185619788] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-11] [INFO] [1775502158.188212028] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-11] [INFO] [1775502158.189886807] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-11] [INFO] [1775502158.193649955] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-11] [INFO] [1775502158.197206045] [controller_server]: Setting transform_tolerance to 0.200000
+[controller_server-11] [INFO] [1775502158.207365777] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[controller_server-11] [INFO] [1775502158.208688813] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775502158.208997753] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-11] [INFO] [1775502158.210236377] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775502158.210503859] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[controller_server-11] [INFO] [1775502158.211035968] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775502158.211311662] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-11] [INFO] [1775502158.212528014] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775502158.212904619] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-11] [INFO] [1775502158.213697446] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775502158.213988415] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-11] [INFO] [1775502158.214528949] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775502158.214798828] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-11] [INFO] [1775502158.215312271] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775502158.215626984] [controller_server]: Using critic "PreferForward" (dwb_critics::PreferForwardCritic)
+[controller_server-11] [INFO] [1775502158.216855143] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775502158.216888241] [controller_server]: Controller Server has FollowPath  controllers available.
+[lifecycle_manager-16] [INFO] [1775502158.227300319] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-12] [INFO] [1775502158.227549642] [planner_server]: Configuring
+[planner_server-12] [INFO] [1775502158.227600174] [global_costmap.global_costmap]: Configuring
+[planner_server-12] [INFO] [1775502158.233781194] [global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-12] [INFO] [1775502158.238588599] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[planner_server-12] [INFO] [1775502158.240719436] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-12] [INFO] [1775502158.240759235] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-12] [INFO] [1775502158.243338998] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-12] [INFO] [1775502158.249088629] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-12] [INFO] [1775502158.249147314] [global_costmap.global_costmap]: Using plugin "voxel_layer"
+[planner_server-12] [INFO] [1775502158.251822076] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-12] [INFO] [1775502158.259064318] [global_costmap.global_costmap]: Initialized plugin "voxel_layer"
+[planner_server-12] [INFO] [1775502158.259104999] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-12] [INFO] [1775502158.261834433] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-12] [INFO] [1775502158.270881591] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 416 X 249 at 0.050000 m/pix
+[planner_server-12] [INFO] [1775502158.271440745] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[planner_server-12] [INFO] [1775502158.271483840] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-12] [INFO] [1775502158.272237652] [planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-10] [INFO] [1775502158.274937411] [lifecycle_manager_localization]: Server amcl connected with bond.
+[lifecycle_manager-10] [INFO] [1775502158.275028325] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-10] [INFO] [1775502158.275050914] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[lifecycle_manager-16] [INFO] [1775502158.280611697] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-13] [INFO] [1775502158.280848327] [behavior_server]: Configuring
+[behavior_server-13] [INFO] [1775502158.287064645] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-13] [INFO] [1775502158.288420666] [behavior_server]: Configuring spin
+[behavior_server-13] [INFO] [1775502158.293078188] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-13] [INFO] [1775502158.294147265] [behavior_server]: Configuring backup
+[behavior_server-13] [INFO] [1775502158.297863145] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[behavior_server-13] [INFO] [1775502158.298911907] [behavior_server]: Configuring drive_on_heading
+[behavior_server-13] [INFO] [1775502158.302706927] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
+[behavior_server-13] [INFO] [1775502158.304236693] [behavior_server]: Configuring assisted_teleop
+[behavior_server-13] [INFO] [1775502158.309564467] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-13] [INFO] [1775502158.310588592] [behavior_server]: Configuring wait
+[lifecycle_manager-16] [INFO] [1775502158.314356437] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[bt_navigator-14] [INFO] [1775502158.314595867] [bt_navigator]: Configuring
+[lifecycle_manager-16] [INFO] [1775502158.365588286] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[waypoint_follower-15] [INFO] [1775502158.365857123] [waypoint_follower]: Configuring
+[waypoint_follower-15] [INFO] [1775502158.373346664] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[lifecycle_manager-16] [INFO] [1775502158.374487463] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[controller_server-11] [INFO] [1775502158.374708477] [controller_server]: Activating
+[controller_server-11] [INFO] [1775502158.374761166] [local_costmap.local_costmap]: Activating
+[controller_server-11] [INFO] [1775502158.374782767] [local_costmap.local_costmap]: Checking transform
+[controller_server-11] [INFO] [1775502158.374849181] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+publisher: beginning loop
+publishing #1: geometry_msgs.msg.PoseWithCovarianceStamped(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0), frame_id='map'), pose=geometry_msgs.msg.PoseWithCovariance(pose=geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0), orientation=geometry_msgs.msg.Quaternion(x=0.0, y=0.0, z=0.0, w=1.0)), covariance=array([0.25, 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.25, 0.  , 0.  , 0.  ,
+       0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  ,
+       0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  ,
+       0.  , 0.  , 0.07])))
+
+[amcl-9] [INFO] [1775502158.414598653] [amcl]: initialPoseReceived
+[amcl-9] [INFO] [1775502158.414819404] [amcl]: Setting pose (1775502158.414819): 0.000 0.000 0.000
+[joy_node-6] [INFO] [1775502158.639083450] [joy_node]: Opened joystick: Controller 1.05.  deadzone: 0.050000
+[INFO] [1775502158.656643317] [object_grasper]: object_grasper started
+Waiting for AMCL to localize...
+[controller_server-11] [INFO] [1775502158.875036588] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[scan_to_scan_filter_chain-5] [WARN] [1775502158.916352558] [laser_filter]: diagnostic_updater: No HW_ID was set. This is probably a bug. Please report it. For devices that do not have a HW_ID, set this value to 'none'. This warning only occurs once all diagnostics are OK. It is okay to wait until the device is open before calling setHardwareID.
+[rviz2-17] [INFO] [1775502159.043235928] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-17] [INFO] [1775502159.043325335] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[rviz2-17] [INFO] [1775502159.171050812] [rviz2]: Stereo is NOT SUPPORTED
+[stretch_driver-3] [0m[INFO] [1775502159.218864206] [stretch_driver]: For use with S T R E T C H (TM) RESEARCH EDITION from Hello Robot Inc.[0m
+[stretch_driver-3] [0m[INFO] [1775502159.219348728] [stretch_driver]: stretch_driver started[0m
+[amcl-9] [WARN] [1775502159.276167089] [amcl]: New subscription discovered on topic '/particle_cloud', requesting incompatible QoS. No messages will be sent to it. Last incompatible policy: RELIABILITY_QOS_POLICY
+[controller_server-11] [INFO] [1775502159.374912150] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775502159.531096824] [rviz2]: Trying to create a map of size 416 x 249 using 1 swatches
+[rviz2-17] [ERROR] [1775502159.537031131] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[rviz2-17] active samplers with a different type refer to the same texture image unit
+[controller_server-11] [INFO] [1775502159.875044593] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[stretch_driver-3] Key mapped to End-Of-Arm Tool: tool_stretch_dex_wrist
+[stretch_driver-3] Unable to load URDF: /home/willy/.local/lib/python3.10/site-packages/stretch_urdf/RE2V0/stretch_description_RE2V0_tool_stretch_dex_wrist.urdf. Disabling collision system.
+[controller_server-11] [INFO] [1775502160.374943404] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [INFO] [1775502160.555402016] [amcl]: Message Filter dropping message: frame 'laser' at time 1775502158.137 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-11] [INFO] [1775502160.874947662] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[stretch_driver-3] [0m[INFO] [1775502160.969036647] [stretch_driver]: broadcast_odom_tf = True[0m
+[stretch_driver-3] [0m[INFO] [1775502161.000707657] [stretch_driver]: rate = 30.0 Hz[0m
+[stretch_driver-3] [0m[INFO] [1775502161.001372121] [stretch_driver]: twist timeout = 0.5 s[0m
+[stretch_driver-3] [0m[INFO] [1775502161.002420058] [stretch_driver]: base_frame_id = base_link[0m
+[stretch_driver-3] [0m[INFO] [1775502161.002900246] [stretch_driver]: odom_frame_id = odom[0m
+[stretch_driver-3] [0m[INFO] [1775502161.059863712] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1775502161.181687174] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /home_the_robot service.
+[INFO] [1775502161.183301928] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /stow_the_robot service.
+[INFO] [1775502161.185225116] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /stop_the_robot service.
+[INFO] [1775502161.186988299] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_trajectory_mode service.
+[INFO] [1775502161.189241241] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_position_mode service.
+[INFO] [1775502161.191332706] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_navigation_mode service.
+[INFO] [1775502161.192038424] [aruco_base_frame_estimator]: Moving head camera to detection orientation...
+[WARN] [1775502161.192326995] [aruco_base_frame_estimator]: Currently in  mode. Recommend switching either to position or trajectory mode
+[WARN] [1775502161.192544566] [aruco_base_frame_estimator]: Commanding joint trajectory server in position mode
+[stretch_driver-3] [0m[INFO] [1775502161.210908780] [stretch_driver]: Received goal request[0m
+[INFO] [1775502161.214821857] [object_grasper]: Node object_grasper connected to /home_the_robot service.
+[INFO] [1775502161.216979032] [object_grasper]: Node object_grasper connected to /stow_the_robot service.
+[INFO] [1775502161.218344908] [object_grasper]: Node object_grasper connected to /stop_the_robot service.
+[INFO] [1775502161.219972426] [object_grasper]: Node object_grasper connected to /switch_to_trajectory_mode service.
+[INFO] [1775502161.221552230] [object_grasper]: Node object_grasper connected to /switch_to_position_mode service.
+[INFO] [1775502161.223265382] [object_grasper]: Node object_grasper connected to /switch_to_navigation_mode service.
+[stretch_driver-3] [0m[INFO] [1775502161.222833922] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_head_pan', 'joint_head_tilt'][0m
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775502161.241301160] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775502161.245727959] [aruco_base_frame_estimator]: Head camera at detection pose — starting ArUco detection.
+[INFO] [1775502161.249264290] [aruco_base_frame_estimator]: Waiting for camera TF (base_link -> camera_color_optical_frame)...
+[amcl-9] [INFO] [1775502161.249647924] [amcl]: createLaserObject
+[INFO] [1775502161.272204412] [aruco_base_frame_estimator]: Camera pose acquired:
+[INFO] [1775502161.272684516] [aruco_base_frame_estimator]:   Position  : X=+0.0062  Y=-0.0517  Z=+1.2871  (m)
+[INFO] [1775502161.273068440] [aruco_base_frame_estimator]:   RPY (deg) : R=-179.02  P=+59.87  Y=+89.24
+[INFO] [1775502161.276858999] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775502161.277354310] [aruco_base_frame_estimator]: ArUco Base Frame Estimator Started
+[INFO] [1775502161.277720320] [aruco_base_frame_estimator]: Target Marker ID: 202
+[INFO] [1775502161.278129228] [aruco_base_frame_estimator]: Marker size: 2.8 cm
+[INFO] [1775502161.278520671] [aruco_base_frame_estimator]: Marker offset (cam frame): X=0.0  Y=0.0  Z=0.0
+[INFO] [1775502161.278917623] [aruco_base_frame_estimator]: Publishing target on: /aruco/target_base_link
+[INFO] [1775502161.279350653] [aruco_base_frame_estimator]: ============================================================
+[rviz2-17] [INFO] [1775502161.292671432] [rviz]: Message Filter dropping message: frame 'laser' at time 1775502158.137 for reason 'discarding message because the queue is full'
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_mast is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_arm_l4 is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+[controller_server-11] [INFO] [1775502161.375081394] [local_costmap.local_costmap]: start
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_wrist_yaw_bottom is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_gripper_s3_body is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_grasp_center is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link Base link (index: 0) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_mast (index: 2) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_arm_l4 (index: 4) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_wrist_yaw_bottom (index: 10) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_gripper_s3_body (index: 13) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_grasp_center (index: 14) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+[INFO] [1775502161.415190242] [object_grasper]: ============================================================
+[INFO] [1775502161.415459063] [object_grasper]: ObjectGrasper ready — waiting for ArUco detections
+[INFO] [1775502161.415647645] [object_grasper]: Listening on: /aruco/target_base_link
+[INFO] [1775502161.415818459] [object_grasper]: Call service: ros2 service call /grasp_object std_srvs/srv/Trigger {}
+[INFO] [1775502161.415989233] [object_grasper]: ============================================================
+AMCL localized!
+[controller_server-11] [INFO] [1775502161.576649059] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1775502161.680259479] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[lifecycle_manager-16] [INFO] [1775502161.680323132] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[planner_server-12] [INFO] [1775502161.680563998] [planner_server]: Activating
+[planner_server-12] [INFO] [1775502161.680617178] [global_costmap.global_costmap]: Activating
+[planner_server-12] [INFO] [1775502161.680641842] [global_costmap.global_costmap]: Checking transform
+[planner_server-12] [INFO] [1775502161.680726975] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 1775502161.661886 but the earliest data is at time 1775502162.102644, when looking up transform from frame [base_link] to frame [map]
+requester: making request: std_srvs.srv.Trigger_Request()
+
+[stretch_driver-3] [0m[INFO] [1775502161.945803178] [stretch_driver]: Changed to mode = navigation[0m
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+Waiting for controller_server...
+[planner_server-12] [INFO] [1775502162.180803881] [global_costmap.global_costmap]: start
+[rviz2-17] [INFO] [1775502162.299133968] [rviz2]: Trying to create a map of size 60 x 60 using 1 swatches
+[realsense2_camera_node-1] [33m[WARN] [1775502162.518500620] [camera]: Device 1/2 failed with exception: set_xu(...). xioctl(UVCIOC_CTRL_QUERY) failed Last Error: Connection timed out[0m
+[planner_server-12] [INFO] [1775502162.522001437] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1775502162.086 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[realsense2_camera_node-1] [0m[INFO] [1775502162.578733727] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502162.578805229] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502162.578834782] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502162.578982181] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502162.578994609] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[planner_server-12] [INFO] [1775502163.232464917] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[planner_server-12] [INFO] [1775502163.233864759] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1775502163.340073824] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[lifecycle_manager-16] [INFO] [1775502163.340145705] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[behavior_server-13] [INFO] [1775502163.340381304] [behavior_server]: Activating
+[behavior_server-13] [INFO] [1775502163.340411383] [behavior_server]: Activating spin
+[behavior_server-13] [INFO] [1775502163.340422949] [behavior_server]: Activating backup
+[behavior_server-13] [INFO] [1775502163.340431340] [behavior_server]: Activating drive_on_heading
+[behavior_server-13] [INFO] [1775502163.340439054] [behavior_server]: Activating assisted_teleop
+[behavior_server-13] [INFO] [1775502163.340446480] [behavior_server]: Activating wait
+[behavior_server-13] [INFO] [1775502163.340457302] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[rviz2-17] [INFO] [1775502163.351591720] [rviz2]: Trying to create a map of size 416 x 249 using 1 swatches
+[lifecycle_manager-16] [INFO] [1775502163.444974559] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[lifecycle_manager-16] [INFO] [1775502163.445028363] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[bt_navigator-14] [INFO] [1775502163.445305157] [bt_navigator]: Activating
+[bt_navigator-14] [INFO] [1775502163.493945223] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1775502163.597222133] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[lifecycle_manager-16] [INFO] [1775502163.597273339] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[waypoint_follower-15] [INFO] [1775502163.597758028] [waypoint_follower]: Activating
+[waypoint_follower-15] [INFO] [1775502163.597809870] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1775502163.703738842] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[lifecycle_manager-16] [INFO] [1775502163.703801629] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-16] [INFO] [1775502163.703813969] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+Set parameter successful
+Yaw tolerance set.
+Resetting arm position...
+[INFO] [1775502164.893220749] [reset_pose]: reset_pose started
+[INFO] [1775502164.938737899] [reset_pose]: Node reset_pose connected to /home_the_robot service.
+[INFO] [1775502164.940099683] [reset_pose]: Node reset_pose connected to /stow_the_robot service.
+[INFO] [1775502164.941421910] [reset_pose]: Node reset_pose connected to /stop_the_robot service.
+[INFO] [1775502164.943116132] [reset_pose]: Node reset_pose connected to /switch_to_trajectory_mode service.
+[INFO] [1775502164.944893539] [reset_pose]: Node reset_pose connected to /switch_to_position_mode service.
+[INFO] [1775502164.946684603] [reset_pose]: Node reset_pose connected to /switch_to_navigation_mode service.
+[INFO] [1775502164.947242938] [reset_pose]: Moving to default pose...
+[WARN] [1775502164.947804498] [reset_pose]: Currently in  mode. Recommend switching either to position or trajectory mode
+[WARN] [1775502164.948343429] [reset_pose]: Commanding joint trajectory server in position mode
+[stretch_driver-3] [0m[INFO] [1775502164.951411437] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775502164.965375943] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_lift', 'joint_arm', 'joint_wrist_yaw', 'joint_wrist_pitch', 'joint_wrist_roll', 'joint_gripper_finger_left'][0m
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775502166.421631788] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775502166.425844240] [reset_pose]: Arm reset done.
+[INFO] [1775502166.426121255] [reset_pose]: Rotating base 0°...
+[WARN] [1775502166.426424159] [reset_pose]: Currently in navigation mode. Recommend switching either to position or trajectory mode
+[WARN] [1775502166.426673944] [reset_pose]: Commanding joint trajectory server in position mode
+[stretch_driver-3] [0m[INFO] [1775502166.434325932] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775502166.440281662] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['rotate_mobile_base'][0m
+[stretch_driver-3] [33m[WARN] [1775502166.440699613] [stretch_driver]: MobileBaseCommandGroup.update: Must be in position mode to receive a command for the ['rotate_mobile_base'] joint(s). Current mode = navigation.[0m
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Errored goal
+[stretch_driver-3] [0m[INFO] [1775502166.440996239] [stretch_driver]: stretch_driver joint_traj action: joint names violated one of command group's requirements[0m
+[INFO] [1775502166.443582657] [reset_pose]: Done.
+terminate called without an active exception
+./dock_grab.sh: line 88: 23760 Aborted                 (core dumped) python3 ../test1.py
+=== Docking to table ===
+[stretch_driver-3] [0m[INFO] [1775502167.250191813] [stretch_driver]: Changed to mode = navigation[0m
+[rviz2-17] [INFO] [1775502170.825520963] [rviz]: Message Filter dropping message: frame 'odom' at time 1775502161.576 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-17] [INFO] [1775502170.825881966] [rviz]: Message Filter dropping message: frame 'odom' at time 1775502161.561 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[realsense2_camera_node-1] [0m[INFO] [1775502171.861138735] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502171.861216375] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502171.861236714] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502171.861423517] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502171.861452807] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[bt_navigator-14] [INFO] [1775502172.219262292] [bt_navigator]: Begin navigating from current location (0.01, -0.00) to (0.57, 1.66)
+[controller_server-11] [INFO] [1775502172.240018997] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-11] [WARN] [1775502172.240106418] [controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+[controller_server-11] [INFO] [1775502173.290410103] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775502174.340385898] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775502175.340383272] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775502176.390424797] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775502177.440383606] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[realsense2_camera_node-1] [0m[INFO] [1775502177.934835951] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502177.934902343] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502177.934923814] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502177.935125755] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502177.935152190] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775502178.440394451] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775502179.490384618] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775502180.490409836] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775502181.540383631] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775502182.542763289] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775502183.590386665] [controller_server]: Passing new path to controller.
+[realsense2_camera_node-1] [0m[INFO] [1775502184.003253422] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502184.003323090] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502184.003346968] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502184.003546225] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502184.003574620] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[controller_server-11] [INFO] [1775502184.590377858] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775502185.640382987] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775502186.690382722] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775502187.690428179] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775502188.740398476] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775502189.740383249] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775502190.043664064] [controller_server]: Reached the goal!
+[realsense2_camera_node-1] [0m[INFO] [1775502190.076400489] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502190.076477986] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502190.076497982] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502190.076688909] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502190.076715111] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[bt_navigator-14] [INFO] [1775502190.079573794] [bt_navigator]: Goal succeeded
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+Set parameter successful
+Waiting for an action server to become available...
+Sending goal:
+     pose:
+  header:
+    stamp:
+      sec: 0
+      nanosec: 0
+    frame_id: map
+  pose:
+    position:
+      x: 0.5688
+      y: 1.6601
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: -0.707
+      w: 0.707
+behavior_tree: ''
+
+Goal accepted with ID: c3c97007d6944347ae683917b43ca716
+
+Result:
+    result: {}
+
+Goal finished with status: SUCCEEDED
+Navigation succeeded!
+Waiting for grasp service...
+Grasp service is ready!
+=== Triggering grasp ===
+requester: making request: std_srvs.srv.Trigger_Request()
+
+[stretch_driver-3] [0m[INFO] [1775502191.133302097] [stretch_driver]: Changed to mode = position[0m
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+requester: making request: std_srvs.srv.Trigger_Request()
+
+[ERROR] [1775502193.742785004] [object_grasper]: No ArUco detection — aborting grasp
+response:
+std_srvs.srv.Trigger_Response(success=False, message='')
+
+Grasp triggered!
+=== dock_grab.sh finished at Mon Apr  6 03:03:13 PM EDT 2026 ===
+[realsense2_camera_node-1] [0m[INFO] [1775502196.144425577] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502196.144500562] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502196.144526190] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502196.144720401] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502196.144746883] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502202.214813663] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502202.214868511] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502202.214878263] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502202.215029143] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502202.215041037] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502208.282264404] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502208.282316505] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502208.282329144] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502208.282455602] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502208.282465010] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502214.352112818] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502214.352166919] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502214.352174747] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502214.352308660] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502214.352319155] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502220.419900413] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502220.419971943] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502220.419997553] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502220.420174629] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502220.420199474] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502226.492520219] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502226.492568243] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502226.492575784] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502226.492698947] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502226.492712409] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502232.561059015] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502232.561146747] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502232.561183165] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502232.561484724] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502232.561532027] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502238.634763763] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502238.634835548] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502238.634857366] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502238.635069137] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502238.635105650] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502244.702525973] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502244.702583156] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502244.702601249] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502244.702771465] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502244.702794169] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502250.778186353] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502250.778236358] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502250.778244844] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502250.778389364] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502250.778399735] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502256.845275220] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502256.845377350] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502256.845416156] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502256.845758814] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502256.845806766] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502262.912834699] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502262.912886907] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502262.912895625] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502262.913047153] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502262.913058855] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502268.981708140] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502268.981769290] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502268.981788807] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502268.981959050] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502268.981994363] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502275.048809314] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502275.048874670] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502275.048895683] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502275.049104285] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502275.049144315] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502281.116422357] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502281.116475897] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502281.116484273] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502281.116654120] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502281.116664691] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502287.187789798] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502287.187833474] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502287.187843042] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502287.187969469] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502287.187979923] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502293.253849604] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502293.253911261] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502293.253999996] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502293.254153752] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502293.254167510] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502299.321216269] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502299.321290452] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502299.321307919] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502299.321493187] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502299.321536589] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502305.389221510] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502305.389299526] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502305.389320643] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502305.389501613] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502305.389527341] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502311.457944887] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502311.458031525] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502311.458051707] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502311.458221476] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502311.458245754] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502317.528841738] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502317.528911044] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502317.528932395] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502317.529145746] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502317.529178155] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502323.599429865] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502323.599489848] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502323.599497854] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502323.599643232] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502323.599657045] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502329.667957886] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502329.668054084] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502329.668081485] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502329.668288523] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502329.668364904] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502335.735565976] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502335.735647031] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502335.735670740] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502335.735864700] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502335.735886987] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502341.803711375] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502341.803774510] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502341.803795758] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502341.803990972] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502341.804018190] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502347.869161787] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502347.869209156] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502347.869217719] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502347.869373851] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502347.869385130] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502353.935163487] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502353.935235408] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502353.935256625] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502353.935440842] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502353.935464881] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502360.002231450] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502360.002288824] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502360.002298275] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502360.002511004] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502360.002526809] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502366.072497257] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502366.072546746] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502366.072556238] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502366.072764038] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502366.072776825] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502372.138409684] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502372.138465877] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502372.138473585] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502372.138598057] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502372.138607498] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502378.207063593] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502378.207128548] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502378.207141960] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502378.207355870] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502378.207386852] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502384.275155951] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502384.275213246] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502384.275225790] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502384.275397463] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502384.275433633] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502390.343225036] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502390.343283066] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502390.343293135] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502390.343459848] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502390.343473360] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502396.416399545] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502396.416457741] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502396.416465635] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502396.416595294] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502396.416606762] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502402.485009369] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502402.485059036] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502402.485067868] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502402.485208381] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502402.485220069] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502408.550104776] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502408.550157804] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502408.550166846] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502408.550297771] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502408.550309514] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502414.617532870] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502414.617582876] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502414.617593503] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502414.617748706] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502414.617762588] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502420.685093849] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502420.685143852] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502420.685152283] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502420.685287157] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502420.685297674] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502426.753944518] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502426.754032347] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502426.754053224] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502426.754266825] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502426.754291651] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502432.824263259] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502432.824307100] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502432.824313941] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502432.824503089] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502432.824554241] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502438.896170065] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502438.896246813] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502438.896268505] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502438.896451734] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502438.896478822] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502444.967254304] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502444.967313953] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502444.967325982] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502444.967519812] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502444.967538273] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502451.040811630] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502451.040886991] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502451.040897931] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502451.041106159] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502451.041130098] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502457.113359958] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502457.113409078] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502457.113417725] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502457.113560574] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502457.113571646] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502463.180117227] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502463.180161060] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502463.180169302] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502463.180291430] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502463.180301472] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502469.247233701] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502469.247333158] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502469.247392602] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502469.247569358] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502469.247581011] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502475.315468134] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502475.315529511] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502475.315545211] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502475.315735789] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502475.315751154] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502481.382052363] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502481.382112397] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502481.382120686] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502481.382257941] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502481.382270188] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502487.450785594] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502487.450842537] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502487.450855974] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502487.451075376] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502487.451095944] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502493.519327651] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502493.519376107] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502493.519385664] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502493.519547411] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502493.519560265] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502499.584967900] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502499.585021668] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502499.585029850] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502499.585180859] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502499.585192193] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502505.651860225] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502505.651909689] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502505.651917497] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502505.652056786] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502505.652067952] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502511.717942373] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502511.718002568] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502511.718011438] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502511.718160426] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502511.718176219] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502517.783155592] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502517.783207792] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502517.783217013] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502517.783464438] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502517.783523328] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502523.849514286] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502523.849560935] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502523.849568446] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502523.849686588] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502523.849696112] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502529.916103265] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502529.916174952] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502529.916201418] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502529.916472357] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502529.916510225] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502535.984258282] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502535.984324252] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502535.984346900] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502535.984519662] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502535.984545401] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502542.054163045] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502542.054236365] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502542.054257884] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502542.054449245] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502542.054475731] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502548.124231387] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502548.124284585] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502548.124294360] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502548.124429264] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502548.124440509] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502554.194240878] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502554.194337959] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502554.194355828] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502554.194494093] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502554.194505481] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502560.267950955] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502560.268035089] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502560.268056604] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502560.268249247] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502560.268278063] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502566.339833891] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502566.339895639] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502566.339908175] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502566.340107907] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502566.340124043] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502572.406857459] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502572.406915868] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502572.406925126] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502572.407078659] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502572.407093243] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502578.474493016] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502578.474590002] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502578.474637456] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502578.474905178] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502578.474941478] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502584.544639353] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502584.544715867] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502584.544757138] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502584.544941935] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502584.544970766] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502590.613185507] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502590.613236918] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502590.613244806] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502590.613377467] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502590.613387774] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502596.678480317] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502596.678539671] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502596.678557680] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502596.678734429] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502596.678772923] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502602.749172149] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502602.749256764] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502602.749280168] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502602.749466997] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502602.749488899] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[stretch_driver-3] Caught signal 15
+[realsense2_camera_node-1] [0m[INFO] [1775502608.816987763] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502608.817093782] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502608.817118983] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502608.817499826] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502608.817532031] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[stretch_driver-3] Caught signal 15
+[stretch_driver-3] Caught signal 15
+[stretch_driver-3] Traceback (most recent call last):
+[stretch_driver-3]   File "/home/willy/ament_ws/install/stretch_core/lib/python3.10/site-packages/stretch_core/stretch_driver.py", line 1119, in main
+[stretch_driver-3]     executor.spin()
+[stretch_driver-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 323, in spin
+[stretch_driver-3]     self.spin_once()
+[stretch_driver-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 863, in spin_once
+[stretch_driver-3]     self._spin_once_impl(timeout_sec)
+[stretch_driver-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 844, in _spin_once_impl
+[stretch_driver-3]     handler, entity, node = self.wait_for_ready_callbacks(
+[stretch_driver-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 780, in wait_for_ready_callbacks
+[stretch_driver-3]     return next(self._cb_iter)
+[stretch_driver-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 677, in _wait_for_ready_callbacks
+[stretch_driver-3]     wait_set.wait(timeout_nsec)
+[stretch_driver-3]   File "/home/willy/.local/lib/python3.10/site-packages/stretch_body/hello_utils.py", line 301, in thread_service_shutdown
+[stretch_driver-3]     raise ThreadServiceExit
+[stretch_driver-3] stretch_body.hello_utils.ThreadServiceExit
+[stretch_driver-3] 
+[stretch_driver-3] During handling of the above exception, another exception occurred:
+[stretch_driver-3] 
+[stretch_driver-3] Traceback (most recent call last):
+[stretch_driver-3]   File "/home/willy/ament_ws/install/stretch_core/lib/python3.10/site-packages/stretch_core/stretch_driver.py", line 1122, in main
+[stretch_driver-3]     node.destroy_node()
+[stretch_driver-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 1685, in destroy_node
+[stretch_driver-3]     self.destroy_publisher(self._publishers[0])
+[stretch_driver-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 1565, in destroy_publisher
+[stretch_driver-3]     publisher.destroy()
+[stretch_driver-3]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/publisher.py", line 99, in destroy
+[stretch_driver-3]     self.__publisher.destroy_when_not_in_use()
+[stretch_driver-3]   File "/home/willy/.local/lib/python3.10/site-packages/stretch_body/hello_utils.py", line 301, in thread_service_shutdown
+[stretch_driver-3]     raise ThreadServiceExit
+[stretch_driver-3] stretch_body.hello_utils.ThreadServiceExit
+[stretch_driver-3] 
+[stretch_driver-3] During handling of the above exception, another exception occurred:
+[stretch_driver-3] 
+[stretch_driver-3] Traceback (most recent call last):
+[stretch_driver-3]   File "/home/willy/ament_ws/install/stretch_core/lib/stretch_core/stretch_driver", line 33, in <module>
+[stretch_driver-3]     sys.exit(load_entry_point('stretch-core==0.2.0', 'console_scripts', 'stretch_driver')())
+[stretch_driver-3]   File "/home/willy/ament_ws/install/stretch_core/lib/python3.10/site-packages/stretch_core/stretch_driver.py", line 1124, in main
+[stretch_driver-3]     node.gamepad_teleop.stop()
+[stretch_driver-3]   File "/home/willy/.local/lib/python3.10/site-packages/stretch_body/gamepad_teleop.py", line 433, in stop
+[stretch_driver-3]     self.gamepad_controller.join(1)
+[stretch_driver-3]   File "/usr/lib/python3.10/threading.py", line 1100, in join
+[stretch_driver-3]     self._wait_for_tstate_lock(timeout=max(timeout, 0))
+[stretch_driver-3]   File "/usr/lib/python3.10/threading.py", line 1116, in _wait_for_tstate_lock
+[stretch_driver-3]     if lock.acquire(block, timeout):
+[stretch_driver-3]   File "/home/willy/.local/lib/python3.10/site-packages/stretch_body/hello_utils.py", line 301, in thread_service_shutdown
+[stretch_driver-3]     raise ThreadServiceExit
+[stretch_driver-3] stretch_body.hello_utils.ThreadServiceExit
+[planner_server-12] [INFO] [1775502609.246216432] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1775502608.799 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-11] [INFO] [1775502609.246272363] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1775502608.799 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-17] [INFO] [1775502609.754623744] [rviz]: Message Filter dropping message: frame 'laser' at time 1775502160.968 for reason 'discarding message because the queue is full'
+[amcl-9] [INFO] [1775502609.950080559] [amcl]: Message Filter dropping message: frame 'laser' at time 1775502608.799 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[ERROR] [stretch_driver-3]: process has died [pid 23314, exit code 1, cmd '/home/willy/ament_ws/install/stretch_core/lib/stretch_core/stretch_driver --ros-args --params-file /tmp/launch_params_24o1puz9 -r cmd_vel:=/stretch/cmd_vel -r joint_states:=/stretch/joint_states'].
+[map_server-8] [WARN] [1775502610.892450292] [rcl_lifecycle]: No transition matching 1 found for current state active
+[map_server-8] [WARN] [1775502610.892485133] [rcl_lifecycle]: No transition matching 1 found for current state active
+[map_server-8] [ERROR] [1775502610.892499105] [map_server]: Unable to start transition 1 from current state active: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[controller_server-11] [WARN] [1775502610.959058368] [rcl_lifecycle]: No transition matching 1 found for current state active
+[controller_server-11] [WARN] [1775502610.959089028] [rcl_lifecycle]: No transition matching 1 found for current state active
+[controller_server-11] [ERROR] [1775502610.959101589] [controller_server]: Unable to start transition 1 from current state active: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[amcl-9] [INFO] [1775502611.846169928] [amcl]: initialPoseReceived
+[amcl-9] [WARN] [1775502611.846260867] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1775502611.846208 but the latest data is at time 1775502609.663265, when looking up transform from frame [base_footprint] to frame [odom])
+[amcl-9] [INFO] [1775502611.846271848] [amcl]: Setting pose (1775502611.846272): 0.000 0.000 0.000
+[amcl-9] [WARN] [1775502612.057190026] [amcl]: New subscription discovered on topic '/particle_cloud', requesting incompatible QoS. No messages will be sent to it. Last incompatible policy: RELIABILITY_QOS_POLICY
+[controller_server-11] [WARN] [1775502614.575256137] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502614.575376904] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502614.775229035] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502614.775310104] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[realsense2_camera_node-1] [0m[INFO] [1775502614.884836316] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502614.884896587] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502614.884906349] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502614.885054966] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502614.885066435] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[controller_server-11] [WARN] [1775502614.975236004] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502614.975335621] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502615.175227226] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502615.175294793] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502615.375217967] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502615.375300780] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502615.575228296] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502615.575323142] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502615.775227584] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502615.775322085] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502615.975702593] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502615.975861250] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502616.175743232] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502616.175914383] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502616.375227460] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502616.375325375] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[rviz2-17] [INFO] [1775502616.406248747] [rviz]: Message Filter dropping message: frame 'odom' at time 1775502609.776 for reason 'discarding message because the queue is full'
+[controller_server-11] [WARN] [1775502616.575282706] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502616.575381018] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502616.775225400] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502616.775311943] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502616.975230572] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502616.975324877] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502617.175262981] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502617.175371146] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502617.375273335] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502617.375482201] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502617.575232099] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502617.575319722] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502617.775236882] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502617.775324399] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502617.975227405] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502617.975313447] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502618.175308902] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502618.175524673] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502618.375323744] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502618.375521443] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[rviz2-17] [INFO] [1775502618.442251618] [rviz]: Message Filter dropping message: frame 'odom' at time 1775502614.755 for reason 'discarding message because the queue is full'
+[controller_server-11] [WARN] [1775502618.575239456] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502618.575324704] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502618.775237482] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502618.775316301] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[rviz2-17] [INFO] [1775502618.930710240] [rviz]: Message Filter dropping message: frame 'odom' at time 1775502612.776 for reason 'discarding message because the queue is full'
+[controller_server-11] [WARN] [1775502618.975253055] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502618.975357850] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502619.175215294] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502619.175292767] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502619.375245965] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502619.375373420] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502619.575227718] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502619.575313428] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502619.775235883] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502619.775327889] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502619.975236961] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502619.975329712] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502620.175316962] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502620.175513771] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502620.375288087] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502620.375472740] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502620.575235366] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502620.575332283] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502620.775316614] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502620.775512978] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[realsense2_camera_node-1] [0m[INFO] [1775502620.952310365] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502620.952373156] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502620.952385275] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502620.952517591] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502620.952527823] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[controller_server-11] [WARN] [1775502620.975221706] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502620.975309707] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[rviz2-17] [INFO] [1775502621.072620684] [rviz]: Message Filter dropping message: frame 'odom' at time 1775502615.921 for reason 'discarding message because the queue is full'
+[controller_server-11] [WARN] [1775502621.175229545] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502621.175316200] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502621.375232240] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502621.375323682] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502621.575227237] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502621.575308272] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502621.775271198] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502621.775503575] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[rviz2-17] [INFO] [1775502621.844908549] [rviz]: Message Filter dropping message: frame 'odom' at time 1775502615.776 for reason 'discarding message because the queue is full'
+[controller_server-11] [WARN] [1775502621.975237252] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502621.975319475] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502622.175219128] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502622.175301414] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502622.375296137] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502622.375494055] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502622.575277513] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502622.575443975] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502622.775212834] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502622.775288676] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502622.975246425] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502622.975328347] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502623.175231798] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502623.175335436] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502623.375276409] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502623.375414195] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502623.575220449] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502623.575340207] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[rviz2-17] [INFO] [1775502623.708280657] [rviz]: Message Filter dropping message: frame 'odom' at time 1775502615.921 for reason 'discarding message because the queue is full'
+[controller_server-11] [WARN] [1775502623.776407714] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502623.776817754] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502623.975269845] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502623.975431428] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502624.175279410] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502624.175363842] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502624.375239691] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502624.375326383] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502624.575210913] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502624.575298308] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502624.775238468] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502624.775378351] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502624.975291255] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502624.975437241] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[rviz2-17] [INFO] [1775502625.022622065] [rviz]: Message Filter dropping message: frame 'odom' at time 1775502618.776 for reason 'discarding message because the queue is full'
+[controller_server-11] [WARN] [1775502625.175201076] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502625.175265721] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502625.375201532] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502625.375264246] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502625.575261282] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502625.575348100] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502625.775202780] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502625.775277706] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502625.975240780] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502625.975498527] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502626.175224111] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502626.175302417] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[rviz2-17] [INFO] [1775502626.268600468] [rviz]: Message Filter dropping message: frame 'odom' at time 1775502615.921 for reason 'discarding message because the queue is full'
+[controller_server-11] [WARN] [1775502626.375201270] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502626.375285923] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502626.575213572] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502626.575293296] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502626.775286929] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502626.775456819] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502626.975223835] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502626.975320848] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[realsense2_camera_node-1] [0m[INFO] [1775502627.023061276] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502627.023183907] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502627.023211353] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502627.023809946] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502627.023916414] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[controller_server-11] [WARN] [1775502627.175202256] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502627.175268309] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502627.375198615] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502627.375255337] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502627.575211284] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502627.575279395] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502627.775211520] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502627.775278461] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[rviz2-17] [INFO] [1775502627.778609258] [rviz]: Message Filter dropping message: frame 'odom' at time 1775502621.776 for reason 'discarding message because the queue is full'
+[controller_server-11] [WARN] [1775502627.975231604] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502627.975313445] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502628.175203947] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502628.175272777] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502628.375218904] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502628.375301669] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502628.575310882] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502628.575521179] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502628.775216538] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502628.775295271] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[rviz2-17] [INFO] [1775502628.868159156] [rviz]: Message Filter dropping message: frame 'odom' at time 1775502615.921 for reason 'discarding message because the queue is full'
+[controller_server-11] [WARN] [1775502628.975217524] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502628.975315041] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502629.175215273] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502629.175291316] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502629.375269209] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502629.375417834] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502629.575248625] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502629.575357065] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502629.775202940] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502629.775267246] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502629.975225719] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502629.975309745] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502630.175293008] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502630.175513961] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502630.375222317] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502630.375306257] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502630.575204980] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502630.575277889] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502630.775199314] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502630.775261874] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[rviz2-17] [INFO] [1775502630.959556010] [rviz]: Message Filter dropping message: frame 'odom' at time 1775502624.776 for reason 'discarding message because the queue is full'
+[controller_server-11] [WARN] [1775502630.975285652] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502630.975417529] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502631.175211988] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502631.175284775] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502631.375208782] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502631.375291104] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[rviz2-17] [INFO] [1775502631.516211048] [rviz]: Message Filter dropping message: frame 'odom' at time 1775502615.921 for reason 'discarding message because the queue is full'
+[controller_server-11] [WARN] [1775502631.575223358] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502631.575325568] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502631.775285321] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502631.775495313] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502631.975217229] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502631.975304397] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502632.175206162] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502632.175278357] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502632.375207396] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502632.375290504] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502632.575227457] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502632.575310499] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502632.775273136] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502632.775456686] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502632.975217133] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502632.975306058] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[realsense2_camera_node-1] [0m[INFO] [1775502633.099834121] [camera]: Device with serial number 218622278011 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775502633.100009991] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2.3/3-2.3.3/3-2.3.3.1/3-2.3.3.1:1.0/video4linux/video6 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502633.100047205] [camera]: Device with name Intel RealSense D405 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775502633.100499872] [camera]: Device with port number 3-2.3.3.1 was found.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775502633.100532824] [camera]: The requested device with device name containing d435 is NOT found. Will Try again.[0m
+[controller_server-11] [WARN] [1775502633.175220755] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502633.175301693] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502633.375251525] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502633.375344612] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502633.575222786] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502633.575309764] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502633.775205680] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502633.775303801] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[rviz2-17] [INFO] [1775502633.925059470] [rviz]: Message Filter dropping message: frame 'odom' at time 1775502627.775 for reason 'discarding message because the queue is full'
+[controller_server-11] [WARN] [1775502633.975221282] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502633.975324311] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[rviz2-17] [INFO] [1775502634.161960606] [rviz]: Message Filter dropping message: frame 'odom' at time 1775502615.921 for reason 'discarding message because the queue is full'
+[controller_server-11] [WARN] [1775502634.175351906] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502634.175547175] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502634.375220559] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502634.375313832] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502634.575198618] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502634.575258488] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502634.775196097] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502634.775271656] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502634.975229330] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502634.975317499] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502635.175263295] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502635.175410628] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502635.376649215] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502635.376742741] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502635.575227207] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502635.575333270] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502635.775288473] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502635.775513472] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502635.975228315] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63) is out of map bounds (-1.45, -1.45) to (1.53, 1.53). The costmap cannot raytrace for it.
+[controller_server-11] [WARN] [1775502635.975340439] [local_costmap.local_costmap]: Sensor origin at (0.62, 1.63 0.17) is out of map bounds (-1.45, -1.45, 0.00) to (1.53, 1.53, 0.78). The costmap cannot raytrace for it.

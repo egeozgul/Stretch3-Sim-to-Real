@@ -1,0 +1,74 @@
+=== pick_object.sh started at Thu Apr  9 05:08:00 PM EDT 2026 ===
+[DEBUG] Received MARKER_ID argument: '202'
+Waiting for nodes to be ready (launch_nodes.sh)...
+Nodes are ready!
+[DEBUG] Current target_marker_id BEFORE set:
+Integer value is: 202
+Setting target marker ID to 202...
+Set parameter successful
+[DEBUG] Current target_marker_id AFTER set:
+Integer value is: 202
+Waiting for stale target to expire (6s)...
+[DEBUG] Marker topic snapshot AFTER stale clear (should be empty or new pose):
+usage: ros2 [-h] [--use-python-default-buffering]
+            Call `ros2 <command> -h` for more detailed usage. ...
+ros2: error: unrecognized arguments: --timeout 3
+[DEBUG] No marker message received within 3s (good — stale cleared)
+Marker ID set and target cleared.
+Resetting arm position for camera view...
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+[INFO] [1775768893.383096717] [reset_pose]: reset_pose started
+[INFO] [1775768893.432052902] [reset_pose]: Node reset_pose connected to /home_the_robot service.
+[INFO] [1775768893.433429507] [reset_pose]: Node reset_pose connected to /stow_the_robot service.
+[INFO] [1775768893.434658972] [reset_pose]: Node reset_pose connected to /stop_the_robot service.
+[INFO] [1775768893.436004857] [reset_pose]: Node reset_pose connected to /switch_to_trajectory_mode service.
+[INFO] [1775768893.438525767] [reset_pose]: Node reset_pose connected to /switch_to_position_mode service.
+[INFO] [1775768893.440285346] [reset_pose]: Node reset_pose connected to /switch_to_navigation_mode service.
+[INFO] [1775768893.440619529] [reset_pose]: Moving to default pose...
+[WARN] [1775768893.440900412] [reset_pose]: Currently in  mode. Recommend switching either to position or trajectory mode
+[WARN] [1775768893.441162870] [reset_pose]: Commanding joint trajectory server in position mode
+[INFO] [1775768898.019473630] [reset_pose]: Arm reset done.
+[INFO] [1775768898.019767692] [reset_pose]: Skipping rotation (ROTATE_DEG=0).
+[INFO] [1775768898.019968998] [reset_pose]: Done.
+Arm reset complete.
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+[DEBUG] Waiting for fresh marker detection on /aruco_base_frame_estimator/target_frame...
+[DEBUG] Detection attempt 1: 
+[DEBUG] Detection attempt 2: 
+[DEBUG] Detection attempt 3: 
+[DEBUG] Detection attempt 4: 
+[DEBUG] Detection attempt 5: 
+[DEBUG] Detection attempt 6: 
+[DEBUG] Detection attempt 7: 
+[DEBUG] Detection attempt 8: 
+[DEBUG] Detection attempt 9: 
+[DEBUG] Detection attempt 10: 
+[DEBUG] Detection attempt 11: 
+[DEBUG] Detection attempt 12: 
+[DEBUG] Detection attempt 13: 
+[DEBUG] Detection attempt 14: 
+[DEBUG] Detection attempt 15: 
+[DEBUG] WARNING: No fresh marker detection after 15s — proceeding anyway (grasp node may handle it)
+Waiting for grasp service...
+Grasp service ready!
+=== Triggering grasp ===
+[DEBUG] Pose snapshot immediately before grasp call:
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='')
+Grasp succeeded!
+=== pick_object.sh finished at Thu Apr  9 05:09:03 PM EDT 2026 ===

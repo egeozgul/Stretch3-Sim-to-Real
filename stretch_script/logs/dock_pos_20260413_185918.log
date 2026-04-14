@@ -1,0 +1,53 @@
+=== dock_pos.sh started at Mon Apr 13 06:59:18 PM EDT 2026 ===
+Using named pose 'stationB': x=1.1135 y=0.6680 yaw=19.05°
+Goal: x=1.1135  y=0.6680  yaw=19.05° (z=0.16547793841345101, w=0.9862134920484682)
+Waiting for nodes to be ready (launch_nodes.sh)...
+Nodes are ready!
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+Waiting for controller_server...
+Set parameter successful
+Yaw tolerance set.
+Resetting arm position...
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+=== Navigating to x=1.1135 y=0.6680 yaw=19.05° ===
+Waiting for an action server to become available...
+Sending goal:
+     pose:
+  header:
+    stamp:
+      sec: 0
+      nanosec: 0
+    frame_id: map
+  pose:
+    position:
+      x: 1.1135
+      y: 0.668
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.16547793841345101
+      w: 0.9862134920484682
+behavior_tree: ''
+
+Goal accepted with ID: 456bfea0a37d4d72bca41cb64657fa19
+
+Result:
+    result: {}
+
+Goal finished with status: SUCCEEDED
+Navigation succeeded!
+=== dock_pos.sh finished at Mon Apr 13 06:59:37 PM EDT 2026 ===

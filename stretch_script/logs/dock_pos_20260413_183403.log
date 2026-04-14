@@ -1,0 +1,65 @@
+=== dock_pos.sh started at Mon Apr 13 06:34:03 PM EDT 2026 ===
+Using named pose 'center': x=1.1141 y=1.191 yaw=0°
+Goal: x=1.1141  y=1.191  yaw=0° (z=0.0, w=1.0)
+Waiting for nodes to be ready (launch_nodes.sh)...
+Nodes are ready!
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+Waiting for controller_server...
+Set parameter successful
+Yaw tolerance set.
+Resetting arm position...
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+[INFO] [1776119648.023917036] [reset_pose]: reset_pose started
+[INFO] [1776119648.065571779] [reset_pose]: Node reset_pose connected to /home_the_robot service.
+[INFO] [1776119648.067396244] [reset_pose]: Node reset_pose connected to /stow_the_robot service.
+[INFO] [1776119648.069052117] [reset_pose]: Node reset_pose connected to /stop_the_robot service.
+[INFO] [1776119648.070691866] [reset_pose]: Node reset_pose connected to /switch_to_trajectory_mode service.
+[INFO] [1776119648.072437114] [reset_pose]: Node reset_pose connected to /switch_to_position_mode service.
+[INFO] [1776119648.073955614] [reset_pose]: Node reset_pose connected to /switch_to_navigation_mode service.
+[INFO] [1776119648.074513670] [reset_pose]: Moving to default pose...
+[INFO] [1776119648.136411148] [reset_pose]: Arm reset done.
+[INFO] [1776119648.136644400] [reset_pose]: Skipping rotation (ROTATE_DEG=0).
+[INFO] [1776119648.136858044] [reset_pose]: Done.
+Arm reset complete (exit 0).
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+=== Navigating to x=1.1141 y=1.191 yaw=0° ===
+Waiting for an action server to become available...
+Sending goal:
+     pose:
+  header:
+    stamp:
+      sec: 0
+      nanosec: 0
+    frame_id: map
+  pose:
+    position:
+      x: 1.1141
+      y: 1.191
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      w: 1.0
+behavior_tree: ''
+
+Goal accepted with ID: daaa85be89bc4cc4abb7bc178d90baca
+
+Result:
+    result: {}
+
+Goal finished with status: SUCCEEDED
+Navigation succeeded!
+=== dock_pos.sh finished at Mon Apr 13 06:34:17 PM EDT 2026 ===

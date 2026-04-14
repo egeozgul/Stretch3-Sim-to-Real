@@ -1,0 +1,1047 @@
+=== dock_grab.sh started at Fri Apr  3 05:34:05 PM EDT 2026 ===
+Freeing robot process...
+Done!
+=== Launching all nodes ===
+Waiting for Nav2 action server...
+[INFO] [launch]: All log files can be found below /home/willy/.ros/log/2026-04-03-17-34-06-498492-stretch-re2-2204-13509
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch]: All log files can be found below /home/willy/.ros/log/2026-04-03-17-34-06-530265-stretch-re2-2204-13508
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: D435i launched in high resolution
+[INFO] [realsense2_camera_node-1]: process started with pid [13584]
+[INFO] [d435i_accel_correction-2]: process started with pid [13586]
+[INFO] [1775252047.015021528] [aruco_base_frame_estimator]: aruco_base_frame_estimator started
+[realsense2_camera_node-1] [0m[INFO] [1775252047.119572872] [camera]: RealSense ROS v4.55.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252047.119689368] [camera]: Built with LibRealSense v2.56.4[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252047.119715316] [camera]: Running with LibRealSense v2.56.4[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252047.140649082] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252047.140722436] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252047.140733686] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252047.140895523] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252047.140908893] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252047.140922687] [camera]: Resetting device...[0m
+[d435i_accel_correction-2] [INFO] [1775252047.158353322] [d435i_accel_correction_node]: d435i_accel_correction_node started
+Nav2 is up!
+Setting initial pose...
+[INFO] [stretch_driver-3]: process started with pid [13742]
+[INFO] [joint_state_publisher-1]: process started with pid [13738]
+[INFO] [robot_state_publisher-2]: process started with pid [13740]
+[INFO] [sllidar_node-4]: process started with pid [13744]
+[INFO] [scan_to_scan_filter_chain-5]: process started with pid [13746]
+[INFO] [joy_node-6]: process started with pid [13748]
+[INFO] [teleop_node-7]: process started with pid [13750]
+[INFO] [map_server-8]: process started with pid [13752]
+[INFO] [amcl-9]: process started with pid [13754]
+[INFO] [lifecycle_manager-10]: process started with pid [13756]
+[INFO] [controller_server-11]: process started with pid [13758]
+[INFO] [planner_server-12]: process started with pid [13760]
+[INFO] [behavior_server-13]: process started with pid [13762]
+[INFO] [bt_navigator-14]: process started with pid [13772]
+[INFO] [waypoint_follower-15]: process started with pid [13774]
+[INFO] [lifecycle_manager-16]: process started with pid [13887]
+[INFO] [rviz2-17]: process started with pid [13889]
+[sllidar_node-4] [INFO] [1775252047.442464259] [sllidar_node]: SLLidar running on ROS2 package SLLidar.ROS2 SDK Version:1.0.1, SLLIDAR SDK Version:2.1.0
+[sllidar_node-4] [INFO] [1775252047.453515244] [sllidar_node]: SLLidar S/N: C394ED93C0EA98C9A5E698F2564A4669
+[sllidar_node-4] [INFO] [1775252047.453654399] [sllidar_node]: Firmware Ver: 1.29
+[sllidar_node-4] [INFO] [1775252047.453667225] [sllidar_node]: Hardware Rev: 7
+[sllidar_node-4] [INFO] [1775252047.456447710] [sllidar_node]: SLLidar health status : 0
+[sllidar_node-4] [INFO] [1775252047.456506426] [sllidar_node]: SLLidar health status : OK.
+[teleop_node-7] [INFO] [1775252047.465466146] [TeleopTwistJoy]: Teleop enable button 4.
+[teleop_node-7] [INFO] [1775252047.465528431] [TeleopTwistJoy]: Linear axis x on 4 at scale 0.500000.
+[teleop_node-7] [INFO] [1775252047.465541115] [TeleopTwistJoy]: Angular axis yaw on 3 at scale 0.500000.
+[amcl-9] [INFO] [1775252047.467463439] [amcl]: 
+[amcl-9] 	amcl lifecycle node launched. 
+[amcl-9] 	Waiting on external lifecycle transitions to activate
+[amcl-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-9] [INFO] [1775252047.468356819] [amcl]: Creating
+[lifecycle_manager-10] [INFO] [1775252047.459318208] [lifecycle_manager_localization]: Creating
+[lifecycle_manager-10] [INFO] [1775252047.463862159] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[controller_server-11] [INFO] [1775252047.463427850] [controller_server]: 
+[controller_server-11] 	controller_server lifecycle node launched. 
+[controller_server-11] 	Waiting on external lifecycle transitions to activate
+[controller_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1775252047.473016194] [planner_server]: 
+[planner_server-12] 	planner_server lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-14] [INFO] [1775252047.479873674] [bt_navigator]: 
+[bt_navigator-14] 	bt_navigator lifecycle node launched. 
+[bt_navigator-14] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-14] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-14] [INFO] [1775252047.480023359] [bt_navigator]: Creating
+[planner_server-12] [INFO] [1775252047.480436807] [planner_server]: Creating
+[behavior_server-13] [INFO] [1775252047.482763361] [behavior_server]: 
+[behavior_server-13] 	behavior_server lifecycle node launched. 
+[behavior_server-13] 	Waiting on external lifecycle transitions to activate
+[behavior_server-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-11] [INFO] [1775252047.482956557] [controller_server]: Creating controller server
+[scan_to_scan_filter_chain-5] [INFO] [1775252047.489372582] [laser_filter]: In shadow configure done
+[waypoint_follower-15] [INFO] [1775252047.490312442] [waypoint_follower]: 
+[waypoint_follower-15] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-15] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-15] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-15] [INFO] [1775252047.491472656] [waypoint_follower]: Creating
+[scan_to_scan_filter_chain-5] [WARN] [1775252047.493141926] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[map_server-8] [INFO] [1775252047.494933544] [map_server]: 
+[map_server-8] 	map_server lifecycle node launched. 
+[map_server-8] 	Waiting on external lifecycle transitions to activate
+[map_server-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-8] [INFO] [1775252047.495116832] [map_server]: Creating
+[lifecycle_manager-16] [INFO] [1775252047.495588614] [lifecycle_manager_navigation]: Creating
+[lifecycle_manager-16] [INFO] [1775252047.497925104] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[lifecycle_manager-10] [INFO] [1775252047.503325180] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-10] [INFO] [1775252047.503399332] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[map_server-8] [INFO] [1775252047.506937749] [map_server]: Configuring
+[map_server-8] [INFO] [1775252047.507047156] [map_io]: Loading yaml file: /home/willy/stretch_user/maps/testing_map.yaml
+[map_server-8] [INFO] [1775252047.507413718] [map_io]: resolution: 0.05
+[map_server-8] [INFO] [1775252047.507431573] [map_io]: origin[0]: -11.5
+[map_server-8] [INFO] [1775252047.507440555] [map_io]: origin[1]: -1.71
+[map_server-8] [INFO] [1775252047.507447773] [map_io]: origin[2]: 0
+[map_server-8] [INFO] [1775252047.507455178] [map_io]: free_thresh: 0.25
+[map_server-8] [INFO] [1775252047.507462712] [map_io]: occupied_thresh: 0.65
+[map_server-8] [INFO] [1775252047.507470606] [map_io]: mode: trinary
+[map_server-8] [INFO] [1775252047.507479174] [map_io]: negate: 0
+[map_server-8] [INFO] [1775252047.507706865] [map_io]: Loading image_file: /home/willy/stretch_user/maps/testing_map.pgm
+[controller_server-11] [INFO] [1775252047.508777419] [local_costmap.local_costmap]: 
+[controller_server-11] 	local_costmap lifecycle node launched. 
+[controller_server-11] 	Waiting on external lifecycle transitions to activate
+[controller_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-11] [INFO] [1775252047.510125831] [local_costmap.local_costmap]: Creating Costmap
+[planner_server-12] [INFO] [1775252047.511670610] [global_costmap.global_costmap]: 
+[planner_server-12] 	global_costmap lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1775252047.517025846] [global_costmap.global_costmap]: Creating Costmap
+[map_server-8] [INFO] [1775252047.529675119] [map_io]: Read map /home/willy/stretch_user/maps/testing_map.pgm: 416 X 249 map @ 0.05 m/cell
+[lifecycle_manager-10] [INFO] [1775252047.534766938] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[amcl-9] [INFO] [1775252047.534986548] [amcl]: Configuring
+[amcl-9] [INFO] [1775252047.535089016] [amcl]: initTransforms
+[amcl-9] [INFO] [1775252047.540125380] [amcl]: initPubSub
+[amcl-9] [INFO] [1775252047.542141304] [amcl]: Subscribed to map topic.
+[lifecycle_manager-10] [INFO] [1775252047.544951530] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[map_server-8] [INFO] [1775252047.545135067] [map_server]: Activating
+[map_server-8] [INFO] [1775252047.545451447] [map_server]: Creating bond (map_server) to lifecycle manager.
+[amcl-9] [INFO] [1775252047.545683774] [amcl]: Received a 416 X 249 map @ 0.050 m/pix
+[lifecycle_manager-16] [INFO] [1775252047.622730111] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-16] [INFO] [1775252047.622801277] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-11] [INFO] [1775252047.623070349] [controller_server]: Configuring controller interface
+[controller_server-11] [INFO] [1775252047.623604485] [controller_server]: getting goal checker plugins..
+[controller_server-11] [INFO] [1775252047.624090142] [controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-11] [INFO] [1775252047.624142155] [local_costmap.local_costmap]: Configuring
+[controller_server-11] [INFO] [1775252047.635626785] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[controller_server-11] [INFO] [1775252047.646097951] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[lifecycle_manager-10] [INFO] [1775252047.648599174] [lifecycle_manager_localization]: Server map_server connected with bond.
+[lifecycle_manager-10] [INFO] [1775252047.648658238] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+[amcl-9] [INFO] [1775252047.649049261] [amcl]: Activating
+[amcl-9] [INFO] [1775252047.649096213] [amcl]: Creating bond (amcl) to lifecycle manager.
+[controller_server-11] [INFO] [1775252047.658540831] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-11] [INFO] [1775252047.658596744] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[sllidar_node-4] [INFO] [1775252047.659186786] [sllidar_node]: current scan mode: Boost, sample rate: 8 Khz, max_distance: 12.0 m, scan frequency:10.0 Hz, 
+[controller_server-11] [INFO] [1775252047.661811420] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-11] [INFO] [1775252047.674624237] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-11] [INFO] [1775252047.674669230] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-11] [INFO] [1775252047.677459885] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-11] [INFO] [1775252047.688935019] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-11] [INFO] [1775252047.691311295] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-11] [INFO] [1775252047.693158069] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-11] [INFO] [1775252047.696147404] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-11] [INFO] [1775252047.702845720] [controller_server]: Setting transform_tolerance to 0.200000
+[controller_server-11] [INFO] [1775252047.738547610] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[controller_server-11] [INFO] [1775252047.741813103] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775252047.742410225] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-11] [INFO] [1775252047.743141323] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775252047.743289284] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[controller_server-11] [INFO] [1775252047.743509052] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775252047.743634778] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-11] [INFO] [1775252047.744002715] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775252047.744134190] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-11] [INFO] [1775252047.744487331] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775252047.744621508] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-11] [INFO] [1775252047.744877265] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775252047.745006685] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-11] [INFO] [1775252047.745261502] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775252047.745394352] [controller_server]: Using critic "PreferForward" (dwb_critics::PreferForwardCritic)
+[controller_server-11] [INFO] [1775252047.749512494] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775252047.749559355] [controller_server]: Controller Server has FollowPath  controllers available.
+[lifecycle_manager-10] [INFO] [1775252047.756492830] [lifecycle_manager_localization]: Server amcl connected with bond.
+[lifecycle_manager-10] [INFO] [1775252047.756550844] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-10] [INFO] [1775252047.756570262] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[lifecycle_manager-16] [INFO] [1775252047.766535165] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-12] [INFO] [1775252047.766822273] [planner_server]: Configuring
+[planner_server-12] [INFO] [1775252047.766863213] [global_costmap.global_costmap]: Configuring
+[planner_server-12] [INFO] [1775252047.770336181] [global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-12] [INFO] [1775252047.775677267] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[planner_server-12] [INFO] [1775252047.776384098] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-12] [INFO] [1775252047.776415321] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-12] [INFO] [1775252047.779211991] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-12] [INFO] [1775252047.787747283] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-12] [INFO] [1775252047.787797303] [global_costmap.global_costmap]: Using plugin "voxel_layer"
+[planner_server-12] [INFO] [1775252047.791867477] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-12] [INFO] [1775252047.804398966] [global_costmap.global_costmap]: Initialized plugin "voxel_layer"
+[planner_server-12] [INFO] [1775252047.804442084] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-12] [INFO] [1775252047.807394116] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-12] [INFO] [1775252047.819907573] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[planner_server-12] [INFO] [1775252047.819955972] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-12] [INFO] [1775252047.820326524] [planner_server]: Planner Server has GridBased  planners available.
+[planner_server-12] [INFO] [1775252047.821055317] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 416 X 249 at 0.050000 m/pix
+[lifecycle_manager-16] [INFO] [1775252047.832760809] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-13] [INFO] [1775252047.832954649] [behavior_server]: Configuring
+[behavior_server-13] [INFO] [1775252047.838092362] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-13] [INFO] [1775252047.838963495] [behavior_server]: Configuring spin
+[behavior_server-13] [INFO] [1775252047.841853658] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-13] [INFO] [1775252047.842613268] [behavior_server]: Configuring backup
+[behavior_server-13] [INFO] [1775252047.846354494] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[behavior_server-13] [INFO] [1775252047.847511721] [behavior_server]: Configuring drive_on_heading
+[behavior_server-13] [INFO] [1775252047.851099317] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
+[behavior_server-13] [INFO] [1775252047.853193267] [behavior_server]: Configuring assisted_teleop
+[behavior_server-13] [INFO] [1775252047.857444554] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-13] [INFO] [1775252047.858702114] [behavior_server]: Configuring wait
+[lifecycle_manager-16] [INFO] [1775252047.861634437] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[bt_navigator-14] [INFO] [1775252047.861921687] [bt_navigator]: Configuring
+[lifecycle_manager-16] [INFO] [1775252047.908191064] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[waypoint_follower-15] [INFO] [1775252047.908455704] [waypoint_follower]: Configuring
+[waypoint_follower-15] [INFO] [1775252047.917493148] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[lifecycle_manager-16] [INFO] [1775252047.919099028] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[controller_server-11] [INFO] [1775252047.919367120] [controller_server]: Activating
+[controller_server-11] [INFO] [1775252047.919426226] [local_costmap.local_costmap]: Activating
+[controller_server-11] [INFO] [1775252047.919449744] [local_costmap.local_costmap]: Checking transform
+[controller_server-11] [INFO] [1775252047.919545223] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[joy_node-6] [INFO] [1775252048.051621584] [joy_node]: Opened joystick: Controller 1.05.  deadzone: 0.050000
+[INFO] [1775252048.265279696] [object_grasper]: object_grasper started
+[controller_server-11] [INFO] [1775252048.419822536] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[scan_to_scan_filter_chain-5] [WARN] [1775252048.476086701] [laser_filter]: diagnostic_updater: No HW_ID was set. This is probably a bug. Please report it. For devices that do not have a HW_ID, set this value to 'none'. This warning only occurs once all diagnostics are OK. It is okay to wait until the device is open before calling setHardwareID.
+[stretch_driver-3] [0m[INFO] [1775252048.682295320] [stretch_driver]: For use with S T R E T C H (TM) RESEARCH EDITION from Hello Robot Inc.[0m
+[stretch_driver-3] [0m[INFO] [1775252048.682531780] [stretch_driver]: stretch_driver started[0m
+publisher: beginning loop
+publishing #1: geometry_msgs.msg.PoseWithCovarianceStamped(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0), frame_id='map'), pose=geometry_msgs.msg.PoseWithCovariance(pose=geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0), orientation=geometry_msgs.msg.Quaternion(x=0.0, y=0.0, z=0.0, w=1.0)), covariance=array([0.25, 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.25, 0.  , 0.  , 0.  ,
+       0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  ,
+       0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  ,
+       0.  , 0.  , 0.07])))
+
+[amcl-9] [INFO] [1775252048.874005101] [amcl]: initialPoseReceived
+[amcl-9] [INFO] [1775252048.874149101] [amcl]: Setting pose (1775252048.874149): 0.000 0.000 0.000
+[controller_server-11] [INFO] [1775252048.919732295] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+Waiting for AMCL to localize...
+[controller_server-11] [INFO] [1775252049.419598747] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[stretch_driver-3] [33m[WARN] [1775252049.424388751] [stretch_driver]: Robot not homed. Call /home_the_robot service.[0m
+[stretch_driver-3] Key mapped to End-Of-Arm Tool: tool_stretch_dex_wrist
+[stretch_driver-3] Unable to load URDF: /home/willy/.local/lib/python3.10/site-packages/stretch_urdf/RE2V0/stretch_description_RE2V0_tool_stretch_dex_wrist.urdf. Disabling collision system.
+[controller_server-11] [INFO] [1775252049.919716042] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [INFO] [1775252050.126987842] [amcl]: Message Filter dropping message: frame 'laser' at time 1775252047.659 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-17] [INFO] [1775252050.185767973] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-17] [INFO] [1775252050.185833310] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[controller_server-11] [INFO] [1775252050.419714915] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[stretch_driver-3] [0m[INFO] [1775252050.436027292] [stretch_driver]: broadcast_odom_tf = True[0m
+[stretch_driver-3] [0m[INFO] [1775252050.480678885] [stretch_driver]: rate = 30.0 Hz[0m
+[stretch_driver-3] [0m[INFO] [1775252050.481372778] [stretch_driver]: twist timeout = 0.5 s[0m
+[stretch_driver-3] [0m[INFO] [1775252050.481818060] [stretch_driver]: base_frame_id = base_link[0m
+[stretch_driver-3] [0m[INFO] [1775252050.482285498] [stretch_driver]: odom_frame_id = odom[0m
+[rviz2-17] [INFO] [1775252050.502299863] [rviz2]: Stereo is NOT SUPPORTED
+[stretch_driver-3] [0m[INFO] [1775252050.534112290] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1775252050.554848166] [object_grasper]: Node object_grasper connected to /home_the_robot service.
+[INFO] [1775252050.556288257] [object_grasper]: Node object_grasper connected to /stow_the_robot service.
+[INFO] [1775252050.558051724] [object_grasper]: Node object_grasper connected to /stop_the_robot service.
+[INFO] [1775252050.563628255] [object_grasper]: Node object_grasper connected to /switch_to_trajectory_mode service.
+[INFO] [1775252050.565312145] [object_grasper]: Node object_grasper connected to /switch_to_position_mode service.
+[INFO] [1775252050.567061547] [object_grasper]: Node object_grasper connected to /switch_to_navigation_mode service.
+[INFO] [1775252050.573820240] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /home_the_robot service.
+[INFO] [1775252050.579329656] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /stow_the_robot service.
+[INFO] [1775252050.581279895] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /stop_the_robot service.
+[INFO] [1775252050.582407349] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_trajectory_mode service.
+[INFO] [1775252050.584491987] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_position_mode service.
+[INFO] [1775252050.586055739] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_navigation_mode service.
+[INFO] [1775252050.586642529] [aruco_base_frame_estimator]: Moving head camera to detection orientation...
+[WARN] [1775252050.587228453] [aruco_base_frame_estimator]: Currently in navigation mode. Recommend switching either to position or trajectory mode
+[WARN] [1775252050.587772432] [aruco_base_frame_estimator]: Commanding joint trajectory server in position mode
+[amcl-9] [WARN] [1775252050.593130646] [amcl]: New subscription discovered on topic '/particle_cloud', requesting incompatible QoS. No messages will be sent to it. Last incompatible policy: RELIABILITY_QOS_POLICY
+[stretch_driver-3] [0m[INFO] [1775252050.597053493] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775252050.607271679] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_head_pan', 'joint_head_tilt'][0m
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775252050.624728304] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775252050.630213906] [aruco_base_frame_estimator]: Head camera at detection pose — starting ArUco detection.
+[INFO] [1775252050.633057646] [aruco_base_frame_estimator]: Waiting for camera TF (base_link -> camera_color_optical_frame)...
+[INFO] [1775252050.675359317] [aruco_base_frame_estimator]: Camera pose acquired:
+[INFO] [1775252050.675970876] [aruco_base_frame_estimator]:   Position  : X=+0.0064  Y=-0.0517  Z=+1.2872  (m)
+[INFO] [1775252050.676491952] [aruco_base_frame_estimator]:   RPY (deg) : R=-179.02  P=+60.04  Y=+89.51
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_mast is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+[INFO] [1775252050.680647699] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775252050.681070925] [aruco_base_frame_estimator]: ArUco Base Frame Estimator Started
+[INFO] [1775252050.681471352] [aruco_base_frame_estimator]: Target Marker ID: 202
+[INFO] [1775252050.681856736] [aruco_base_frame_estimator]: Marker size: 2.8 cm
+[INFO] [1775252050.682237862] [aruco_base_frame_estimator]: Marker offset (cam frame): X=0.0  Y=0.0  Z=0.0
+[INFO] [1775252050.682613146] [aruco_base_frame_estimator]: Publishing target on: /aruco/target_base_link
+[INFO] [1775252050.682989204] [aruco_base_frame_estimator]: ============================================================
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_arm_l4 is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_wrist_yaw_bottom is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_gripper_s3_body is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_grasp_center is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link Base link (index: 0) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_mast (index: 2) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_arm_l4 (index: 4) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_wrist_yaw_bottom (index: 10) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_gripper_s3_body (index: 13) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_grasp_center (index: 14) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+[INFO] [1775252050.799341728] [object_grasper]: ============================================================
+[INFO] [1775252050.799604423] [object_grasper]: ObjectGrasper ready — waiting for ArUco detections
+[INFO] [1775252050.799792127] [object_grasper]: Listening on: /aruco/target_base_link
+[INFO] [1775252050.799984014] [object_grasper]: Call service: ros2 service call /grasp_object std_srvs/srv/Trigger {}
+[INFO] [1775252050.800171563] [object_grasper]: ============================================================
+[amcl-9] [INFO] [1775252050.834545019] [amcl]: createLaserObject
+[rviz2-17] [INFO] [1775252050.850551652] [rviz2]: Trying to create a map of size 416 x 249 using 1 swatches
+[rviz2-17] [ERROR] [1775252050.859840307] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[rviz2-17] active samplers with a different type refer to the same texture image unit
+[controller_server-11] [INFO] [1775252050.919771028] [local_costmap.local_costmap]: start
+[controller_server-11] [INFO] [1775252051.121203384] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+AMCL localized!
+[lifecycle_manager-16] [INFO] [1775252051.225320344] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[lifecycle_manager-16] [INFO] [1775252051.225370809] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[planner_server-12] [INFO] [1775252051.225653282] [planner_server]: Activating
+[planner_server-12] [INFO] [1775252051.225705484] [global_costmap.global_costmap]: Activating
+[planner_server-12] [INFO] [1775252051.225729044] [global_costmap.global_costmap]: Checking transform
+[planner_server-12] [INFO] [1775252051.225839287] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 1775252051.202595 but the earliest data is at time 1775252051.686577, when looking up transform from frame [base_link] to frame [map]
+requester: making request: std_srvs.srv.Trigger_Request()
+
+[stretch_driver-3] [0m[INFO] [1775252051.621559653] [stretch_driver]: Changed to mode = navigation[0m
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+[planner_server-12] [INFO] [1775252051.725943547] [global_costmap.global_costmap]: start
+[rviz2-17] [INFO] [1775252051.939688073] [rviz2]: Trying to create a map of size 60 x 60 using 1 swatches
+Waiting for controller_server...
+[planner_server-12] [INFO] [1775252052.116971741] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1775252051.681 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-12] [INFO] [1775252052.777111618] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[planner_server-12] [INFO] [1775252052.777869452] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[rviz2-17] [INFO] [1775252052.865019510] [rviz2]: Trying to create a map of size 416 x 249 using 1 swatches
+[lifecycle_manager-16] [INFO] [1775252052.882010314] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[lifecycle_manager-16] [INFO] [1775252052.882057921] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[behavior_server-13] [INFO] [1775252052.882331887] [behavior_server]: Activating
+[behavior_server-13] [INFO] [1775252052.882366418] [behavior_server]: Activating spin
+[behavior_server-13] [INFO] [1775252052.882385811] [behavior_server]: Activating backup
+[behavior_server-13] [INFO] [1775252052.882400050] [behavior_server]: Activating drive_on_heading
+[behavior_server-13] [INFO] [1775252052.882413978] [behavior_server]: Activating assisted_teleop
+[behavior_server-13] [INFO] [1775252052.882428154] [behavior_server]: Activating wait
+[behavior_server-13] [INFO] [1775252052.882445044] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1775252052.985355881] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[lifecycle_manager-16] [INFO] [1775252052.985443993] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[bt_navigator-14] [INFO] [1775252052.985969176] [bt_navigator]: Activating
+[bt_navigator-14] [INFO] [1775252053.058462956] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1775252053.161430252] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[lifecycle_manager-16] [INFO] [1775252053.161495870] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[waypoint_follower-15] [INFO] [1775252053.161796497] [waypoint_follower]: Activating
+[waypoint_follower-15] [INFO] [1775252053.161832407] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[realsense2_camera_node-1] [0m[INFO] [1775252053.163536988] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252053.163598666] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252053.163620941] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252053.163836061] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252053.163884068] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252053.164016629] [camera]: getParameters...[0m
+[lifecycle_manager-16] [INFO] [1775252053.264356996] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[lifecycle_manager-16] [INFO] [1775252053.264427597] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-16] [INFO] [1775252053.264447386] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252053.468476950] [camera]: JSON file is loaded! (/home/willy/ament_ws/install/stretch_core/share/stretch_core/config/HighAccuracyPreset.json)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252053.468548323] [camera]: Device Name: Intel RealSense D435I[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252053.468572326] [camera]: Device Serial No: 239722071445[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252053.468592135] [camera]: Device physical port: /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252053.468611449] [camera]: Device FW version: 5.16.0.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252053.468629326] [camera]: Device Product ID: 0x0B3A[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252053.468646583] [camera]: Sync Mode: On[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252053.599037754] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252053.599886364] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252053.611709526] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775252053.613105510] [camera]: Given value, 63 is invalid. Set ROS param back to: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252053.629609826] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252053.629724096] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252053.629802324] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252053.660273325] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252053.663496601] [camera]: Open profile: stream_type: Depth(0), Format: Z16, Width: 1280, Height: 720, FPS: 15[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252053.674054585] [camera]: Starting Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252053.677148754] [camera]: Open profile: stream_type: Color(0), Format: RGB8, Width: 1280, Height: 720, FPS: 15[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252053.699454145] [camera]: Starting Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252053.700729067] [camera]: Open profile: stream_type: Accel(0)Format: MOTION_XYZ32F, FPS: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252053.700754648] [camera]: Open profile: stream_type: Gyro(0)Format: MOTION_XYZ32F, FPS: 200[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252053.702565397] [camera]: RealSense Node Is Up![0m
+Set parameter successful
+Yaw tolerance set.
+=== Docking to table ===
+[INFO] [1775252054.385204534] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252054.jpg
+[realsense2_camera_node-1] [33m[WARN] [1775252054.660911423] [camera]: XXX Hardware Notification:Motion Module failure,1.77525e+12,Error,Hardware Error[0m
+[realsense2_camera_node-1] [33m[WARN] [1775252054.661083516] [camera]: Hardware Notification:Motion Module failure,1.77525e+12,Error,Hardware Error[0m
+[stretch_driver-3] [0m[INFO] [1775252055.170036438] [stretch_driver]: Changed to mode = navigation[0m
+[INFO] [1775252057.428915723] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252057.jpg
+[rviz2-17] [INFO] [1775252060.366366037] [rviz]: Message Filter dropping message: frame 'odom' at time 1775252051.102 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-17] [INFO] [1775252060.366886477] [rviz]: Message Filter dropping message: frame 'odom' at time 1775252051.121 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1775252060.472924651] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252060.jpg
+[bt_navigator-14] [INFO] [1775252060.538734447] [bt_navigator]: Begin navigating from current location (-0.00, 0.01) to (0.57, 1.66)
+[controller_server-11] [INFO] [1775252060.559608081] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-11] [WARN] [1775252060.559683722] [controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+[controller_server-11] [INFO] [1775252061.609951586] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775252062.659948291] [controller_server]: Passing new path to controller.
+[INFO] [1775252063.503752601] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252063.jpg
+[controller_server-11] [INFO] [1775252063.659934729] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775252064.709929536] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775252065.709914955] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[INFO] [1775252066.541157886] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252066.jpg
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775252066.759925616] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775252067.810027719] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[controller_server-11] [INFO] [1775252068.809928720] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[stretch_driver-3] [INFO] [robot_monitor]: Base bump event
+[INFO] [1775252069.741993291] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252069.jpg
+[controller_server-11] [INFO] [1775252069.859928005] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775252070.859924803] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775252071.909938435] [controller_server]: Passing new path to controller.
+[INFO] [1775252072.776239261] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252072.jpg
+[controller_server-11] [INFO] [1775252072.959959386] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775252073.959960329] [controller_server]: Passing new path to controller.
+[controller_server-11] [INFO] [1775252075.009963966] [controller_server]: Passing new path to controller.
+/home/willy/tf.py:207: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  cx, cy, cz = float(tvec[0]), float(tvec[1]), float(tvec[2])
+/home/willy/tf.py:139: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  t.transform.translation.x = float(tvec_offset[0])
+/home/willy/tf.py:140: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  t.transform.translation.y = float(tvec_offset[1])
+/home/willy/tf.py:141: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  t.transform.translation.z = float(tvec_offset[2])
+[controller_server-11] [INFO] [1775252076.009923871] [controller_server]: Passing new path to controller.
+[WARN] [1775252076.125388374] [aruco_base_frame_estimator]: TF lookup failed: "fruit_marker" passed to lookupTransform argument source_frame does not exist. 
+/home/willy/tf.py:215: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  bx, by, bz = self.transform_camera_to_base(float(tvec[0]), float(tvec[1]), float(tvec[2]))
+[INFO] [1775252076.129572269] [object_grasper]: [ArUco] target updated → X=+0.164  Y=-0.756  Z=+0.923
+[INFO] [1775252076.141363540] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252076.jpg
+[controller_server-11] [INFO] [1775252077.059907092] [controller_server]: Passing new path to controller.
+[WARN] [1775252077.180095851] [aruco_base_frame_estimator]: TF lookup failed: Lookup would require extrapolation at time 1775252075.027228, but only time 1775252075.109188 is in the buffer, when looking up transform from frame [fruit_marker] to frame [base_link]
+[INFO] [1775252077.183531236] [object_grasper]: [ArUco] target updated → X=+0.157  Y=-0.743  Z=+0.931
+[controller_server-11] [INFO] [1775252078.109934692] [controller_server]: Passing new path to controller.
+[WARN] [1775252078.215585627] [aruco_base_frame_estimator]: TF lookup failed: Lookup would require extrapolation at time 1775252075.027228, but only time 1775252075.109188 is in the buffer, when looking up transform from frame [fruit_marker] to frame [base_link]
+[INFO] [1775252078.217259423] [object_grasper]: [ArUco] target updated → X=+0.040  Y=-0.759  Z=+0.929
+[controller_server-11] [INFO] [1775252078.416419843] [controller_server]: Reached the goal!
+[bt_navigator-14] [INFO] [1775252078.449118980] [bt_navigator]: Goal succeeded
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+Set parameter successful
+Waiting for an action server to become available...
+Sending goal:
+     pose:
+  header:
+    stamp:
+      sec: 0
+      nanosec: 0
+    frame_id: map
+  pose:
+    position:
+      x: 0.5688
+      y: 1.6601
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: -0.707
+      w: 0.707
+behavior_tree: ''
+
+Goal accepted with ID: 6ed18b4a17894474aa3cd7ab83299096
+
+Result:
+    result: {}
+
+Goal finished with status: SUCCEEDED
+Navigation succeeded!
+Waiting for grasp service...
+[INFO] [1775252079.147948181] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252079.jpg
+[INFO] [1775252079.237329789] [object_grasper]: [ArUco] target updated → X=-0.058  Y=-0.741  Z=+0.936
+Grasp service is ready!
+=== Triggering grasp ===
+requester: making request: std_srvs.srv.Trigger_Request()
+
+[stretch_driver-3] [0m[INFO] [1775252079.884919276] [stretch_driver]: Changed to mode = position[0m
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+[INFO] [1775252080.047285978] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775252080.047570357] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775252080.047783986] [aruco_base_frame_estimator]:   [CAMERA raw] X=-0.042m  Y=-0.043m  Z=+0.789m  dist=0.792m
+[INFO] [1775252080.048050706] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=-0.058m  Y=-0.741m  Z=+0.936m  → published
+[INFO] [1775252080.048239350] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775252080.247609393] [object_grasper]: [ArUco] target updated → X=-0.058  Y=-0.741  Z=+0.936
+[INFO] [1775252081.249284272] [object_grasper]: [ArUco] target updated → X=-0.058  Y=-0.741  Z=+0.936
+[INFO] [1775252082.118629636] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775252082.118898131] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775252082.119095163] [aruco_base_frame_estimator]:   [CAMERA raw] X=-0.041m  Y=-0.042m  Z=+0.774m  dist=0.776m
+[INFO] [1775252082.119296811] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=-0.058m  Y=-0.741m  Z=+0.936m  → published
+[INFO] [1775252082.119489220] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775252082.190755060] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252082.jpg
+[INFO] [1775252082.311995542] [object_grasper]: [ArUco] target updated → X=-0.058  Y=-0.741  Z=+0.936
+requester: making request: std_srvs.srv.Trigger_Request()
+
+[INFO] [1775252082.697669498] [object_grasper]: Using LIVE target: X=-0.058  Y=-0.741  Z=+0.936
+[INFO] [1775252082.697951065] [object_grasper]: Solving IK for grasp target: [-0.058, -0.741, 0.936]
+[INFO] [1775252082.698186147] [object_grasper]: IK attempt 1/150
+[INFO] [1775252082.816421595] [object_grasper]: IK error: 0.0000m
+[INFO] [1775252082.816761469] [object_grasper]: base_trans=-0.0000m  lift=0.9057m  arm=0.3451m
+[INFO] [1775252082.817014816] [object_grasper]: Solving IK for approach target: [-0.058, -0.741, 1.016]
+[INFO] [1775252082.817258728] [object_grasper]: IK attempt 1/150
+[INFO] [1775252082.883034198] [object_grasper]: IK error: 0.0000m
+[INFO] [1775252082.883376736] [object_grasper]: base_trans=-0.0000m  lift=1.0057m  arm=0.3442m
+[INFO] [1775252082.883600732] [object_grasper]: === GRASP SEQUENCE START ===
+[INFO] [1775252082.883826520] [object_grasper]: Step 1: Move to approach height (1.016m) + set wrist
+[INFO] [1775252082.884076012] [object_grasper]: → Lift=1.006m  yaw=0.804  pitch=-0.300  roll=-0.009
+[stretch_driver-3] [0m[INFO] [1775252082.887931766] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775252082.892761372] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_lift', 'joint_wrist_yaw', 'joint_wrist_pitch', 'joint_wrist_roll'][0m
+[stretch_driver-3] [WARNING] [lift]: Lift not calibrated
+[stretch_driver-3] [WARNING] [wrist_yaw]: Dynamixel not calibrated: wrist_yaw
+[stretch_driver-3] Dynamixel not calibrated: wrist_yaw
+[INFO] [1775252084.525850179] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775252084.526112587] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775252084.526371233] [aruco_base_frame_estimator]:   [CAMERA raw] X=-0.041m  Y=-0.042m  Z=+0.775m  dist=0.777m
+[INFO] [1775252084.526563373] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=-0.058m  Y=-0.742m  Z=+0.936m  → published
+[INFO] [1775252084.526743855] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775252085.254361266] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252085.jpg
+[INFO] [1775252086.782656479] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775252086.782936282] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775252086.783140273] [aruco_base_frame_estimator]:   [CAMERA raw] X=-0.041m  Y=-0.042m  Z=+0.775m  dist=0.777m
+[INFO] [1775252086.783322605] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=-0.060m  Y=-0.755m  Z=+0.930m  → published
+[INFO] [1775252086.783492856] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775252088.319747831] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252088.jpg
+[INFO] [1775252089.190558763] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775252089.190886401] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775252089.191110688] [aruco_base_frame_estimator]:   [CAMERA raw] X=-0.041m  Y=-0.042m  Z=+0.775m  dist=0.777m
+[INFO] [1775252089.191388007] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=-0.059m  Y=-0.754m  Z=+0.930m  → published
+[INFO] [1775252089.191596896] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775252091.469068068] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252091.jpg
+[INFO] [1775252091.515627387] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775252091.515876090] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775252091.516059536] [aruco_base_frame_estimator]:   [CAMERA raw] X=-0.042m  Y=-0.043m  Z=+0.789m  dist=0.792m
+[INFO] [1775252091.516239055] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=-0.058m  Y=-0.742m  Z=+0.936m  → published
+[INFO] [1775252091.516407435] [aruco_base_frame_estimator]: ============================================================
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Errored goal
+[stretch_driver-3] [0m[INFO] [1775252092.920184054] [stretch_driver]: stretch_driver joint_traj action: Time to execute the current goal point = <trajectory_msgs.msg.JointTrajectoryPoint(positions=[1.00569651312238, 0.8043472101596496, -0.29999954115792193, -0.009203884727313847], velocities=[], accelerations=[], effort=[], time_from_start=builtin_interfaces.msg.Duration(sec=0, nanosec=0))> exceeded the default_goal_timeout = 10.0[0m
+[INFO] [1775252092.923954690] [object_grasper]: Step 2: Open gripper
+[INFO] [1775252092.924924028] [object_grasper]: → Opening gripper
+[stretch_driver-3] [0m[INFO] [1775252092.930864521] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775252092.946765946] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_gripper_finger_left'][0m
+[stretch_driver-3] [WARNING] [stretch_gripper]: Dynamixel not calibrated: stretch_gripper
+[stretch_driver-3] Dynamixel not calibrated: stretch_gripper
+[INFO] [1775252093.727268544] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775252093.727815945] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775252093.728299798] [aruco_base_frame_estimator]:   [CAMERA raw] X=-0.041m  Y=-0.043m  Z=+0.783m  dist=0.786m
+[INFO] [1775252093.728762243] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=-0.058m  Y=-0.742m  Z=+0.936m  → published
+[INFO] [1775252093.729263123] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775252094.470951130] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252094.jpg
+[INFO] [1775252095.846508262] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775252095.846731102] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775252095.846916368] [aruco_base_frame_estimator]:   [CAMERA raw] X=-0.041m  Y=-0.042m  Z=+0.775m  dist=0.777m
+[INFO] [1775252095.847098956] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=-0.058m  Y=-0.742m  Z=+0.936m  → published
+[INFO] [1775252095.847277892] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775252097.530485519] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252097.jpg
+[INFO] [1775252098.121708377] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775252098.122006296] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775252098.122222836] [aruco_base_frame_estimator]:   [CAMERA raw] X=-0.041m  Y=-0.042m  Z=+0.775m  dist=0.777m
+[INFO] [1775252098.122430871] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=-0.058m  Y=-0.742m  Z=+0.936m  → published
+[INFO] [1775252098.122632510] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775252100.460416612] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775252100.460812036] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775252100.461067901] [aruco_base_frame_estimator]:   [CAMERA raw] X=-0.041m  Y=-0.042m  Z=+0.775m  dist=0.777m
+[INFO] [1775252100.461270813] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=-0.058m  Y=-0.742m  Z=+0.936m  → published
+[INFO] [1775252100.461446927] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775252100.568867299] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252100.jpg
+[INFO] [1775252102.583837565] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775252102.584088611] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775252102.584272052] [aruco_base_frame_estimator]:   [CAMERA raw] X=-0.041m  Y=-0.042m  Z=+0.775m  dist=0.777m
+[INFO] [1775252102.584410961] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=-0.058m  Y=-0.742m  Z=+0.936m  → published
+[INFO] [1775252102.584547624] [aruco_base_frame_estimator]: ============================================================
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Errored goal
+[stretch_driver-3] [0m[INFO] [1775252102.975082051] [stretch_driver]: stretch_driver joint_traj action: Time to execute the current goal point = <trajectory_msgs.msg.JointTrajectoryPoint(positions=[50.0], velocities=[], accelerations=[], effort=[], time_from_start=builtin_interfaces.msg.Duration(sec=0, nanosec=0))> exceeded the default_goal_timeout = 10.0[0m
+[INFO] [1775252102.987765335] [object_grasper]: Step 3: Extend arm to target x,y (approach height)
+[INFO] [1775252102.988171734] [object_grasper]: → Extending arm to 0.317m
+[stretch_driver-3] [0m[INFO] [1775252102.990538734] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775252102.992260477] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_arm'][0m
+[stretch_driver-3] [WARNING] [arm]: Arm not calibrated
+[INFO] [1775252103.598691647] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252103.jpg
+[INFO] [1775252105.002313708] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775252105.002794595] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775252105.003381412] [aruco_base_frame_estimator]:   [CAMERA raw] X=-0.041m  Y=-0.042m  Z=+0.775m  dist=0.777m
+[INFO] [1775252105.003797804] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=-0.058m  Y=-0.742m  Z=+0.936m  → published
+[INFO] [1775252105.004358711] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775252106.666031529] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252106.jpg
+[INFO] [1775252107.126114619] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775252107.126339207] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775252107.126569186] [aruco_base_frame_estimator]:   [CAMERA raw] X=-0.041m  Y=-0.042m  Z=+0.775m  dist=0.777m
+[INFO] [1775252107.126870111] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=-0.058m  Y=-0.742m  Z=+0.936m  → published
+[INFO] [1775252107.127087095] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775252109.401848997] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775252109.402185733] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775252109.402403579] [aruco_base_frame_estimator]:   [CAMERA raw] X=-0.042m  Y=-0.043m  Z=+0.788m  dist=0.791m
+[INFO] [1775252109.402598099] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=-0.058m  Y=-0.742m  Z=+0.936m  → published
+[INFO] [1775252109.402802656] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775252109.672677765] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252109.jpg
+[INFO] [1775252111.408121250] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775252111.408461748] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775252111.408656567] [aruco_base_frame_estimator]:   [CAMERA raw] X=-0.041m  Y=-0.042m  Z=+0.775m  dist=0.777m
+[INFO] [1775252111.408848023] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=-0.058m  Y=-0.742m  Z=+0.936m  → published
+[INFO] [1775252111.409026937] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775252112.737249542] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252112.jpg
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Errored goal
+[stretch_driver-3] [0m[INFO] [1775252113.005751180] [stretch_driver]: stretch_driver joint_traj action: Time to execute the current goal point = <trajectory_msgs.msg.JointTrajectoryPoint(positions=[0.3167274702158422], velocities=[], accelerations=[], effort=[], time_from_start=builtin_interfaces.msg.Duration(sec=0, nanosec=0))> exceeded the default_goal_timeout = 10.0[0m
+[INFO] [1775252113.008202340] [object_grasper]: Step 4: Lower lift to grasp height (0.906m)
+[stretch_driver-3] [0m[INFO] [1775252113.012494134] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775252113.017555398] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_lift'][0m
+[stretch_driver-3] [WARNING] [lift]: Lift not calibrated
+[INFO] [1775252113.533742402] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775252113.534012943] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775252113.534197421] [aruco_base_frame_estimator]:   [CAMERA raw] X=-0.041m  Y=-0.042m  Z=+0.775m  dist=0.777m
+[INFO] [1775252113.534373152] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=-0.058m  Y=-0.742m  Z=+0.936m  → published
+[INFO] [1775252113.534538450] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775252115.738912033] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252115.jpg
+[INFO] [1775252115.869704671] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775252115.869975647] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775252115.870174773] [aruco_base_frame_estimator]:   [CAMERA raw] X=-0.041m  Y=-0.042m  Z=+0.775m  dist=0.777m
+[INFO] [1775252115.870359754] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=-0.058m  Y=-0.742m  Z=+0.936m  → published
+[INFO] [1775252115.870540014] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775252118.046803283] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775252118.047066054] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775252118.047251799] [aruco_base_frame_estimator]:   [CAMERA raw] X=-0.041m  Y=-0.042m  Z=+0.775m  dist=0.777m
+[INFO] [1775252118.047416923] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=-0.059m  Y=-0.749m  Z=+0.932m  → published
+[INFO] [1775252118.047576335] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775252118.742034248] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252118.jpg
+[INFO] [1775252120.269354706] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775252120.269621883] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775252120.269816642] [aruco_base_frame_estimator]:   [CAMERA raw] X=-0.041m  Y=-0.043m  Z=+0.783m  dist=0.786m
+[INFO] [1775252120.270001269] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=-0.058m  Y=-0.747m  Z=+0.934m  → published
+[INFO] [1775252120.270166204] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775252121.744930388] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252121.jpg
+[INFO] [1775252122.346473141] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775252122.346723526] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775252122.346997158] [aruco_base_frame_estimator]:   [CAMERA raw] X=-0.041m  Y=-0.042m  Z=+0.775m  dist=0.777m
+[INFO] [1775252122.347223238] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=-0.058m  Y=-0.742m  Z=+0.936m  → published
+[INFO] [1775252122.347402847] [aruco_base_frame_estimator]: ============================================================
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Errored goal
+[stretch_driver-3] [0m[INFO] [1775252123.025664816] [stretch_driver]: stretch_driver joint_traj action: Time to execute the current goal point = <trajectory_msgs.msg.JointTrajectoryPoint(positions=[0.9157142331183132], velocities=[], accelerations=[], effort=[], time_from_start=builtin_interfaces.msg.Duration(sec=0, nanosec=0))> exceeded the default_goal_timeout = 10.0[0m
+[INFO] [1775252123.030497285] [object_grasper]: Step 5: Close gripper
+[INFO] [1775252123.031043739] [object_grasper]: → Closing gripper
+[stretch_driver-3] [0m[INFO] [1775252123.039724817] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775252123.047883266] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_gripper_finger_left'][0m
+[stretch_driver-3] [WARNING] [stretch_gripper]: Dynamixel not calibrated: stretch_gripper
+[stretch_driver-3] Dynamixel not calibrated: stretch_gripper
+[INFO] [1775252124.674371492] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775252124.674637891] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775252124.674851377] [aruco_base_frame_estimator]:   [CAMERA raw] X=-0.041m  Y=-0.042m  Z=+0.775m  dist=0.777m
+[INFO] [1775252124.675036032] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=-0.058m  Y=-0.742m  Z=+0.936m  → published
+[INFO] [1775252124.675215776] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775252124.749214933] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252124.jpg
+[INFO] [1775252126.684152823] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775252126.684518934] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775252126.684775529] [aruco_base_frame_estimator]:   [CAMERA raw] X=-0.041m  Y=-0.042m  Z=+0.775m  dist=0.777m
+[INFO] [1775252126.684983316] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=-0.058m  Y=-0.742m  Z=+0.936m  → published
+[INFO] [1775252126.685290014] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775252127.837473977] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252127.jpg
+[rviz2-17] Start navigation
+[rviz2-17] [INFO] [1775252128.639635036] [rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[bt_navigator-14] [INFO] [1775252128.640252679] [bt_navigator]: Begin navigating from current location (0.61, 1.64) to (-0.19, -0.02)
+[controller_server-11] [INFO] [1775252128.661199522] [controller_server]: Received a goal, begin computing control effort.
+[stretch_driver-3] [31m[ERROR] [1775252128.674335951] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252128.716926192] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252128.766992147] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252128.817794328] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252128.874554226] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252128.918485553] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252128.967147411] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252129.017516542] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252129.081434534] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[INFO] [1775252129.091750808] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775252129.092052176] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775252129.092269863] [aruco_base_frame_estimator]:   [CAMERA raw] X=-0.041m  Y=-0.042m  Z=+0.775m  dist=0.777m
+[INFO] [1775252129.092471794] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=-0.060m  Y=-0.755m  Z=+0.930m  → published
+[INFO] [1775252129.092665234] [aruco_base_frame_estimator]: ============================================================
+[stretch_driver-3] [31m[ERROR] [1775252129.119935864] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252129.172681947] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252129.216520289] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252129.271456070] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252129.320840678] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252129.375489380] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252129.416772196] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252129.466522556] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252129.521961029] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252129.567378162] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252129.617976230] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252129.677987952] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[controller_server-11] [INFO] [1775252129.711604519] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [31m[ERROR] [1775252129.720580467] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252129.767475689] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252129.817390645] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252129.877253699] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252129.918332847] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252129.973029844] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252130.016897579] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252130.074974405] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252130.118762305] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252130.177492246] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252130.215754599] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252130.266336379] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252130.314781913] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252130.367442844] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252130.418559199] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252130.467188671] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252130.520667652] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252130.572134491] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252130.616868886] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252130.682442613] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[controller_server-11] [INFO] [1775252130.711611219] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [31m[ERROR] [1775252130.719503204] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252130.766936694] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252130.815410931] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252130.872173066] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[INFO] [1775252130.885749558] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252130.jpg
+[stretch_driver-3] [31m[ERROR] [1775252130.920612892] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252130.970866927] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252131.016675669] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252131.079587038] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252131.116442234] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252131.166515700] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252131.218589993] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252131.283267577] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[INFO] [1775252131.295009289] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775252131.295421066] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775252131.295747990] [aruco_base_frame_estimator]:   [CAMERA raw] X=-0.041m  Y=-0.042m  Z=+0.775m  dist=0.777m
+[INFO] [1775252131.296058803] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=-0.058m  Y=-0.742m  Z=+0.936m  → published
+[INFO] [1775252131.296321631] [aruco_base_frame_estimator]: ============================================================
+[stretch_driver-3] [31m[ERROR] [1775252131.318359841] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252131.372624032] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252131.417932897] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252131.478020189] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252131.518315922] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252131.575048789] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252131.616790308] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252131.667329071] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252131.718546231] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[controller_server-11] [INFO] [1775252131.761589830] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [31m[ERROR] [1775252131.778750766] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252131.818491872] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252131.872633855] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252131.917382972] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252131.971051445] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252132.021911458] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252132.077296630] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252132.123618153] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252132.167558132] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252132.223177219] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252132.272714138] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252132.318449539] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252132.371764651] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252132.420393534] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252132.479826695] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252132.517105667] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252132.566511880] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252132.620124033] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252132.683538796] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252132.718282871] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252132.767486415] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[controller_server-11] [INFO] [1775252132.811682496] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [31m[ERROR] [1775252132.820257031] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252132.875810845] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252132.917140355] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252132.973090870] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252133.020333567] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Errored goal
+[stretch_driver-3] [31m[ERROR] [1775252133.073580934] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [0m[INFO] [1775252133.078255203] [stretch_driver]: stretch_driver joint_traj action: Time to execute the current goal point = <trajectory_msgs.msg.JointTrajectoryPoint(positions=[-10.0], velocities=[], accelerations=[], effort=[], time_from_start=builtin_interfaces.msg.Duration(sec=0, nanosec=0))> exceeded the default_goal_timeout = 10.0[0m
+[INFO] [1775252133.081704196] [object_grasper]: Step 6: Lift up to 1.006m
+[stretch_driver-3] [0m[INFO] [1775252133.085137242] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [0m[INFO] [1775252133.091659650] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_lift'][0m
+[stretch_driver-3] [WARNING] [lift]: Lift not calibrated
+[stretch_driver-3] [31m[ERROR] [1775252133.117811889] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252133.166610917] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252133.217173226] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252133.274885007] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252133.323473015] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252133.366425396] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252133.416930794] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252133.473149814] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252133.517499281] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252133.567654468] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252133.622277980] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[INFO] [1775252133.628445236] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775252133.628691821] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775252133.628887628] [aruco_base_frame_estimator]:   [CAMERA raw] X=-0.041m  Y=-0.042m  Z=+0.775m  dist=0.777m
+[INFO] [1775252133.629075544] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=-0.057m  Y=-0.734m  Z=+0.940m  → published
+[INFO] [1775252133.629251410] [aruco_base_frame_estimator]: ============================================================
+[stretch_driver-3] [31m[ERROR] [1775252133.673776209] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252133.717500647] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252133.767252812] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[controller_server-11] [INFO] [1775252133.811608873] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [31m[ERROR] [1775252133.818739073] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252133.866563377] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[INFO] [1775252133.897261093] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252133.jpg
+[stretch_driver-3] [31m[ERROR] [1775252133.918679319] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252133.970301855] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252134.017592869] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252134.067535270] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252134.115933498] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252134.176492360] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252134.224325566] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252134.273760666] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252134.317275320] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252134.367253256] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252134.417897499] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252134.479063427] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252134.517625185] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252134.571995634] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252134.616767357] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252134.672566801] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252134.718026386] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252134.778779254] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252134.822936023] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[controller_server-11] [INFO] [1775252134.861943905] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [31m[ERROR] [1775252134.874335666] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252134.917615219] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252134.971517235] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252135.020223662] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252135.067463758] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252135.117381861] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252135.175652244] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252135.216939553] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252135.270951954] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252135.316200111] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252135.367399420] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252135.418604023] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252135.476135083] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252135.517706464] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252135.570706106] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252135.628330802] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252135.676017391] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252135.717617738] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252135.774120106] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252135.817958846] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[controller_server-11] [INFO] [1775252135.861640123] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [31m[ERROR] [1775252135.877726773] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[INFO] [1775252135.895599834] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775252135.895913662] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775252135.896113660] [aruco_base_frame_estimator]:   [CAMERA raw] X=-0.041m  Y=-0.042m  Z=+0.775m  dist=0.777m
+[INFO] [1775252135.896299660] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=-0.058m  Y=-0.742m  Z=+0.936m  → published
+[INFO] [1775252135.896479234] [aruco_base_frame_estimator]: ============================================================
+[stretch_driver-3] [31m[ERROR] [1775252135.919362856] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252135.975071430] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252136.015915409] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252136.072757520] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252136.118195667] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252136.168909135] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252136.221244165] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252136.267227652] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252136.318090826] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252136.372466109] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252136.420294789] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252136.482578699] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252136.519474296] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252136.572695358] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252136.617676237] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252136.667149669] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252136.721863813] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252136.772564006] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252136.816895140] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252136.874132738] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[controller_server-11] [INFO] [1775252136.911623139] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [31m[ERROR] [1775252136.917778718] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[INFO] [1775252136.954147602] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252136.jpg
+[stretch_driver-3] [31m[ERROR] [1775252136.978063618] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252137.018198326] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252137.067393381] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252137.123558155] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252137.171870471] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252137.220186225] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252137.280041043] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252137.318422969] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252137.366329465] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252137.417777390] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252137.499773996] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252137.523219192] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252137.574584270] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252137.620079770] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252137.674898318] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252137.729166690] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252137.771648902] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252137.819094917] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252137.882034786] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252137.918382456] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[controller_server-11] [INFO] [1775252137.961626629] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [31m[ERROR] [1775252137.967609113] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252138.019952835] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252138.072497175] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252138.119255975] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[INFO] [1775252138.154371761] [aruco_base_frame_estimator]: 
+============================================================
+[INFO] [1775252138.154612146] [aruco_base_frame_estimator]: ✓ MARKER 202
+[INFO] [1775252138.154805537] [aruco_base_frame_estimator]:   [CAMERA raw] X=-0.042m  Y=-0.043m  Z=+0.788m  dist=0.791m
+[INFO] [1775252138.154983331] [aruco_base_frame_estimator]:   [BASE_LINK+offset] X=-0.057m  Y=-0.734m  Z=+0.940m  → published
+[INFO] [1775252138.155149212] [aruco_base_frame_estimator]: ============================================================
+[stretch_driver-3] [31m[ERROR] [1775252138.166916931] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252138.229170115] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252138.266674416] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252138.319535675] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252138.366053020] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252138.419909069] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252138.481386005] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252138.521590678] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252138.567478102] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252138.620779062] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[controller_server-11] [ERROR] [1775252138.661820614] [controller_server]: Failed to make progress
+[controller_server-11] [WARN] [1775252138.661960903] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[stretch_driver-3] [31m[ERROR] [1775252138.665007359] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[controller_server-11] [INFO] [1775252138.680628195] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-11] [INFO] [1775252138.681885285] [controller_server]: Received a goal, begin computing control effort.
+[stretch_driver-3] [31m[ERROR] [1775252138.731212205] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252138.752913628] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252138.791015528] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252138.840230837] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252138.888907090] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252138.945059483] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[controller_server-11] [INFO] [1775252138.982318796] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [31m[ERROR] [1775252138.991916458] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252139.041527203] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252139.088844354] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252139.144391123] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252139.186405662] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252139.244701499] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252139.290098090] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252139.349466717] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252139.387970237] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252139.439594615] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252139.495219019] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252139.557572091] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252139.589650568] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252139.643906243] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252139.689461963] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252139.745560662] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252139.789340520] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252139.841513352] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252139.895072036] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252139.945884532] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[INFO] [1775252139.955661207] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775252139.jpg
+[controller_server-11] [INFO] [1775252139.982318588] [controller_server]: Passing new path to controller.
+[stretch_driver-3] [31m[ERROR] [1775252139.987849746] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252140.041092964] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252140.087227098] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[stretch_driver-3] [31m[ERROR] [1775252140.142904826] [stretch_driver]: stretch_driver action server must be in navigation mode to receive a twist on cmd_vel. Current mode = position.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252140.163816485] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252140.170462180] [camera]: Stop Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252140.170745888] [camera]: Close Sensor. [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252140.175129994] [camera]: Close Sensor - Done. [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252140.175199547] [camera]: Stop Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252140.175212780] [camera]: Close Sensor. [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252140.204061211] [camera]: Close Sensor - Done. [0m
+[realsense2_camera_node-1] [0m[INFO] [1775252140.204118843] [camera]: Stop Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775252140.204538935] [camera]: Close Sensor. [0m
+[d435i_accel_correction-2] Traceback (most recent call last):
+[d435i_accel_correction-2]   File "/home/willy/ament_ws/install/stretch_core/lib/stretch_core/d435i_accel_correction", line 33, in <module>
+[d435i_accel_correction-2]     sys.exit(load_entry_point('stretch-core==0.2.0', 'console_scripts', 'd435i_accel_correction')())
+[d435i_accel_correction-2]   File "/home/willy/ament_ws/install/stretch_core/lib/python3.10/site-packages/stretch_core/d435i_accel_correction.py", line 47, in main
+[d435i_accel_correction-2]     rclpy.spin(node)
+[d435i_accel_correction-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[d435i_accel_correction-2]     executor.spin_once()
+[d435i_accel_correction-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 808, in spin_once
+[d435i_accel_correction-2]     self._spin_once_impl(timeout_sec)
+[d435i_accel_correction-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 797, in _spin_once_impl
+[d435i_accel_correction-2]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[d435i_accel_correction-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 780, in wait_for_ready_callbacks
+[d435i_accel_correction-2]     return next(self._cb_iter)
+[d435i_accel_correction-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 681, in _wait_for_ready_callbacks
+[d435i_accel_correction-2]     raise ExternalShutdownException()
+[d435i_accel_correction-2] rclpy.executors.ExternalShutdownException
+[realsense2_camera_node-1] [0m[INFO] [1775252140.257525454] [camera]: Close Sensor - Done. [0m
+Traceback (most recent call last):
+  File "/home/willy/tf.py", line 307, in <module>
+    main()
+  File "/home/willy/tf.py", line 304, in main
+    rclpy.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 130, in shutdown
+    _shutdown(context=context)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
+    return context.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
+    self.__context.shutdown()
+rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241
+[ERROR] [d435i_accel_correction-2]: process has died [pid 13586, exit code 1, cmd '/home/willy/ament_ws/install/stretch_core/lib/stretch_core/d435i_accel_correction --ros-args'].
+[INFO] [realsense2_camera_node-1]: process has finished cleanly [pid 13584]

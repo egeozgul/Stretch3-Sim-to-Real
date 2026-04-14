@@ -1,0 +1,51 @@
+=== pick_object.sh started at Fri Apr 10 02:39:19 PM EDT 2026 ===
+Target ArUco marker ID: 202
+Waiting for nodes to be ready (launch_nodes.sh)...
+Nodes are ready!
+Setting target marker ID to 202...
+Set parameter successful
+Resetting arm position for camera view...
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+[INFO] [1775846362.885869084] [reset_pose]: reset_pose started
+[INFO] [1775846362.929238169] [reset_pose]: Node reset_pose connected to /home_the_robot service.
+[INFO] [1775846362.930466817] [reset_pose]: Node reset_pose connected to /stow_the_robot service.
+[INFO] [1775846362.932674237] [reset_pose]: Node reset_pose connected to /stop_the_robot service.
+[INFO] [1775846362.935231278] [reset_pose]: Node reset_pose connected to /switch_to_trajectory_mode service.
+[INFO] [1775846362.937423277] [reset_pose]: Node reset_pose connected to /switch_to_position_mode service.
+[INFO] [1775846362.942582452] [reset_pose]: Node reset_pose connected to /switch_to_navigation_mode service.
+[INFO] [1775846362.943422721] [reset_pose]: Moving to default pose...
+[WARN] [1775846362.944149867] [reset_pose]: Currently in  mode. Recommend switching either to position or trajectory mode
+[WARN] [1775846362.949140362] [reset_pose]: Commanding joint trajectory server in position mode
+[INFO] [1775846373.041976279] [reset_pose]: Arm reset done.
+[INFO] [1775846373.042283178] [reset_pose]: Skipping rotation (ROTATE_DEG=0).
+[INFO] [1775846373.042482200] [reset_pose]: Done.
+Arm reset complete.
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+Waiting for live marker detection (confirming stamp is advancing)...
+Live detection confirmed! (stamp advancing: 1775846375 → 1775846377)
+Live pose:
+  x: 0.06954443919531184
+  y: -0.6338211089629576
+  z: 0.9155696170827292
+Waiting for grasp service...
+Grasp service ready!
+=== Triggering grasp ===
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='')
+Grasp succeeded!
+=== pick_object.sh finished at Fri Apr 10 02:40:01 PM EDT 2026 ===

@@ -1,0 +1,76 @@
+=== place_object.sh started at Fri Apr 10 05:24:59 PM EDT 2026 ===
+Switching to position mode...
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+Extending arm to place position...
+[INFO] [1775856302.006645488] [place_object]: place_object started
+[INFO] [1775856302.063394125] [place_object]: Node place_object connected to /home_the_robot service.
+[INFO] [1775856302.065992758] [place_object]: Node place_object connected to /stow_the_robot service.
+[INFO] [1775856302.068953193] [place_object]: Node place_object connected to /stop_the_robot service.
+[INFO] [1775856302.070489677] [place_object]: Node place_object connected to /switch_to_trajectory_mode service.
+[INFO] [1775856302.075467532] [place_object]: Node place_object connected to /switch_to_position_mode service.
+[INFO] [1775856302.079046179] [place_object]: Node place_object connected to /switch_to_navigation_mode service.
+[INFO] [1775856302.084818477] [place_object]: Centering wrist yaw...
+[INFO] [1775856302.802387556] [place_object]: Moving to place position...
+[INFO] [1775856305.352502764] [place_object]: Place position reached.
+[INFO] [1775856305.353026123] [place_object]: Opening gripper to release object...
+[INFO] [1775856308.823247541] [place_object]: Gripper opened, object released.
+[INFO] [1775856308.823684223] [place_object]: Retracting arm...
+[INFO] [1775856311.357299652] [place_object]: Arm retracted.
+[INFO] [1775856311.357551413] [place_object]: Done.
+./place_object.sh: line 52: 16701 Segmentation fault      (core dumped) python3 - <<'EOF'
+import rclpy
+from hello_helpers.hello_misc import HelloNode
+
+class PlaceObject(HelloNode):
+    def __init__(self):
+        super().__init__()
+        super().main('place_object', 'place_object', wait_for_first_pointcloud=False)
+
+        self.get_logger().info("Centering wrist yaw...")
+        self.move_to_pose({'joint_wrist_yaw': 0.95}, blocking=True)
+
+        self.get_logger().info("Moving to place position...")
+        self.move_to_pose({
+            'joint_lift': 0.9118,
+            'joint_arm':  0.25,
+        }, blocking=True)
+        self.get_logger().info("Place position reached.")
+
+        self.get_logger().info("Opening gripper to release object...")
+        self.move_to_pose({'joint_gripper_finger_left': 0.6}, blocking=True)
+        self.get_logger().info("Gripper opened, object released.")
+
+        self.get_logger().info("Retracting arm...")
+        self.move_to_pose({'joint_arm': 0.0}, blocking=True)
+        self.get_logger().info("Arm retracted.")
+
+        self.get_logger().info("Done.")
+
+def main():
+    node = PlaceObject()
+    node.destroy_node()
+    rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()
+EOF
+
+Object placed successfully.
+Resetting arm to travel position...
+[INFO] [1775856313.028831224] [reset_pose]: reset_pose started
+[INFO] [1775856313.091266134] [reset_pose]: Node reset_pose connected to /home_the_robot service.
+[INFO] [1775856313.093503712] [reset_pose]: Node reset_pose connected to /stow_the_robot service.
+[INFO] [1775856313.096084462] [reset_pose]: Node reset_pose connected to /stop_the_robot service.
+[INFO] [1775856313.098569971] [reset_pose]: Node reset_pose connected to /switch_to_trajectory_mode service.
+[INFO] [1775856313.104507900] [reset_pose]: Node reset_pose connected to /switch_to_position_mode service.
+[INFO] [1775856313.108678919] [reset_pose]: Node reset_pose connected to /switch_to_navigation_mode service.
+[INFO] [1775856313.109472399] [reset_pose]: Moving to default pose...
+[INFO] [1775856317.096103576] [reset_pose]: Arm reset done.
+[INFO] [1775856317.096361855] [reset_pose]: Skipping rotation (ROTATE_DEG=0).
+[INFO] [1775856317.096555412] [reset_pose]: Done.
+Arm reset complete.
+=== place_object.sh finished at Fri Apr 10 05:25:17 PM EDT 2026 ===

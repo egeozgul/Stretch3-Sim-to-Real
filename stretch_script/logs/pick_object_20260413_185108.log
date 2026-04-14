@@ -1,0 +1,44 @@
+=== pick_object.sh started at Mon Apr 13 06:51:08 PM EDT 2026 ===
+Target ArUco marker ID: 200
+Waiting for nodes to be ready (launch_nodes.sh)...
+Nodes are ready!
+Setting target marker ID to 200...
+Set parameter successful
+Resetting arm position for camera view...
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+[INFO] [1776120671.785624101] [reset_pose]: reset_pose started
+[INFO] [1776120671.842114483] [reset_pose]: Node reset_pose connected to /home_the_robot service.
+[INFO] [1776120671.845193607] [reset_pose]: Node reset_pose connected to /stow_the_robot service.
+[INFO] [1776120671.847133976] [reset_pose]: Node reset_pose connected to /stop_the_robot service.
+[INFO] [1776120671.851491826] [reset_pose]: Node reset_pose connected to /switch_to_trajectory_mode service.
+[INFO] [1776120671.853984961] [reset_pose]: Node reset_pose connected to /switch_to_position_mode service.
+[INFO] [1776120671.856122781] [reset_pose]: Node reset_pose connected to /switch_to_navigation_mode service.
+[INFO] [1776120671.856708231] [reset_pose]: Moving to default pose...
+[INFO] [1776120671.935572867] [reset_pose]: Arm reset done.
+[INFO] [1776120671.935815872] [reset_pose]: Skipping rotation (ROTATE_DEG=0).
+[INFO] [1776120671.935999410] [reset_pose]: Done.
+./pick_object.sh: line 35: 10600 Segmentation fault      (core dumped) python3 ~/test1.py
+Arm reset complete.
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+Waiting for live marker detection (confirming stamp is advancing)...
+Live detection confirmed! (stamp advancing: 1776120674 → 1776120676)
+Live pose:
+  x: -0.16273031998900978
+  y: -0.4396611846239583
+  z: 0.9456243745942007
+Waiting for grasp service...
+Grasp service ready!
+=== Triggering grasp ===
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+

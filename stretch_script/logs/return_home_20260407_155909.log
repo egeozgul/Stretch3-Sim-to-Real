@@ -1,0 +1,58 @@
+=== return_home.sh started at Tue Apr  7 03:59:09 PM EDT 2026 ===
+Waiting for nodes to be ready (launch_nodes.sh)...
+Nodes are ready!
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+Waiting for controller_server...
+Set parameter successful
+Yaw tolerance set.
+=== Navigating back to origin ===
+Waiting for an action server to become available...
+Sending goal:
+     pose:
+  header:
+    stamp:
+      sec: 0
+      nanosec: 0
+    frame_id: map
+  pose:
+    position:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      w: 1.0
+behavior_tree: ''
+
+Goal accepted with ID: ff2e526fb48a4dd6bc0a26a79bda39aa
+
+Result:
+    result: {}
+
+Goal finished with status: SUCCEEDED
+Navigation to origin succeeded!
+Resetting arm position...
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+[INFO] [1775591974.218044200] [reset_pose]: reset_pose started
+[INFO] [1775591974.290187327] [reset_pose]: Node reset_pose connected to /home_the_robot service.
+[INFO] [1775591974.291616420] [reset_pose]: Node reset_pose connected to /stow_the_robot service.
+[INFO] [1775591974.292844079] [reset_pose]: Node reset_pose connected to /stop_the_robot service.
+[INFO] [1775591974.294828751] [reset_pose]: Node reset_pose connected to /switch_to_trajectory_mode service.
+[INFO] [1775591974.296555790] [reset_pose]: Node reset_pose connected to /switch_to_position_mode service.
+[INFO] [1775591974.298393084] [reset_pose]: Node reset_pose connected to /switch_to_navigation_mode service.
+[INFO] [1775591974.299038250] [reset_pose]: Moving to default pose...
+[INFO] [1775591979.238390930] [reset_pose]: Arm reset done.
+[INFO] [1775591979.238856405] [reset_pose]: Skipping rotation (ROTATE_DEG=0).
+[INFO] [1775591979.239234501] [reset_pose]: Done.
+Arm reset complete (exit 0).
+=== return_home.sh finished at Tue Apr  7 03:59:39 PM EDT 2026 ===

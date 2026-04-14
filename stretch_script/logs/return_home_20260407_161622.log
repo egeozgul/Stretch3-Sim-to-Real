@@ -1,0 +1,60 @@
+=== return_home.sh started at Tue Apr  7 04:16:22 PM EDT 2026 ===
+Waiting for nodes to be ready (launch_nodes.sh)...
+Nodes are ready!
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in navigation mode.')
+
+Waiting for controller_server...
+Set parameter successful
+Yaw tolerance set.
+=== Navigating back to origin ===
+Waiting for an action server to become available...
+Sending goal:
+     pose:
+  header:
+    stamp:
+      sec: 0
+      nanosec: 0
+    frame_id: map
+  pose:
+    position:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      w: 1.0
+behavior_tree: ''
+
+Goal accepted with ID: 863fea00f75d4028925229d0084523f9
+
+Result:
+    result: {}
+
+Goal finished with status: SUCCEEDED
+Navigation to origin succeeded!
+Resetting arm position...
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+[INFO] [1775593005.912609795] [reset_pose]: reset_pose started
+[INFO] [1775593005.957689229] [reset_pose]: Node reset_pose connected to /home_the_robot service.
+[INFO] [1775593005.959049690] [reset_pose]: Node reset_pose connected to /stow_the_robot service.
+[INFO] [1775593005.960252118] [reset_pose]: Node reset_pose connected to /stop_the_robot service.
+[INFO] [1775593005.961388429] [reset_pose]: Node reset_pose connected to /switch_to_trajectory_mode service.
+[INFO] [1775593005.962546315] [reset_pose]: Node reset_pose connected to /switch_to_position_mode service.
+[INFO] [1775593005.963720959] [reset_pose]: Node reset_pose connected to /switch_to_navigation_mode service.
+[INFO] [1775593005.964077671] [reset_pose]: Moving to default pose...
+[WARN] [1775593005.964378371] [reset_pose]: Currently in  mode. Recommend switching either to position or trajectory mode
+[WARN] [1775593005.964626843] [reset_pose]: Commanding joint trajectory server in position mode
+[INFO] [1775593016.028095397] [reset_pose]: Arm reset done.
+[INFO] [1775593016.028343170] [reset_pose]: Skipping rotation (ROTATE_DEG=0).
+[INFO] [1775593016.028558512] [reset_pose]: Done.
+Arm reset complete (exit 0).
+=== return_home.sh finished at Tue Apr  7 04:16:56 PM EDT 2026 ===

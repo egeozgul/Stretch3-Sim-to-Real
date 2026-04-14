@@ -1,0 +1,259 @@
+=== dock_to_origin.sh started at Mon Apr  6 03:25:49 PM EDT 2026 ===
+Freeing robot process...
+Done!
+Releasing LiDAR port...
+Launching Nav2...
+Waiting for Nav2 action server...
+[INFO] [launch]: All log files can be found below /home/willy/.ros/log/2026-04-06-15-25-51-453225-stretch-re2-2204-28765
+[INFO] [launch]: Default logging verbosity is set to INFO
+Nav2 is up!
+Checking LiDAR...
+[INFO] [stretch_driver-3]: process started with pid [28830]
+[INFO] [joint_state_publisher-1]: process started with pid [28826]
+[INFO] [robot_state_publisher-2]: process started with pid [28828]
+[INFO] [sllidar_node-4]: process started with pid [28832]
+[INFO] [scan_to_scan_filter_chain-5]: process started with pid [28834]
+[INFO] [joy_node-6]: process started with pid [28836]
+[INFO] [teleop_node-7]: process started with pid [28838]
+[INFO] [map_server-8]: process started with pid [28840]
+[INFO] [amcl-9]: process started with pid [28842]
+[INFO] [lifecycle_manager-10]: process started with pid [28844]
+[INFO] [controller_server-11]: process started with pid [28846]
+[INFO] [planner_server-12]: process started with pid [28848]
+[INFO] [behavior_server-13]: process started with pid [28850]
+[INFO] [bt_navigator-14]: process started with pid [28852]
+[INFO] [waypoint_follower-15]: process started with pid [28858]
+[INFO] [lifecycle_manager-16]: process started with pid [28937]
+[INFO] [rviz2-17]: process started with pid [28940]
+[sllidar_node-4] [INFO] [1775503552.124747697] [sllidar_node]: SLLidar running on ROS2 package SLLidar.ROS2 SDK Version:1.0.1, SLLIDAR SDK Version:2.1.0
+[sllidar_node-4] [INFO] [1775503552.139695715] [sllidar_node]: SLLidar S/N: C394ED93C0EA98C9A5E698F2564A4669
+[sllidar_node-4] [INFO] [1775503552.139758902] [sllidar_node]: Firmware Ver: 1.29
+[sllidar_node-4] [INFO] [1775503552.139774898] [sllidar_node]: Hardware Rev: 7
+[scan_to_scan_filter_chain-5] [INFO] [1775503552.128393142] [laser_filter]: In shadow configure done
+[scan_to_scan_filter_chain-5] [WARN] [1775503552.128684654] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[teleop_node-7] [INFO] [1775503552.124100807] [TeleopTwistJoy]: Teleop enable button 4.
+[teleop_node-7] [INFO] [1775503552.124183271] [TeleopTwistJoy]: Linear axis x on 4 at scale 0.500000.
+[teleop_node-7] [INFO] [1775503552.124200009] [TeleopTwistJoy]: Angular axis yaw on 3 at scale 0.500000.
+[controller_server-11] [INFO] [1775503552.135529230] [controller_server]: 
+[controller_server-11] 	controller_server lifecycle node launched. 
+[controller_server-11] 	Waiting on external lifecycle transitions to activate
+[controller_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1775503552.128996285] [planner_server]: 
+[planner_server-12] 	planner_server lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1775503552.132087162] [planner_server]: Creating
+[planner_server-12] [INFO] [1775503552.136260117] [global_costmap.global_costmap]: 
+[planner_server-12] 	global_costmap lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1775503552.137951071] [global_costmap.global_costmap]: Creating Costmap
+[lifecycle_manager-10] [INFO] [1775503552.144251555] [lifecycle_manager_localization]: Creating
+[controller_server-11] [INFO] [1775503552.145721745] [controller_server]: Creating controller server
+[sllidar_node-4] [INFO] [1775503552.147485951] [sllidar_node]: SLLidar health status : 0
+[sllidar_node-4] [INFO] [1775503552.147561812] [sllidar_node]: SLLidar health status : OK.
+[map_server-8] [INFO] [1775503552.150313315] [map_server]: 
+[map_server-8] 	map_server lifecycle node launched. 
+[map_server-8] 	Waiting on external lifecycle transitions to activate
+[map_server-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-8] [INFO] [1775503552.150450201] [map_server]: Creating
+[bt_navigator-14] [INFO] [1775503552.153448900] [bt_navigator]: 
+[bt_navigator-14] 	bt_navigator lifecycle node launched. 
+[bt_navigator-14] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-14] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-14] [INFO] [1775503552.153571027] [bt_navigator]: Creating
+[waypoint_follower-15] [INFO] [1775503552.163079540] [waypoint_follower]: 
+[waypoint_follower-15] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-15] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-15] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-10] [INFO] [1775503552.163554298] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[behavior_server-13] [INFO] [1775503552.165798692] [behavior_server]: 
+[behavior_server-13] 	behavior_server lifecycle node launched. 
+[behavior_server-13] 	Waiting on external lifecycle transitions to activate
+[behavior_server-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-15] [INFO] [1775503552.168333870] [waypoint_follower]: Creating
+[controller_server-11] [INFO] [1775503552.168429819] [local_costmap.local_costmap]: 
+[controller_server-11] 	local_costmap lifecycle node launched. 
+[controller_server-11] 	Waiting on external lifecycle transitions to activate
+[controller_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-16] [INFO] [1775503552.169138614] [lifecycle_manager_navigation]: Creating
+[controller_server-11] [INFO] [1775503552.169669958] [local_costmap.local_costmap]: Creating Costmap
+[lifecycle_manager-16] [INFO] [1775503552.171835747] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[amcl-9] [INFO] [1775503552.183522337] [amcl]: 
+[amcl-9] 	amcl lifecycle node launched. 
+[amcl-9] 	Waiting on external lifecycle transitions to activate
+[amcl-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-9] [INFO] [1775503552.184678408] [amcl]: Creating
+[lifecycle_manager-10] [INFO] [1775503552.312201307] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-10] [INFO] [1775503552.312499067] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[map_server-8] [INFO] [1775503552.312726684] [map_server]: Configuring
+[map_server-8] [INFO] [1775503552.313017927] [map_io]: Loading yaml file: /home/willy/stretch_user/maps/testing_map.yaml
+[map_server-8] [INFO] [1775503552.313810733] [map_io]: resolution: 0.05
+[map_server-8] [INFO] [1775503552.313827829] [map_io]: origin[0]: -11.5
+[map_server-8] [INFO] [1775503552.313832959] [map_io]: origin[1]: -1.71
+[map_server-8] [INFO] [1775503552.313837936] [map_io]: origin[2]: 0
+[map_server-8] [INFO] [1775503552.313843174] [map_io]: free_thresh: 0.25
+[lifecycle_manager-16] [INFO] [1775503552.313925280] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-16] [INFO] [1775503552.313982178] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-11] [INFO] [1775503552.314261286] [controller_server]: Configuring controller interface
+[map_server-8] [INFO] [1775503552.314609396] [map_io]: occupied_thresh: 0.65
+[map_server-8] [INFO] [1775503552.314630739] [map_io]: mode: trinary
+[map_server-8] [INFO] [1775503552.314638181] [map_io]: negate: 0
+[map_server-8] [INFO] [1775503552.315333208] [map_io]: Loading image_file: /home/willy/stretch_user/maps/testing_map.pgm
+[controller_server-11] [INFO] [1775503552.315664418] [controller_server]: getting goal checker plugins..
+[controller_server-11] [INFO] [1775503552.316767073] [controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-11] [INFO] [1775503552.316832469] [local_costmap.local_costmap]: Configuring
+[controller_server-11] [INFO] [1775503552.335353449] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[controller_server-11] [INFO] [1775503552.345347264] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[map_server-8] [INFO] [1775503552.350871330] [map_io]: Read map /home/willy/stretch_user/maps/testing_map.pgm: 416 X 249 map @ 0.05 m/cell
+[controller_server-11] [INFO] [1775503552.354681153] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-11] [INFO] [1775503552.354736071] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[sllidar_node-4] [INFO] [1775503552.358353592] [sllidar_node]: current scan mode: Boost, sample rate: 8 Khz, max_distance: 12.0 m, scan frequency:10.0 Hz, 
+[controller_server-11] [INFO] [1775503552.358727696] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[lifecycle_manager-10] [INFO] [1775503552.362269252] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[amcl-9] [INFO] [1775503552.363000035] [amcl]: Configuring
+[amcl-9] [INFO] [1775503552.363096236] [amcl]: initTransforms
+[controller_server-11] [INFO] [1775503552.376946336] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-11] [INFO] [1775503552.376992568] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-11] [INFO] [1775503552.379549789] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[amcl-9] [INFO] [1775503552.383607766] [amcl]: initPubSub
+[controller_server-11] [INFO] [1775503552.393673820] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-11] [INFO] [1775503552.394767883] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-11] [INFO] [1775503552.395287569] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[amcl-9] [INFO] [1775503552.396916593] [amcl]: Subscribed to map topic.
+[lifecycle_manager-10] [INFO] [1775503552.403192464] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[map_server-8] [INFO] [1775503552.404009038] [map_server]: Activating
+[map_server-8] [INFO] [1775503552.404422654] [map_server]: Creating bond (map_server) to lifecycle manager.
+[amcl-9] [INFO] [1775503552.405209778] [amcl]: Received a 416 X 249 map @ 0.050 m/pix
+[controller_server-11] [INFO] [1775503552.405750642] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-11] [INFO] [1775503552.411680545] [controller_server]: Setting transform_tolerance to 0.200000
+[controller_server-11] [INFO] [1775503552.438035787] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[controller_server-11] [INFO] [1775503552.440348302] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775503552.440834159] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-11] [INFO] [1775503552.442738059] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775503552.442957684] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[controller_server-11] [INFO] [1775503552.443308787] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775503552.443492319] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-11] [INFO] [1775503552.445913744] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775503552.446370917] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-11] [INFO] [1775503552.447718174] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775503552.448188052] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-11] [INFO] [1775503552.449064377] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775503552.449266617] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-11] [INFO] [1775503552.449630068] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775503552.449806901] [controller_server]: Using critic "PreferForward" (dwb_critics::PreferForwardCritic)
+[controller_server-11] [INFO] [1775503552.452745578] [controller_server]: Critic plugin initialized
+[controller_server-11] [INFO] [1775503552.452775614] [controller_server]: Controller Server has FollowPath  controllers available.
+[lifecycle_manager-16] [INFO] [1775503552.462586615] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-12] [INFO] [1775503552.462874102] [planner_server]: Configuring
+[planner_server-12] [INFO] [1775503552.462917511] [global_costmap.global_costmap]: Configuring
+[planner_server-12] [INFO] [1775503552.470051559] [global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-12] [INFO] [1775503552.482576045] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[planner_server-12] [INFO] [1775503552.484715104] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-12] [INFO] [1775503552.484758161] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-12] [INFO] [1775503552.488464882] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-12] [INFO] [1775503552.494834852] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-12] [INFO] [1775503552.494900058] [global_costmap.global_costmap]: Using plugin "voxel_layer"
+[planner_server-12] [INFO] [1775503552.496676956] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-12] [INFO] [1775503552.501412363] [global_costmap.global_costmap]: Initialized plugin "voxel_layer"
+[planner_server-12] [INFO] [1775503552.501482420] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-12] [INFO] [1775503552.502403387] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-12] [INFO] [1775503552.508810034] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 416 X 249 at 0.050000 m/pix
+[planner_server-12] [INFO] [1775503552.509480794] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[planner_server-12] [INFO] [1775503552.509529832] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-12] [INFO] [1775503552.510787636] [planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-16] [INFO] [1775503552.519374540] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-13] [INFO] [1775503552.519583835] [behavior_server]: Configuring
+[lifecycle_manager-10] [INFO] [1775503552.520568232] [lifecycle_manager_localization]: Server map_server connected with bond.
+[lifecycle_manager-10] [INFO] [1775503552.520634870] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+[amcl-9] [INFO] [1775503552.520826352] [amcl]: Activating
+[amcl-9] [INFO] [1775503552.520862796] [amcl]: Creating bond (amcl) to lifecycle manager.
+[behavior_server-13] [INFO] [1775503552.527432191] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-13] [INFO] [1775503552.528564151] [behavior_server]: Configuring spin
+[behavior_server-13] [INFO] [1775503552.533826371] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-13] [INFO] [1775503552.534840468] [behavior_server]: Configuring backup
+[behavior_server-13] [INFO] [1775503552.538734382] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[behavior_server-13] [INFO] [1775503552.539660284] [behavior_server]: Configuring drive_on_heading
+[behavior_server-13] [INFO] [1775503552.543346068] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
+[behavior_server-13] [INFO] [1775503552.545376101] [behavior_server]: Configuring assisted_teleop
+[behavior_server-13] [INFO] [1775503552.551192499] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-13] [INFO] [1775503552.552009281] [behavior_server]: Configuring wait
+[lifecycle_manager-16] [INFO] [1775503552.555674555] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[bt_navigator-14] [INFO] [1775503552.555982153] [bt_navigator]: Configuring
+[lifecycle_manager-10] [INFO] [1775503552.626865109] [lifecycle_manager_localization]: Server amcl connected with bond.
+[lifecycle_manager-10] [INFO] [1775503552.626925767] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-10] [INFO] [1775503552.626946503] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[lifecycle_manager-16] [INFO] [1775503552.632136731] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[waypoint_follower-15] [INFO] [1775503552.632342197] [waypoint_follower]: Configuring
+[waypoint_follower-15] [INFO] [1775503552.638719850] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[lifecycle_manager-16] [INFO] [1775503552.639635580] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[controller_server-11] [INFO] [1775503552.639839976] [controller_server]: Activating
+[controller_server-11] [INFO] [1775503552.639876355] [local_costmap.local_costmap]: Activating
+[controller_server-11] [INFO] [1775503552.639886540] [local_costmap.local_costmap]: Checking transform
+[controller_server-11] [INFO] [1775503552.639928882] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[joy_node-6] [INFO] [1775503552.782148064] [joy_node]: Opened joystick: Controller 1.05.  deadzone: 0.050000
+[rviz2-17] [INFO] [1775503553.094655565] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-17] [INFO] [1775503553.094717066] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[scan_to_scan_filter_chain-5] [WARN] [1775503553.124667248] [laser_filter]: diagnostic_updater: No HW_ID was set. This is probably a bug. Please report it. For devices that do not have a HW_ID, set this value to 'none'. This warning only occurs once all diagnostics are OK. It is okay to wait until the device is open before calling setHardwareID.
+[controller_server-11] [INFO] [1775503553.139975638] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775503553.191667205] [rviz2]: Stereo is NOT SUPPORTED
+[amcl-9] [WARN] [1775503553.276197675] [amcl]: New subscription discovered on topic '/particle_cloud', requesting incompatible QoS. No messages will be sent to it. Last incompatible policy: RELIABILITY_QOS_POLICY
+[stretch_driver-3] [0m[INFO] [1775503553.367422703] [stretch_driver]: For use with S T R E T C H (TM) RESEARCH EDITION from Hello Robot Inc.[0m
+[stretch_driver-3] [0m[INFO] [1775503553.367693253] [stretch_driver]: stretch_driver started[0m
+[rviz2-17] [INFO] [1775503553.496429559] [rviz2]: Trying to create a map of size 416 x 249 using 1 swatches
+[rviz2-17] [ERROR] [1775503553.501601718] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[rviz2-17] active samplers with a different type refer to the same texture image unit
+LiDAR OK!
+Waiting for AMCL service...
+[controller_server-11] [INFO] [1775503553.639984477] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[stretch_driver-3] Key mapped to End-Of-Arm Tool: tool_stretch_dex_wrist
+[stretch_driver-3] Unable to load URDF: /home/willy/.local/lib/python3.10/site-packages/stretch_urdf/RE2V0/stretch_description_RE2V0_tool_stretch_dex_wrist.urdf. Disabling collision system.
+[controller_server-11] [INFO] [1775503554.139978851] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-11] [INFO] [1775503554.640009278] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [INFO] [1775503554.859950492] [amcl]: Message Filter dropping message: frame 'laser' at time 1775503552.358 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[stretch_driver-3] [0m[INFO] [1775503555.139165355] [stretch_driver]: broadcast_odom_tf = True[0m
+[controller_server-11] [INFO] [1775503555.140016399] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[stretch_driver-3] [0m[INFO] [1775503555.170088888] [stretch_driver]: rate = 30.0 Hz[0m
+[stretch_driver-3] [0m[INFO] [1775503555.172037797] [stretch_driver]: twist timeout = 0.5 s[0m
+[stretch_driver-3] [0m[INFO] [1775503555.173359726] [stretch_driver]: base_frame_id = base_link[0m
+[stretch_driver-3] [0m[INFO] [1775503555.174546346] [stretch_driver]: odom_frame_id = odom[0m
+[stretch_driver-3] [0m[INFO] [1775503555.227448420] [stretch_driver]: Changed to mode = navigation[0m
+[rviz2-17] [INFO] [1775503555.279118775] [rviz]: Message Filter dropping message: frame 'laser' at time 1775503552.358 for reason 'discarding message because the queue is full'
+[amcl-9] [INFO] [1775503555.419278079] [amcl]: createLaserObject
+[amcl-9] [WARN] [1775503555.439900584] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[controller_server-11] [INFO] [1775503555.640083823] [local_costmap.local_costmap]: start
+[controller_server-11] [INFO] [1775503555.842239685] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+Setting initial pose...
+[lifecycle_manager-16] [INFO] [1775503555.947712276] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[lifecycle_manager-16] [INFO] [1775503555.947801470] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[planner_server-12] [INFO] [1775503555.948177584] [planner_server]: Activating
+[planner_server-12] [INFO] [1775503555.948262937] [global_costmap.global_costmap]: Activating
+[planner_server-12] [INFO] [1775503555.948297143] [global_costmap.global_costmap]: Checking transform
+[planner_server-12] [INFO] [1775503555.948349321] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775503556.448430640] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775503556.948407251] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [INFO] [1775503557.228153782] [amcl]: initialPoseReceived
+[amcl-9] [ERROR] [1775503557.228219191] [amcl]: Received initialpose message is malformed. Rejecting.
+[planner_server-12] [INFO] [1775503557.448423532] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [WARN] [1775503557.544112394] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[rviz2-17] [INFO] [1775503557.801562569] [rviz]: Message Filter dropping message: frame 'laser' at time 1775503556.132 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775503557.912672264] [rviz]: Message Filter dropping message: frame 'odom' at time 1775503555.829 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775503557.948454406] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+Waiting for AMCL to localize...
+[planner_server-12] [INFO] [1775503558.448399030] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775503558.948388151] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775503559.448426357] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [WARN] [1775503559.668783471] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-12] [INFO] [1775503559.948461007] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775503560.322502568] [rviz]: Message Filter dropping message: frame 'laser' at time 1775503558.674 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775503560.448429921] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775503560.501141379] [rviz]: Message Filter dropping message: frame 'odom' at time 1775503558.428 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775503560.948462459] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775503561.451055779] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-9] [WARN] [1775503561.806368861] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[rviz2-17] [INFO] [1775503561.889828759] [rviz]: Message Filter dropping message: frame 'odom' at time 1775503555.841 for reason 'discarding message because the queue is full'
+[planner_server-12] [INFO] [1775503561.948454116] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775503562.448422928] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1775503562.948423409] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-17] [INFO] [1775503563.010320371] [rviz]: Message Filter dropping message: frame 'laser' at time 1775503561.376 for reason 'discarding message because the queue is full'
+[rviz2-17] [INFO] [1775503563.121560885] [rviz]: Message Filter dropping message: frame 'odom' at time 1775503561.029 for reason 'discarding message because the queue is full'

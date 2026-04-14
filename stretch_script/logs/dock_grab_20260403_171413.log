@@ -1,0 +1,350 @@
+=== dock_grab.sh started at Fri Apr  3 05:14:13 PM EDT 2026 ===
+Freeing robot process...
+Done!
+=== Launching all nodes ===
+Waiting for Nav2 action server...
+[INFO] [launch]: All log files can be found below /home/willy/.ros/log/2026-04-03-17-14-14-309724-stretch-re2-2204-20997
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch]: All log files can be found below /home/willy/.ros/log/2026-04-03-17-14-14-316682-stretch-re2-2204-20996
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: D435i launched in high resolution
+[INFO] [realsense2_camera_node-1]: process started with pid [21069]
+[INFO] [d435i_accel_correction-2]: process started with pid [21071]
+[INFO] [1775250854.895539805] [aruco_base_frame_estimator]: aruco_base_frame_estimator started
+[d435i_accel_correction-2] [INFO] [1775250854.981689367] [d435i_accel_correction_node]: d435i_accel_correction_node started
+[realsense2_camera_node-1] [0m[INFO] [1775250855.065599215] [camera]: RealSense ROS v4.55.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775250855.065704778] [camera]: Built with LibRealSense v2.56.4[0m
+[realsense2_camera_node-1] [0m[INFO] [1775250855.065723052] [camera]: Running with LibRealSense v2.56.4[0m
+[realsense2_camera_node-1] [0m[INFO] [1775250855.116838687] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775250855.116902135] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775250855.116911178] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775250855.117030103] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775250855.117041595] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1775250855.117048701] [camera]: Resetting device...[0m
+[INFO] [stretch_driver-3]: process started with pid [21217]
+[INFO] [joint_state_publisher-1]: process started with pid [21213]
+[INFO] [robot_state_publisher-2]: process started with pid [21215]
+[INFO] [sllidar_node-4]: process started with pid [21219]
+[INFO] [scan_to_scan_filter_chain-5]: process started with pid [21221]
+[INFO] [joy_node-6]: process started with pid [21223]
+[INFO] [teleop_node-7]: process started with pid [21225]
+[INFO] [map_server-8]: process started with pid [21227]
+[INFO] [amcl-9]: process started with pid [21229]
+[INFO] [lifecycle_manager-10]: process started with pid [21231]
+[INFO] [controller_server-11]: process started with pid [21233]
+[INFO] [planner_server-12]: process started with pid [21237]
+[INFO] [behavior_server-13]: process started with pid [21239]
+[INFO] [bt_navigator-14]: process started with pid [21241]
+[INFO] [waypoint_follower-15]: process started with pid [21255]
+[INFO] [lifecycle_manager-16]: process started with pid [21362]
+[INFO] [rviz2-17]: process started with pid [21364]
+[sllidar_node-4] [INFO] [1775250855.249246833] [sllidar_node]: SLLidar running on ROS2 package SLLidar.ROS2 SDK Version:1.0.1, SLLIDAR SDK Version:2.1.0
+[sllidar_node-4] [INFO] [1775250855.259993904] [sllidar_node]: SLLidar S/N: C394ED93C0EA98C9A5E698F2564A4669
+[sllidar_node-4] [INFO] [1775250855.260077416] [sllidar_node]: Firmware Ver: 1.29
+[sllidar_node-4] [INFO] [1775250855.260093264] [sllidar_node]: Hardware Rev: 7
+[sllidar_node-4] [INFO] [1775250855.261703506] [sllidar_node]: SLLidar health status : 0
+[sllidar_node-4] [INFO] [1775250855.262628188] [sllidar_node]: SLLidar health status : OK.
+[scan_to_scan_filter_chain-5] [INFO] [1775250855.300245458] [laser_filter]: In shadow configure done
+[scan_to_scan_filter_chain-5] [WARN] [1775250855.309262801] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[teleop_node-7] [INFO] [1775250855.260483120] [TeleopTwistJoy]: Teleop enable button 4.
+[teleop_node-7] [INFO] [1775250855.260566025] [TeleopTwistJoy]: Linear axis x on 4 at scale 0.500000.
+[teleop_node-7] [INFO] [1775250855.260582021] [TeleopTwistJoy]: Angular axis yaw on 3 at scale 0.500000.
+[map_server-8] [INFO] [1775250855.305068939] [map_server]: 
+[map_server-8] 	map_server lifecycle node launched. 
+[map_server-8] 	Waiting on external lifecycle transitions to activate
+[map_server-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-8] [INFO] [1775250855.305230694] [map_server]: Creating
+[amcl-9] [INFO] [1775250855.301121139] [amcl]: 
+[amcl-9] 	amcl lifecycle node launched. 
+[amcl-9] 	Waiting on external lifecycle transitions to activate
+[amcl-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-9] [INFO] [1775250855.302375596] [amcl]: Creating
+[lifecycle_manager-10] [INFO] [1775250855.330615225] [lifecycle_manager_localization]: Creating
+[lifecycle_manager-10] [INFO] [1775250855.336645583] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[planner_server-12] [INFO] [1775250855.340585050] [planner_server]: 
+[planner_server-12] 	planner_server lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1775250855.350657629] [planner_server]: Creating
+[behavior_server-13] [INFO] [1775250855.337165764] [behavior_server]: 
+[behavior_server-13] 	behavior_server lifecycle node launched. 
+[behavior_server-13] 	Waiting on external lifecycle transitions to activate
+[behavior_server-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-15] [INFO] [1775250855.269194257] [waypoint_follower]: 
+[waypoint_follower-15] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-15] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-15] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-15] [INFO] [1775250855.270818597] [waypoint_follower]: Creating
+[controller_server-11] [INFO] [1775250855.366793334] [controller_server]: 
+[controller_server-11] 	controller_server lifecycle node launched. 
+[controller_server-11] 	Waiting on external lifecycle transitions to activate
+[controller_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1775250855.379262172] [global_costmap.global_costmap]: 
+[planner_server-12] 	global_costmap lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1775250855.380453830] [global_costmap.global_costmap]: Creating Costmap
+[bt_navigator-14] [INFO] [1775250855.380077878] [bt_navigator]: 
+[bt_navigator-14] 	bt_navigator lifecycle node launched. 
+[bt_navigator-14] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-14] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-14] [INFO] [1775250855.380287263] [bt_navigator]: Creating
+[controller_server-11] [INFO] [1775250855.418612011] [controller_server]: Creating controller server
+[lifecycle_manager-16] [INFO] [1775250855.458009109] [lifecycle_manager_navigation]: Creating
+[lifecycle_manager-16] [INFO] [1775250855.470094115] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[sllidar_node-4] [INFO] [1775250855.477574292] [sllidar_node]: current scan mode: Boost, sample rate: 8 Khz, max_distance: 12.0 m, scan frequency:10.0 Hz, 
+[controller_server-11] [INFO] [1775250855.495151580] [local_costmap.local_costmap]: 
+[controller_server-11] 	local_costmap lifecycle node launched. 
+[controller_server-11] 	Waiting on external lifecycle transitions to activate
+[controller_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-11] [INFO] [1775250855.497078670] [local_costmap.local_costmap]: Creating Costmap
+[lifecycle_manager-16] [INFO] [1775250855.516076347] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-16] [INFO] [1775250855.516147072] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[lifecycle_manager-10] [INFO] [1775250855.519551238] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-10] [INFO] [1775250855.519645096] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[map_server-8] [INFO] [1775250855.522599329] [map_server]: Configuring
+[map_server-8] [INFO] [1775250855.522732329] [map_io]: Loading yaml file: /home/willy/stretch_user/maps/testing_map.yaml
+[map_server-8] [INFO] [1775250855.525007494] [map_io]: resolution: 0.05
+[map_server-8] [INFO] [1775250855.525040841] [map_io]: origin[0]: -11.5
+[map_server-8] [INFO] [1775250855.525049587] [map_io]: origin[1]: -1.71
+[map_server-8] [INFO] [1775250855.525056645] [map_io]: origin[2]: 0
+[map_server-8] [INFO] [1775250855.525063990] [map_io]: free_thresh: 0.25
+[map_server-8] [INFO] [1775250855.525071665] [map_io]: occupied_thresh: 0.65
+[map_server-8] [INFO] [1775250855.525079495] [map_io]: mode: trinary
+[map_server-8] [INFO] [1775250855.525087377] [map_io]: negate: 0
+[map_server-8] [INFO] [1775250855.525347760] [map_io]: Loading image_file: /home/willy/stretch_user/maps/testing_map.pgm
+[map_server-8] [INFO] [1775250855.557012052] [map_io]: Read map /home/willy/stretch_user/maps/testing_map.pgm: 416 X 249 map @ 0.05 m/cell
+[lifecycle_manager-10] [INFO] [1775250855.567702623] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[amcl-9] [INFO] [1775250855.569208349] [amcl]: Configuring
+[amcl-9] [INFO] [1775250855.569357070] [amcl]: initTransforms
+[amcl-9] [INFO] [1775250855.579119466] [amcl]: initPubSub
+[amcl-9] [INFO] [1775250855.582274311] [amcl]: Subscribed to map topic.
+[lifecycle_manager-10] [INFO] [1775250855.592615599] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[map_server-8] [INFO] [1775250855.593001110] [map_server]: Activating
+[map_server-8] [INFO] [1775250855.593392236] [map_server]: Creating bond (map_server) to lifecycle manager.
+[amcl-9] [INFO] [1775250855.593745154] [amcl]: Received a 416 X 249 map @ 0.050 m/pix
+[lifecycle_manager-10] [INFO] [1775250855.639167942] [lifecycle_manager_localization]: Server map_server connected with bond.
+[lifecycle_manager-10] [INFO] [1775250855.639221220] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+[amcl-9] [INFO] [1775250855.639614189] [amcl]: Activating
+[amcl-9] [INFO] [1775250855.639665292] [amcl]: Creating bond (amcl) to lifecycle manager.
+[lifecycle_manager-10] [INFO] [1775250855.743814899] [lifecycle_manager_localization]: Server amcl connected with bond.
+[lifecycle_manager-10] [INFO] [1775250855.743882876] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-10] [INFO] [1775250855.743902681] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[joy_node-6] [INFO] [1775250855.811829805] [joy_node]: Opened joystick: Controller 1.05.  deadzone: 0.050000
+[scan_to_scan_filter_chain-5] [WARN] [1775250856.273555199] [laser_filter]: diagnostic_updater: No HW_ID was set. This is probably a bug. Please report it. For devices that do not have a HW_ID, set this value to 'none'. This warning only occurs once all diagnostics are OK. It is okay to wait until the device is open before calling setHardwareID.
+[INFO] [1775250856.333487034] [object_grasper]: object_grasper started
+[stretch_driver-3] [0m[INFO] [1775250856.877374713] [stretch_driver]: For use with S T R E T C H (TM) RESEARCH EDITION from Hello Robot Inc.[0m
+[stretch_driver-3] [0m[INFO] [1775250856.877663164] [stretch_driver]: stretch_driver started[0m
+[stretch_driver-3] Key mapped to End-Of-Arm Tool: tool_stretch_dex_wrist
+[stretch_driver-3] Unable to load URDF: /home/willy/.local/lib/python3.10/site-packages/stretch_urdf/RE2V0/stretch_description_RE2V0_tool_stretch_dex_wrist.urdf. Disabling collision system.
+[amcl-9] [INFO] [1775250857.901310272] [amcl]: Message Filter dropping message: frame 'laser' at time 1775250855.478 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-17] [INFO] [1775250858.297533507] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-17] [INFO] [1775250858.297700072] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[rviz2-17] [INFO] [1775250858.629330150] [rviz2]: Stereo is NOT SUPPORTED
+[stretch_driver-3] [0m[INFO] [1775250858.630231407] [stretch_driver]: broadcast_odom_tf = True[0m
+[stretch_driver-3] [0m[INFO] [1775250858.656543815] [stretch_driver]: rate = 30.0 Hz[0m
+[stretch_driver-3] [0m[INFO] [1775250858.657645238] [stretch_driver]: twist timeout = 0.5 s[0m
+[stretch_driver-3] [0m[INFO] [1775250858.658517977] [stretch_driver]: base_frame_id = base_link[0m
+[stretch_driver-3] [0m[INFO] [1775250858.660084329] [stretch_driver]: odom_frame_id = odom[0m
+[stretch_driver-3] [0m[INFO] [1775250858.736360015] [stretch_driver]: Changed to mode = navigation[0m
+[amcl-9] [WARN] [1775250858.743053013] [amcl]: New subscription discovered on topic '/particle_cloud', requesting incompatible QoS. No messages will be sent to it. Last incompatible policy: RELIABILITY_QOS_POLICY
+[INFO] [1775250858.887329800] [object_grasper]: Node object_grasper connected to /home_the_robot service.
+[INFO] [1775250858.898827229] [object_grasper]: Node object_grasper connected to /stow_the_robot service.
+[INFO] [1775250858.900684753] [object_grasper]: Node object_grasper connected to /stop_the_robot service.
+[INFO] [1775250858.902315600] [object_grasper]: Node object_grasper connected to /switch_to_trajectory_mode service.
+[INFO] [1775250858.911244045] [object_grasper]: Node object_grasper connected to /switch_to_position_mode service.
+[INFO] [1775250858.913974020] [object_grasper]: Node object_grasper connected to /switch_to_navigation_mode service.
+[INFO] [1775250858.985748293] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /home_the_robot service.
+[INFO] [1775250858.987077686] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /stow_the_robot service.
+[INFO] [1775250858.988205559] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /stop_the_robot service.
+[INFO] [1775250859.001077123] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_trajectory_mode service.
+[INFO] [1775250859.004886719] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_position_mode service.
+[INFO] [1775250859.013090688] [aruco_base_frame_estimator]: Node aruco_base_frame_estimator connected to /switch_to_navigation_mode service.
+[INFO] [1775250859.015434602] [aruco_base_frame_estimator]: Moving head camera to detection orientation...
+[amcl-9] [INFO] [1775250859.014251024] [amcl]: createLaserObject
+[WARN] [1775250859.017983558] [aruco_base_frame_estimator]: Currently in navigation mode. Recommend switching either to position or trajectory mode
+[WARN] [1775250859.018816269] [aruco_base_frame_estimator]: Commanding joint trajectory server in position mode
+[stretch_driver-3] [0m[INFO] [1775250859.033578881] [stretch_driver]: Received goal request[0m
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.70
+[stretch_driver-3] [0m[INFO] [1775250859.046118213] [stretch_driver]: stretch_driver joint_traj action: New trajectory received with joint_names = ['joint_head_pan', 'joint_head_tilt'][0m
+[amcl-9] [WARN] [1775250859.063886878] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[rviz2-17] [INFO] [1775250859.081991923] [rviz2]: Trying to create a map of size 416 x 249 using 1 swatches
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_mast is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+[rviz2-17] [ERROR] [1775250859.098546997] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[rviz2-17] active samplers with a different type refer to the same texture image unit
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_arm_l4 is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_wrist_yaw_bottom is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_gripper_s3_body is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/urdf/URDF.py:261: UserWarning: Joint joint_grasp_center is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored
+  warnings.warn("Joint {} is of type: fixed, but has an 'axis' attribute defined. This is not in the URDF spec and thus this axis is ignored".format(joint.attrib["name"]))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link Base link (index: 0) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_mast (index: 2) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_arm_l4 (index: 4) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_wrist_yaw_bottom (index: 10) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_gripper_s3_body (index: 13) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+/home/willy/.local/lib/python3.10/site-packages/ikpy/chain.py:60: UserWarning: Link joint_grasp_center (index: 14) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive
+  warnings.warn("Link {} (index: {}) is of type 'fixed' but set as active in the active_links_mask. In practice, this fixed link doesn't provide any transformation so is as it were inactive".format(link.name, link_index))
+[INFO] [1775250859.231359898] [object_grasper]: ============================================================
+[INFO] [1775250859.231643917] [object_grasper]: ObjectGrasper ready — waiting for ArUco detections
+[INFO] [1775250859.231851498] [object_grasper]: Listening on: /aruco/target_base_link
+[INFO] [1775250859.232025314] [object_grasper]: Call service: ros2 service call /grasp_object std_srvs/srv/Trigger {}
+[INFO] [1775250859.232194617] [object_grasper]: ============================================================
+[stretch_driver-3] -------------------------------------------
+[stretch_driver-3] Finished goal
+[stretch_driver-3] [0m[INFO] [1775250859.880838349] [stretch_driver]: stretch_driver joint_traj action: Achieved all target points.[0m
+[INFO] [1775250859.882827003] [aruco_base_frame_estimator]: Head camera at detection pose — starting ArUco detection.
+[INFO] [1775250859.890785455] [aruco_base_frame_estimator]: Waiting for camera TF (base_link -> camera_color_optical_frame)...
+[INFO] [1775250859.919228254] [aruco_base_frame_estimator]: Camera pose acquired:
+[INFO] [1775250859.919523131] [aruco_base_frame_estimator]:   Position  : X=+0.0103  Y=-0.0516  Z=+1.2866  (m)
+[INFO] [1775250859.919760442] [aruco_base_frame_estimator]:   RPY (deg) : R=-179.12  P=+59.21  Y=+94.68
+[INFO] [1775250859.923473940] [aruco_base_frame_estimator]: ============================================================
+[INFO] [1775250859.923721708] [aruco_base_frame_estimator]: ArUco Base Frame Estimator Started
+[INFO] [1775250859.923902825] [aruco_base_frame_estimator]: Target Marker ID: 202
+[INFO] [1775250859.924068713] [aruco_base_frame_estimator]: Marker size: 2.8 cm
+[INFO] [1775250859.924227238] [aruco_base_frame_estimator]: Marker offset (cam frame): X=0.0  Y=0.0  Z=0.0
+[INFO] [1775250859.924382111] [aruco_base_frame_estimator]: Publishing target on: /aruco/target_base_link
+[INFO] [1775250859.924539242] [aruco_base_frame_estimator]: ============================================================
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.28
+[amcl-9] [WARN] [1775250861.125855529] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[rviz2-17] [INFO] [1775250861.164093491] [rviz]: Message Filter dropping message: frame 'laser' at time 1775250858.733 for reason 'discarding message because the queue is full'
+[realsense2_camera_node-1] [0m[INFO] [1775250861.186652012] [camera]: Device with serial number 239722071445 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1775250861.186698950] [camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775250861.186707918] [camera]: Device with name Intel RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775250861.186842048] [camera]: Device with port number 2-1 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1775250861.186853706] [camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1775250861.194095615] [camera]: getParameters...[0m
+[realsense2_camera_node-1] [0m[INFO] [1775250861.488794137] [camera]: JSON file is loaded! (/home/willy/ament_ws/install/stretch_core/share/stretch_core/config/HighAccuracyPreset.json)[0m
+[realsense2_camera_node-1] [0m[INFO] [1775250861.488864476] [camera]: Device Name: Intel RealSense D435I[0m
+[realsense2_camera_node-1] [0m[INFO] [1775250861.488881648] [camera]: Device Serial No: 239722071445[0m
+[realsense2_camera_node-1] [0m[INFO] [1775250861.488895625] [camera]: Device physical port: /sys/devices/pci0000:00/0000:00:0d.0/usb2/2-1/2-1:1.0/video4linux/video0[0m
+[realsense2_camera_node-1] [0m[INFO] [1775250861.488908950] [camera]: Device FW version: 5.16.0.1[0m
+[realsense2_camera_node-1] [0m[INFO] [1775250861.488921699] [camera]: Device Product ID: 0x0B3A[0m
+[realsense2_camera_node-1] [0m[INFO] [1775250861.488934108] [camera]: Sync Mode: On[0m
+[realsense2_camera_node-1] [33m[WARN] [1775250861.601933322] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775250861.603287351] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [33m[WARN] [1775250861.622033676] [camera]: re-enable the stream for the change to take effect.[0m
+[realsense2_camera_node-1] [31m[ERROR] [1775250861.625561709] [camera]: Given value, 63 is invalid. Set ROS param back to: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775250861.642857903] [camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775250861.642947915] [camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775250861.642967832] [camera]: Stopping Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775250861.668335909] [camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775250861.673928115] [camera]: Open profile: stream_type: Depth(0), Format: Z16, Width: 1280, Height: 720, FPS: 15[0m
+[realsense2_camera_node-1] [0m[INFO] [1775250861.689433159] [camera]: Starting Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1775250861.692401434] [camera]: Open profile: stream_type: Color(0), Format: RGB8, Width: 1280, Height: 720, FPS: 15[0m
+[realsense2_camera_node-1] [0m[INFO] [1775250861.699236296] [camera]: Starting Sensor: Motion Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1775250861.701267045] [camera]: Open profile: stream_type: Accel(0)Format: MOTION_XYZ32F, FPS: 100[0m
+[realsense2_camera_node-1] [0m[INFO] [1775250861.701340121] [camera]: Open profile: stream_type: Gyro(0)Format: MOTION_XYZ32F, FPS: 200[0m
+[realsense2_camera_node-1] [0m[INFO] [1775250861.703945899] [camera]: RealSense Node Is Up![0m
+[INFO] [1775250863.175209163] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775250863.jpg
+[amcl-9] [WARN] [1775250863.250674458] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.74
+[rviz2-17] [INFO] [1775250863.726311587] [rviz]: Message Filter dropping message: frame 'laser' at time 1775250861.838 for reason 'discarding message because the queue is full'
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.68
+[amcl-9] [WARN] [1775250865.326437470] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[INFO] [1775250866.167706862] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775250866.jpg
+[rviz2-17] [INFO] [1775250866.398396690] [rviz]: Message Filter dropping message: frame 'laser' at time 1775250864.774 for reason 'discarding message because the queue is full'
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 8.12
+[amcl-9] [WARN] [1775250867.402251686] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.73
+[rviz2-17] [INFO] [1775250868.957131956] [rviz]: Message Filter dropping message: frame 'laser' at time 1775250867.402 for reason 'discarding message because the queue is full'
+[INFO] [1775250869.235303800] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775250869.jpg
+[amcl-9] [WARN] [1775250869.514346008] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.67
+[rviz2-17] [INFO] [1775250871.520573117] [rviz]: Message Filter dropping message: frame 'laser' at time 1775250869.933 for reason 'discarding message because the queue is full'
+[amcl-9] [WARN] [1775250871.627138656] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[INFO] [1775250872.237154853] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775250872.jpg
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.13
+[amcl-9] [WARN] [1775250873.739665025] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[rviz2-17] [INFO] [1775250874.078347184] [rviz]: Message Filter dropping message: frame 'laser' at time 1775250872.474 for reason 'discarding message because the queue is full'
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.42
+[INFO] [1775250875.243904552] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775250875.jpg
+[amcl-9] [WARN] [1775250875.864402334] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.47
+[rviz2-17] [INFO] [1775250876.819869750] [rviz]: Message Filter dropping message: frame 'laser' at time 1775250875.154 for reason 'discarding message because the queue is full'
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.69
+[amcl-9] [WARN] [1775250877.964743336] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[INFO] [1775250878.297308668] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775250878.jpg
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.10
+[rviz2-17] [INFO] [1775250879.413445729] [rviz]: Message Filter dropping message: frame 'laser' at time 1775250877.829 for reason 'discarding message because the queue is full'
+[amcl-9] [WARN] [1775250880.028253448] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.20
+[INFO] [1775250881.378139335] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775250881.jpg
+[rviz2-17] [INFO] [1775250882.011150469] [rviz]: Message Filter dropping message: frame 'laser' at time 1775250880.298 for reason 'discarding message because the queue is full'
+[amcl-9] [WARN] [1775250882.103639280] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.78
+[amcl-9] [WARN] [1775250884.179335910] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[INFO] [1775250884.384218940] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775250884.jpg
+[rviz2-17] [INFO] [1775250884.605193585] [rviz]: Message Filter dropping message: frame 'laser' at time 1775250883.062 for reason 'discarding message because the queue is full'
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.75
+[amcl-9] [WARN] [1775250886.304286703] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 8.20
+[rviz2-17] [INFO] [1775250887.215391556] [rviz]: Message Filter dropping message: frame 'laser' at time 1775250885.592 for reason 'discarding message because the queue is full'
+[INFO] [1775250887.391724800] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775250887.jpg
+[amcl-9] [WARN] [1775250888.418103566] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.62
+[rviz2-17] [INFO] [1775250889.810651459] [rviz]: Message Filter dropping message: frame 'laser' at time 1775250888.134 for reason 'discarding message because the queue is full'
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 8.04
+[INFO] [1775250890.393491816] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775250890.jpg
+[amcl-9] [WARN] [1775250890.541489625] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 8.00
+[rviz2-17] [INFO] [1775250892.387863143] [rviz]: Message Filter dropping message: frame 'laser' at time 1775250890.812 for reason 'discarding message because the queue is full'
+[amcl-9] [WARN] [1775250892.642071950] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.71
+[INFO] [1775250893.437211738] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775250893.jpg
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.21
+[amcl-9] [WARN] [1775250894.754757563] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[rviz2-17] [INFO] [1775250894.952063375] [rviz]: Message Filter dropping message: frame 'laser' at time 1775250893.195 for reason 'discarding message because the queue is full'
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.96
+[INFO] [1775250896.456826671] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775250896.jpg
+[amcl-9] [WARN] [1775250896.854632182] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[rviz2-17] [INFO] [1775250897.551999448] [rviz]: Message Filter dropping message: frame 'laser' at time 1775250896.020 for reason 'discarding message because the queue is full'
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.77
+[amcl-9] [WARN] [1775250898.905800753] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.81
+[INFO] [1775250899.596529150] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775250899.jpg
+[rviz2-17] [INFO] [1775250900.162028940] [rviz]: Message Filter dropping message: frame 'laser' at time 1775250898.636 for reason 'discarding message because the queue is full'
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.67
+[amcl-9] [WARN] [1775250900.969442795] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.88
+[INFO] [1775250902.659062173] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775250902.jpg
+[rviz2-17] [INFO] [1775250902.723684585] [rviz]: Message Filter dropping message: frame 'laser' at time 1775250901.104 for reason 'discarding message because the queue is full'
+[amcl-9] [WARN] [1775250903.057098021] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[amcl-9] [WARN] [1775250905.157412339] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[rviz2-17] [INFO] [1775250905.275317726] [rviz]: Message Filter dropping message: frame 'laser' at time 1775250903.622 for reason 'discarding message because the queue is full'
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.81
+[INFO] [1775250905.733062540] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775250905.jpg
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.33
+[amcl-9] [WARN] [1775250907.270973078] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[stretch_driver-3] [0m[INFO] [1775250907.374161450] [stretch_driver]: Changed to mode = runstopped[0m
+[stretch_driver-3] [INFO] [robot_monitor]: Runstop activated
+[rviz2-17] [INFO] [1775250907.951927780] [rviz]: Message Filter dropping message: frame 'laser' at time 1775250906.287 for reason 'discarding message because the queue is full'
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.99
+[INFO] [1775250908.841831427] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775250908.jpg
+[amcl-9] [WARN] [1775250909.382690045] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.32
+[rviz2-17] [INFO] [1775250910.577818710] [rviz]: Message Filter dropping message: frame 'laser' at time 1775250908.965 for reason 'discarding message because the queue is full'
+[amcl-9] [WARN] [1775250911.495172218] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.08
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.38
+[INFO] [1775250912.075240620] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775250912.jpg
+[rviz2-17] [INFO] [1775250913.162846562] [rviz]: Message Filter dropping message: frame 'laser' at time 1775250911.495 for reason 'discarding message because the queue is full'
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.98
+[amcl-9] [WARN] [1775250913.583091459] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.12
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.96
+[INFO] [1775250915.135579584] [aruco_base_frame_estimator]: Saved: base_detections/frame_1775250915.jpg
+[rviz2-17] [INFO] [1775250915.676708317] [rviz]: Message Filter dropping message: frame 'laser' at time 1775250914.000 for reason 'discarding message because the queue is full'
+[amcl-9] [WARN] [1775250915.696022775] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[stretch_driver-3] [INFO] [robot_monitor]: High current of: 7.90
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         

@@ -1,0 +1,3 @@
+=== pick_object.sh started at Thu Apr  9 05:42:25 PM EDT 2026 ===
+Target ArUco marker ID: 202
+Waiting for nodes to be ready (launch_nodes.sh)...

@@ -1,0 +1,17 @@
+=== pick_object.sh started at Wed Apr  8 02:36:18 PM EDT 2026 ===
+Waiting for robot to be docked (dock_pos.sh)...
+Robot is docked!
+Waiting for grasp service...
+Grasp service ready!
+=== Triggering grasp ===
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Now in position mode.')
+
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='')
+Grasp succeeded!
+=== pick_object.sh finished at Wed Apr  8 02:36:39 PM EDT 2026 ===
